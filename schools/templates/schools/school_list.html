@@ -18,7 +18,9 @@
             var lon = "{{ school.geometry.x }}";
             var lat = "{{ school.geometry.y }}";
             // add node to map
-            L.marker([lat, lon]).addTo(map);
+            L.marker([lat, lon]).addTo(map)
+                .bindPopup('This is {{ school.name }}')
+                .openPopup();
         {% endfor %}
         map.setView([lat, lon], 12);
     }
