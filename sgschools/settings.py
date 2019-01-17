@@ -126,6 +126,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+
+LEAFLET_CONFIG = {
+    'DEFAULT_ZOOM': 12,
+    'MIN_ZOOM': 11,
+    'MAX_ZOOM': 18,
+}
+
 if os.name == 'nt':
     import platform
     OSGEO4W = r"C:\OSGeo4W"

@@ -1,9 +1,10 @@
-.map-container {
-    margin: auto;
+.leaflet-container {  
+    /* all maps */
+    width:  800px;
     height: 600px;
-    width: 800px;
+    margin: auto;
 }
 
-.map-container #main{
-    height: 100%;
+.app-title {
+    text-align: center;
 }
