@@ -10,3 +10,7 @@ class PrimarySchoolAdmin(OSMGeoAdmin):
 @admin.register(Kindergarten)
 class KindergartenlAdmin(OSMGeoAdmin):
     list_display = ('name', 'geometry')
+    fieldsets = (
+        (None, {'fields': ('name','geometry', 'primary_schools')}),
+    )
+    filter_horizontal = ('primary_schools',)
