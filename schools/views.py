@@ -3,7 +3,7 @@ from django.utils import timezone
 from django.views import generic
 from django.http import HttpResponse
 
-from .models import School
+from .models import PrimarySchool
 
 
 def index(request):
@@ -12,8 +12,8 @@ def index(request):
 class SchoolsDetailView(generic.ListView):
 
     template_name = 'schools/school_list.html'
-    context_object_name = 'school_list'
+    context_object_name = 'primary_school_list'
 
     def get_queryset(self):
-        """Return all the school nodes."""
-        return School.objects.all()
+        """Return all the primary school nodes."""
+        return PrimarySchool.objects.all()
