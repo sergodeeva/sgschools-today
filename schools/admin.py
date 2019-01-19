@@ -1,8 +1,16 @@
 from django.contrib import admin
 from django.contrib.gis.admin import OSMGeoAdmin
-from .models import School
+from .models import PrimarySchool, Kindergarten
 
 
-@admin.register(School)
-class ShopAdmin(OSMGeoAdmin):
+@admin.register(PrimarySchool)
+class PrimarySchoolAdmin(OSMGeoAdmin):
     list_display = ('name', 'geometry')
+
+@admin.register(Kindergarten)
+class KindergartenlAdmin(OSMGeoAdmin):
+    list_display = ('name', 'geometry')
+    fieldsets = (
+        (None, {'fields': ('name','geometry', 'primary_schools')}),
+    )
+    filter_horizontal = ('primary_schools',)

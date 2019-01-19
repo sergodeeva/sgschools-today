@@ -5,7 +5,7 @@
 {% leaflet_js %}
 
 <div>
-    <h1 class="app-title">Universities in Singapore</h1>
+    <h1 class="app-title">Primary schools in Singapore</h1>
     <div class="map-container">
         {% leaflet_map "main" callback="map_init" %}
     </div>
@@ -16,13 +16,13 @@
     function map_init(map, options) {
         map.setMaxBounds( [[1.1,103.5], [1.5,104.2]] );
 
-        {% for school in school_list %}
+        {% for school in primary_school_list %}
             var lon = "{{ school.geometry.x }}";
             var lat = "{{ school.geometry.y }}";
             // add node to map
             L.marker([lat, lon]).addTo(map)
                 .bindPopup('This is {{ school.name }}') ;
         {% endfor %}
-        map.setView([lat, lon], 12);
+        map.setView([1.32, 103.83], 12);
     }
 </script>
