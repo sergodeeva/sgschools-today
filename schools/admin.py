@@ -7,10 +7,11 @@ from .models import PrimarySchool, Kindergarten
 class PrimarySchoolAdmin(OSMGeoAdmin):
     list_display = ('name', 'geometry')
 
+
 @admin.register(Kindergarten)
 class KindergartenlAdmin(OSMGeoAdmin):
     list_display = ('name', 'geometry')
     fieldsets = (
-        (None, {'fields': ('name','geometry', 'primary_schools')}),
+        (None, {'fields': ('name', 'geometry', 'primary_schools')}),
     )
     filter_horizontal = ('primary_schools',)

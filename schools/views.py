@@ -9,6 +9,7 @@ from .models import PrimarySchool
 def index(request):
     return HttpResponse("Hello, world. You're at the school index.")
 
+
 class SchoolsDetailView(generic.ListView):
 
     template_name = 'schools/school_list.html'

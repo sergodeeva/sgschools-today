@@ -6,7 +6,7 @@ app_name = 'schools'
 
 urlpatterns = [
     # school map view
-    path('map/', SchoolsDetailView.as_view(), name='school'),
+    path('', SchoolsDetailView.as_view(), name='school'),
     # path('map/', views.map, name='map')
 
 ]
