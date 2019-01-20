@@ -22,3 +22,4 @@ python manage.py migrate
 ```
 python manage.py runserver
  ```
+visit your web app at http://127.0.0.1:8000/
