@@ -16,6 +16,7 @@ class PrimarySchool(models.Model):
         # plural form in admin view
         verbose_name_plural = 'Primary schools'
 
+
 class Kindergarten(models.Model):
     name = models.CharField(max_length=100, blank=False)
     geometry = geomodels.PointField()
