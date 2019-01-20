@@ -5,7 +5,7 @@ a GeoDjango Webapp with schools in Singapore
 1.install GeoDjango 
 https://docs.djangoproject.com/en/2.1/ref/contrib/gis/install
 
-2.coufigure your database in settings.py
+2.configure your database in settings.py
 
 # create an admin account
 ```
