@@ -14,24 +14,33 @@
 <script type="text/javascript">
 
     function map_init(map, options) {
-        
+        //set map map.setMaxBounds
         map.setMaxBounds( [[1.1,103.5], [1.5,104.2]] );
+        //create markers group
+        var markers = L.layerGroup();
 
         {% for school in primary_school_list %}
             var lon = "{{ school.geometry.x }}";
             var lat = "{{ school.geometry.y }}";
-            // add node to map
-            L.marker([lat, lon]).addTo(map)
-                .bindPopup('This is {{ school.name }}') ;
+            // add a marker to markers
+            var marker = L.marker([lat, lon]).bindPopup('This is {{ school.name }}');
+            markers.addLayer(marker);
         {% endfor %}
 
+        //add markers group to map
+        map.addLayer(markers);
+
         map.setView([1.32, 103.83], 12);
-     
+
+        //alert mouse location on click
         map.addEventListener('click', function(ev) {
             var lat, lng;
             lat = ev.latlng.lat;
             lng = ev.latlng.lng;
-             alert(lat + ' - ' + lng);
+            alert(lat + ' - ' + lng);
+            markers.clearLayers();
+            marker = L.marker([lat, lng]);
+            markers.addLayer(marker);
         });
 
     }
