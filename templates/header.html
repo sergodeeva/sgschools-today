@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sgSchools</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'schools/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static  'leaflet/leaflet.css' %}">
+    <link rel="stylesheet" type="text/css"
+          href="    https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="{% static  'leaflet/leaflet.js' %}"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+
+<body>
+<h1 class="app-title">Example heading <span class="badge badge-secondary">New</span></h1></div>
+{% block content %}{% endblock %}
+</body>
+</html>
