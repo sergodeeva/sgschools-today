@@ -1,10 +1,10 @@
 from django.db import models
-from django.contrib.gis.db import models as geomodels
+from django.contrib.gis.db import models as geo_models
 
 
 class PrimarySchool(models.Model):
     name = models.CharField(max_length=100, blank=False)
-    geometry = geomodels.PointField()
+    geometry = geo_models.PointField()
 
     def __str__(self):
         return self.name
@@ -19,7 +19,7 @@ class PrimarySchool(models.Model):
 
 class Kindergarten(models.Model):
     name = models.CharField(max_length=100, blank=False)
-    geometry = geomodels.PointField()
+    geometry = geo_models.PointField()
     primary_schools = models.ManyToManyField(PrimarySchool)
 
     def __str__(self):

@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sgSchools</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'schools/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static  'leaflet/leaflet.css' %}">
+    <link rel="stylesheet" type="text/css"
+          href="    https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="{% static  'leaflet/leaflet.js' %}"></script>
+<body>
+{% block content %}{% endblock %}
+</body>
+</html>
