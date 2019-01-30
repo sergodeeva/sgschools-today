@@ -4,7 +4,7 @@ from django.contrib.gis.geos import Point
 from .models import PrimarySchool, Kindergarten
 
 pnt = Point(103.83, 1.32, srid=4326)
-pnt.transform(900913)
+pnt.transform(3857)
 
 
 @admin.register(PrimarySchool)
