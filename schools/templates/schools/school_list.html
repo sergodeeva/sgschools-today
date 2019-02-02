@@ -11,6 +11,17 @@
         //create markers group
         var markers = L.layerGroup();
 
+        // create popup contents
+        var customPopup = "<b>My office</b><br/><img src='http://netdna.webdesignerdepot.com/uploads/2014/05/workspace_06_previo.jpg' alt='maptime logo gif' width='150px'/>";
+
+        // specify popup options
+        var customOptions =
+            {
+                'maxWidth': '400',
+                'width': '200',
+                'className': 'popupCustom'
+            }
+
         {% for school in primary_school_list %}
             var lon = "{{ school.geometry.x }}";
             var lat = "{{ school.geometry.y }}";
@@ -23,7 +34,7 @@
         mymap.addLayer(markers);
 
         //alert mouse location on click
-        mymap.addEventListener('click', function (ev) {
+        mymap.addEventListener('', function (ev) {
             var lat, lng;
             lat = ev.latlng.lat;
             lng = ev.latlng.lng;
