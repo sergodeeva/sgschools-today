@@ -14,7 +14,7 @@ python manage.py createsuperuser
 
 # migration
 ```
-py manage.py makemigrations
+python manage.py makemigrations schools
 python manage.py migrate
 ```
 
