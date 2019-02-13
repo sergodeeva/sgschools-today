@@ -16,19 +16,19 @@ class SchoolsDetailView(generic.ListView):
     def get_queryset(self):
 
         # load data from csv.
-        with open('school_list.csv', encoding='utf-8') as f:
-            reader = csv.reader(f)
-            for row in reader:
-                _, created = PrimarySchool.objects.get_or_create(
-                    name=row[0],
-                    geometry=Point(float(row[1]), float(row[2]))
-                )
-        with open('kindergarten_list.csv', encoding='utf-8') as f:
-            reader = csv.reader(f)
-            for row in reader:
-                _, created = Kindergarten.objects.get_or_create(
-                    name=row[0],
-                    geometry=Point(float(row[1]), float(row[2]))
-                )
+        # with open('school_list.csv', encoding='utf-8') as f:
+        #     reader = csv.reader(f)
+        #     for row in reader:
+        #         _, created = PrimarySchool.objects.get_or_create(
+        #             name=row[0],
+        #             geometry=Point(float(row[1]), float(row[2]))
+        #         )
+        # with open('kindergarten_list.csv', encoding='utf-8') as f:
+        #     reader = csv.reader(f)
+        #     for row in reader:
+        #         _, created = Kindergarten.objects.get_or_create(
+        #             name=row[0],
+        #             geometry=Point(float(row[1]), float(row[2]))
+        #         )
         # Return all the primary school nodes.
         return PrimarySchool.objects.all()
