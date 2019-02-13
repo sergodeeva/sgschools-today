@@ -2,7 +2,7 @@ from django.views import generic
 from django.http import HttpResponse
 import csv
 from django.contrib.gis.geos import Point
-from .models import PrimarySchool
+from .models import PrimarySchool, Kindergarten
 
 
 def index(request):
@@ -16,10 +16,17 @@ class SchoolsDetailView(generic.ListView):
     def get_queryset(self):
 
         # load data from csv.
-        with open('school_location.csv', encoding='utf-8') as f:
+        with open('school_list.csv', encoding='utf-8') as f:
             reader = csv.reader(f)
             for row in reader:
                 _, created = PrimarySchool.objects.get_or_create(
+                    name=row[0],
+                    geometry=Point(float(row[1]), float(row[2]))
+                )
+        with open('kindergarten_list.csv', encoding='utf-8') as f:
+            reader = csv.reader(f)
+            for row in reader:
+                _, created = Kindergarten.objects.get_or_create(
                     name=row[0],
                     geometry=Point(float(row[1]), float(row[2]))
                 )
