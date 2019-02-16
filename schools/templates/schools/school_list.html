@@ -1,11 +1,59 @@
 {% extends "header.html" %}
 {% load static %}
 {% block content %}
-    <div class="page-wrapper page">
+    <div class="page-wrapper page"> 
+        <!-------Add By Kiwi-------------->
+       
+    	<form>
+        <div id="search">
+	        <div id="searchType" ><h5>Find Buildings Near a School</h5></div>
+	        <div id="search-box" class="search-form-control">
+		        <input id="searchinput" type="text" ng-model="schoolSearch" placeholder="Search School" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search School'" class="input-box ng-valid ng-dirty ng-valid-parse ng-touched">
+		        <div id="tip"></div>
+	        </div>
+	        <!-- <div id="tip"></div> -->
+	        <div id="radio-container">
+            <!-- HTML -->
+                {% for school in primary_school_list %}	          
+		            <div class="radio-beauty-container">
+			                <div class="radio-row" name="school" >
+				                <label class="radio-label">
+				                    <span class="radio-name" >{{school}}</span>
+				                    <input type="radio" name="radioName" id="radioName1" value="{{school}}" 
+				                    hidden/>
+				                    <label for="radioName1" class="radio-beauty"></label>
+				                </label>
+			                </div>
+		            </div>
+	            {% endfor %}
+	            <!-- </script>	                                                          -->
+            </div>
+        </div>
+        </form>
+                  
+	    <!-------End Add By Kiwi-------------->
+       
         <div class="map-container page">
             <div id="main-map"></div>
         </div>
     </div>
+    <!-------Add By Kiwi-------------->
+    <!-- <script src="{% static  'schools/js/angular-scroll.js' %}"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    	$("#searchinput").change(function(){
+           console.log($(this).val());
+           $('#tip').html($(this).val());
+
+
+	     //    $.ajax({
+	     //        $(".radio-row").remove();
+	    	// });
+        });
+           
+    </script>
+    <!-------End Add By Kiwi-------------->
     <script src="{% static  'schools/js/init_map.js' %}"></script>
     <script type="text/javascript">
         //create markers group
