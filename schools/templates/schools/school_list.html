@@ -6,7 +6,7 @@
             <div id="main-map"></div>
         </div>
     </div>
-    <script src="{% static  'schools/js/init_map.js' %}"></script>
+    <script src="{% static "schools/js/init_map.js" %}"></script>
     <script type="text/javascript">
         //create markers group
         var schools = L.layerGroup();
@@ -18,39 +18,40 @@
                 'maxWidth': '400',
                 'width': '200',
                 'className': 'popupCustom'
-            }
+            };
 
         {% for school in schools_list %}
-            var lon = "{{ school.geometry.x }}";
-            var lat = "{{ school.geometry.y }}";
+            var lng = '{{ school.geometry.x }}';
+            var lat = '{{ school.geometry.y }}';
             // create popup contents
-            var customPopup = "<b>{{ school.name }}</b><br/><button class='circle'>circle</button>";
-
+            var customPopup = '<b>{{ school.name }}</b><br/>';
+            {% for k in school.kindergarten_set.all %}
+                customPopup += '{{ k.name }}</br>';
+            {% endfor %}
+            customPopup += '<button type="button" class="circle btn btn-info">circle</button>';
             // add a marker to group
-            var marker = L.marker([lat, lon]).bindPopup(customPopup, customOptions);
+            marker = L.marker([lat, lng]).bindPopup(customPopup, customOptions);
             schools.addLayer(marker);
         {% endfor %}
 
-        {% for school in kindergarten_list %}
-            var lon = "{{ school.geometry.x }}";
-            var lat = "{{ school.geometry.y }}";
-            var customPopup = "<b>{{ school.name }}</b><br/>";
-            {% for ps in school.primary_schools.all %}
-                customPopup += "{{ ps.name }}</br>";
+        {% for kindergarten in kindergarten_list %}
+            lng = '{{ kindergarten.geometry.x }}';
+            lat = '{{ kindergarten.geometry.y }}';
+            customPopup = '<b>{{ kindergarten.name }}</b><br/>';
+            {% for ps in kindergarten.primary_schools.all %}
+                customPopup += '{{ ps.name }}</br>';
             {% endfor %}
-            customPopup += "<button class='circle'>circle</button>";
-            // create popup contents
-
+            customPopup += '<button type="button" class="circle btn btn-info">circle</button>';
 
             // add a marker to group
-            var marker = L.marker([lat, lon]).bindPopup(customPopup, customOptions);
+            var marker = L.marker([lat, lng]).bindPopup(customPopup, customOptions);
             kindergartens.addLayer(marker);
         {% endfor %}
 
         //set layer control
         var overlayMaps = {
-            "Schools": schools,
-            "Kindergartens": kindergartens
+            'Schools': schools,
+            'Kindergartens': kindergartens
         };
 
         //add markers group to map
@@ -69,7 +70,7 @@
         var range = L.layerGroup();
 
         //draw circles within 1/2 km
-        mymap.on("popupopen", function (ev) {
+        mymap.on('popupopen', function (ev) {
             var lat, lng;
             lat = ev.popup.getLatLng().lat;
             lng = ev.popup.getLatLng().lng;
@@ -77,14 +78,14 @@
             $('button.circle').click(function () {
                 mymap.removeLayer(range);
                 range.clearLayers();
-                range.addLayer(L.circle([lat, lng], {radius: 1000, color: "red", opacity: .5}));
-                range.addLayer(L.circle([lat, lng], {radius: 2000, opacity: .5}))
+                range.addLayer(L.circle([lat, lng], {radius: 1000, color: 'red', opacity: .5}));
+                range.addLayer(L.circle([lat, lng], {radius: 2000, opacity: .5}));
                 range.addTo(mymap);
             });
         });
 
         //remove circle when deselect overlay
-        mymap.on("overlayremove", function (ev) {
+        mymap.on('overlayremove', function () {
             mymap.removeLayer(range);
             range.clearLayers();
         })
