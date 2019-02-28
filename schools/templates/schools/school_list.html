@@ -20,6 +20,20 @@
                 'className': 'popupCustom'
             };
 
+        // specify school marker (font-awesome icon)
+        var schoolMarker = L.AwesomeMarkers.icon({
+            prefix: 'fa',
+            icon: 'school',
+            markerColor: 'blue'
+        });
+
+        // specify kindergarten marker (font-awesome icon)
+        var kindergartenMarker = L.AwesomeMarkers.icon({
+            prefix: 'fa',
+            icon: 'child',
+            markerColor: 'orange'
+        });
+
         {% for school in schools_list %}
             var lng = '{{ school.geometry.x }}';
             var lat = '{{ school.geometry.y }}';
@@ -30,7 +44,7 @@
             {% endfor %}
             customPopup += '<button type="button" class="circle btn btn-info">circle</button>';
             // add a marker to group
-            marker = L.marker([lat, lng]).bindPopup(customPopup, customOptions);
+            marker = L.marker([lat, lng], {icon: schoolMarker}).bindPopup(customPopup, customOptions);
             schools.addLayer(marker);
         {% endfor %}
 
@@ -44,7 +58,7 @@
             customPopup += '<button type="button" class="circle btn btn-info">circle</button>';
 
             // add a marker to group
-            var marker = L.marker([lat, lng]).bindPopup(customPopup, customOptions);
+            var marker = L.marker([lat, lng], {icon: kindergartenMarker}).bindPopup(customPopup, customOptions);
             kindergartens.addLayer(marker);
         {% endfor %}
 
