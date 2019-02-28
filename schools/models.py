@@ -20,7 +20,7 @@ class PrimarySchool(models.Model):
 class Kindergarten(models.Model):
     name = models.CharField(max_length=100, blank=False)
     geometry = geo_models.PointField()
-    primary_schools = models.ManyToManyField(PrimarySchool)
+    primary_schools = models.ManyToManyField(PrimarySchool, blank=True)
 
     def __str__(self):
         return self.name
