@@ -9,7 +9,7 @@
     <script src="{% static "schools/js/init_map.js" %}"></script>
     <script type="text/javascript">
         //create markers group
-        var schools = L.layerGroup();
+        var schools = L.featureGroup();
         var kindergartens = L.layerGroup();
 
         // specify popup options
@@ -42,7 +42,11 @@
             {% for k in school.kindergarten_set.all %}
                 customPopup += '{{ k.name }}</br>';
             {% endfor %}
-            customPopup += '<button type="button" class="circle btn btn-info">circle</button>';
+            customPopup += '<button type="button" class="popup-btn circle btn btn-info"  data-toggle="button">circle</button>';
+
+            {% if school.kindergarten_set.all %}
+                customPopup += '<button type="button" class="popup-btn show-kindergarten btn btn-info">show</button>';
+            {% endif %}
             // add a marker to group
             marker = L.marker([lat, lng], {icon: schoolMarker}).bindPopup(customPopup, customOptions);
             schools.addLayer(marker);
@@ -56,6 +60,7 @@
                 customPopup += '{{ ps.name }}</br>';
             {% endfor %}
             customPopup += '<button type="button" class="circle btn btn-info">circle</button>';
+
 
             // add a marker to group
             var marker = L.marker([lat, lng], {icon: kindergartenMarker}).bindPopup(customPopup, customOptions);
@@ -90,13 +95,30 @@
             lng = ev.popup.getLatLng().lng;
             {#lng = ev.getLatLng();#}
             $('button.circle').click(function () {
-                mymap.removeLayer(range);
-                range.clearLayers();
-                range.addLayer(L.circle([lat, lng], {radius: 1000, color: 'red', opacity: .5}));
-                range.addLayer(L.circle([lat, lng], {radius: 2000, opacity: .5}));
-                range.addTo(mymap);
+                if (!$(this).hasClass('active')) {
+                    mymap.removeLayer(range);
+                    range.clearLayers();
+                    range.addLayer(L.circle([lat, lng], {radius: 1000, color: 'red', opacity: .5}));
+                    range.addLayer(L.circle([lat, lng], {radius: 2000, opacity: .5}));
+                    range.addTo(mymap);
+                } else {
+                    mymap.removeLayer(range);
+                    range.clearLayers();
+                }
+
             });
         });
+
+        //
+        schools.on('click', function (ev) {
+            var clickedMarker = ev.layer;
+            if (mymap.getZoom() < 14) {
+                mymap.flyTo([clickedMarker.getLatLng().lat, clickedMarker.getLatLng().lng], 14);
+            } else {
+                mymap.flyTo([clickedMarker.getLatLng().lat, clickedMarker.getLatLng().lng]);
+            }
+
+        })
 
         //remove circle when deselect overlay
         mymap.on('overlayremove', function () {
