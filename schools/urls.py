@@ -1,12 +1,12 @@
 from django.urls import path
-from schools.views import SchoolsDetailView
+from schools.views import MapView
 from . import views
 
 app_name = 'schools'
 
 urlpatterns = [
     # school map view
-    path('', SchoolsDetailView.as_view(), name='school'),
+    path('', MapView.as_view(), name='school'),
     # path('map/', views.map, name='map')
 
 ]
