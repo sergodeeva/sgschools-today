@@ -13,6 +13,10 @@ class PrimarySchoolAdmin(OSMGeoAdmin):
     default_zoom = 11
 
     list_display = ('name', 'geometry')
+    fieldsets = (
+        (None, {'fields': ('name', 'geometry', 'kindergartens')}),
+    )
+    filter_horizontal = ('kindergartens',)
 
 
 @admin.register(Kindergarten)
@@ -21,7 +25,3 @@ class KindergartenAdmin(OSMGeoAdmin):
     default_zoom = 11
 
     list_display = ('name', 'geometry')
-    fieldsets = (
-        (None, {'fields': ('name', 'geometry', 'primary_schools')}),
-    )
-    filter_horizontal = ('primary_schools',)

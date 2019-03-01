@@ -7,8 +7,8 @@ app_name = 'schools'
 
 urlpatterns = [
     # school map view
-    url(r'^get-kindergarten/$', get_related_kindergarten, name='get_related_kindergarten'),
-    url('', MapView.as_view(), name='school'),
+    path('get-kindergarten/', get_related_kindergarten, name='get_related_kindergarten'),
+    path('', MapView.as_view(), name='school'),
 
 
 ]

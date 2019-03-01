@@ -13,6 +13,11 @@
 
         var schools_json = {{ schools_list|safe }};
 
+        //schools_json from Django view
+        var schools_list = schools_json.features;
+
+        show_schools(schools_list);
+
 
         {#        {% for school in schools_list %}#}
         {#            var lng = '{{ school.geometry.x }}';#}
@@ -55,9 +60,6 @@
             alert(lat + ' - ' + lng);
         });
 
-
-
-
-
     </script>
+
 {% endblock %}

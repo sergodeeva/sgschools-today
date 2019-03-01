@@ -27,19 +27,20 @@ var kindergartenMarker = L.AwesomeMarkers.icon({
     markerColor: 'orange'
 });
 
-//schools_json from Django view
-var schools_list = schools_json.features;
 
-schools_list.forEach(function (school) {
-    var lng = school.geometry.coordinates[0];
-    var lat = school.geometry.coordinates[1];
-    var school_id = school.properties.pk;
-    var customPopup = '<b>' + school.properties.name + '</b><br/>';
-    customPopup += '<button type="button" class="popup-btn circle btn btn-info"  data-toggle="button">circle</button>';
-    customPopup += '<button type="button" class="popup-btn show-kindergarten btn btn-info" school-id=' + school_id + '>show</button>';
-    marker = L.marker([lat, lng], {icon: schoolMarker}).bindPopup(customPopup, customOptions);
-    schools.addLayer(marker);
-});
+function show_schools(schools_list) {
+    schools_list.forEach(function (school) {
+        var lng = school.geometry.coordinates[0];
+        var lat = school.geometry.coordinates[1];
+        var school_id = school.properties.pk;
+        var customPopup = '<b>' + school.properties.name + '</b><br/>';
+        customPopup += '<button type="button" class="popup-btn circle btn btn-info"  data-toggle="button">circle</button>';
+        customPopup += '<button type="button" class="popup-btn show-kindergarten btn btn-info" school-id=' + school_id + '>show</button>';
+        marker = L.marker([lat, lng], {icon: schoolMarker}).bindPopup(customPopup, customOptions);
+        schools.addLayer(marker);
+    });
+}
+
 
 //add markers group to map
 schools.addTo(mymap);
@@ -93,7 +94,7 @@ function find_kindergarten(school_id) {
         success: function (result) {
 
             kindergartens.clearLayers();
-            var response_list = JSON.parse(result).features
+            var response_list = JSON.parse(result).features;
             if (response_list.length > 0) {
 
                 response_list.forEach(function (kindergarten) {

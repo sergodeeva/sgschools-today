@@ -16,7 +16,7 @@ def index(request):
 def get_related_kindergarten(request):
     if request.method == 'GET' and request.is_ajax():
         school_id = request.GET['schoolId']
-    kindergartens = PrimarySchool.objects.get(pk=school_id).kindergarten_set.all()
+    kindergartens = PrimarySchool.objects.get(pk=school_id).kindergartens.all()
     json_response = serializers.serialize('geojson', kindergartens, geometry_field='geometry', )
     return JsonResponse(json_response, safe=False)
 
