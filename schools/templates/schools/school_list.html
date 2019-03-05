@@ -10,10 +10,20 @@
             <div id="search-box" class="search-form-control">
                 <input id="searchinput" type="text" ng-model="schoolSearch" placeholder="Search School" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search School'" class="input-box ng-valid ng-dirty ng-valid-parse ng-touched">              
             </div>
-            <div>
-            	<input type="checkbox" name="searchtype" class="searchtype" value="school">search school</>
-            	<input type="checkbox" name="searchtype" class="searchtype" value="kindergarten">search kindergarten</>
+            <!-- <div class="container">
+                  <input id="toggle1" type="checkbox" checked>
+                  <label for="toggle1">Toggle me!</label>
+
+                  <input id="toggle2" type="checkbox">
+                  <label for="toggle2">Hey, me too!</label>
+            </div> -->
+            <div id="searchtype-container">
+            	<input type="checkbox" name="searchtype" class="searchtype" value="school" id="checkbox1">
+                <label for ="checkbox1" class="searchtype">School</label>
+            	<input type="checkbox" name="searchtype" class="searchtype" value="kindergarten" id="checkbox2">
+                <label for="checkbox2" class="searchtype">Kindergarten</label>
             </div>
+
             <div id="radio-container">
                 
                 {% for school in primary_school_list %}           
@@ -21,9 +31,9 @@
                             <div class="radio-row">
                                 <label class="radio-label">
                                     <span class="radio-name" >{{school}}</span>
-                                    <input type="radio" name="radioName" id="radioName1" value="{{school}}" 
+                                    <input type="radio" name="radioName" id="{{school}}" value="{{school}}" 
                                     hidden/>
-                                    <label for="radioName1" class="radio-beauty"></label>
+                                    <label for="{{school}}" class="radio-beauty"></label>
                                 </label>
                             </div>
                     </div>
