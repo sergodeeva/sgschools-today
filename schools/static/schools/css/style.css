@@ -117,3 +117,8 @@
   height: 20px;
   border: 1px solid #000;
  }
+
+ #searchType table th{
+  width: 50%;
+  padding: 0;
+ }

@@ -6,15 +6,18 @@
        
         <!-- <form> -->
         <div id="search">
-            <div id="searchType" ><h5>Find Buildings Near a School</h5></div>
+        	<div id="searchType" ><h5>Find Buildings Near a School</h5></div>       	
             <div id="search-box" class="search-form-control">
                 <input id="searchinput" type="text" ng-model="schoolSearch" placeholder="Search School" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search School'" class="input-box ng-valid ng-dirty ng-valid-parse ng-touched">              
             </div>
-            
+            <div>
+            	<input type="checkbox" name="searchtype" class="searchtype" value="school">search school</>
+            	<input type="checkbox" name="searchtype" class="searchtype" value="kindergarten">search kindergarten</>
+            </div>
             <div id="radio-container">
                 
                 {% for school in primary_school_list %}           
-                    <div class="radio-beauty-container" name="{{school}}">
+                    <div class="radio-beauty-container school" name="{{school}}">
                             <div class="radio-row">
                                 <label class="radio-label">
                                     <span class="radio-name" >{{school}}</span>
@@ -26,6 +29,17 @@
                     </div>
                     
                 {% endfor %}
+
+                <div class="radio-beauty-container kindergarten" name="kindergarten1">
+                        <div class="radio-row">
+                            <label class="radio-label">
+                                <span class="radio-name" >kindergarten1</span>
+                                <input type="radio" name="radioName" id="radioName1" value="{{school}}" 
+                                hidden/>
+                                <label for="radioName1" class="radio-beauty"></label>
+                            </label>
+                        </div>
+                </div>
     
             </div>
         </div>
@@ -41,16 +55,49 @@
     <script type="text/javascript">
         
         $("#searchinput").bind('input propertychange', function(){  
-
+           
            var value = $(this).val().toLowerCase();
+           // var searchtype = document.getElementByName("searchtype").val();
+           var searchtype = $("input[name='searchtype']:checked").val();
            //case insensitive filter
-           $("div .radio-beauty-container").hide().filter(function(){
-             return $(this).attr("name").toLowerCase().indexOf(value)>-1;
-           }).show();          
+           if(searchtype==null){
+	           $("div .radio-beauty-container").hide().filter(function(){
+	             return $(this).attr("name").toLowerCase().indexOf(value)>-1;
+	           }).show();
+           }
+           else{
+	           $("div .radio-beauty-container").hide().filter(function(){
+	             return ($(this).attr("name").toLowerCase().indexOf(value)>-1)&&($(this).attr("class").indexOf(searchtype)>-1);
+	           }).show();          	
+           }
+           
         });
            
     </script>
+
+    <script type="text/javascript">
+        
+        $(":checkbox").bind('input propertychange', function(){  
+           var value = $(this).val();
+           
+           if($(this).prop("checked")){
+		       $("div .radio-beauty-container").hide().filter("."+value).show();    
+           }
+           else{
+           
+	           $("div .radio-beauty-container").filter("*").show();
+           }          
+        });
+           
+    </script>
+
+    <script type="text/javascript">
+    	$(":checkbox").click(function(){
+    		$(this).siblings().prop("checked",false);
+    	})
+    </script>
     <!-------End Add By Kiwi-------------->
+
     <script src="{% static  'schools/js/init_map.js' %}"></script>
     <script type="text/javascript">
         //create markers group
