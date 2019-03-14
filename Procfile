@@ -1,2 +1,2 @@
-web: gunicorn sgschools.wsgi — log-file -
+web: gunicorn geodjango_sg_schools.wsgi — log-file -
 
