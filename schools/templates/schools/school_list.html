@@ -6,76 +6,51 @@
             <div id="main-map"></div>
         </div>
     </div>
+
     <script src="{% static "schools/js/init_map.js" %}"></script>
+    <script src="{% static "schools/js/map_function.js" %}"></script>
     <script type="text/javascript">
-        //create markers group
-        var schools = L.featureGroup();
-        var kindergartens = L.layerGroup();
 
-        // specify popup options
-        var customOptions =
-            {
-                'maxWidth': '400',
-                'width': '200',
-                'className': 'popupCustom'
-            };
+        var schools_json = {{ schools_list|safe }};
 
-        // specify school marker (font-awesome icon)
-        var schoolMarker = L.AwesomeMarkers.icon({
-            prefix: 'fa',
-            icon: 'school',
-            markerColor: 'blue'
-        });
+        //schools_json from Django view
+        var schools_list = schools_json.features;
 
-        // specify kindergarten marker (font-awesome icon)
-        var kindergartenMarker = L.AwesomeMarkers.icon({
-            prefix: 'fa',
-            icon: 'child',
-            markerColor: 'orange'
-        });
-
-        {% for school in schools_list %}
-            var lng = '{{ school.geometry.x }}';
-            var lat = '{{ school.geometry.y }}';
-            // create popup contents
-            var customPopup = '<b>{{ school.name }}</b><br/>';
-            {% for k in school.kindergarten_set.all %}
-                customPopup += '{{ k.name }}</br>';
-            {% endfor %}
-            customPopup += '<button type="button" class="popup-btn circle btn btn-info"  data-toggle="button">circle</button>';
-
-            {% if school.kindergarten_set.all %}
-                customPopup += '<button type="button" class="popup-btn show-kindergarten btn btn-info">show</button>';
-            {% endif %}
-            // add a marker to group
-            marker = L.marker([lat, lng], {icon: schoolMarker}).bindPopup(customPopup, customOptions);
-            schools.addLayer(marker);
-        {% endfor %}
-
-        {% for kindergarten in kindergarten_list %}
-            lng = '{{ kindergarten.geometry.x }}';
-            lat = '{{ kindergarten.geometry.y }}';
-            customPopup = '<b>{{ kindergarten.name }}</b><br/>';
-            {% for ps in kindergarten.primary_schools.all %}
-                customPopup += '{{ ps.name }}</br>';
-            {% endfor %}
-            customPopup += '<button type="button" class="circle btn btn-info">circle</button>';
+        show_schools(schools_list);
 
 
-            // add a marker to group
-            var marker = L.marker([lat, lng], {icon: kindergartenMarker}).bindPopup(customPopup, customOptions);
-            kindergartens.addLayer(marker);
-        {% endfor %}
-
-        //set layer control
-        var overlayMaps = {
-            'Schools': schools,
-            'Kindergartens': kindergartens
-        };
-
-        //add markers group to map
-        L.control.layers({}, overlayMaps).addTo(mymap);
-        schools.addTo(mymap);
+        {#        {% for school in schools_list %}#}
+        {#            var lng = '{{ school.geometry.x }}';#}
+        {#            var lat = '{{ school.geometry.y }}';#}
+        {#            // create popup contents#}
+        {#            var customPopup = '<b>{{ school.name }}</b><br/>';#}
+        {#            {% for k in school.kindergarten_set.all %}#}
+        {#                customPopup += '{{ k.name }}</br>';#}
+        {#            {% endfor %}#}
+        {#            customPopup += '<button type="button" class="popup-btn circle btn btn-info"  data-toggle="button">circle</button>';#}
+        {##}
+        {#            {% if school.kindergarten_set.all %}#}
+        {#                customPopup += '<button type="button" class="popup-btn show-kindergarten btn btn-info">show</button>';#}
+        {#            {% endif %}#}
+        {#            // add a marker to group#}
+        {#            marker = L.marker([lat, lng], {icon: schoolMarker}).bindPopup(customPopup, customOptions);#}
+        {#            schools.addLayer(marker);#}
+        {#        {% endfor %}#}
+        {##}
+        {#        {% for kindergarten in kindergarten_list %}#}
+        {#            lng = '{{ kindergarten.geometry.x }}';#}
+        {#            lat = '{{ kindergarten.geometry.y }}';#}
+        {#            customPopup = '<b>{{ kindergarten.name }}</b><br/>';#}
+        {#            {% for ps in kindergarten.primary_schools.all %}#}
+        {#                customPopup += '{{ ps.name }}</br>';#}
+        {#            {% endfor %}#}
+        {#            customPopup += '<button type="button" class="circle btn btn-info">circle</button>';#}
+        {##}
+        {##}
+        {#            // add a marker to group#}
+        {#            var marker = L.marker([lat, lng], {icon: kindergartenMarker}).bindPopup(customPopup, customOptions);#}
+        {#            kindergartens.addLayer(marker);#}
+        {#        {% endfor %}#}
 
         //alert mouse location on click
         mymap.addEventListener('', function (ev) {
@@ -85,46 +60,6 @@
             alert(lat + ' - ' + lng);
         });
 
-        //circle layer
-        var range = L.layerGroup();
-
-        //draw circles within 1/2 km
-        mymap.on('popupopen', function (ev) {
-            var lat, lng;
-            lat = ev.popup.getLatLng().lat;
-            lng = ev.popup.getLatLng().lng;
-            {#lng = ev.getLatLng();#}
-            $('button.circle').click(function () {
-                if (!$(this).hasClass('active')) {
-                    mymap.removeLayer(range);
-                    range.clearLayers();
-                    range.addLayer(L.circle([lat, lng], {radius: 1000, color: 'red', opacity: .5}));
-                    range.addLayer(L.circle([lat, lng], {radius: 2000, opacity: .5}));
-                    range.addTo(mymap);
-                } else {
-                    mymap.removeLayer(range);
-                    range.clearLayers();
-                }
-
-            });
-        });
-
-        //
-        schools.on('click', function (ev) {
-            var clickedMarker = ev.layer;
-            if (mymap.getZoom() < 14) {
-                mymap.flyTo([clickedMarker.getLatLng().lat, clickedMarker.getLatLng().lng], 14);
-            } else {
-                mymap.flyTo([clickedMarker.getLatLng().lat, clickedMarker.getLatLng().lng]);
-            }
-
-        })
-
-        //remove circle when deselect overlay
-        mymap.on('overlayremove', function () {
-            mymap.removeLayer(range);
-            range.clearLayers();
-        })
-
     </script>
+
 {% endblock %}
