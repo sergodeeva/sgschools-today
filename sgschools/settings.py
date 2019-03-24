@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'sgschools.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'sg_schools',
-        'USER': 'django_user',
-        'PASSWORD': '1234',
+        'NAME': 'postgis_sg_schools',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
         'HOST': 'localhost',
         'PORT': '5432'
     }
