@@ -17,6 +17,8 @@ python manage.py createsuperuser
 python manage.py makemigrations schools
 python manage.py migrate
 ```
+# import data
+import csv files in data folder to relevant table in database 
 
 # start server
 ```
