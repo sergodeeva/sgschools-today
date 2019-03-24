@@ -1,62 +1,57 @@
 {% extends "header.html" %}
 {% load static %}
 {% block content %}
-    <div class="page-wrapper page"> 
+    <div class="page-wrapper page">
         <!-------Add By Kiwi-------------->
-       
+
         <!-- <form> -->
         <div id="search">
-        	<div id="searchType" ><h5>Find Buildings Near a School</h5></div>       	
+            <div id="search-title"><h5>Find Buildings Near a School</h5></div>
             <div id="search-box" class="search-form-control">
-                <input id="searchinput" type="text" ng-model="schoolSearch" placeholder="Search School" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search School'" class="input-box ng-valid ng-dirty ng-valid-parse ng-touched">              
+                <input id="search-input" type="text" placeholder="Search School"
+                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search School'"
+                       class="input-box">
             </div>
-            <!-- <div class="container">
-                  <input id="toggle1" type="checkbox" checked>
-                  <label for="toggle1">Toggle me!</label>
-
-                  <input id="toggle2" type="checkbox">
-                  <label for="toggle2">Hey, me too!</label>
-            </div> -->
-            <div id="searchtype-container">
-            	<input type="checkbox" name="searchtype" class="searchtype" value="school" id="checkbox1">
-                <label for ="checkbox1" class="searchtype">School</label>
-            	<input type="checkbox" name="searchtype" class="searchtype" value="kindergarten" id="checkbox2">
-                <label for="checkbox2" class="searchtype">Kindergarten</label>
+            {{ schools_list.items }}
+            <div id="search-type-container">
+                <input type="radio" name="search-type" class="search-type" value="school" id="checkbox1" checked="true">
+                <label for="checkbox1" class="search-type">School</label>
+                <input type="radio" name="search-type" class="search-type" value="kindergarten" id="checkbox2">
+                <label for="checkbox2" class="search-type">Kindergarten</label>
             </div>
 
             <div id="radio-container">
-                
-                {% for school in primary_school_list %}           
-                    <div class="radio-beauty-container school" name="{{school}}">
-                            <div class="radio-row">
-                                <label class="radio-label">
-                                    <span class="radio-name" >{{school}}</span>
-                                    <input type="radio" name="radioName" id="{{school}}" value="{{school}}" 
-                                    hidden/>
-                                    <label for="{{school}}" class="radio-beauty"></label>
-                                </label>
-                            </div>
+
+                {% for school in primary_school_list %}
+                    <div class="radio-beauty-container school" name="{{ school }}">
+                        <div class="radio-row">
+                            <label class="radio-label">
+                                <span class="radio-name">{{ school }}</span>
+                                <input type="radio" name="radioName" id="{{ school }}" value="{{ school }}"
+                                       hidden/>
+                                <label for="{{ school }}" class="radio-beauty"></label>
+                            </label>
+                        </div>
                     </div>
-                    
+
                 {% endfor %}
 
                 <div class="radio-beauty-container kindergarten" name="kindergarten1">
-                        <div class="radio-row">
-                            <label class="radio-label">
-                                <span class="radio-name" >kindergarten1</span>
-                                <input type="radio" name="radioName" id="radioName1" value="{{school}}" 
-                                hidden/>
-                                <label for="radioName1" class="radio-beauty"></label>
-                            </label>
-                        </div>
+                    <div class="radio-row">
+                        <label class="radio-label">
+                            <span class="radio-name">kindergarten1</span>
+                            <input type="radio" name="radioName" id="radioName1" value="{{ school }}"
+                                   hidden/>
+                            <label for="radioName1" class="radio-beauty"></label>
+                        </label>
+                    </div>
                 </div>
-    
+
             </div>
         </div>
-        <!-- </form> -->
-                  
+
         <!-------End Add By Kiwi-------------->
-       
+
         <div class="map-container page">
             <div id="main-map"></div>
         </div>
@@ -64,48 +59,31 @@
 
     <!-------Add By Kiwi-------------->
     <script type="text/javascript">
-        
-        $("#searchinput").bind('input propertychange', function(){  
-           
-           var value = $(this).val().toLowerCase();
-           // var searchtype = document.getElementByName("searchtype").val();
-           var searchtype = $("input[name='searchtype']:checked").val();
-           //case insensitive filter
-           if(searchtype==null){
-	           $("div .radio-beauty-container").hide().filter(function(){
-	             return $(this).attr("name").toLowerCase().indexOf(value)>-1;
-	           }).show();
-           }
-           else{
-	           $("div .radio-beauty-container").hide().filter(function(){
-	             return ($(this).attr("name").toLowerCase().indexOf(value)>-1)&&($(this).attr("class").indexOf(searchtype)>-1);
-	           }).show();          	
-           }
-           
+        $("#search-input").bind('input propertychange', function () {
+            var value = $(this).val().toLowerCase();
+            var searchtype = $("input[name='search-type']:checked").val();
+            if (searchtype == null) {
+                $("div .radio-beauty-container").hide().filter(function () {
+                    return $(this).attr("name").toLowerCase().indexOf(value) > -1;
+                }).show();
+            } else {
+                $("div .radio-beauty-container").hide().filter(function () {
+                    return ($(this).attr("name").toLowerCase().indexOf(value) > -1) && ($(this).attr("class").indexOf(searchtype) > -1);
+                }).show();
+            }
         });
-           
-    </script>
 
-    <script type="text/javascript">
-        
-        $(":checkbox").bind('input propertychange', function(){  
-           var value = $(this).val();
-           
-           if($(this).prop("checked")){
-		       $("div .radio-beauty-container").hide().filter("."+value).show();    
-           }
-           else{
-           
-	           $("div .radio-beauty-container").filter("*").show();
-           }          
+        $("input.search-type:radio").bind('input propertychange', function () {
+            var value = $(this).val();
+
+            if ($(this).prop("checked")) {
+                $("div .radio-beauty-container").hide().filter("." + value).show();
+            } else {
+
+                $("div .radio-beauty-container").filter("*").show();
+            }
         });
-           
-    </script>
 
-    <script type="text/javascript">
-    	$(":checkbox").click(function(){
-    		$(this).siblings().prop("checked",false);
-    	})
     </script>
     <!-------End Add By Kiwi-------------->
 
@@ -113,56 +91,9 @@
     <script src="{% static "schools/js/map_function.js" %}"></script>
 
     <script type="text/javascript">
-
         var schools_json = {{ schools_list|safe }};
-
-        //schools_json from Django view
-        var schools_list = schools_json.features;
-
+        var schools_list = schools_json.features; //schools_json from Django view
         show_schools(schools_list);
-
-
-        {#        {% for school in schools_list %}#}
-        {#            var lng = '{{ school.geometry.x }}';#}
-        {#            var lat = '{{ school.geometry.y }}';#}
-        {#            // create popup contents#}
-        {#            var customPopup = '<b>{{ school.name }}</b><br/>';#}
-        {#            {% for k in school.kindergarten_set.all %}#}
-        {#                customPopup += '{{ k.name }}</br>';#}
-        {#            {% endfor %}#}
-        {#            customPopup += '<button type="button" class="popup-btn circle btn btn-info"  data-toggle="button">circle</button>';#}
-        {##}
-        {#            {% if school.kindergarten_set.all %}#}
-        {#                customPopup += '<button type="button" class="popup-btn show-kindergarten btn btn-info">show</button>';#}
-        {#            {% endif %}#}
-        {#            // add a marker to group#}
-        {#            marker = L.marker([lat, lng], {icon: schoolMarker}).bindPopup(customPopup, customOptions);#}
-        {#            schools.addLayer(marker);#}
-        {#        {% endfor %}#}
-        {##}
-        {#        {% for kindergarten in kindergarten_list %}#}
-        {#            lng = '{{ kindergarten.geometry.x }}';#}
-        {#            lat = '{{ kindergarten.geometry.y }}';#}
-        {#            customPopup = '<b>{{ kindergarten.name }}</b><br/>';#}
-        {#            {% for ps in kindergarten.primary_schools.all %}#}
-        {#                customPopup += '{{ ps.name }}</br>';#}
-        {#            {% endfor %}#}
-        {#            customPopup += '<button type="button" class="circle btn btn-info">circle</button>';#}
-        {##}
-        {##}
-        {#            // add a marker to group#}
-        {#            var marker = L.marker([lat, lng], {icon: kindergartenMarker}).bindPopup(customPopup, customOptions);#}
-        {#            kindergartens.addLayer(marker);#}
-        {#        {% endfor %}#}
-
-        //alert mouse location on click
-        mymap.addEventListener('', function (ev) {
-            var lat, lng;
-            lat = ev.latlng.lat;
-            lng = ev.latlng.lng;
-            alert(lat + ' - ' + lng);
-        });
-
     </script>
 
 {% endblock %}

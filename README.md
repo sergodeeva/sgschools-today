@@ -18,7 +18,14 @@ python manage.py makemigrations schools
 python manage.py migrate
 ```
 # import data
-import csv files in data folder to relevant table in database 
+flush data (optional)
+```
+python manage.py flush
+```
+load default data
+```
+python manage.py loaddata db.json
+```
 
 # start server
 ```

@@ -22,18 +22,7 @@ def get_related_kindergarten(request):
 
 
 class MapView(generic.TemplateView):
-    # load data from csv.
-    # with open('school_list.csv', encoding='utf-8') as f:
-    #     reader = csv.reader(f)
-    #     for row in reader:
-    #         _, created = PrimarySchool.objects.get_or_create(
-    #             name=row[0],
-    #             geometry=Point(float(row[1]), float(row[2]))
-    #         )
-    # Return all the primary school nodes.
-
     template_name = 'schools/school_list.html'
-    context_object_name = 'schools_list'
 
     def get_context_data(self, **kwargs):
         context = super(MapView, self).get_context_data(**kwargs)
@@ -42,6 +31,7 @@ class MapView(generic.TemplateView):
 
         context.update({
             'schools_list': schools_json,
+            'primary_school_list': PrimarySchool.objects.all(),
             # 'kindergarten_list': kindergartens_json,
         })
         return context
