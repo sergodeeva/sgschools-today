@@ -40,11 +40,13 @@ function get_school_detail(type, id) {
             var response = JSON.parse(result).features;
             if (response.length > 0) {
                 response.forEach(function (point) {
-                    var marker = getMarker(point);
+                    var marker;
                     if (type === 'school') {
+                        marker = getMarker(point, schoolMarker)
                         schools.addLayer(marker);
                         schools.addTo(mymap);
                     } else if (type ==='kindergarten') {
+                        marker = getMarker(point, kindergartenMarker)
                         kindergartens.addLayer(marker);
                         kindergartens.addTo(mymap);
                     }

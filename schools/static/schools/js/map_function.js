@@ -29,11 +29,11 @@ var kindergartenMarker = L.AwesomeMarkers.icon({
 
 
 //create marker for the input data
-function getMarker(school) {
+function getMarker(school, markerType) {
     var Popup = getPopup(school);
     var lat = school.geometry.coordinates[1];
     var lng = school.geometry.coordinates[0];
-    return L.marker([lat, lng], {icon: schoolMarker}).bindPopup(Popup, customOptions);
+    return L.marker([lat, lng], {icon: markerType}).bindPopup(Popup, customOptions);
 }
 
 // generate popup for the point on map
