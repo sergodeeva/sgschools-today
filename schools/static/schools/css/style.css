@@ -34,14 +34,17 @@
 
 #search {
     height: 85%;
-    width: 400px;
-    display: inline-block;
+    width: 30%;
     min-height: 400px;
+    min-width: 350px;
+    max-width: 400px;
     box-shadow: 0px 2px 9px 2px rgba(13, 71, 161, 0.3);
     margin: 20px 10px;
     background-color: #ffffff;
     position: fixed;
     z-index: 999;
+    display: flex;
+    flex-direction: column;
 }
 
 #search-title {
@@ -75,7 +78,6 @@
 #radio-container {
     overflow: auto;
     margin: 10px 0 10px 5%;
-    height: 60%;
     width: 90%;
 }
 
@@ -86,12 +88,14 @@
 
 .radio-beauty-container .radio-row {
     width: 100%;
-    border: 2px solid #111;
+    border: 1px solid #111;
     height: auto;
 }
 
 .radio-beauty-container .radio-label {
     width: 100%;
+    display:flex;
+    margin-bottom: 0;
 }
 
 .radio-beauty-container .radio-beauty:hover, .radio-beauty-container input[type="radio"]:checked + .radio-beauty {
@@ -103,11 +107,11 @@
 .radio-beauty-container .radio-name {
     vertical-align: middle;
     font-size: 18px;
-    margin-left: 5px;
     text-align: center;
     color: #68686A;
     line-height: 35px;
     overflow: hidden;
+    width:90%;
 }
 
 .radio-beauty-container .radio-beauty {
@@ -116,11 +120,8 @@
     box-sizing: border-box;
     display: inline-block;
     border: 1px solid #6a8494;
-    vertical-align: bottom;
     border-radius: 50%;
-    float: right;
-    margin-right: 10px;
-    margin-top: 8px;
+    margin:auto;
 }
 
 .radio-beauty-container .radio-beauty:hover {
@@ -128,7 +129,7 @@
 }
 
 .radio-beauty-container .radio-label:hover {
-    padding: 2px;
+    padding: 2px 0 2px 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, .6);
 }
 
@@ -139,12 +140,14 @@ input.search-type {
 
 #search-type-container {
     width: 100%;
+    text-align: center;
 }
 
 label.search-type {
     display: inline-block;
     position: relative;
-    margin: 2px 0 2px 5%;
+    text-align: left;
+    margin: auto 0 auto 0;
     padding: 5px 10px 5px 28px;
     width: 160px;
     border: 3px solid #fff;
@@ -158,6 +161,10 @@ label.search-type {
     /*transition: background-color .2s, box-shadow .2s;*/
     font-size: 18px;
     font-weight: bold;
+}
+
+label.search-type ~ label.search-type{
+    margin-left: 5px;
 }
 
 label.search-type::before {

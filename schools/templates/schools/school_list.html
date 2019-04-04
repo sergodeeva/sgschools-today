@@ -3,8 +3,6 @@
 {% block content %}
     <div class="page-wrapper page">
         <!-------Add By Kiwi-------------->
-
-        <!-- <form> -->
         <div id="search">
             <div id="search-title"><h5>Find Buildings Near a School</h5></div>
             <div id="search-box" class="search-form-control">
@@ -12,12 +10,16 @@
                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search School'"
                        class="input-box">
             </div>
-            {{ schools_list.items }}
             <div id="search-type-container">
-                <input type="radio" name="search-type" class="search-type" value="school" id="checkbox1" checked="true">
+
+                <input type="radio" name="search-type" class="search-type" value="school" id="checkbox1"
+                       checked="true">
                 <label for="checkbox1" class="search-type">School</label>
+
                 <input type="radio" name="search-type" class="search-type" value="kindergarten" id="checkbox2">
                 <label for="checkbox2" class="search-type">Kindergarten</label>
+
+
             </div>
 
             <div id="radio-container">
@@ -27,29 +29,30 @@
                         <div class="radio-row">
                             <label class="radio-label">
                                 <span class="radio-name">{{ school }}</span>
-                                <input type="radio" name="radioName" id="{{ school }}" value="{{ school }}"
+                                <input type="radio" name="schoolOnSelect" value="{{ school.id }}"
                                        hidden/>
-                                <label for="{{ school }}" class="radio-beauty"></label>
+                                <span class="radio-beauty"></span>
                             </label>
+
                         </div>
                     </div>
 
                 {% endfor %}
 
-                <div class="radio-beauty-container kindergarten" name="kindergarten1">
-                    <div class="radio-row">
-                        <label class="radio-label">
-                            <span class="radio-name">kindergarten1</span>
-                            <input type="radio" name="radioName" id="radioName1" value="{{ school }}"
-                                   hidden/>
-                            <label for="radioName1" class="radio-beauty"></label>
-                        </label>
+                {% for kindergarten in kindergarten_list %}
+                    <div class="radio-beauty-container kindergarten" name="{{ kindergarten }}">
+                        <div class="radio-row">
+                            <label class="radio-label">
+                                <span class="radio-name">{{ kindergarten }}</span>
+                                <input type="radio" name="schoolOnSelect" value="{{ kindergarten.id }}"
+                                       hidden/>
+                                <span class="radio-beauty"></span>
+                            </label>
+                        </div>
                     </div>
-                </div>
-
+                {% endfor %}
             </div>
         </div>
-
         <!-------End Add By Kiwi-------------->
 
         <div class="map-container page">
@@ -57,44 +60,15 @@
         </div>
     </div>
 
-    <!-------Add By Kiwi-------------->
-    <script type="text/javascript">
-        $("#search-input").bind('input propertychange', function () {
-            var value = $(this).val().toLowerCase();
-            var searchtype = $("input[name='search-type']:checked").val();
-            if (searchtype == null) {
-                $("div .radio-beauty-container").hide().filter(function () {
-                    return $(this).attr("name").toLowerCase().indexOf(value) > -1;
-                }).show();
-            } else {
-                $("div .radio-beauty-container").hide().filter(function () {
-                    return ($(this).attr("name").toLowerCase().indexOf(value) > -1) && ($(this).attr("class").indexOf(searchtype) > -1);
-                }).show();
-            }
-        });
-
-        $("input.search-type:radio").bind('input propertychange', function () {
-            var value = $(this).val();
-
-            if ($(this).prop("checked")) {
-                $("div .radio-beauty-container").hide().filter("." + value).show();
-            } else {
-
-                $("div .radio-beauty-container").filter("*").show();
-            }
-        });
-
-    </script>
-    <!-------End Add By Kiwi-------------->
-
     <script src="{% static "schools/js/init_map.js" %}"></script>
+    <script src="{% static "schools/js/searchbox_function.js" %}"></script>
     <script src="{% static "schools/js/map_function.js" %}"></script>
 
-    <script type="text/javascript">
-        var schools_json = {{ schools_list|safe }};
-        var schools_list = schools_json.features; //schools_json from Django view
-        show_schools(schools_list);
-    </script>
+    {#    <script type="text/javascript">#}
+    {#        var schools_json = {{ schools_list|safe }};#}
+    {#        var schools_list = schools_json.features; //schools_json from Django view#}
+    {#        show_schools(schools_list);#}
+    {#    </script>#}
 
 {% endblock %}
 
