@@ -35,6 +35,8 @@ def get_related_kindergarten(request):
         kindergartens = PrimarySchool.objects.get(pk=school_id).kindergartens.all()
         json_response = serializers.serialize('geojson', kindergartens, geometry_field='geometry', )
         return JsonResponse(json_response, safe=False)
+    else:
+        return HttpResponseRedirect('/')
 
 
 class MapView(generic.TemplateView):

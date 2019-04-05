@@ -1,9 +1,15 @@
-//circle layer
-var range = L.layerGroup();
-
 // create markers group
 var schools = L.featureGroup();
+schools.addTo(mymap);
 var kindergartens = L.layerGroup();
+kindergartens.addTo(mymap);
+
+// range layer
+var range = L.layerGroup();
+range.addTo(mymap);
+
+var onekmRange;
+var twokmRange;
 
 // popup options
 var customOptions =
@@ -30,7 +36,10 @@ var kindergartenMarker = L.AwesomeMarkers.icon({
 
 //create marker for the input data
 function getMarker(school, markerType) {
-    var Popup = getPopup(school);
+    var Popup = '<b class="popup-title">' + school.properties.name + '</b><br/>';
+    if (markerType === schoolMarker) {
+        Popup += getPopup(school);
+    }
     var lat = school.geometry.coordinates[1];
     var lng = school.geometry.coordinates[0];
     return L.marker([lat, lng], {icon: markerType}).bindPopup(Popup, customOptions);
@@ -38,34 +47,43 @@ function getMarker(school, markerType) {
 
 // generate popup for the point on map
 function getPopup(school) {
-    var school_id = school.properties.pk;
-    var customPopup = '<b>' + school.properties.name + '</b><br/>';
-    customPopup += '<button type="button" class="popup-btn circle btn btn-info"  data-toggle="button">circle</button>';
-    customPopup += '<button type="button" class="popup-btn show-kindergarten btn btn-info" school-id=' + school_id + '>show</button>';
+    var customPopup = '';
+
+    if (school.properties.kindergartens.length !== 0) {
+        customPopup = '<p class="popup-content"> The school has co-related kindergarten</p>'
+    } else {
+        customPopup = '<p class="popup-content"> There is no co-related kindergarten</p>'
+    }
+    customPopup += '<div class="popup-btn-container">';
+    customPopup += '<button type="button" class="popup-btn circle btn btn-info one-km"  data-toggle="button">1km</button>';
+    customPopup += '<button type="button" class="popup-btn circle btn btn-info two-km"  data-toggle="button">2km</button></br></div>';
     return customPopup;
 }
 
-//add markers group to map
-schools.addTo(mymap);
 
 //popup functions
 mymap.on('popupopen', function (ev) {
-    var lat, lng;
-    lat = ev.popup.getLatLng().lat;
-    lng = ev.popup.getLatLng().lng;
-
+    if (range.hasLayer(onekmRange)) {
+        $('button.circle.one-km').addClass('active');
+    }
+    if (range.hasLayer(twokmRange)) {
+        $('button.circle.two-km').addClass('active');
+    }
     $('button.circle').click(function () {
         if (!$(this).hasClass('active')) {
-            mymap.removeLayer(range);
-            range.clearLayers();
-            range.addLayer(L.circle([lat, lng], {radius: 1000, color: 'red', opacity: .3}));
-            range.addLayer(L.circle([lat, lng], {radius: 2000, opacity: .3}));
-            range.addTo(mymap);
-        } else {
-            mymap.removeLayer(range);
-            range.clearLayers();
-        }
 
+            if ($(this).hasClass('one-km') && !range.hasLayer(onekmRange)) {
+                range.addLayer(onekmRange);
+            } else if ($(this).hasClass('two-km') && !range.hasLayer(twokmRange)) {
+                range.addLayer(twokmRange);
+            }
+        } else {
+            if ($(this).hasClass('one-km')) {
+                range.removeLayer(onekmRange);
+            } else if ($(this).hasClass('two-km')) {
+                range.removeLayer(twokmRange);
+            }
+        }
     });
 
     $('button.show-kindergarten').click(function () {
@@ -74,22 +92,60 @@ mymap.on('popupopen', function (ev) {
     );
 });
 
-//draw range
-schools.on('click', function (ev) {
-    var clickedMarker = ev.layer;
-    goTo(clickedMarker.getLatLng().lat, clickedMarker.getLatLng().lng)
-});
-
 // set map center to the specific point
 function goTo(lat, lng) {
-    if (mymap.getZoom() < 14) {
-        mymap.flyTo([lat, lng], 14);
+    if (mymap.getZoom() < 16) {
+        mymap.flyTo([lat, lng], 16);
     } else {
         mymap.flyTo([lat, lng]);
     }
 }
 
-//get related kindergarten (ajax)
+
+function showOnMap(type, id) {
+    $.ajax({
+        type: "GET",
+        url: 'api/get-detail/',
+        data: {
+            'type': type,
+            'id': id
+        },
+        async: true,
+        success: function (result) {
+
+            var response = JSON.parse(result).features;
+            if (response.length > 0) {
+                response.forEach(function (point) {
+                    var marker;
+                    if (type === 'school') {
+                        marker = getMarker(point, schoolMarker);
+                        schools.addLayer(marker);
+
+                        if (point.properties.kindergartens.length !== 0) {
+                            for (var i = 0, len = point.properties.kindergartens.length; i < len; i++) {
+                                showOnMap('kindergarten', point.properties.kindergartens[i]);
+                            }
+                        }
+                    } else if (type === 'kindergarten') {
+                        marker = getMarker(point, kindergartenMarker)
+                        kindergartens.addLayer(marker);
+                    }
+                    var lat = point.geometry.coordinates[1];
+                    var lng = point.geometry.coordinates[0];
+                    onekmRange = L.circle([lat, lng], {radius: 1000, color: 'red', opacity: .3});
+                    twokmRange = L.circle([lat, lng], {radius: 2000, opacity: .3});
+                    goTo(lat, lng);
+
+                })
+            }
+        },
+        error: function (error) {
+            console.log(error);
+        }
+    })
+}
+
+//get related kindergarten (not used)
 function find_kindergarten(school_id) {
     $.ajax({
         type: "GET",
