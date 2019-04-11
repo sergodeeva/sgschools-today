@@ -24,7 +24,7 @@ $("input[type=radio][name='schoolOnSelect']").change(function () {
     schools.clearLayers();
     kindergartens.clearLayers();
     range.clearLayers();
-    showOnMap(searchType, target_id);
+    showOnMap(searchType, target_id, true);
 
 });
 

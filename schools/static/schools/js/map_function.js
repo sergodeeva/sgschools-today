@@ -94,15 +94,15 @@ mymap.on('popupopen', function (ev) {
 
 // set map center to the specific point
 function goTo(lat, lng) {
-    if (mymap.getZoom() < 16) {
-        mymap.flyTo([lat, lng], 16);
+    if (mymap.getZoom() < 14) {
+        mymap.flyTo([lat, lng], 14);
     } else {
         mymap.flyTo([lat, lng]);
     }
 }
 
 
-function showOnMap(type, id) {
+function showOnMap(type, id, move) {
     $.ajax({
         type: "GET",
         url: 'api/get-detail/',
@@ -123,18 +123,20 @@ function showOnMap(type, id) {
 
                         if (point.properties.kindergartens.length !== 0) {
                             for (var i = 0, len = point.properties.kindergartens.length; i < len; i++) {
-                                showOnMap('kindergarten', point.properties.kindergartens[i]);
+                                showOnMap('kindergarten', point.properties.kindergartens[i], false);
                             }
                         }
                     } else if (type === 'kindergarten') {
                         marker = getMarker(point, kindergartenMarker)
                         kindergartens.addLayer(marker);
                     }
-                    var lat = point.geometry.coordinates[1];
-                    var lng = point.geometry.coordinates[0];
-                    onekmRange = L.circle([lat, lng], {radius: 1000, color: 'red', opacity: .3});
-                    twokmRange = L.circle([lat, lng], {radius: 2000, opacity: .3});
-                    goTo(lat, lng);
+                    if (move === true) {
+                        var lat = point.geometry.coordinates[1];
+                        var lng = point.geometry.coordinates[0];
+                        onekmRange = L.circle([lat, lng], {radius: 1000, color: 'red', opacity: .3});
+                        twokmRange = L.circle([lat, lng], {radius: 2000, opacity: .3});
+                        goTo(lat, lng);
+                    }
 
                 })
             }
