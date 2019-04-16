@@ -1,10 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<h1>About</h1>
-</body>
-</html>
+{% extends "header.html" %}
+{% load static %}
+{% block content %}
+
+    <!-- Header -->
+{#    <header class="bg-secondary text-center py-5 mb-4">#}
+{#        <div class="container">#}
+{#            <h1 class="font-weight-light text-white">About</h1>#}
+{#        </div>#}
+{#    </header>#}
+
+    <!-- Page Content -->
+    <div class="jumbotron">
+        <h1 class="display-4">About this project</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Team Member 1 -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Ren Jiawei</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Sun Pu</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="col-xl-4 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Zhang Junzhi</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+{% endblock %}
+

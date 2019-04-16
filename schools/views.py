@@ -28,7 +28,7 @@ def get_detail(request):
 
 
 class MapView(generic.TemplateView):
-    template_name = 'schools/school_list.html'
+    template_name = 'schools/main.html'
 
     def get_context_data(self, **kwargs):
         context = super(MapView, self).get_context_data(**kwargs)

@@ -1,3 +1,4 @@
+/*----------Main page-----------------------------------------------------*/
 .leaflet-container {
     /* all maps */
     width: 100%;
@@ -209,3 +210,5 @@ input.search-type:checked + label.search-type {
 input.search-type:checked + label.search-type::before {
     background-color: #ab576c;
 }
+
+/*----------About page-----------------------------------------------------*/
