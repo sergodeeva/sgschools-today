@@ -146,34 +146,3 @@ function showOnMap(type, id, move) {
         }
     })
 }
-
-//get related kindergarten (not used)
-function find_kindergarten(school_id) {
-    $.ajax({
-        type: "GET",
-        url: 'api/get-kindergarten/',
-        data: {
-            'schoolId': school_id
-        },
-        async: false,
-        success: function (result) {
-
-            kindergartens.clearLayers();
-            var response_list = JSON.parse(result).features;
-            if (response_list.length > 0) {
-
-                response_list.forEach(function (kindergarten) {
-                    console.log(kindergarten.properties.name);
-                    var lat = kindergarten.geometry.coordinates[1];
-                    var lng = kindergarten.geometry.coordinates[0];
-                    var marker = L.marker([lat, lng], {icon: kindergartenMarker});
-                    kindergartens.addLayer(marker);
-                })
-            }
-            kindergartens.addTo(mymap);
-        },
-        error: function (error) {
-            console.log(error);
-        }
-    })
-}
