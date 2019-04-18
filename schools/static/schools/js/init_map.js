@@ -1,5 +1,5 @@
 var mymap = L.map('main-map', {zoomControl: false}).setView([1.35, 103.75], 12);
-new L.Control.Zoom({position: 'bottomleft'}).addTo(mymap);
+new L.Control.Zoom({position: 'topright'}).addTo(mymap);
 
 // OpenStreetMap tile layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}', {

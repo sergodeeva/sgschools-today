@@ -2,13 +2,14 @@
 {% load static %}
 {% block content %}
     <div class="page-wrapper page">
-        <!-------Add By Kiwi-------------->
+
+        <!-------Add by Kiwi-------------->
         <div id="search">
             <div id="search-title"><h5>Locate a School or Kindergarten</h5></div>
 
             <div id="search-box" class="search-form-control">
-                <input class="input-box" id="search-input" onblur="this.placeholder = 'Search School'"
-                       onfocus="this.placeholder = ''" placeholder="Search School"
+                <input class="input-box" id="search-input" onblur="this.placeholder = 'Search'"
+                       onfocus="this.placeholder = ''" placeholder="Search"
                        type="text">
             </div>
 
@@ -56,6 +57,9 @@
 
         <div class="map-container page">
             <div id="main-map"></div>
+        </div>
+        <div >
+            <a href="/about"><img class="about" src="{% static "images/about.png" %}"></a>
         </div>
     </div>
 
