@@ -1,5 +1,5 @@
 // create markers group
-var schools = L.featureGroup();
+var schools = L.layerGroup();
 schools.addTo(mymap);
 var kindergartens = L.layerGroup();
 kindergartens.addTo(mymap);
@@ -85,11 +85,6 @@ mymap.on('popupopen', function (ev) {
             }
         }
     });
-
-    $('button.show-kindergarten').click(function () {
-            find_kindergarten($(this).attr('school-id'));
-        }
-    );
 });
 
 // set map center to the specific point
