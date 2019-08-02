@@ -9,5 +9,4 @@ urlpatterns = [
     path('api/get-detail/', get_detail, name='get_detail'),
     path('about/', about, name='about'),
     path('', MapView.as_view(), name='school'),
-
 ]

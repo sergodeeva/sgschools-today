@@ -1,124 +1,124 @@
 {% extends "header.html" %}
 {% load static %}
 {% block content %}
-    <!-- Page Content -->
+<!-- Page Content -->
 
 
-    <div class="about-container mx-5 my-3">
-        <h1 class="display-4">About <span class="text-info">sgschools.today</span></h1>
-        <hr class="my-4">
-        <p>I started sgschools.today because I felt that students of computer science (and computer engineering)
-            should be exposed to geographic information and geographic information systems (GIS), and were not.
-            I
-            drew up the following list of concepts, software, frameworks and websites, which I felt were
-            important
-            to anyone interested in creating an app or website that has a map:
-        </p>
-        <ul class="list">
-            <li>longitude and latitude</li>
-            <li>geographic information systems</li>
-            <li>geolocation and reverse geolocation</li>
-            <li>OpenStreetMap and other projects involving volunteered geographic information (<a
-                    href="https://icaci.org/files/documents/wom/16_IMY_WoM_en.pdf">VGI</a>)
-            </li>
-            <li>coordinate systems like WGS84 and OSGB36</li>
-            <li>Django and Geodjango</li>
-            <li>PostgreSQL and PostGIS</li>
-            <li>Leaflet.js</li>
-        </ul>
-        <p>The best way to get students to tinker or experiment with geographic information is to get them
-            working
-            on a Critical Inquiry project, and so, I proposed a CI project with this topic for Semester 2 (2018/19
-            Academic Year). Three students from the MSc (Information Systems) programme took up the
-            challenge,
-            and
-            this site is the product of their 13-week effort.</p>
-        <h3>Phase 1: Laying the Foundations</h3>
-        <p> In this phase, the data model was developed, a basic map interface developed to show the location of
-            kindergartens and primary schools in Singapore. The focus was not on a rich set of functionality, but
-            rather, to get a foundational set of code which could be built upon by future groups of students taking
-            the Critical Inquiry module. This objective has been nicely met. I asked each student to provide a
-            write-up about themselves so that they could be highlighted in the "About" page. The following are their
-            write-ups:
-        </p>
-        <p><b>Zhang “John” Junzhi</b> graduate from Peking University with a degree in chemistry, in 2017. He did
-            very well
-            in his undergraduate studies – well enough for Cambridge University to offer him a PhD scholarship, but
-            he decided to take a little detour after graduating to dabble with information technology. John worked
-            at a chemistry lab as an undergraduate, and realised that although he liked chemistry, and science in
-            general, becoming a research may not be his thing. During his internship at Televic doing web
-            development, John discovered that he likes programming. John is an avid computer gamer, and he plays
-            World of Warcraft and Civilization. Coming from Shanghai, John is amazed at the humid weather in
-            Singapore.</p>
-        <p>John is responsible for data collection, backend development and part of the frontend development. For
-            harvest the data, he used Google Geocoding API and get all the geographic information on schools and
-            kindergartens. For the backend, he designed the model types, URL mapper, and views to support the
-            frontend. For the frontend, he focussed mainly on the map function (init_map.js and
-            map_function.js).</p>
-        <p>
-            <b>Ren “Jennifer” Jiawei</b> holds a bachelor’s degree in optoelectronic information science and
-            engineering
-            from Zhejiang University. After graduating in 2018, she enrolled in the MSc (Information Systems)
-            programme at the Nanyang Technological University. Jennifer hails from Shaoxing, China. Besides coding,
-            Jennifer also likes to challenge herself in other ways. She once climbed the Ijen and Bromo Volcanos in
-            Indonesia during the night to see the beautiful blue flame of the sulphur mine, and so that she could
-            watch the sunrise. Jennifer has a sense of adventure, and occasionally takes on challenges to enjoy a
-            sense of accomplishment (moving from optoelectronics to information systems is evidence of this). Her
-            next challenge is to get a diving license.</p>
-        <p>
-            Jennifer has been in Singapore for a year now, and she says she likes this vibrant city because the
-            flowers and lush vegetation make her feel alive. She hopes to travel to neighbouring Southeast Asian
-            countries in the next trip. After studying information systems, she has become interested in UX design.
-            She feels that good UX design is to help people reach the information they need within a shorter time
-            and few operations. For sgschools.today, Jennifer is primarily responsible for front-end development as
-            well as UI and interaction design. She hopes that this page will really help those who have the query
-            needs and hope that her design will make it easy for users to understand and quickly locate a primary
-            school that best suits their needs.
-        </p>
-        <p>
-            <b>Sun Pu “Larry”</b> graduated from Singapore Management University (SMU) with Bachelor of Accountancy
-            in
-            2011, and he worked in the area of public accounting from 2014 to 2018. He is Chartered Accountant of
-            Singapore, Certified Public Accountant (US) and Certified Internal Auditor. His last fulltime position
-            was Senior Associate in PricewaterhouseCoopers Singapore. He has strong interests in IT because of his
-            engineering background. He received a Diploma in Electronics Computer and Communication Engineering from
-            Nanyang Polytechnic before he attended SMU.
-        </p>
-        <p>
-            Larry like to explore the “Capture the Flag” (CTF) test in his spare time, and he is working towards
-            becoming an Offensive Security Certified Professional (OSCP). He chose the MSc (Information Systems) as
-            he would like to pursue a career with cybersecurity and IT risk management.
-        </p>
-        <p>
-            Larry is responsible for the implementation of the web application on Virtual Private Server (VPS), and
-            subsequent maintenance of the application such as update of the application. He uses the uWSGI and Nginx
-            to implement the project on Ubuntu 18.04 LTS of AWS. He is looking at the possibility of containerizing
-            the application using Docker, and is currently assessing the capability and convenience of subsequent
-            maintenance using Docker.
-        </p>
-
-        <h3>About me</h3>
-        <p>I graduated from the National University of Singapore with a Bachelor of Engineering
-            (Chemical Engineering) degree. The twists and turns of life has brought me in contact with (wildly)
-            different
-            subject areas, reflected in the diversity of modules I have taught over the years. I am responsible for
-            the MSc (Knowledge Management) programme, and also the Associate Chair (Students) at the Wee Kim Wee
-            School of Communication and Information. For the last 29 years, I have been crafting learning paths for
-            my students, and cheering them on as they embark on their learning journeys. Occasionally, I teach!
-        </p>
-
-        <h3>Future groups of CI students</h3>
-        <p>If you are from the MSc (Information Systems) programme, and wish to
-            bring
-            to sgschools.today to the next level, please send an exciting proposal to
-            <a href="mailto:ascklee@ntu.edu.sg">ascklee@ntu.edu.sg</a>. Remember
-            to surprise me.
-        </p>
-    </div>
-    <p class="text-center">
-        <a class="btn btn-secondary btn-sm" href="/" role="button">Back</a>
+<div class="about-container mx-5 my-3">
+    <h1 class="display-4">About <span class="text-info">sgschools.today</span></h1>
+    <hr class="my-4">
+    <p>I started sgschools.today because I felt that students of computer science (and computer engineering)
+        should be exposed to geographic information and geographic information systems (GIS), and were not.
+        I
+        drew up the following list of concepts, software, frameworks and websites, which I felt were
+        important
+        to anyone interested in creating an app or website that has a map:
+    </p>
+    <ul class="list">
+        <li>longitude and latitude</li>
+        <li>geographic information systems</li>
+        <li>geolocation and reverse geolocation</li>
+        <li>OpenStreetMap and other projects involving volunteered geographic information (<a
+                href="https://icaci.org/files/documents/wom/16_IMY_WoM_en.pdf">VGI</a>)
+        </li>
+        <li>coordinate systems like WGS84 and OSGB36</li>
+        <li>Django and Geodjango</li>
+        <li>PostgreSQL and PostGIS</li>
+        <li>Leaflet.js</li>
+    </ul>
+    <p>The best way to get students to tinker or experiment with geographic information is to get them
+        working
+        on a Critical Inquiry project, and so, I proposed a CI project with this topic for Semester 2 (2018/19
+        Academic Year). Three students from the MSc (Information Systems) programme took up the
+        challenge,
+        and
+        this site is the product of their 13-week effort.</p>
+    <h3>Phase 1: Laying the Foundations</h3>
+    <p> In this phase, the data model was developed, a basic map interface developed to show the location of
+        kindergartens and primary schools in Singapore. The focus was not on a rich set of functionality, but
+        rather, to get a foundational set of code which could be built upon by future groups of students taking
+        the Critical Inquiry module. This objective has been nicely met. I asked each student to provide a
+        write-up about themselves so that they could be highlighted in the "About" page. The following are their
+        write-ups:
+    </p>
+    <p><b>Zhang “John” Junzhi</b> graduate from Peking University with a degree in chemistry, in 2017. He did
+        very well
+        in his undergraduate studies – well enough for Cambridge University to offer him a PhD scholarship, but
+        he decided to take a little detour after graduating to dabble with information technology. John worked
+        at a chemistry lab as an undergraduate, and realised that although he liked chemistry, and science in
+        general, becoming a research may not be his thing. During his internship at Televic doing web
+        development, John discovered that he likes programming. John is an avid computer gamer, and he plays
+        World of Warcraft and Civilization. Coming from Shanghai, John is amazed at the humid weather in
+        Singapore.</p>
+    <p>John is responsible for data collection, backend development and part of the frontend development. For
+        harvest the data, he used Google Geocoding API and get all the geographic information on schools and
+        kindergartens. For the backend, he designed the model types, URL mapper, and views to support the
+        frontend. For the frontend, he focussed mainly on the map function (init_map.js and
+        map_function.js).</p>
+    <p>
+        <b>Ren “Jennifer” Jiawei</b> holds a bachelor’s degree in optoelectronic information science and
+        engineering
+        from Zhejiang University. After graduating in 2018, she enrolled in the MSc (Information Systems)
+        programme at the Nanyang Technological University. Jennifer hails from Shaoxing, China. Besides coding,
+        Jennifer also likes to challenge herself in other ways. She once climbed the Ijen and Bromo Volcanos in
+        Indonesia during the night to see the beautiful blue flame of the sulphur mine, and so that she could
+        watch the sunrise. Jennifer has a sense of adventure, and occasionally takes on challenges to enjoy a
+        sense of accomplishment (moving from optoelectronics to information systems is evidence of this). Her
+        next challenge is to get a diving license.</p>
+    <p>
+        Jennifer has been in Singapore for a year now, and she says she likes this vibrant city because the
+        flowers and lush vegetation make her feel alive. She hopes to travel to neighbouring Southeast Asian
+        countries in the next trip. After studying information systems, she has become interested in UX design.
+        She feels that good UX design is to help people reach the information they need within a shorter time
+        and few operations. For sgschools.today, Jennifer is primarily responsible for front-end development as
+        well as UI and interaction design. She hopes that this page will really help those who have the query
+        needs and hope that her design will make it easy for users to understand and quickly locate a primary
+        school that best suits their needs.
+    </p>
+    <p>
+        <b>Sun Pu “Larry”</b> graduated from Singapore Management University (SMU) with Bachelor of Accountancy
+        in
+        2011, and he worked in the area of public accounting from 2014 to 2018. He is Chartered Accountant of
+        Singapore, Certified Public Accountant (US) and Certified Internal Auditor. His last fulltime position
+        was Senior Associate in PricewaterhouseCoopers Singapore. He has strong interests in IT because of his
+        engineering background. He received a Diploma in Electronics Computer and Communication Engineering from
+        Nanyang Polytechnic before he attended SMU.
+    </p>
+    <p>
+        Larry like to explore the “Capture the Flag” (CTF) test in his spare time, and he is working towards
+        becoming an Offensive Security Certified Professional (OSCP). He chose the MSc (Information Systems) as
+        he would like to pursue a career with cybersecurity and IT risk management.
+    </p>
+    <p>
+        Larry is responsible for the implementation of the web application on Virtual Private Server (VPS), and
+        subsequent maintenance of the application such as update of the application. He uses the uWSGI and Nginx
+        to implement the project on Ubuntu 18.04 LTS of AWS. He is looking at the possibility of containerizing
+        the application using Docker, and is currently assessing the capability and convenience of subsequent
+        maintenance using Docker.
     </p>
 
-    </div>
+    <h3>About me</h3>
+    <p>I graduated from the National University of Singapore with a Bachelor of Engineering
+        (Chemical Engineering) degree. The twists and turns of life has brought me in contact with (wildly)
+        different
+        subject areas, reflected in the diversity of modules I have taught over the years. I am responsible for
+        the MSc (Knowledge Management) programme, and also the Associate Chair (Students) at the Wee Kim Wee
+        School of Communication and Information. For the last 29 years, I have been crafting learning paths for
+        my students, and cheering them on as they embark on their learning journeys. Occasionally, I teach!
+    </p>
+
+    <h3>Future groups of CI students</h3>
+    <p>If you are from the MSc (Information Systems) programme, and wish to
+        bring
+        to sgschools.today to the next level, please send an exciting proposal to
+        <a href="mailto:ascklee@ntu.edu.sg">ascklee@ntu.edu.sg</a>. Remember
+        to surprise me.
+    </p>
+</div>
+<p class="text-center">
+    <a class="btn btn-secondary btn-sm" href="/" role="button">Back</a>
+</p>
+
+</div>
 {% endblock %}
 
