@@ -4020,9 +4020,7 @@
     "fields": {
       "name": "Dazhong Primary School",
       "geometry": "SRID=4326;POINT (103.7480153999999 1.359377200000005)",
-      "kindergartens": [
-        164
-      ]
+      "kindergartens": [164]
     }
   },
   {
@@ -4076,9 +4074,7 @@
     "fields": {
       "name": "Blangah Rise Primary School",
       "geometry": "SRID=4326;POINT (103.8086755000002 1.276195699999987)",
-      "kindergartens": [
-        163
-      ]
+      "kindergartens": [163]
     }
   },
   {
@@ -4168,9 +4164,7 @@
     "fields": {
       "name": "West Spring Primary School",
       "geometry": "SRID=4326;POINT (103.7662554000002 1.3893631)",
-      "kindergartens": [
-        184
-      ]
+      "kindergartens": [184]
     }
   },
   {
@@ -4575,9 +4569,7 @@
     "fields": {
       "name": "Frontier Primary School",
       "geometry": "SRID=4326;POINT (103.6997742000004 1.33684299999999)",
-      "kindergartens": [
-        170
-      ]
+      "kindergartens": [170]
     }
   },
   {
@@ -4649,9 +4641,7 @@
     "fields": {
       "name": "Westwood Primary School",
       "geometry": "SRID=4326;POINT (103.7004707999996 1.34723609999999)",
-      "kindergartens": [
-        185
-      ]
+      "kindergartens": [185]
     }
   },
   {
@@ -4678,9 +4668,7 @@
     "fields": {
       "name": "Farrer Park Primary School",
       "geometry": "SRID=4326;POINT (103.8508244000002 1.312292599999999)",
-      "kindergartens": [
-        165
-      ]
+      "kindergartens": [165]
     }
   },
   {
@@ -4860,9 +4848,7 @@
     "fields": {
       "name": "Punggol Green Primary School",
       "geometry": "SRID=4326;POINT (103.8988530999997 1.401854399999996)",
-      "kindergartens": [
-        176
-      ]
+      "kindergartens": [176]
     }
   },
   {
@@ -4871,9 +4857,7 @@
     "fields": {
       "name": "Punggol View Primary School",
       "geometry": "SRID=4326;POINT (103.9051799000001 1.405295599999984)",
-      "kindergartens": [
-        177
-      ]
+      "kindergartens": [177]
     }
   },
   {
@@ -4936,9 +4920,7 @@
     "fields": {
       "name": "Northoaks Primary School",
       "geometry": "SRID=4326;POINT (103.8138259999999 1.456637999999987)",
-      "kindergartens": [
-        172
-      ]
+      "kindergartens": [172]
     }
   },
   {
@@ -5055,9 +5037,7 @@
     "fields": {
       "name": "Sengkang Green Primary School",
       "geometry": "SRID=4326;POINT (103.8751169000003 1.39253369999999)",
-      "kindergartens": [
-        179
-      ]
+      "kindergartens": [179]
     }
   },
   {
@@ -5066,9 +5046,7 @@
     "fields": {
       "name": "Springdale Primary School",
       "geometry": "SRID=4326;POINT (103.8896801000001 1.394966700000005)",
-      "kindergartens": [
-        180
-      ]
+      "kindergartens": [180]
     }
   },
   {
@@ -5356,9 +5334,7 @@
     "fields": {
       "name": "Riverside Primary School",
       "geometry": "SRID=4326;POINT (103.8017893000002 1.447200999999987)",
-      "kindergartens": [
-        178
-      ]
+      "kindergartens": [178]
     }
   },
   {

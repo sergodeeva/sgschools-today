@@ -14,7 +14,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Kindergarten',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True,
+                                        primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=100)),
                 ('geometry', django.contrib.gis.db.models.fields.PointField(srid=4326)),
             ],
@@ -26,10 +27,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='PrimarySchool',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True,
+                                        primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=100)),
                 ('geometry', django.contrib.gis.db.models.fields.PointField(srid=4326)),
-                ('kindergartens', models.ManyToManyField(blank=True, to='schools.Kindergarten')),
+                ('kindergartens', models.ManyToManyField(
+                    blank=True, to='schools.Kindergarten')),
             ],
             options={
                 'verbose_name_plural': 'Primary schools',

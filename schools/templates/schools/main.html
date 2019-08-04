@@ -5,17 +5,18 @@
 
     <!-------Add by Kiwi-------------->
     <div id="search">
-        <div id="search-title"><h5>Locate a School or Kindergarten</h5></div>
+        <div id="search-title">
+            <h5>Locate a School or Kindergarten</h5>
+        </div>
 
         <div id="search-box" class="search-form-control">
             <input class="input-box" id="search-input" onblur="this.placeholder = 'Search'"
-                   onfocus="this.placeholder = ''" placeholder="Search"
-                   type="text">
+                onfocus="this.placeholder = ''" placeholder="Search" type="text">
+                <a href="#"><img src="/static/images/location.svg" /></a>
         </div>
 
         <div id="search-type-container">
-            <input type="radio" name="search-type" class="search-type" value="school" id="checkbox1"
-                   checked>
+            <input type="radio" name="search-type" class="search-type" value="school" id="checkbox1" checked>
             <label for="checkbox1" class="search-type">School</label>
             <input type="radio" name="search-type" class="search-type" value="kindergarten" id="checkbox2">
             <label for="checkbox2" class="search-type">Kindergarten</label>
@@ -29,8 +30,7 @@
                 <div class="radio-row">
                     <label class="radio-label">
                         <span class="radio-name">{{ school }}</span>
-                        <input type="radio" name="schoolOnSelect" value="{{ school.id }}"
-                               hidden/>
+                        <input type="radio" name="schoolOnSelect" value="{{ school.id }}" hidden />
                         <span class="radio-beauty"></span>
                     </label>
 
@@ -43,8 +43,7 @@
                 <div class="radio-row">
                     <label class="radio-label">
                         <span class="radio-name">{{ kindergarten }}</span>
-                        <input type="radio" name="schoolOnSelect" value="{{ kindergarten.id }}"
-                               hidden/>
+                        <input type="radio" name="schoolOnSelect" value="{{ kindergarten.id }}" hidden />
                         <span class="radio-beauty"></span>
                     </label>
                 </div>
@@ -64,9 +63,17 @@
 </div>
 
 <script src="{% static "schools/js/init_map.js" %}"></script>
-    <script src="{% static "schools/js/map_function.js" %}"></script>
+<script src="{% static "schools/js/map_function.js" %}"></script>
 <script src="{% static "schools/js/searchbox_function.js" %}"></script>
+<script>
+    function locateUser() {
+        mymap.locate({ setView: true });
+    }
+
+    $('#search-box').find('a').on('click', function () {
+        locateUser();
+    });
+</script>
 
 
 {% endblock %}
-
