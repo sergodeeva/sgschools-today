@@ -1,0 +1,6203 @@
+[
+  {
+    "model": "schools.kindergarten",
+    "pk": 1,
+    "fields": {
+      "name": "3House Kindergarten (Tampines)",
+      "geometry": "SRID=4326;POINT (103.9310667 1.3491298)",
+      "address": "891 Tampines Avenue 8 #01-82",
+      "postal_code": "520891",
+      "phone_number": "6604736",
+      "email_address": "the3housekindergarten@hotmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 2,
+    "fields": {
+      "name": "ACES Montessori Kidz Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9594753 1.3684875)",
+      "address": "Pasir Ris East Community CC 1 Pasir Ris Drive 4 #04-05",
+      "postal_code": "519457",
+      "phone_number": "6583301",
+      "email_address": "",
+      "website_url": "www.aceskidz.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 3,
+    "fields": {
+      "name": "Agape Montessori House Kindergarten",
+      "geometry": "SRID=4326;POINT (103.832175 1.378401)",
+      "address": "11 Thomson Hills Drive",
+      "postal_code": "574756",
+      "phone_number": "9787982",
+      "email_address": "agape_montessori@yahoo.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 4,
+    "fields": {
+      "name": "Al - Amin Pre-School",
+      "geometry": "SRID=4326;POINT (103.9602815 1.3541102)",
+      "address": "9 Tampines Street 32 #02-01",
+      "postal_code": "529287",
+      "phone_number": "6786004",
+      "email_address": "info@alamin.edu.sg",
+      "website_url": "alamin.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 5,
+    "fields": {
+      "name": "Al - Amin Preschool (Pasir Ris)",
+      "geometry": "SRID=4326;POINT (103.9464403 1.3728386)",
+      "address": "570 Pasir Ris Street 53 #01-64",
+      "postal_code": "510570",
+      "phone_number": "6583226",
+      "email_address": "info@alamin.edu.sg",
+      "website_url": "alamin.edu.sg/ourschools/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 6,
+    "fields": {
+      "name": "Al - Ansar Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.926342 1.327015)",
+      "address": "155 Bedok North Avenue 1",
+      "postal_code": "469751",
+      "phone_number": "6449728",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 7,
+    "fields": {
+      "name": "Al - Iman Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.772594 1.378212)",
+      "address": "10 Bukit Panjang Ring Road",
+      "postal_code": "679943",
+      "phone_number": "6762310",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 8,
+    "fields": {
+      "name": "Al - Istighfar Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.964096 1.371115)",
+      "address": "2 Pasir Ris Walk",
+      "postal_code": "518239",
+      "phone_number": "6426713",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 9,
+    "fields": {
+      "name": "Al - Istiqamah Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8754615 1.369123)",
+      "address": "2 Serangoon North Avenue 2",
+      "postal_code": "555876",
+      "phone_number": "6281428",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 10,
+    "fields": {
+      "name": "Al - Khair Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7500489 1.3827033)",
+      "address": "1 Teck Whye Crescent",
+      "postal_code": "688847",
+      "phone_number": "6631014",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 11,
+    "fields": {
+      "name": "Al - Mukminin Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7414975 1.3392083)",
+      "address": "271 Jurong East Street 21",
+      "postal_code": "609603",
+      "phone_number": "6899906",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 12,
+    "fields": {
+      "name": "Al - Muttaqin Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.845991 1.3705399)",
+      "address": "5140 Ang Mo Kio Avenue 6",
+      "postal_code": "569844",
+      "phone_number": "6552546",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 13,
+    "fields": {
+      "name": "Al-Nasry @ Jurong West Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7719589 1.4407673)",
+      "address": "6 Admiralty Road",
+      "postal_code": "640743",
+      "phone_number": "6316422",
+      "email_address": "alsryjw@gmail.com",
+      "website_url": "www.alsry.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 14,
+    "fields": {
+      "name": "Al-Nasry @ Sengkang South",
+      "geometry": "SRID=4326;POINT (103.8904 1.3788)",
+      "address": "552 Hougang Street 51 #B1-296",
+      "postal_code": "530541",
+      "phone_number": "6343430",
+      "email_address": "",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 15,
+    "fields": {
+      "name": "An - Nur Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7719589 1.4407673)",
+      "address": "6 Admiralty Road",
+      "postal_code": "739983",
+      "phone_number": "6363138",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 16,
+    "fields": {
+      "name": "Ang Mo Kio Methodist Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.835464 1.367176)",
+      "address": "1 Ang Mo Kio Street 21",
+      "postal_code": "569383",
+      "phone_number": "6705616",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 17,
+    "fields": {
+      "name": "Ar - Raudhah Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7558482 1.3517647)",
+      "address": "30 Bukit Batok East Avenue 2",
+      "postal_code": "659919",
+      "phone_number": "6899584",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 18,
+    "fields": {
+      "name": "Arise Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7756324 1.3446289)",
+      "address": "2B Hindhede Road",
+      "postal_code": "589240",
+      "phone_number": "6462297",
+      "email_address": "admin@arisekgn.org",
+      "website_url": "www.arisekgn.org"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 19,
+    "fields": {
+      "name": "Artskidz Preschool",
+      "geometry": "SRID=4326;POINT (103.8334053 1.2734327)",
+      "address": "10 Raeburn Park",
+      "postal_code": "088702",
+      "phone_number": "6456800",
+      "email_address": "hr@artskidz.com.sg",
+      "website_url": "artskidz.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 20,
+    "fields": {
+      "name": "Assyakirin Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7196359 1.3355809)",
+      "address": "550 Yung An Road",
+      "postal_code": "618617",
+      "phone_number": "6268184",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 21,
+    "fields": {
+      "name": "Banyan Tree Education @ AMK PTE. LTD.",
+      "geometry": "SRID=4326;POINT (103.8754017 1.3779581)",
+      "address": "Northstar@AMK 7030 Ang Mo Kio Ave 5 #01-45",
+      "postal_code": "569880",
+      "phone_number": "6684887",
+      "email_address": "kidslandnorthstar@gmail.com",
+      "website_url": "banyantreeeducation.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 22,
+    "fields": {
+      "name": "Barker Road Methodist Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8340094 1.3187583)",
+      "address": "70 Barker Road #01-01",
+      "postal_code": "309936",
+      "phone_number": "6255843",
+      "email_address": "principal@brmck.edu.sg",
+      "website_url": "www.brmck.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 23,
+    "fields": {
+      "name": "Bedok Lutheran Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.937524 1.320956)",
+      "address": "485 Bedok South Avenue 2",
+      "postal_code": "469315",
+      "phone_number": "6443162",
+      "email_address": "blck1982@yahoo.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 24,
+    "fields": {
+      "name": "Bedok Methodist Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9537778 1.3234182)",
+      "address": "86 Bedok Road",
+      "postal_code": "469371",
+      "phone_number": "6445804",
+      "email_address": "bmck@bmc.org.sg",
+      "website_url": "www.bmc.org.sg/kindergarten"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 25,
+    "fields": {
+      "name": "Bethany Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8819123 1.3442947)",
+      "address": "301 Upper Paya Lebar Road",
+      "postal_code": "534934",
+      "phone_number": "6287120",
+      "email_address": "kindergarten@bethanyipc.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 26,
+    "fields": {
+      "name": "Bethel Kinderlites",
+      "geometry": "SRID=4326;POINT (103.886822 1.321746)",
+      "address": "114 Aljunied Avenue 2 #03-75",
+      "postal_code": "380114",
+      "phone_number": "6744586",
+      "email_address": "admin@bethelcs.org.sg",
+      "website_url": "www.bethelcs.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 27,
+    "fields": {
+      "name": "Bethesda (Ang Mo Kio) Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8373567 1.3747585)",
+      "address": "601 Ang Mo Kio Ave 4",
+      "postal_code": "569898",
+      "phone_number": "6453613",
+      "email_address": "bethkindamk@gmail.com",
+      "website_url": "bethesdakindergarten.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 28,
+    "fields": {
+      "name": "Bethesda (Bedok-Tampines) Kindergarten",
+      "geometry": "SRID=4326;POINT (103.934759 1.331242)",
+      "address": "300 Bedok North Avenue 3",
+      "postal_code": "469717",
+      "phone_number": "6645074",
+      "email_address": "kindyadmin@bbtk.com.sg | graceseah@bbtk.com.sg",
+      "website_url": "www.bbtc.com.sg/kindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 29,
+    "fields": {
+      "name": "Bethesda (Bukit Arang) Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8673945 1.3493972)",
+      "address": "114 Serangoon Avenue 3",
+      "postal_code": "556110",
+      "phone_number": "6287081",
+      "email_address": "bbakinder@bcba.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 30,
+    "fields": {
+      "name": "Bethesda (Depot Walk) Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8141545 1.2819049)",
+      "address": "10 Depot Walk",
+      "postal_code": "109590",
+      "phone_number": "6276473",
+      "email_address": "bethdwkind@gmail.com",
+      "website_url": "bethesdadwkindergarten.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 31,
+    "fields": {
+      "name": "Bethesda (Katong) Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9183355 1.3166261)",
+      "address": "2 La Salle Street",
+      "postal_code": "456929",
+      "phone_number": "6442262",
+      "email_address": "bkk@bfec.org.sg",
+      "website_url": "www.bfec.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 32,
+    "fields": {
+      "name": "Bethesda (Pasir Ris) Kindergarten",
+      "geometry": "SRID=4326;POINT (103.964391 1.367897)",
+      "address": "11 Pasir Ris Drive 2",
+      "postal_code": "518458",
+      "phone_number": "6585034",
+      "email_address": "bprk@bpmc.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 33,
+    "fields": {
+      "name": "Bethesda Chapel Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9100937 1.3206444)",
+      "address": "27 Lorong Melayu",
+      "postal_code": "416913",
+      "phone_number": "6749407",
+      "email_address": "",
+      "website_url": "www.bck.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 34,
+    "fields": {
+      "name": "Bibinogs Preschool K.A.",
+      "geometry": "SRID=4326;POINT (103.8108037 1.3233285)",
+      "address": "559 Bukit Timah Road #B1-01",
+      "postal_code": "269695",
+      "phone_number": "6466535",
+      "email_address": "principal@bibinogs.com",
+      "website_url": "www.bibinogs.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 35,
+    "fields": {
+      "name": "Blue House International School",
+      "geometry": "SRID=4326;POINT (103.7964857 1.3362491)",
+      "address": "2 Turf Club Road",
+      "postal_code": "287988",
+      "phone_number": "6734082",
+      "email_address": "enquiries@bluehouseintertiol.com | office@bluehouseintertiol.com",
+      "website_url": "www.bluehouseintertiol.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 36,
+    "fields": {
+      "name": "Brain Buttons Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8640925 1.3890398)",
+      "address": "357 Yio Chu Kang Road",
+      "postal_code": "805939",
+      "phone_number": "6481925",
+      "email_address": "357brainbuttons@gmail.com",
+      "website_url": "www.brainbuttons.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 37,
+    "fields": {
+      "name": "Brainy Bunch International Montessori",
+      "geometry": "SRID=4326;POINT (103.8915416 1.3591279)",
+      "address": "247 Hougang Avenue 3 #01-452",
+      "postal_code": "530247",
+      "phone_number": "6283449",
+      "email_address": "info.sg@brainybunch.com | hougang@brainybunch.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 38,
+    "fields": {
+      "name": "Brainy Bunch International Montessori (Pasir Ris)",
+      "geometry": "SRID=4326;POINT (103.964113 1.364845)",
+      "address": "273 Pasir Ris Street 21 #01-498",
+      "postal_code": "510273",
+      "phone_number": "6385674",
+      "email_address": "info.sg@brainybunch.com | pasir.ris@brainybunch.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 39,
+    "fields": {
+      "name": "British Council (Singapore) Pre-school",
+      "geometry": "SRID=4326;POINT (103.940956 1.356359)",
+      "address": "11 Tampines Concourse #01-02/03/04",
+      "postal_code": "528729",
+      "phone_number": "6783920",
+      "email_address": "",
+      "website_url": "www.britishcouncil.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 40,
+    "fields": {
+      "name": "Bukit Panjang Methodist Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.767981 1.361923)",
+      "address": "John Wesley Centre 496 Upper Bukit Timah Road",
+      "postal_code": "678099",
+      "phone_number": "6760766",
+      "email_address": "kinder@bpmck.org.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 41,
+    "fields": {
+      "name": "Buttercups Kindergarten (Pasir Panjang)",
+      "geometry": "SRID=4326;POINT (103.7714465 1.2914722)",
+      "address": "Pasir Panjang Post Office 396 Pasir Panjang Road #02-01",
+      "postal_code": "118733",
+      "phone_number": "6774490",
+      "email_address": "buttercupspp@singnet.com.sg",
+      "website_url": "www.buttercupsmontessori.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 42,
+    "fields": {
+      "name": "Buttercups Kindergarten (Rochester)",
+      "geometry": "SRID=4326;POINT (103.7882108 1.3055636)",
+      "address": "The Rochester 35 Rochester Drive #03-11",
+      "postal_code": "138639",
+      "phone_number": "6684898",
+      "email_address": "buttercupsroc@singnet.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 43,
+    "fields": {
+      "name": "Buttercups Montessori Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7967648 1.3240886)",
+      "address": "68 Namly Place",
+      "postal_code": "267214",
+      "phone_number": "6462483",
+      "email_address": "bmonte@singnet.com.sg",
+      "website_url": "www.buttercupsmontessori.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 44,
+    "fields": {
+      "name": "Callidus Preschool",
+      "geometry": "SRID=4326;POINT (103.8461269 1.35761)",
+      "address": "229 Bishan Street 23 #B1-53",
+      "postal_code": "570229",
+      "phone_number": "6455257",
+      "email_address": "calliduspreschool@gmail.com",
+      "website_url": "calliduspreschool.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 45,
+    "fields": {
+      "name": "Calvary Baptist Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8740749 1.332299)",
+      "address": "48 Wan Tho Avenue",
+      "postal_code": "347592",
+      "phone_number": "6289390",
+      "email_address": "cbk@calvary.org.sg",
+      "website_url": "www.calvarybk.com/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 46,
+    "fields": {
+      "name": "Calvary Pandan Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7460233 1.3211696)",
+      "address": "201 Pandan Gardens",
+      "postal_code": "609337",
+      "phone_number": "6560388",
+      "email_address": "cpk@calvarypandan.sg",
+      "website_url": "www.cpk.calvarypandan.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 47,
+    "fields": {
+      "name": "Canaan Church (SCCC) Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8635088 1.3245165)",
+      "address": "84 St. Francis Road",
+      "postal_code": "328069",
+      "phone_number": "6292933",
+      "email_address": "kindergarten@mycaan.org",
+      "website_url": "kindergarten.mycaan.org/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 48,
+    "fields": {
+      "name": "Canossian Convent Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7649879 1.3453359)",
+      "address": "100 Jalan Merbok",
+      "postal_code": "598454",
+      "phone_number": "6469220",
+      "email_address": "cckg.generaloffice@gmail.com",
+      "website_url": "canossian.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 49,
+    "fields": {
+      "name": "Catholic Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8819238 1.3597549)",
+      "address": "15 Flower Road",
+      "postal_code": "549404",
+      "phone_number": "6283382",
+      "email_address": "catholickdg@gmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 50,
+    "fields": {
+      "name": "Cavenur Kindergarten",
+      "geometry": "SRID=4326;POINT (103.933002 1.359975)",
+      "address": "741 Tampines Street 72 #01-74",
+      "postal_code": "520741",
+      "phone_number": "6782343",
+      "email_address": "info@cavenur.edu.sg",
+      "website_url": "www.cavenur.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 51,
+    "fields": {
+      "name": "Cedan Kindergarten",
+      "geometry": "SRID=4326;POINT (103.90634 1.39946)",
+      "address": "198 Punggol Field #02-02",
+      "postal_code": "820198",
+      "phone_number": "6387664",
+      "email_address": "enquiry@cedankindergarten.com.sg",
+      "website_url": "www.cedankindergarten.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 52,
+    "fields": {
+      "name": "Centre of New Life Kindergarten",
+      "geometry": "SRID=4326;POINT (103.6989628 1.3494146)",
+      "address": "5 Jurong West Street 74",
+      "postal_code": "649151",
+      "phone_number": "6794367",
+      "email_address": "kindergarten@cnl.org.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 53,
+    "fields": {
+      "name": "CGM Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7467423 1.3772301)",
+      "address": "172 Choa Chu Kang Avenue 1",
+      "postal_code": "689457",
+      "phone_number": "6762745",
+      "email_address": "cgmadm172@gmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 54,
+    "fields": {
+      "name": "Changi Baptist Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.975138 1.3661705)",
+      "address": "1069 Upper Changi Road North",
+      "postal_code": "507692",
+      "phone_number": "6545206",
+      "email_address": "cbck@changibaptist.org",
+      "website_url": "www.changibaptist.org/#!kindergarten/c1uje"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 55,
+    "fields": {
+      "name": "Chatsworth Preschool",
+      "geometry": "SRID=4326;POINT (103.8712913 1.402803)",
+      "address": "1 Piccadilly Circus",
+      "postal_code": "797640",
+      "phone_number": "6481558",
+      "email_address": "information.piccadilly@chatsworth.com.sg",
+      "website_url": "www.chatsworth.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 56,
+    "fields": {
+      "name": "Chatsworth Preschool (Bedok)",
+      "geometry": "SRID=4326;POINT (103.947613 1.3318049)",
+      "address": "Simpang Bedok Post Office 350 Bedok Road",
+      "postal_code": "469538",
+      "phone_number": "6448900",
+      "email_address": "information.bedok@chatsworth.com.sg",
+      "website_url": "www.chatsworth.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 57,
+    "fields": {
+      "name": "Chen Li Kindergarten",
+      "geometry": "SRID=4326;POINT (103.880336 1.309935)",
+      "address": "76 Guillemard Road",
+      "postal_code": "399711",
+      "phone_number": "6345180",
+      "email_address": "grow@chenli.edu.sg",
+      "website_url": "chenli.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 58,
+    "fields": {
+      "name": "Chengzhu Mandarin Kindergarten",
+      "geometry": "SRID=4326;POINT (103.787966 1.3058751)",
+      "address": "The Rochester 35 Rochester Drive #03-01/02/03/04/05/27",
+      "postal_code": "138639",
+      "phone_number": "6737534",
+      "email_address": "enquiries@chengzhu.net",
+      "website_url": "www.chengzhu.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 59,
+    "fields": {
+      "name": "Cherrybrook Kindergarten",
+      "geometry": "SRID=4326;POINT (103.806691 1.3180683)",
+      "address": "82 Queen's Road",
+      "postal_code": "266774",
+      "phone_number": "6468655",
+      "email_address": "service@cherrybrook.edu.sg",
+      "website_url": "www.cherrybrook.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 60,
+    "fields": {
+      "name": "Children's Vineyard Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9047474 1.3123328)",
+      "address": "91 Koon Seng Road",
+      "postal_code": "427032",
+      "phone_number": "6440881",
+      "email_address": "admin@childrensvineyard.com",
+      "website_url": "childrensvineyard.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 61,
+    "fields": {
+      "name": "Chinese Kindergarten",
+      "geometry": "SRID=4326;POINT (103.835925 1.285749)",
+      "address": "256 Outram Road",
+      "postal_code": "169053",
+      "phone_number": "6221986",
+      "email_address": "ckenquiry@gmail.com |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 62,
+    "fields": {
+      "name": "Choa Chu Kang Bible Centre Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7443256 1.3943857)",
+      "address": "10 Choa Chu Kang Street 52",
+      "postal_code": "689284",
+      "phone_number": "6763750",
+      "email_address": "cckbckin@singnet.com.sg",
+      "website_url": "cckbck.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 63,
+    "fields": {
+      "name": "Church Of Holy Trinity Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9493913 1.3488407)",
+      "address": "20 Tampines Street 11",
+      "postal_code": "529455",
+      "phone_number": "6787465",
+      "email_address": "admin@holytrinitykindergarten.edu.sg",
+      "website_url": "www.holytrinitykindergarten.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 64,
+    "fields": {
+      "name": "Clementi Woods Kindergarten LLP",
+      "geometry": "SRID=4326;POINT (103.765838 1.30275)",
+      "address": "152 West Coast Road",
+      "postal_code": "127370",
+      "phone_number": "6775065",
+      "email_address": "cwk152@singnet.com.sg",
+      "website_url": "www.clementiwoodskindergarten.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 65,
+    "fields": {
+      "name": "Creative Thinkers Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7721399 1.3411934)",
+      "address": "110 Jalan Jurong Kechil #01-02/03/04",
+      "postal_code": "598606",
+      "phone_number": "6462067",
+      "email_address": "creativethinkers2004@gmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 66,
+    "fields": {
+      "name": "Creative Twinkles Preschool",
+      "geometry": "SRID=4326;POINT (103.9625394 1.3546941)",
+      "address": "354 Tampines Street 33 #01-530",
+      "postal_code": "520354",
+      "phone_number": "6789006",
+      "email_address": "creativetwinklesllp@gmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 67,
+    "fields": {
+      "name": "CS Montessori Kindergarten @ Serangoon",
+      "geometry": "SRID=4326;POINT (103.8726445 1.3508236)",
+      "address": "Nex 23 Serangoon Central #04-77",
+      "postal_code": "556083",
+      "phone_number": "6634561",
+      "email_address": "nexadmin@cs-montessori.com.sg",
+      "website_url": "www.cs-montessori.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 68,
+    "fields": {
+      "name": "CS Montessori Kindergarten @ Tiong Bahru",
+      "geometry": "SRID=4326;POINT (103.8271961 1.2883406)",
+      "address": "36 Beo Crescent #01-31",
+      "postal_code": "160036",
+      "phone_number": "6324020",
+      "email_address": "ewadmin@cs-montessori.com.sg",
+      "website_url": "www.cs-montessori.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 69,
+    "fields": {
+      "name": "Damien Centre Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7989408 1.2955912)",
+      "address": "1 Commonwealth Drive",
+      "postal_code": "149603",
+      "phone_number": "6473781",
+      "email_address": "dckdgn@bsc.org.sg",
+      "website_url": "www.damiencentrekindergarten.webs.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 70,
+    "fields": {
+      "name": "Darul Ghufran Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9398683 1.3553404)",
+      "address": "503 Tampines Avenue 5",
+      "postal_code": "529651",
+      "phone_number": "6786554",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 71,
+    "fields": {
+      "name": "Darul Makmur Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.834442 1.4368588)",
+      "address": "950 Yishun Avenue 2",
+      "postal_code": "769099",
+      "phone_number": "6852836",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 72,
+    "fields": {
+      "name": "Darussalam Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7710082 1.312392)",
+      "address": "3002 Commonwealth Avenue West",
+      "postal_code": "129579",
+      "phone_number": "6777002",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 73,
+    "fields": {
+      "name": "Dayspring Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8989927 1.4150863)",
+      "address": "Marina Country Club 11 Northshore Drive",
+      "postal_code": "828670",
+      "phone_number": "6489748",
+      "email_address": "dayspring17@ymail.com",
+      "website_url": "http://www.dayspring.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 74,
+    "fields": {
+      "name": "Dayspring Kindergarten @ Marina Country Club",
+      "geometry": "SRID=4326;POINT (103.8989927 1.4150863)",
+      "address": "Marina Country Club 11 Northshore Drive #02-01",
+      "postal_code": "828670",
+      "phone_number": "6489448",
+      "email_address": "dayspring17@ymail.com",
+      "website_url": "http://www.dayspring.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 75,
+    "fields": {
+      "name": "Divinity Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8901309 1.3324004)",
+      "address": "Oxley Bizhub 65 Ubi Road 1 #01-56 to 59",
+      "postal_code": "408729",
+      "phone_number": "6702755",
+      "email_address": "divinity.esp@gmail.com",
+      "website_url": "www.divinity.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 76,
+    "fields": {
+      "name": "Dreamkids Kindergarten @ East Gate Pte Ltd",
+      "geometry": "SRID=4326;POINT (103.903347 1.3045872)",
+      "address": "Eastgate 46 East Coast Road #01-03",
+      "postal_code": "428766",
+      "phone_number": "6348807",
+      "email_address": "",
+      "website_url": "www.dreamkids.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 77,
+    "fields": {
+      "name": "Dynamic World Montessori Preschool",
+      "geometry": "SRID=4326;POINT (103.9093474 1.3082614)",
+      "address": "292 East Coast Road",
+      "postal_code": "428951",
+      "phone_number": "6448957",
+      "email_address": "dw_montessori@yahoo.com.sg",
+      "website_url": "dw-montessori.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 78,
+    "fields": {
+      "name": "Early Years Montessori",
+      "geometry": "SRID=4326;POINT (103.766526 1.325597)",
+      "address": "16 Sunset Drive",
+      "postal_code": "597475",
+      "phone_number": "6469157",
+      "email_address": "admin@earlyyears.edu.sg",
+      "website_url": "www.earlyyears.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 79,
+    "fields": {
+      "name": "Edelweiss Kindergarten Sembawang Presbyterian Church",
+      "geometry": "SRID=4326;POINT (103.82543 1.441611)",
+      "address": "10B Jalan Jeruju",
+      "postal_code": "768443",
+      "phone_number": "6257522",
+      "email_address": "edelweiss.kindergarten@gmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 80,
+    "fields": {
+      "name": "Elim Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8643073 1.3238994)",
+      "address": "1079 Serangoon Road",
+      "postal_code": "328182",
+      "phone_number": "6298220",
+      "email_address": "elimkindie@yahoo.com.sg",
+      "website_url": "www.elimchurch.org.sg/elim-kindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 81,
+    "fields": {
+      "name": "Elite Learning Kindergarten Pte Ltd",
+      "geometry": "SRID=4326;POINT (103.6976529 1.3444104)",
+      "address": "720 Jurong West Avenue 5 #B1-94",
+      "postal_code": "640720",
+      "phone_number": "6795779",
+      "email_address": "elitelearningkindergarten@hotmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 82,
+    "fields": {
+      "name": "En-Naeem Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.89261 1.361)",
+      "address": "120 Tampines Road",
+      "postal_code": "535136",
+      "phone_number": "6285383",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 83,
+    "fields": {
+      "name": "Eshkol Valley @ Gospel Light",
+      "geometry": "SRID=4326;POINT (103.9136275 1.3915118)",
+      "address": "39 Punggol Field Walk #05-02",
+      "postal_code": "828753",
+      "phone_number": "6525608",
+      "email_address": "eshkolvalley.sg@gmail.com",
+      "website_url": "www.eshkolvalley.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 84,
+    "fields": {
+      "name": "Etonhouse International Research Preschool",
+      "geometry": "SRID=4326;POINT (103.886241 1.300484)",
+      "address": "716 Mountbatten Road",
+      "postal_code": "436736",
+      "phone_number": "6846332",
+      "email_address": "enquiry@etonhouse.com.sg",
+      "website_url": "www.etonhouse.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 85,
+    "fields": {
+      "name": "Evangel Kindergarten",
+      "geometry": "SRID=4326;POINT (103.791808 1.439408)",
+      "address": "1 Woodlands Street 83",
+      "postal_code": "738488",
+      "phone_number": "6365307",
+      "email_address": "",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 86,
+    "fields": {
+      "name": "Evelyn's Schoolhouse",
+      "geometry": "SRID=4326;POINT (103.7012048 1.3460202)",
+      "address": "735 Jurong West St 75 #01-19",
+      "postal_code": "640735",
+      "phone_number": "6316565",
+      "email_address": "contact@evelynschoolhouse.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 87,
+    "fields": {
+      "name": "Faith Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7972205 1.3027305)",
+      "address": "400 Commonwealth Drive",
+      "postal_code": "149604",
+      "phone_number": "6479540",
+      "email_address": "info@faithkindy.edu.sg",
+      "website_url": "www.faithkindy.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 88,
+    "fields": {
+      "name": "Far Eastern Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8382463 1.3157818)",
+      "address": "9A Gilstead Road",
+      "postal_code": "309063",
+      "phone_number": "6251367",
+      "email_address": "fek_edu@singnet.com.sg",
+      "website_url": "www.lifebpc.com/fekedu/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 89,
+    "fields": {
+      "name": "First Step Montessori House",
+      "geometry": "SRID=4326;POINT (103.8277637 1.4262233)",
+      "address": "716 Yishun Street 71 #01-268",
+      "postal_code": "760716",
+      "phone_number": "6755755",
+      "email_address": "firststepmontessorihouse@gmail.com",
+      "website_url": "www.firststep.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 90,
+    "fields": {
+      "name": "Foochow Methodist Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8515595 1.3090534)",
+      "address": "90 Race Course Road",
+      "postal_code": "218577",
+      "phone_number": "6294251",
+      "email_address": "fmc_kdg@foochowmc.org.sg",
+      "website_url": "foochowmc.ednoland.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 91,
+    "fields": {
+      "name": "Galilee Kindergarten",
+      "geometry": "SRID=4326;POINT (103.746262 1.321681)",
+      "address": "202 Pandan Gardens",
+      "postal_code": "609338",
+      "phone_number": "6560351",
+      "email_address": "kindergarten@galileebpchurch.org",
+      "website_url": "www.galileebpchurch.org/kindergarten"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 92,
+    "fields": {
+      "name": "Glory Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7765429 1.338651)",
+      "address": "11 Pei Wah Avenue",
+      "postal_code": "597611",
+      "phone_number": "6468553",
+      "email_address": "gk@glorykindi.edu.sg",
+      "website_url": "www.glorykindi.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 93,
+    "fields": {
+      "name": "Good Shepherd Convent Kindergarten",
+      "geometry": "SRID=4326;POINT (103.932694 1.311256)",
+      "address": "25 Nallur Road",
+      "postal_code": "456650",
+      "phone_number": "6241180",
+      "email_address": "principal@gsckg.edu.sg",
+      "website_url": "www.gsckg.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 94,
+    "fields": {
+      "name": "Grace House @ Tanglin",
+      "geometry": "SRID=4326;POINT (103.8164186 1.2943971)",
+      "address": "355 Tanglin Road",
+      "postal_code": "247960",
+      "phone_number": "6262358",
+      "email_address": "weekee@raffleshouse.com",
+      "website_url": "www.gracehouse.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 95,
+    "fields": {
+      "name": "Grace House Kindergarten",
+      "geometry": "SRID=4326;POINT (103.747426 1.364678)",
+      "address": "1 Bukit Batok West Avenue 4 #04-01",
+      "postal_code": "659125",
+      "phone_number": "6899885",
+      "email_address": "dorothysek@gracehouse.com.sg",
+      "website_url": "www.gracehouse.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 96,
+    "fields": {
+      "name": "Gracefields Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8247473 1.3005391)",
+      "address": "1 One Tree Hill",
+      "postal_code": "248668",
+      "phone_number": "6354282",
+      "email_address": "gracefields.kindergarten@gmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 97,
+    "fields": {
+      "name": "GUG The Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8435452 1.317325)",
+      "address": "101 Thomson Road #01-20/27",
+      "postal_code": "307591",
+      "phone_number": "6258472",
+      "email_address": "director@gugifted.com",
+      "website_url": "www.gugifted.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 98,
+    "fields": {
+      "name": "Han Junior",
+      "geometry": "SRID=4326;POINT (103.9225671 1.3237356)",
+      "address": "VIVA Business Park 750 Chai Chee Road #01-14/14A",
+      "postal_code": "469000",
+      "phone_number": "6694838",
+      "email_address": "chiangyy@hanlanguage.edu.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 99,
+    "fields": {
+      "name": "Hanis Montessori Kindergarten (Choa Chu Kang)",
+      "geometry": "SRID=4326;POINT (103.7472453 1.390511)",
+      "address": "707 Choa Chu Kang Street 53 #01-118",
+      "postal_code": "680707",
+      "phone_number": "6766550",
+      "email_address": "choa_chu_kang@ehanis.com.sg",
+      "website_url": "www.ehanis.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 100,
+    "fields": {
+      "name": "Hanis Montessori Kindergarten (Enterprise One)",
+      "geometry": "SRID=4326;POINT (103.9020509 1.3330623)",
+      "address": "Enterprise One 1 Kakit Bukit Road #01-10",
+      "postal_code": "415934",
+      "phone_number": "6440550",
+      "email_address": "enterprise_one@ehanis.com.sg",
+      "website_url": "www.ehanis.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 101,
+    "fields": {
+      "name": "Hanis Montessori Kindergarten (Kovan)",
+      "geometry": "SRID=4326;POINT (103.8787344 1.3548045)",
+      "address": "777 Upper Serangoon Road #01-01",
+      "postal_code": "534645",
+      "phone_number": "6487550",
+      "email_address": "Ari@ehanis.com.sg",
+      "website_url": "www.ehanis.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 102,
+    "fields": {
+      "name": "Hanis Montessori Kindergarten (Pasir Ris)",
+      "geometry": "SRID=4326;POINT (103.9367509 1.3743683)",
+      "address": "775 Pasir Ris Street 71 #01-402",
+      "postal_code": "510775",
+      "phone_number": "6582550",
+      "email_address": "pasir_ris@ehanis.com.sg",
+      "website_url": "www.ehanis.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 103,
+    "fields": {
+      "name": "Hanis Montessori Kindergarten (Tampines)",
+      "geometry": "SRID=4326;POINT (103.9589064 1.3568176)",
+      "address": "374 Tampines Street 34 #01-42",
+      "postal_code": "520374",
+      "phone_number": "6788550",
+      "email_address": "tampines@ehanis.com.sg",
+      "website_url": "www.ehanis.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 104,
+    "fields": {
+      "name": "Hanis Montessori Kindergarten (Woodlands)",
+      "geometry": "SRID=4326;POINT (103.7747088 1.4273037)",
+      "address": "424 Woodlands Street 41 #01-340",
+      "postal_code": "730424",
+      "phone_number": "6365550",
+      "email_address": "woodlands@ehanis.com.sg",
+      "website_url": "www.ehanis.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 105,
+    "fields": {
+      "name": "Hasanah Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.738397 1.3212)",
+      "address": "492 Teban Gardens Road",
+      "postal_code": "608878",
+      "phone_number": "6561799",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 106,
+    "fields": {
+      "name": "Holy Family Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9070093 1.3066767)",
+      "address": "6 Chapel Road",
+      "postal_code": "429509",
+      "phone_number": "6440434",
+      "email_address": "alee_holyfampc@pacific.net.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 107,
+    "fields": {
+      "name": "Holy Grace Kindergarten",
+      "geometry": "SRID=4326;POINT (103.939505 1.314406)",
+      "address": "408-B Upper East Coast Road",
+      "postal_code": "466484",
+      "phone_number": "6448334",
+      "email_address": "principal_hgk@holygrace.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 108,
+    "fields": {
+      "name": "Hope Community Kindergarten (Choa Chu Kang)",
+      "geometry": "SRID=4326;POINT (103.7404917 1.3777532)",
+      "address": "21 Choa Chu Kang Avenue 2",
+      "postal_code": "689907",
+      "phone_number": "6766064",
+      "email_address": "",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 109,
+    "fields": {
+      "name": "Hope Community Kindergarten (Sembawang)",
+      "geometry": "SRID=4326;POINT (103.8146526 1.4547822)",
+      "address": "55 Sembawang Drive",
+      "postal_code": "757614",
+      "phone_number": "6555129",
+      "email_address": "hcksbw@yahoo.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 110,
+    "fields": {
+      "name": "Hope Community Kindergarten (Tampines)",
+      "geometry": "SRID=4326;POINT (103.9521967 1.3614177)",
+      "address": "20 Tampines Street 43",
+      "postal_code": "529151",
+      "phone_number": "6544077",
+      "email_address": "hopecommunitykind@hotmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 111,
+    "fields": {
+      "name": "Ichiban Nurtureland Kindergarten (Choa Chu Kang)",
+      "geometry": "SRID=4326;POINT (103.7457486 1.3773862)",
+      "address": "31 Hong San Walk",
+      "postal_code": "689022",
+      "phone_number": "6765842",
+      "email_address": "inpl_2003@yahoo.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 112,
+    "fields": {
+      "name": "Iman Kindergarten (Bt. Batok)",
+      "geometry": "SRID=4326;POINT (103.75787 1.347408)",
+      "address": "277 Bukit Batok East Avenue 3 #02-373",
+      "postal_code": "650277",
+      "phone_number": "6561546",
+      "email_address": "iman@iman.edu.sg",
+      "website_url": "www.iman.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 113,
+    "fields": {
+      "name": "Iman Kindergarten (CCK)",
+      "geometry": "SRID=4326;POINT (103.74185 1.3926735)",
+      "address": "530 Choa Chu Kang Street 51 #01-323",
+      "postal_code": "680530",
+      "phone_number": "6468940",
+      "email_address": "imanchoachukang@gmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 114,
+    "fields": {
+      "name": "Iman Kindergarten (Tampines)",
+      "geometry": "SRID=4326;POINT (103.945122 1.344925)",
+      "address": "136 Tampines Street 11 #01-156",
+      "postal_code": "521136",
+      "phone_number": "6788491",
+      "email_address": "",
+      "website_url": "www.iman.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 115,
+    "fields": {
+      "name": "Iman Kindergarten (Tenagaville)",
+      "geometry": "SRID=4326;POINT (103.9073754 1.3322173)",
+      "address": "651 Jalan Tenaga #01-04",
+      "postal_code": "410651",
+      "phone_number": "6342133",
+      "email_address": "iman.tega@gmail.com",
+      "website_url": "iman@iman.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 116,
+    "fields": {
+      "name": "Iman Kindergarten (Yishun)",
+      "geometry": "SRID=4326;POINT (103.836589 1.425757)",
+      "address": "934 Yishun Central 1 #01-57",
+      "postal_code": "760934",
+      "phone_number": "6756004",
+      "email_address": "imanyishun@gmail.com",
+      "website_url": "iman.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 117,
+    "fields": {
+      "name": "Iroha Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8806947 1.3085065)",
+      "address": "Block C 231 Mountbatten Road #01-01",
+      "postal_code": "397999",
+      "phone_number": "6908508",
+      "email_address": "irohajeis@outlook.jp |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 118,
+    "fields": {
+      "name": "Jamiyah Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8788298 1.3104312)",
+      "address": "31 Lorong 12 Geylang Level 3",
+      "postal_code": "399006",
+      "phone_number": "6743121",
+      "email_address": "jk@jamiyah.org.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 119,
+    "fields": {
+      "name": "JENIUS Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8826076 1.3650321)",
+      "address": "54 Da Silva Lane",
+      "postal_code": "549783",
+      "phone_number": "6288479",
+      "email_address": "totshse@singnet.com.sg",
+      "website_url": "www.jeniustotshouse.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 120,
+    "fields": {
+      "name": "Jenius Kindergarten (Hougang)",
+      "geometry": "SRID=4326;POINT (103.8837018 1.3775517)",
+      "address": "915 Hougang Street 91 #01-10",
+      "postal_code": "530915",
+      "phone_number": "6385551",
+      "email_address": "dia@jeniustotshouse.com",
+      "website_url": "www.jeniustotshouse.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 121,
+    "fields": {
+      "name": "Jessin Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8510575 1.335692)",
+      "address": "85B Lorong 4 Toa Payoh #01-336",
+      "postal_code": "310085",
+      "phone_number": "6258455",
+      "email_address": "robin@jessin.edu.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 122,
+    "fields": {
+      "name": "JHS Montessori Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8392004 1.2958197)",
+      "address": "Valley Point Tower 491B River Valley Road #02-01",
+      "postal_code": "248373",
+      "phone_number": "6887487",
+      "email_address": "admin@jhs-montessori.com.sg",
+      "website_url": "www.jhs-montessori.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 123,
+    "fields": {
+      "name": "Josiah Montessori Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9599466 1.354279)",
+      "address": "5 Tampines Street 32 #02-01",
+      "postal_code": "529284",
+      "phone_number": "6260131",
+      "email_address": "le.lim@josiah.com.sg",
+      "website_url": "www.josiah.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 124,
+    "fields": {
+      "name": "Joyhouse Montessori Preschool",
+      "geometry": "SRID=4326;POINT (103.8459683 1.357263)",
+      "address": "231 Bishan Street 23 #B1-05",
+      "postal_code": "570231",
+      "phone_number": "6455586",
+      "email_address": "joyhouselearningcentre@gmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 125,
+    "fields": {
+      "name": "Jurong Calvary Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7235618 1.3332755)",
+      "address": "1 Tao Ching Road",
+      "postal_code": "618720",
+      "phone_number": "6265619",
+      "email_address": "jurongcalvary@jck.edu.sg",
+      "website_url": "www.jurongcalvarykindergarten.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 126,
+    "fields": {
+      "name": "Jurong Christian Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7220839 1.336506)",
+      "address": "2 Tah Ching Road",
+      "postal_code": "618744",
+      "phone_number": "6266053",
+      "email_address": "jcckindy@singnet.com.sg",
+      "website_url": "jcckindy.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 127,
+    "fields": {
+      "name": "Kampong Kapor Methodist Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.85394 1.3073349)",
+      "address": "1 Kampong Kapor Road",
+      "postal_code": "208673",
+      "phone_number": "6294263",
+      "email_address": "kkmckindy@gmail.com",
+      "website_url": "kkmckindy.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 128,
+    "fields": {
+      "name": "Kampung Siglap Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9275409 1.3098998)",
+      "address": "451 Marine Parade Road",
+      "postal_code": "449283",
+      "phone_number": "6243706",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 129,
+    "fields": {
+      "name": "Kay Poh Road Baptist Kindergarten",
+      "geometry": "SRID=4326;POINT (103.829363 1.2962944)",
+      "address": "7 Kay Poh Road",
+      "postal_code": "248963",
+      "phone_number": "6238120",
+      "email_address": "kprbk@kprbc.org.sg",
+      "website_url": "www.kprbc.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 130,
+    "fields": {
+      "name": "Khalsa Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8588283 1.3140061)",
+      "address": "1 Beatty Road",
+      "postal_code": "209943",
+      "phone_number": "6297358",
+      "email_address": "principal@khalsakindergarten.org.sg",
+      "website_url": "www.singaporekhalsa.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 131,
+    "fields": {
+      "name": "Kids 'n' Kids School",
+      "geometry": "SRID=4326;POINT (103.9206702 1.3108336)",
+      "address": "17 Jalan Saudara Ku",
+      "postal_code": "457453",
+      "phone_number": "8180206",
+      "email_address": "kckids03@hotmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 132,
+    "fields": {
+      "name": "Kidszone Kindergarten",
+      "geometry": "SRID=4326;POINT (103.828571 1.430627)",
+      "address": "102 Yishun Avenue 5 #03-115",
+      "postal_code": "760102",
+      "phone_number": "6752045",
+      "email_address": "kidszone@singnet.com.sg",
+      "website_url": "www.kidszone.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 133,
+    "fields": {
+      "name": "Kidz Meadow Kindergarten",
+      "geometry": "SRID=4326;POINT (103.94352 1.38375)",
+      "address": "102 Pasir Ris Road",
+      "postal_code": "519108",
+      "phone_number": "6583352",
+      "email_address": "pasir_ris.ps@merculearning.com",
+      "website_url": "www.merculearning.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 134,
+    "fields": {
+      "name": "Kim Keat Christian Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8659502 1.3242583)",
+      "address": "11 Beng Wan Road",
+      "postal_code": "339843",
+      "phone_number": "6294166",
+      "email_address": "kkcckindergarten@gmail.com",
+      "website_url": "www.kkcc.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 135,
+    "fields": {
+      "name": "Kindergarten@An-Nahdhah",
+      "geometry": "SRID=4326;POINT (103.8513059 1.353539)",
+      "address": "9A Bishan Street 14",
+      "postal_code": "579786",
+      "phone_number": "6354313",
+      "email_address": "kindergarten@anhdhah.mosque.org.sg",
+      "website_url": "www.anhdhah.org"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 136,
+    "fields": {
+      "name": "Kinderland Kindergarten (Choa Chu Kang)",
+      "geometry": "SRID=4326;POINT (103.7389881 1.3780266)",
+      "address": "475 Choa Chu Kang Avenue 3 #02-15",
+      "postal_code": "680475",
+      "phone_number": "6764001",
+      "email_address": "booneng@kinderland.com.sg",
+      "website_url": "kinderland.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 137,
+    "fields": {
+      "name": "Kinderland Kindergarten (Serangoon)",
+      "geometry": "SRID=4326;POINT (103.8741573 1.3509746)",
+      "address": "587 Upper Serangoon Road",
+      "postal_code": "534564",
+      "phone_number": "6288297",
+      "email_address": "keshgps@kinderland.com.sg",
+      "website_url": "www.kinderland.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 138,
+    "fields": {
+      "name": "Kinderland Kindergarten (Woodlands)",
+      "geometry": "SRID=4326;POINT (103.7870168 1.4349786)",
+      "address": "Woodlands Civic Centre 900 South Woodlands Drive #05-10",
+      "postal_code": "730900",
+      "phone_number": "6769816",
+      "email_address": "keswck@kinderland.com.sg",
+      "website_url": "www.kinderland.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 139,
+    "fields": {
+      "name": "Kinderland Kindergarten (Yio Chu Kang)",
+      "geometry": "SRID=4326;POINT (103.8541664 1.3909551)",
+      "address": "449 Yio Chu Kang Road",
+      "postal_code": "805946",
+      "phone_number": "6483226",
+      "email_address": "kesyckps@kinderland.com.sg",
+      "website_url": "kinderland.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 140,
+    "fields": {
+      "name": "Kits4Kids Kindergarten",
+      "geometry": "SRID=4326;POINT (103.913194 1.3123328)",
+      "address": "107 Lorong L Telok Kurau",
+      "postal_code": "425542",
+      "phone_number": "6345881",
+      "email_address": "enquiry@kits4kids.org",
+      "website_url": "www.kits4kids.org"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 141,
+    "fields": {
+      "name": "Kizroo Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7933377 1.3378923)",
+      "address": "The Grandstand 200 Turf Club Road #06-03",
+      "postal_code": "287994",
+      "phone_number": "6466701",
+      "email_address": "info-kiz@kizroo.com",
+      "website_url": "kizroo.com/kindergarten"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 142,
+    "fields": {
+      "name": "Little Hands Montessori Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8291204 1.3014954)",
+      "address": "2A Paterson Hill",
+      "postal_code": "238565",
+      "phone_number": "6235574",
+      "email_address": "",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 143,
+    "fields": {
+      "name": "Little Leader Kindergarten",
+      "geometry": "SRID=4326;POINT (103.828571 1.430627)",
+      "address": "102 Yishun Avenue 5 #04-115",
+      "postal_code": "760102",
+      "phone_number": "6752234",
+      "email_address": "",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 144,
+    "fields": {
+      "name": "Little Oaks Montessori Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8118615 1.319875)",
+      "address": "98 Farrer Road",
+      "postal_code": "259226",
+      "phone_number": "6463372",
+      "email_address": "",
+      "website_url": "www.littleoaks.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 145,
+    "fields": {
+      "name": "Little Ones Kindergarten",
+      "geometry": "SRID=4326;POINT (103.78001 1.313979)",
+      "address": "58 Holland Grove Drive",
+      "postal_code": "278886",
+      "phone_number": "6763199",
+      "email_address": "mail@littleones.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 146,
+    "fields": {
+      "name": "Little Raindrops Montessori Pre-School",
+      "geometry": "SRID=4326;POINT (103.8291204 1.3014954)",
+      "address": "2A Paterson Hill",
+      "postal_code": "238565",
+      "phone_number": "6734962",
+      "email_address": "littleraindrops@singnet.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 147,
+    "fields": {
+      "name": "Little Woods Montessori Preschool",
+      "geometry": "SRID=4326;POINT (103.8382065 1.3190227)",
+      "address": "45 Gentle Road",
+      "postal_code": "309166",
+      "phone_number": "6251631",
+      "email_address": "admin@littlewoodsmontessori.com",
+      "website_url": "www.littlewoodsmontessori.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 148,
+    "fields": {
+      "name": "LittleSparks Montessori Kindergarten",
+      "geometry": "SRID=4326;POINT (103.919242 1.315651)",
+      "address": "Bowmont Centre 20 Siglap Drive #01-06",
+      "postal_code": "456192",
+      "phone_number": "6876019",
+      "email_address": "littlesparkskinder@yahoo.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 149,
+    "fields": {
+      "name": "LittleSparks Montessori Kindergarten @ Kembangan",
+      "geometry": "SRID=4326;POINT (103.9132861 1.3251069)",
+      "address": "103 Jalan Kembangan",
+      "postal_code": "419145",
+      "phone_number": "6440477",
+      "email_address": "littlesparkskbg@gmail.com",
+      "website_url": "littlesparks.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 150,
+    "fields": {
+      "name": "Living Sanctuary Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8914976 1.3559823)",
+      "address": "Bethesda Ground 2 Hougang Street 22",
+      "postal_code": "538728",
+      "phone_number": "6283337",
+      "email_address": "lskadmin@lsbc.org.sg",
+      "website_url": "www.lsbc.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 151,
+    "fields": {
+      "name": "Lumiere Montessori House",
+      "geometry": "SRID=4326;POINT (103.869774 1.346997)",
+      "address": "64 Wolskel Road",
+      "postal_code": "357971",
+      "phone_number": "6283929",
+      "email_address": "serene@lumiere.edu.sg",
+      "website_url": "www.lumiere.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 152,
+    "fields": {
+      "name": "Magdalene's Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8822778 1.3261855)",
+      "address": "1 Sallim Road",
+      "postal_code": "387621",
+      "phone_number": "6747655",
+      "email_address": "magkg@singnet.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 153,
+    "fields": {
+      "name": "Mahad Al - Nasry Kindergarten",
+      "geometry": "SRID=4326;POINT (103.953763 1.3609389)",
+      "address": "476 Tampines Street 44 #01-179",
+      "postal_code": "520476",
+      "phone_number": "6787472",
+      "email_address": "alsrytp@gmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 154,
+    "fields": {
+      "name": "Mahad Al-Nasry @ Sengkang kindergarten",
+      "geometry": "SRID=4326;POINT (103.9011251 1.3918105)",
+      "address": "415 Punggol Road",
+      "postal_code": "546646",
+      "phone_number": "6489676",
+      "email_address": "mahadsry@gmail.com",
+      "website_url": "www.al-srykindergarten.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 155,
+    "fields": {
+      "name": "Maris Stella Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8087661 1.308706)",
+      "address": "49B Holland Road",
+      "postal_code": "258851",
+      "phone_number": "6474359",
+      "email_address": "marisstellakg@yahoo.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 156,
+    "fields": {
+      "name": "Marymount Kindergarten",
+      "geometry": "SRID=4326;POINT (103.857018 1.340333)",
+      "address": "9 Toa Payoh Lorong 8",
+      "postal_code": "319253",
+      "phone_number": "6251504",
+      "email_address": "principal@mkg.edu.sg | admin@mkg.edu.sg",
+      "website_url": "www.mkg.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 157,
+    "fields": {
+      "name": "Metamorphosis Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7458191 1.385156)",
+      "address": "309 Choa Chu Kang Avenue 4 #04-07",
+      "postal_code": "680309",
+      "phone_number": "6769690",
+      "email_address": "metamorphosis0407@yahoo.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 158,
+    "fields": {
+      "name": "Methodist Church Of The Incarnation (MCI) Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7536484 1.3798574)",
+      "address": "31 Teck Whye Lane",
+      "postal_code": "688798",
+      "phone_number": "6763062",
+      "email_address": "mcik@mci.org.sg",
+      "website_url": "mci.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 159,
+    "fields": {
+      "name": "MFC Kindergarten (Broadrick Road)",
+      "geometry": "SRID=4326;POINT (103.8907084 1.2997929)",
+      "address": "11 Broadrick Road",
+      "postal_code": "439476",
+      "phone_number": "6345008",
+      "email_address": "broadrick@montessori.edu.sg",
+      "website_url": "www.montessori.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 160,
+    "fields": {
+      "name": "MFC Kindergarten (Newton)",
+      "geometry": "SRID=4326;POINT (103.841281 1.318051)",
+      "address": "43 Newton Road",
+      "postal_code": "307970",
+      "phone_number": "6256395",
+      "email_address": "newton@montessori.edu.sg",
+      "website_url": "www.montessori.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 161,
+    "fields": {
+      "name": "Modern Montessori Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9293084 1.3114621)",
+      "address": "12 Kee Sun Avenue",
+      "postal_code": "457037",
+      "phone_number": "6244032",
+      "email_address": "",
+      "website_url": "www.modernmontessori.intl.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 162,
+    "fields": {
+      "name": "Monte Kidz World (Hougang)",
+      "geometry": "SRID=4326;POINT (103.8878925 1.3792668)",
+      "address": "21 Hougang Street 51 #02-14",
+      "postal_code": "538719",
+      "phone_number": "6386129",
+      "email_address": "centremager_hougang@montekidz.com.sg",
+      "website_url": "www.montekidz.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 163,
+    "fields": {
+      "name": "Monte Kidz World (Pasir Ris)",
+      "geometry": "SRID=4326;POINT (103.9420438 1.3786144)",
+      "address": "625 Elias Road #02-330",
+      "postal_code": "510625",
+      "phone_number": "6585332",
+      "email_address": "principal@montekidz.com.sg",
+      "website_url": "www.montekidz.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 164,
+    "fields": {
+      "name": "Queenstown Good Shepherd Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8073624 1.2951788)",
+      "address": "2 Dundee Road",
+      "postal_code": "149454",
+      "phone_number": "6479338",
+      "email_address": "kindergarten@cogsanglican.org",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 165,
+    "fields": {
+      "name": "Montessori Children's House Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7907002 1.3321505)",
+      "address": "886 Old Holland Road",
+      "postal_code": "278685",
+      "phone_number": "6468837",
+      "email_address": "montessorich@gmail.com",
+      "website_url": "www.montessorich.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 166,
+    "fields": {
+      "name": "Mosaic Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7835965 1.3366443)",
+      "address": "Sime Darby Centre 896 Dunearn Road #01-01B",
+      "postal_code": "589472",
+      "phone_number": "6909047",
+      "email_address": "mosaic@mkg.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 167,
+    "fields": {
+      "name": "MRC Kindergarten (Serangoon North)",
+      "geometry": "SRID=4326;POINT (103.8701385 1.3734621)",
+      "address": "542B Serangoon North Avenue 3 #01-03",
+      "postal_code": "552542",
+      "phone_number": "6555782",
+      "email_address": "",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 168,
+    "fields": {
+      "name": "MRC Kindergarten (Yishun South)",
+      "geometry": "SRID=4326;POINT (103.835301 1.416239)",
+      "address": "848 Yishun Street 81 #01-150",
+      "postal_code": "760848",
+      "phone_number": "6100231",
+      "email_address": "",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 169,
+    "fields": {
+      "name": "Muhammadiyah Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9152147 1.3231361)",
+      "address": "66 Jalan Lapang",
+      "postal_code": "419006",
+      "phone_number": "6442475",
+      "email_address": "kindergarten@muhammadiyah.org.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 170,
+    "fields": {
+      "name": "Mujahidin Mosque Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8009144 1.2979589)",
+      "address": "590 Stirling Road",
+      "postal_code": "148952",
+      "phone_number": "6473740",
+      "email_address": "lydiayanti@mujahidin.mosque.org.sg |",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 171,
+    "fields": {
+      "name": "My Montessori Preschool @ Bullion",
+      "geometry": "SRID=4326;POINT (103.8370965 1.390797)",
+      "address": "Bullion Park 172 Lentor Loop #02-01",
+      "postal_code": "789100",
+      "phone_number": "6552123",
+      "email_address": "mymonte2013@gmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 172,
+    "fields": {
+      "name": "My Prep School",
+      "geometry": "SRID=4326;POINT (103.925843 1.307426)",
+      "address": "Mandarin Gardens Condominium 9 Siglap Road",
+      "postal_code": "448910",
+      "phone_number": "6443542",
+      "email_address": "nooranisaad@yahoo.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 173,
+    "fields": {
+      "name": "NAFA Arts Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9139459 1.3098305)",
+      "address": "511 East Coast Road",
+      "postal_code": "429064",
+      "phone_number": "6346951",
+      "email_address": "artskinder@fa.edu.sg",
+      "website_url": "www.fa-intl.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 174,
+    "fields": {
+      "name": "NAFA Arts Kindergarten (Derbyshire)",
+      "geometry": "SRID=4326;POINT (103.8456173 1.3153103)",
+      "address": "2 Derbyshire Road",
+      "postal_code": "309458",
+      "phone_number": "6513027",
+      "email_address": "artskinder2@fa.edu.sg",
+      "website_url": "www.fa-intl.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 175,
+    "fields": {
+      "name": "Nanyang Children School",
+      "geometry": "SRID=4326;POINT (103.8082431 1.2736326)",
+      "address": "78B Telok Blangah Street 32 #02-17",
+      "postal_code": "102078",
+      "phone_number": "6274552",
+      "email_address": "nyangchildrenskool@yahoo.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 176,
+    "fields": {
+      "name": "Nanyang Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8058913 1.3179313)",
+      "address": "118 King's Road",
+      "postal_code": "268155",
+      "phone_number": "6466337",
+      "email_address": "nykadmin@nyangkindergarten.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 177,
+    "fields": {
+      "name": "Nanyang Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8068644 1.3212649)",
+      "address": "51 Coronation Road",
+      "postal_code": "269460",
+      "phone_number": "6463277",
+      "email_address": "nykadmin@nyangkindergarten.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 178,
+    "fields": {
+      "name": "Nativity Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.897954 1.374516)",
+      "address": "98 Hougang Avenue 8",
+      "postal_code": "538791",
+      "phone_number": "6487675",
+      "email_address": "nckdgn@singnet.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 179,
+    "fields": {
+      "name": "New Life Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7773919 1.4449829)",
+      "address": "10 Marsiling Lane",
+      "postal_code": "739147",
+      "phone_number": "6368956",
+      "email_address": "nlkindergarten@gmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 180,
+    "fields": {
+      "name": "Newton Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8406941 1.3137966)",
+      "address": "16 Newton Road",
+      "postal_code": "307995",
+      "phone_number": "6251558",
+      "email_address": "newtonkindergarten@gmail.com",
+      "website_url": "www.newtonkindergarten.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 181,
+    "fields": {
+      "name": "P & J Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8263306 1.3575676)",
+      "address": "35 Windsor Park Road Windsor Park",
+      "postal_code": "574141",
+      "phone_number": "6481254",
+      "email_address": "pnjmontessori@yahoo.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 182,
+    "fields": {
+      "name": "Paper Scissors Stone Montessori Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9613513 1.3436694)",
+      "address": "30 Jalan Pergam",
+      "postal_code": "488306",
+      "phone_number": "6546880",
+      "email_address": "simei@pssmk.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 183,
+    "fields": {
+      "name": "Paper Scissors Stone Montessori Kindergarten (Bedok Reservoir Branch)",
+      "geometry": "SRID=4326;POINT (103.9256829 1.337161)",
+      "address": "718 Bedok Reservoir Road #01-4590",
+      "postal_code": "470718",
+      "phone_number": "6242471",
+      "email_address": "enquiry@pssmk.com | bedok@pssmk.com",
+      "website_url": "www.pssmk.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 184,
+    "fields": {
+      "name": "Pasir Panjang Hill Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7857272 1.2804502)",
+      "address": "3 Pasir Panjang Hill",
+      "postal_code": "118827",
+      "phone_number": "6474218",
+      "email_address": "principal_pphck@pphbc.org",
+      "website_url": "www.pphbc.org/our-kindergarten"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 185,
+    "fields": {
+      "name": "Paya Lebar Methodist Church Covenant Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8757218 1.352642)",
+      "address": "5 Boundary Road",
+      "postal_code": "549954",
+      "phone_number": "6285373",
+      "email_address": "kindergarten@plmc.org",
+      "website_url": "www.plmc.org/care-help/kindergarten"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 186,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ ADMIRALTY Blk 501 (KN)",
+      "geometry": "SRID=4326;POINT (103.792047 1.4329829)",
+      "address": "501 Woodlands Drive 14 #01-52",
+      "postal_code": "730501",
+      "phone_number": "6314616",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 187,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ ADMIRALTY Blk 581 (KN)",
+      "geometry": "SRID=4326;POINT (103.796348 1.430134)",
+      "address": "581 Woodlands Drive 16 #01-486",
+      "postal_code": "730581",
+      "phone_number": "6314616",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 188,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ ADMIRALTY Blk 687B (KN)",
+      "geometry": "SRID=4326;POINT (103.8072266 1.4419076)",
+      "address": "687B Woodlands Drive 75 #01-47",
+      "postal_code": "732687",
+      "phone_number": "6314616",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 189,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ ANG MO KIO-HOUGANG Blk 632 (KN)",
+      "geometry": "SRID=4326;POINT (103.8809111 1.3708097)",
+      "address": "632 Hougang Avenue 8 #01-28",
+      "postal_code": "530632",
+      "phone_number": "6282656",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 190,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ ANG MO KIO-HOUGANG Blk 929 (KN)",
+      "geometry": "SRID=4326;POINT (103.8814857 1.376066)",
+      "address": "929 Hougang Street 91 #01-127",
+      "postal_code": "530929",
+      "phone_number": "6386987",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 191,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ ANG MO KIO-HOUGANG Blk 970 (KN)",
+      "geometry": "SRID=4326;POINT (103.880312 1.378769)",
+      "address": "970 Hougang Street 91 #01-152",
+      "postal_code": "530970",
+      "phone_number": "6384006",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 192,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ AYER RAJAH Blk 48 (KN)",
+      "geometry": "SRID=4326;POINT (103.739893 1.320538)",
+      "address": "48 Teban Gardens Road #01-248",
+      "postal_code": "600048",
+      "phone_number": "6569825",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 193,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BEDOK Blk 30 (KN)",
+      "geometry": "SRID=4326;POINT (103.9364662 1.3236193)",
+      "address": "30 New Upper Changi Road #01-812",
+      "postal_code": "461030",
+      "phone_number": "6442362",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 194,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BEDOK RESERVOIR-PUNGGOL Blk 414 (DS)",
+      "geometry": "SRID=4326;POINT (103.8959572 1.375043)",
+      "address": "414 Hougang Avenue 10 #01-1256",
+      "postal_code": "530414",
+      "phone_number": "6386850",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 195,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BEDOK RESERVOIR-PUNGGOL Blk 475C (DS)",
+      "geometry": "SRID=4326;POINT (103.9000117 1.3754302)",
+      "address": "475C Upper Serangoon Crescent #01-547",
+      "postal_code": "533475",
+      "phone_number": "6385568",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 196,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BEDOK RESERVOIR-PUNGGOL Blk 713 (KN)",
+      "geometry": "SRID=4326;POINT (103.92242 1.336814)",
+      "address": "713 Bedok Reservoir Road #01-3960",
+      "postal_code": "470713",
+      "phone_number": "6442865",
+      "email_address": "pcf_brp_713@yahoo.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 197,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BISHAN EAST-THOMSON Blk 144 (KN)",
+      "geometry": "SRID=4326;POINT (103.8533738 1.3459243)",
+      "address": "144 Bishan Street 12 #01-554",
+      "postal_code": "570144",
+      "phone_number": "6353326",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 198,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BISHAN EAST-THOMSON Blk 197 (KN)",
+      "geometry": "SRID=4326;POINT (103.8504935 1.34885)",
+      "address": "197 Bishan Street 13 #01-567",
+      "postal_code": "570197",
+      "phone_number": "6259054",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 199,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BISHAN EAST-THOMSON Blk 313 (KN)",
+      "geometry": "SRID=4326;POINT (103.8380265 1.3513189)",
+      "address": "313 Shunfu Road #01-287",
+      "postal_code": "570313",
+      "phone_number": "6356264",
+      "email_address": "313pcfthom@gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 200,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BISHAN NORTH Blk 231 (KN)",
+      "geometry": "SRID=4326;POINT (103.8457582 1.3573799)",
+      "address": "231 Bishan Street 23 #01-21",
+      "postal_code": "570231",
+      "phone_number": "6454960",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 201,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BISHAN NORTH Blk 441 (KN)",
+      "geometry": "SRID=4326;POINT (103.8314948 1.359049)",
+      "address": "441 Sin Ming Avenue #01-417",
+      "postal_code": "570441",
+      "phone_number": "6452058",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 202,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BOON LAY Blk 207 (KN)",
+      "geometry": "SRID=4326;POINT (103.71362 1.34664)",
+      "address": "207 Boon Lay Place #01-215",
+      "postal_code": "640207",
+      "phone_number": "6261608",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 203,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BOON LAY Blk 262 (KN)",
+      "geometry": "SRID=4326;POINT (103.7072763 1.3447063)",
+      "address": "262 Boon Lay Drive #01-573",
+      "postal_code": "640262",
+      "phone_number": "6793256",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 204,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BOON LAY Blk 631 (KN)",
+      "geometry": "SRID=4326;POINT (103.7001705 1.3430899)",
+      "address": "631 Jurong West Street 65 #01-260",
+      "postal_code": "640631",
+      "phone_number": "6790041",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 205,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BRADDELL HEIGHTS Blk 307 (KN)",
+      "geometry": "SRID=4326;POINT (103.8669628 1.354559)",
+      "address": "307 Serangoon Avenue 2 #01-44",
+      "postal_code": "550307",
+      "phone_number": "6285709",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 206,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BRADDELL HEIGHTS Blk 417 (KN)",
+      "geometry": "SRID=4326;POINT (103.8750489 1.349917)",
+      "address": "417 Serangoon Central #01-456",
+      "postal_code": "550417",
+      "phone_number": "6284576",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 207,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BUKIT BATOK Blk 148 (KN)",
+      "geometry": "SRID=4326;POINT (103.7438834 1.3492899)",
+      "address": "148 Bukit Batok West Avenue 6 #01-319",
+      "postal_code": "650148",
+      "phone_number": "6561465",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 208,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BUKIT BATOK Blk 180 (KN)",
+      "geometry": "SRID=4326;POINT (103.7428809 1.3455047)",
+      "address": "180 Bukit Batok West Avenue 8 #01-181",
+      "postal_code": "650180",
+      "phone_number": "6569671",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 209,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BUKIT BATOK EAST Blk 241 (KN)",
+      "geometry": "SRID=4326;POINT (103.754458 1.350917)",
+      "address": "241 Bukit Batok East Avenue 5 #01-261",
+      "postal_code": "650241",
+      "phone_number": "6425465",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 210,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BUKIT BATOK EAST Blk 285C (KN)",
+      "geometry": "SRID=4326;POINT (103.7484575 1.3330884)",
+      "address": "285C Toh Guan Road #01-92",
+      "postal_code": "603285",
+      "phone_number": "6565921",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 211,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BUKIT BATOK EAST Blk 289G (KN)",
+      "geometry": "SRID=4326;POINT (103.7609726 1.3426274)",
+      "address": "289G Bukit Batok Street 25 #01-94",
+      "postal_code": "656289",
+      "phone_number": "6566760",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 212,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BUKIT GOMBAK Blk 535 (DS)",
+      "geometry": "SRID=4326;POINT (103.750231 1.354954)",
+      "address": "535 Bukit Batok Street 52 #01-631",
+      "postal_code": "650535",
+      "phone_number": "6561810",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 213,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BUKIT PANJANG Blk 111 (KN)",
+      "geometry": "SRID=4326;POINT (103.7684054 1.3781971)",
+      "address": "111 Gangsa Road #01-75",
+      "postal_code": "670111",
+      "phone_number": "6764482",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 214,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BUKIT PANJANG Blk 226 (KN)",
+      "geometry": "SRID=4326;POINT (103.772335 1.375289)",
+      "address": "226 Pending Road #01-179",
+      "postal_code": "670226",
+      "phone_number": "6769188",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 215,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BUKIT PANJANG Blk 422 (KN)",
+      "geometry": "SRID=4326;POINT (103.769585 1.385016)",
+      "address": "422 Fajar Road #01-511",
+      "postal_code": "670422",
+      "phone_number": "6892126",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 216,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BUKIT TIMAH BLK 312B (DS)",
+      "geometry": "SRID=4326;POINT (103.764582 1.3195342)",
+      "address": "312B Clementi Avenue 4 #01-181 122312",
+      "postal_code": "122312",
+      "phone_number": "",
+      "email_address": "Koh.shu.hui.kelin@pcf.org.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 217,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BUKIT TIMAH Blk 319 (KN)",
+      "geometry": "SRID=4326;POINT (103.7648068 1.3174403)",
+      "address": "319 Clementi Avenue 4 #01-55",
+      "postal_code": "120319",
+      "phone_number": "6777086",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 218,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BUONA VISTA Blk 4 (DS)",
+      "geometry": "SRID=4326;POINT (103.7957715 1.3079724)",
+      "address": "4 Holland Close #01-19",
+      "postal_code": "271004",
+      "phone_number": "6776692",
+      "email_address": "Buo.Vista@pcf.org.sg",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 219,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ BUONA VISTA Blk 54 (DS)",
+      "geometry": "SRID=4326;POINT (103.7968651 1.301484)",
+      "address": "54 Commonwealth Drive #01-564",
+      "postal_code": "142054",
+      "phone_number": "6334491",
+      "email_address": "pcfqueenstown@ymail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 220,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ CANBERRA Blk 330 (DS)",
+      "geometry": "SRID=4326;POINT (103.8177564 1.4467044)",
+      "address": "330 Sembawang Close #01-383",
+      "postal_code": "750330",
+      "phone_number": "6257011",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 221,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ CANBERRA Blk 468D (KN)",
+      "geometry": "SRID=4326;POINT (103.8145167 1.4508551)",
+      "address": "468D Admiralty Drive #01-223",
+      "postal_code": "754468",
+      "phone_number": "6755411",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 222,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ CANBERRA Blk 487 (KN)",
+      "geometry": "SRID=4326;POINT (103.815988 1.4556371)",
+      "address": "487 Admiralty Link #01-131",
+      "postal_code": "750487",
+      "phone_number": "6570022",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 223,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ CASHEW Blk 545 (KN)",
+      "geometry": "SRID=4326;POINT (103.7634489 1.3816901)",
+      "address": "545 Bukit Panjang Ring Road #01-871",
+      "postal_code": "670545",
+      "phone_number": "6764622",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 224,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ CHANGI-SIMEI Blk 119 (KN)",
+      "geometry": "SRID=4326;POINT (103.9521569 1.3438747)",
+      "address": "119 Simei Street 1 #01-506",
+      "postal_code": "520119",
+      "phone_number": "6787769",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 225,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ CHANGI-SIMEI Blk 131 (KN)",
+      "geometry": "SRID=4326;POINT (103.9538437 1.3454611)",
+      "address": "131 Simei Street 1 #01-208",
+      "postal_code": "520131",
+      "phone_number": "6782561",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 226,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ CHENG SAN-SELETAR Blk 435 (KN)",
+      "geometry": "SRID=4326;POINT (103.8541891 1.3677443)",
+      "address": "435 Ang Mo Kio Avenue 10 #01-1393",
+      "postal_code": "560435",
+      "phone_number": "6452129",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 227,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ CHENG SAN-SELETAR Blk 533 (KN)",
+      "geometry": "SRID=4326;POINT (103.8530114 1.3741984)",
+      "address": "533 Ang Mo Kio Avenue 5 #01-4100",
+      "postal_code": "560533",
+      "phone_number": "6458956",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 228,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ CHONG PANG Blk 107 (KN)",
+      "geometry": "SRID=4326;POINT (103.827305 1.432263)",
+      "address": "107 Yishun Ring Road #01-207",
+      "postal_code": "760107",
+      "phone_number": "6759704",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 229,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ CHONG PANG Blk 122 (KN)",
+      "geometry": "SRID=4326;POINT (103.830913 1.434935)",
+      "address": "122 Yishun Street 11 #01-479",
+      "postal_code": "760122",
+      "phone_number": "6755032",
+      "email_address": "littlegems122@gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 230,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ CHUA CHU KANG Blk 10 (KN)",
+      "geometry": "SRID=4326;POINT (103.7554147 1.380253)",
+      "address": "10 Teck Whye Avenue #01-59",
+      "postal_code": "680010",
+      "phone_number": "6760578",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 231,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ CHUA CHU KANG Blk 123 (KN)",
+      "geometry": "SRID=4326;POINT (103.74936 1.3792629)",
+      "address": "123 Teck Whye Lane #01-864",
+      "postal_code": "680123",
+      "phone_number": "6765363",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 232,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ CLEMENTI Blk 330 (DS)",
+      "geometry": "SRID=4326;POINT (103.7677038 1.3136913)",
+      "address": "330 Clementi Avenue 2 #01-170",
+      "postal_code": "120330",
+      "phone_number": "6773195",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 233,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ CLEMENTI Blk 462A (KN)",
+      "geometry": "SRID=4326;POINT (103.7637318 1.3152965)",
+      "address": "462A Clementi Avenue 3 #01-01",
+      "postal_code": "120462",
+      "phone_number": "6779313",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 234,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ EUNOS Blk 122 (KN)",
+      "geometry": "SRID=4326;POINT (103.910638 1.3320522)",
+      "address": "122 Bedok Reservoir Road #01-1025",
+      "postal_code": "470122",
+      "phone_number": "6743820",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 235,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ EUNOS Blk 616 (KN)",
+      "geometry": "SRID=4326;POINT (103.9148975 1.3318081)",
+      "address": "616 Bedok Reservoir Road #01-1106",
+      "postal_code": "470616",
+      "phone_number": "6242063",
+      "email_address": "pcfeunos616@gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 236,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ FENGSHAN Blk 126 (KN)",
+      "geometry": "SRID=4326;POINT (103.9389165 1.3281579)",
+      "address": "126 Bedok North Street 2 #01-88",
+      "postal_code": "460126",
+      "phone_number": "6243003",
+      "email_address": "fspcf126@gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 237,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ GAMBAS Blk 309 (KN)",
+      "geometry": "SRID=4326;POINT (103.8213318 1.4467567)",
+      "address": "309 Canberra Road #01-109",
+      "postal_code": "750309",
+      "phone_number": "6482063",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 238,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ GAMBAS Blk 317 (KN)",
+      "geometry": "SRID=4326;POINT (103.8203026 1.4457976)",
+      "address": "317 Sembawang Vista #01-211",
+      "postal_code": "750317",
+      "phone_number": "6753247",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 239,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ GAMBAS Blk 408 (KN)",
+      "geometry": "SRID=4326;POINT (103.8484821 1.4262799)",
+      "address": "408 Yishun Avenue 6 #01-1264",
+      "postal_code": "760408",
+      "phone_number": "6753744",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 240,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ GEYLANG SERAI Blk 11 (KN)",
+      "geometry": "SRID=4326;POINT (103.9043813 1.3218511)",
+      "address": "11 Eunos Cresent #01-2737",
+      "postal_code": "400011",
+      "phone_number": "6745746",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 241,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ GEYLANG SERAI Blk 14 (KN)",
+      "geometry": "SRID=4326;POINT (103.879775 1.33583)",
+      "address": "14 Joo Seng Road #01-103",
+      "postal_code": "360014",
+      "phone_number": "6282743",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 242,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ HENDERSON-DAWSON Blk 124A (KN)",
+      "geometry": "SRID=4326;POINT (103.8228497 1.2850717)",
+      "address": "124A Bukit Merah View #01-406",
+      "postal_code": "151124",
+      "phone_number": "6273451",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 243,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ HONG KAH NORTH Blk 276D (KN)",
+      "geometry": "SRID=4326;POINT (103.7026815 1.3540741)",
+      "address": "276D Jurong West Street 25 #01-11",
+      "postal_code": "644276",
+      "phone_number": "6267900",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 244,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ HONG KAH NORTH Blk 319 (KN)",
+      "geometry": "SRID=4326;POINT (103.7463401 1.3611948)",
+      "address": "319 Bukit Batok Street 33 #01-40",
+      "postal_code": "650319",
+      "phone_number": "6569437",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 245,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ HONG KAH NORTH Blk 338 (KN)",
+      "geometry": "SRID=4326;POINT (103.750589 1.363603)",
+      "address": "338 Bukit Batok Street 34 #01-338",
+      "postal_code": "650338",
+      "phone_number": "6569660",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 246,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ HONG KAH NORTH Blk 750 (KN)",
+      "geometry": "SRID=4326;POINT (103.6994635 1.3479897)",
+      "address": "750 Jurong West Street 73 #01-169",
+      "postal_code": "640750",
+      "phone_number": "6794495",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 247,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ HOUGANG Blk 328 (DS)",
+      "geometry": "SRID=4326;POINT (103.8964516 1.3687457)",
+      "address": "328 Hougang Avenue 5 #01-196",
+      "postal_code": "530328",
+      "phone_number": "6282585",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 248,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ JALAN KAYU Blk 518 (KN)",
+      "geometry": "SRID=4326;POINT (103.8742393 1.3717335)",
+      "address": "518 Serangoon North Avenue 4 #01-218",
+      "postal_code": "550518",
+      "phone_number": "6483035",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 249,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ JALAN KAYU Blk 556 (KN)",
+      "geometry": "SRID=4326;POINT (103.8577221 1.3720459)",
+      "address": "556 Ang Mo Kio Avenue 10 #01-1902",
+      "postal_code": "560556",
+      "phone_number": "6456971",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 250,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ JALAN KAYU Blk 987C (DS)",
+      "geometry": "SRID=4326;POINT (103.8778078 1.3793701)",
+      "address": "987C Buangkok Green #01-57",
+      "postal_code": "532987",
+      "phone_number": "6636365",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 251,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ JOO CHIAT Blk 15 (KN)",
+      "geometry": "SRID=4326;POINT (103.9075595 1.3122958)",
+      "address": "15 Lorong K Telok Kurau",
+      "postal_code": "425611",
+      "phone_number": "6346012",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 252,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ JURONG CENTRAL Blk 490 (KN)",
+      "geometry": "SRID=4326;POINT (103.7273009 1.3497215)",
+      "address": "490 Jurong West Avenue 1 #01-01",
+      "postal_code": "640490",
+      "phone_number": "6569144",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 253,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ JURONG SPRING Blk 465 (KN)",
+      "geometry": "SRID=4326;POINT (103.722934 1.350198)",
+      "address": "465 Jurong West Street 41 #01-536",
+      "postal_code": "640465",
+      "phone_number": "6561260",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 254,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ JURONG SPRING Blk 515 (KN)",
+      "geometry": "SRID=4326;POINT (103.7206383 1.34633)",
+      "address": "515 Jurong West Street 52 #01-17",
+      "postal_code": "640515",
+      "phone_number": "6565650",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 255,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ JURONG SPRING Blk 527 (KN)",
+      "geometry": "SRID=4326;POINT (103.716037 1.3481557)",
+      "address": "527 Jurong West St 52 #01-301",
+      "postal_code": "640527",
+      "phone_number": "6565889",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 256,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ KAKI BUKIT Blk 519 (KN)",
+      "geometry": "SRID=4326;POINT (103.9282689 1.3309319)",
+      "address": "519 Bedok North Avenue 1 #01-372",
+      "postal_code": "460519",
+      "phone_number": "6449524",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 257,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ KAKI BUKIT Blk 526 (KN)",
+      "geometry": "SRID=4326;POINT (103.9291271 1.334214)",
+      "address": "526 Bedok North Street 3 #01-462",
+      "postal_code": "460526",
+      "phone_number": "6449144",
+      "email_address": "admkbkn526@gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 258,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ KAMPONG CHAI CHEE Blk 135 (KN)",
+      "geometry": "SRID=4326;POINT (103.936185 1.328765)",
+      "address": "135 Bedok North Street 2 #01-137",
+      "postal_code": "460135",
+      "phone_number": "6442298",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 259,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ KAMPONG CHAI CHEE Blk 409 (KN)",
+      "geometry": "SRID=4326;POINT (103.9330246 1.3281186)",
+      "address": "409 Bedok North Avenue 2 #01-26",
+      "postal_code": "460409",
+      "phone_number": "6449020",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 260,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ KAMPONG CHAI CHEE Blk 775 (KN)",
+      "geometry": "SRID=4326;POINT (103.935776 1.33669)",
+      "address": "775 Bedok Reservoir View #01-333",
+      "postal_code": "470775",
+      "phone_number": "6245219",
+      "email_address": "pcfkcc775@gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 261,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ KAMPONG GLAM Blk 462 (KN)",
+      "geometry": "SRID=4326;POINT (103.8610712 1.3045349)",
+      "address": "462 Crawford Lane #03-33",
+      "postal_code": "190462",
+      "phone_number": "6298420",
+      "email_address": "kampong.glam@pcf.org.sg",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 262,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ KEAT HONG Blk 295 (KN)",
+      "geometry": "SRID=4326;POINT (103.740955 1.378179)",
+      "address": "295 Choa Chu Kang Avenue 2 #01-169",
+      "postal_code": "680295",
+      "phone_number": "6762992",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 263,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ KEAT HONG Blk 411 (KN)",
+      "geometry": "SRID=4326;POINT (103.741234 1.381129)",
+      "address": "411 Choa Chu Kang Avenue 3 #01-359",
+      "postal_code": "680411",
+      "phone_number": "6769209",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 264,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ KEAT HONG Blk 801 (DS)",
+      "geometry": "SRID=4326;POINT (103.7434311 1.3745549)",
+      "address": "801 Keat Hong Close #01-01",
+      "postal_code": "680801",
+      "phone_number": "6891021",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 265,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ KEMBANGAN CHAI CHEE Blk 116 (DS)",
+      "geometry": "SRID=4326;POINT (103.9119068 1.3228258)",
+      "address": "116 Lengkong Tiga #01-187",
+      "postal_code": "410116",
+      "phone_number": "6741994",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 266,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ KEMBANGAN CHAI CHEE Blk 326 (KN)",
+      "geometry": "SRID=4326;POINT (103.903744 1.327274)",
+      "address": "326 Ubi Avenue 1 #01-675",
+      "postal_code": "400326",
+      "phone_number": "6745329",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 267,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ KEMBANGAN CHAI CHEE Blk 59 (KN)",
+      "geometry": "SRID=4326;POINT (103.9206209 1.3246566)",
+      "address": "59 Chai Chee Road #01-878",
+      "postal_code": "460059",
+      "phone_number": "6449038",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 268,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ KOLAM AYER Blk 12 (KN)",
+      "geometry": "SRID=4326;POINT (103.8700432 1.3143581)",
+      "address": "12 Upper Boon Keng Road #01-895",
+      "postal_code": "380012",
+      "phone_number": "6748744",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 269,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ KOLAM AYER Blk 64 (KN)",
+      "geometry": "SRID=4326;POINT (103.8684124 1.3203667)",
+      "address": "64 Kallang Bahru #01-375",
+      "postal_code": "330064",
+      "phone_number": "6392255",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 270,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ KRETA AYER-KIM SENG Blk 79 (KN)",
+      "geometry": "SRID=4326;POINT (103.8287358 1.2911109)",
+      "address": "79 Indus Road #01-435",
+      "postal_code": "161079",
+      "phone_number": "6278202",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 271,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ LIMBANG Blk 543 (KN)",
+      "geometry": "SRID=4326;POINT (103.7443261 1.3938834)",
+      "address": "543 Choa Chu Kang Street 52 #01-70",
+      "postal_code": "680543",
+      "phone_number": "6766337",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 272,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ LIMBANG Blk 786 (KN)",
+      "geometry": "SRID=4326;POINT (103.7484865 1.3949385)",
+      "address": "786 Choa Chu Kang Drive #01-237",
+      "postal_code": "680786",
+      "phone_number": "6766569",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 273,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ MACPHERSON Blk 108 (KN)",
+      "geometry": "SRID=4326;POINT (103.8852646 1.319098)",
+      "address": "108 Aljunied Cres #01-36",
+      "postal_code": "380108",
+      "phone_number": "6842697",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 274,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ MACPHERSON Blk 31 (KN)",
+      "geometry": "SRID=4326;POINT (103.885782 1.3297509)",
+      "address": "31 Balam Road #01-103",
+      "postal_code": "370031",
+      "phone_number": "6746707",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 275,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ MACPHERSON Blk 54 (KN)",
+      "geometry": "SRID=4326;POINT (103.8875301 1.324282)",
+      "address": "54 Pipit Road #01-52",
+      "postal_code": "370054",
+      "phone_number": "6746152",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 276,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ MARINE PARADE Blk 46 (KN)",
+      "geometry": "SRID=4326;POINT (103.9126544 1.305066)",
+      "address": "46 Marine Crescent #01-42",
+      "postal_code": "440046",
+      "phone_number": "6442694",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 277,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ MARSILING Blk 15 (KN)",
+      "geometry": "SRID=4326;POINT (103.7782825 1.4419805)",
+      "address": "15 Marsiling Lane #01-163",
+      "postal_code": "730015",
+      "phone_number": "6365506",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 278,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ MARSILING Blk 302 (KN)",
+      "geometry": "SRID=4326;POINT (103.7746389 1.431536)",
+      "address": "302 Woodlands Street 31 #01-301",
+      "postal_code": "730302",
+      "phone_number": "6368334",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 279,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ MARSILING Blk 32 (KN)",
+      "geometry": "SRID=4326;POINT (103.7727925 1.443378)",
+      "address": "32 Marsiling Drive #01-343",
+      "postal_code": "730032",
+      "phone_number": "6368478",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 280,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ MOULMEIN-CAIRNHILL Blk 10 (DS)",
+      "geometry": "SRID=4326;POINT (103.8521735 1.3139654)",
+      "address": "10 Gloucester Road #01-33",
+      "postal_code": "210010",
+      "phone_number": "6297213",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 281,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ MOUNTBATTEN Blk 51 (KN)",
+      "geometry": "SRID=4326;POINT (103.8858122 1.3082773)",
+      "address": "51 Old Airport Road #02-01",
+      "postal_code": "390051",
+      "phone_number": "6344903",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 282,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ NANYANG Blk 813 (KN)",
+      "geometry": "SRID=4326;POINT (103.695721 1.345967)",
+      "address": "813 Jurong West Street 81 #01-180",
+      "postal_code": "640813",
+      "phone_number": "6792083",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 283,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ NANYANG Blk 934 (KN)",
+      "geometry": "SRID=4326;POINT (103.6886479 1.3424401)",
+      "address": "934 Jurong West Street 91 #01-329",
+      "postal_code": "640934",
+      "phone_number": "6792096",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 284,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ NEE SOON CENTRAL Blk 609 (KN)",
+      "geometry": "SRID=4326;POINT (103.8358728 1.4210319)",
+      "address": "609 Yishun Street 61 #01-235",
+      "postal_code": "760609",
+      "phone_number": "6752525",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 285,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ NEE SOON CENTRAL Blk 646 (KN)",
+      "geometry": "SRID=4326;POINT (103.8376274 1.4221191)",
+      "address": "646 Yishun Street 61 #01-354",
+      "postal_code": "760646",
+      "phone_number": "6257114",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 286,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ NEE SOON CENTRAL Blk 737 (KN)",
+      "geometry": "SRID=4326;POINT (103.8323857 1.4290591)",
+      "address": "737 Yishun Street 72 #01-99",
+      "postal_code": "760737",
+      "phone_number": "6753755",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 287,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ NEE SOON CENTRAL Blk 738 (KN)",
+      "geometry": "SRID=4326;POINT (103.8323253 1.4292949)",
+      "address": "738 Yishun Street 72 #01-135",
+      "postal_code": "760738",
+      "phone_number": "6758535",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 288,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ NEE SOON EAST Blk 223 (KN)",
+      "geometry": "SRID=4326;POINT (103.8354516 1.4344216)",
+      "address": "223 Yishun St 21 #01-520",
+      "postal_code": "760223",
+      "phone_number": "6257023",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 289,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ NEE SOON EAST Blk 367 (KN)",
+      "geometry": "SRID=4326;POINT (103.845203 1.429603)",
+      "address": "367 Yishun Ring Road #01-1534",
+      "postal_code": "760367",
+      "phone_number": "6754555",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 290,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ NEE SOON EAST Blk 671 (DS)",
+      "geometry": "SRID=4326;POINT (103.8414619 1.4192438)",
+      "address": "671 Yishun Avenue 4 #01-01",
+      "postal_code": "760671",
+      "phone_number": "6481351",
+      "email_address": "",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 291,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ NEE SOON SOUTH Blk 875 (DS)",
+      "geometry": "SRID=4326;POINT (103.836184 1.414819)",
+      "address": "875 Yishun St 81 #01-175",
+      "postal_code": "760875",
+      "phone_number": "6759351",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 292,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PASIR RIS EAST Blk 216 (KN)",
+      "geometry": "SRID=4326;POINT (103.960907 1.36903)",
+      "address": "216 Pasir Ris Street 21 #01-184",
+      "postal_code": "510216",
+      "phone_number": "6584023",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 293,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PASIR RIS EAST Blk 426 (KN)",
+      "geometry": "SRID=4326;POINT (103.9570383 1.3712182)",
+      "address": "426-1/2 Pasir Ris Drive 6 #01-73/61",
+      "postal_code": "510426",
+      "phone_number": "6581035",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 294,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PASIR RIS WEST Blk 517 (KN)",
+      "geometry": "SRID=4326;POINT (103.944107 1.3744945)",
+      "address": "517 Pasir Ris Street 52 #01-57",
+      "postal_code": "510517",
+      "phone_number": "6584457",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 295,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PASIR RIS WEST Blk 738 (KN)",
+      "geometry": "SRID=4326;POINT (103.9366504 1.379196)",
+      "address": "738 Pasir Ris Drive 10 #01-21",
+      "postal_code": "510738",
+      "phone_number": "6585133",
+      "email_address": "pasir.ris.west@pcf.org.sg",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 296,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PAYA LEBAR Blk 125 (KN)",
+      "geometry": "SRID=4326;POINT (103.8864497 1.3524122)",
+      "address": "125 Hougang Avenue 1 #01-1470",
+      "postal_code": "530125",
+      "phone_number": "6487028",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 297,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PAYA LEBAR Blk 23 (KN)",
+      "geometry": "SRID=4326;POINT (103.8907 1.3648579)",
+      "address": "23 Hougang Avenue 3 #01-303",
+      "postal_code": "530023",
+      "phone_number": "6288252",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 298,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PIONEER Blk 642 (KN)",
+      "geometry": "SRID=4326;POINT (103.695873 1.340431)",
+      "address": "642 Jurong West Street 61 #01-60",
+      "postal_code": "640642",
+      "phone_number": "6790852",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 299,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PIONEER Blk 654B (KN)",
+      "geometry": "SRID=4326;POINT (103.697793 1.336142)",
+      "address": "654B Jurong West Street 61 #01-490",
+      "postal_code": "642654",
+      "phone_number": "6792280",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 300,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PIONEER Blk 662B (KN)",
+      "geometry": "SRID=4326;POINT (103.703116 1.337205)",
+      "address": "662B Jurong West Street 64 #01-312",
+      "postal_code": "642662",
+      "phone_number": "6794498",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 301,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PIONEER Blk 665A (KN)",
+      "geometry": "SRID=4326;POINT (103.703265 1.339949)",
+      "address": "665A Jurong West Street 64 #01-160",
+      "postal_code": "641665",
+      "phone_number": "6791800",
+      "email_address": "pioneer665a@gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 302,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ POTONG PASIR Blk 143 (KN)",
+      "geometry": "SRID=4326;POINT (103.8657865 1.3328263)",
+      "address": "143 Potong Pasir Avenue 2 #01-24",
+      "postal_code": "350143",
+      "phone_number": "6288172",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 303,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PUNGGOL COAST Blk 303A (KN)",
+      "geometry": "SRID=4326;POINT (103.9061944 1.4037736)",
+      "address": "303A Punggol Central #01-782",
+      "postal_code": "821303",
+      "phone_number": "6556274",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 304,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PUNGGOL COAST Blk 676B (DS)",
+      "geometry": "SRID=4326;POINT (103.9102846 1.4051717)",
+      "address": "676B Punggol Drive #02-724",
+      "postal_code": "822676",
+      "phone_number": "6881790",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 305,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PUNGGOL EAST Blk 103 (KN)",
+      "geometry": "SRID=4326;POINT (103.90076 1.3830001)",
+      "address": "103 Rivervale Walk #01-86",
+      "postal_code": "540103",
+      "phone_number": "6489758",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 306,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PUNGGOL EAST Blk 124A (KN)",
+      "geometry": "SRID=4326;POINT (103.9022552 1.3884501)",
+      "address": "124A Rivervale Drive #01-193",
+      "postal_code": "541124",
+      "phone_number": "6881660",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 307,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PUNGGOL EAST Blk 143 (KN)",
+      "geometry": "SRID=4326;POINT (103.905739 1.390138)",
+      "address": "143 Rivervale Drive #01-557",
+      "postal_code": "540143",
+      "phone_number": "6388948",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 308,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PUNGGOL EAST Blk 187B (KN)",
+      "geometry": "SRID=4326;POINT (103.9058932 1.3943625)",
+      "address": "187B Rivervale Drive #01-866",
+      "postal_code": "542187",
+      "phone_number": "6489784",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 309,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PUNGGOL NORTH Blk 105D (KN)",
+      "geometry": "SRID=4326;POINT (103.905293 1.397401)",
+      "address": "105D Edgefield Plains #01-59",
+      "postal_code": "824105",
+      "phone_number": "6315429",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 310,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PUNGGOL NORTH Blk 171C (KN)",
+      "geometry": "SRID=4326;POINT (103.9131424 1.3947619)",
+      "address": "171C Edgedale Plains #01-438",
+      "postal_code": "823171",
+      "phone_number": "6343840",
+      "email_address": "punggol.north@pcf.org.sg",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 311,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PUNGGOL NORTH Blk 174D (KN)",
+      "geometry": "SRID=4326;POINT (103.909924 1.397229)",
+      "address": "174D Edgedale Plains #01-193",
+      "postal_code": "824174",
+      "phone_number": "6386649",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 312,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PUNGGOL NORTH Blk 663A (DS)",
+      "geometry": "SRID=4326;POINT (103.9172982 1.4003923)",
+      "address": "663A Punggol Drive #01-260",
+      "postal_code": "821663",
+      "phone_number": "6315380",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 313,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PUNGGOL WEST Blk 271A (KN)",
+      "geometry": "SRID=4326;POINT (103.9004648 1.4037098)",
+      "address": "271A Punggol Walk #01-509",
+      "postal_code": "821271",
+      "phone_number": "6702079",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 314,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ PUNGGOL WEST Blk 308B (DS)",
+      "geometry": "SRID=4326;POINT (103.900087 1.4077286)",
+      "address": "308B Punggol Walk #01-364",
+      "postal_code": "822308",
+      "phone_number": "6444803",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 315,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ QUEENSTOWN Blk 3 (KN)",
+      "geometry": "SRID=4326;POINT (103.8066833 1.287028)",
+      "address": "3 Jalan Bukit Merah #01-5118",
+      "postal_code": "150003",
+      "phone_number": "6272055",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 316,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ QUEENSTOWN Blk 53A (KN)",
+      "geometry": "SRID=4326;POINT (103.807639 1.293339)",
+      "address": "53A Strathmore Avenue #01-01",
+      "postal_code": "143053",
+      "phone_number": "6475191",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 317,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ RADIN MAS Blk 108 (KN)",
+      "geometry": "SRID=4326;POINT (103.8254768 1.2734415)",
+      "address": "108 Bukit Purmei Road #01-105",
+      "postal_code": "90108",
+      "phone_number": "6274286",
+      "email_address": "nrm108@hotmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 318,
+    "fields": {
+      "name": "Queenstown Lutheran Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7993089 1.3062679)",
+      "address": "709 Commonwealth Drive",
+      "postal_code": "149601",
+      "phone_number": "6475745",
+      "email_address": "principal@qlc.org.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 319,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ RADIN MAS Blk 21 (KN)",
+      "geometry": "SRID=4326;POINT (103.8208603 1.2766836)",
+      "address": "21 Telok Blangah Crescent #01-52",
+      "postal_code": "90021",
+      "phone_number": "6270534",
+      "email_address": "pcfrm21@hotmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 320,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ RADIN MAS Blk 70A (KN)",
+      "geometry": "SRID=4326;POINT (103.8168783 1.2866889)",
+      "address": "70A Redhill Close #07-01",
+      "postal_code": "151070",
+      "phone_number": "6479428",
+      "email_address": "pcfrm70a@hotmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 321,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ RADIN MAS Blk 87 (KN)",
+      "geometry": "SRID=4326;POINT (103.8190701 1.2861647)",
+      "address": "87 Redhill Close #01-582",
+      "postal_code": "150087",
+      "phone_number": "6472162",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 322,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SEMBAWANG Blk 507D (KN)",
+      "geometry": "SRID=4326;POINT (103.8228714 1.4514088)",
+      "address": "507D Wellington Circle #01-94",
+      "postal_code": "754507",
+      "phone_number": "6752881",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 323,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SEMBAWANG Blk 786B (KN)",
+      "geometry": "SRID=4326;POINT (103.8007292 1.4455999)",
+      "address": "786B Woodlands Drive 60 #01-97",
+      "postal_code": "732786",
+      "phone_number": "6369515",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 324,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SEMBAWANG Blk 789 (KN)",
+      "geometry": "SRID=4326;POINT (103.8023818 1.4434424)",
+      "address": "789 Woodlands Avenue 6 #01-663",
+      "postal_code": "730789",
+      "phone_number": "6363797",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 325,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SENGKANG CENTRAL Blk 206A (KN)",
+      "geometry": "SRID=4326;POINT (103.8978731 1.3857154)",
+      "address": "206A Compassvale Lane #01-67",
+      "postal_code": "541206",
+      "phone_number": "6489237",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 326,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SENGKANG CENTRAL Blk 231 (KN)",
+      "geometry": "SRID=4326;POINT (103.9013943 1.3895178)",
+      "address": "231 Compassvale Walk #01-436",
+      "postal_code": "540231",
+      "phone_number": "6881790",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 327,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SENGKANG CENTRAL Blk 277B (KN)",
+      "geometry": "SRID=4326;POINT (103.894509 1.382338)",
+      "address": "277B Compassvale Link #01-264",
+      "postal_code": "542277",
+      "phone_number": "6556320",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 328,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SENGKANG CENTRAL Blk 292B (KN)",
+      "geometry": "SRID=4326;POINT (103.898739 1.395418)",
+      "address": "292B Compassvale Street #01-206",
+      "postal_code": "542292",
+      "phone_number": "6875572",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 329,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SENGKANG SOUTH Blk 443 (KN)",
+      "geometry": "SRID=4326;POINT (103.8741094 1.391585)",
+      "address": "443 Fernvale Road #01-411",
+      "postal_code": "790443",
+      "phone_number": "6636681",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 330,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SENGKANG SOUTH Blk 452 (DS)",
+      "geometry": "SRID=4326;POINT (103.8963258 1.3786196)",
+      "address": "452 Hougang Avenue 10 #01-575",
+      "postal_code": "530452",
+      "phone_number": "6387100",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 331,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SENGKANG SOUTH Blk 535 (KN)",
+      "geometry": "SRID=4326;POINT (103.8901578 1.3764693)",
+      "address": "535 Hougang Street 52 #01-18",
+      "postal_code": "530535",
+      "phone_number": "6385103",
+      "email_address": "punggolsouth535@gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 332,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SENGKANG WEST Blk 303A (KN)",
+      "geometry": "SRID=4326;POINT (103.8904743 1.3937207)",
+      "address": "303A Anchorvale Link #01-82",
+      "postal_code": "541303",
+      "phone_number": "6312296",
+      "email_address": "pcfskwkn303@gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 333,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SENGKANG WEST Blk 330A (DS)",
+      "geometry": "SRID=4326;POINT (103.8912742 1.3968593)",
+      "address": "330A Anchorvale Street #01-519",
+      "postal_code": "541330",
+      "phone_number": "6385142",
+      "email_address": "pcfsw330a@gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 334,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SENGKANG WEST Blk 416A (KN)",
+      "geometry": "SRID=4326;POINT (103.879813 1.3904156)",
+      "address": "416A Fernvale Link #01-106",
+      "postal_code": "791416",
+      "phone_number": "6315065",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 335,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SENGKANG WEST Blk 436D (KN)",
+      "geometry": "SRID=4326;POINT (103.876613 1.39208)",
+      "address": "436D Fernvale Road #01-156",
+      "postal_code": "791436",
+      "phone_number": "6242080",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 336,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SERANGOON Blk 125 (KN)",
+      "geometry": "SRID=4326;POINT (103.872153 1.366521)",
+      "address": "125 Serangoon North Avenue 1 #01-133",
+      "postal_code": "550125",
+      "phone_number": "6287186",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 337,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SERANGOON Blk 226 (KN)",
+      "geometry": "SRID=4326;POINT (103.8709556 1.3568711)",
+      "address": "226 Serangoon Avenue 4 #01-149",
+      "postal_code": "550226",
+      "phone_number": "6284668",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 338,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ SIGLAP Blk 170 (KN)",
+      "geometry": "SRID=4326;POINT (103.946119 1.320799)",
+      "address": "170 Bedok South Road #01-354",
+      "postal_code": "460170",
+      "phone_number": "6241267",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 339,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TAMAN JURONG Blk 352 (KN)",
+      "geometry": "SRID=4326;POINT (103.7201965 1.3394)",
+      "address": "352 Kang Ching Road #01-71",
+      "postal_code": "610352",
+      "phone_number": "6265699",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 340,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TAMPINES CENTRAL Blk 725 (DS)",
+      "geometry": "SRID=4326;POINT (103.9353903 1.356957)",
+      "address": "725 Tampines Street 71 #01-179",
+      "postal_code": "520725",
+      "phone_number": "6789367",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 341,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TAMPINES CENTRAL Blk 856 (KN)",
+      "geometry": "SRID=4326;POINT (103.9363784 1.3534941)",
+      "address": "856 Tampines Street 82 #01-279",
+      "postal_code": "520856",
+      "phone_number": "6789459",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 342,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TAMPINES CENTRAL Blk 868A (KN)",
+      "geometry": "SRID=4326;POINT (103.9325981 1.3554659)",
+      "address": "868A Tampines Avenue 8 #01-534",
+      "postal_code": "520868",
+      "phone_number": "6341682",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 343,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TAMPINES EAST Blk 261 (KN)",
+      "geometry": "SRID=4326;POINT (103.950836 1.354257)",
+      "address": "261 Tampines Street 21 #01-300",
+      "postal_code": "520261",
+      "phone_number": "6786111",
+      "email_address": "pcfte261@singnet.com.sg",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 344,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TAMPINES EAST Blk 262 (DS)",
+      "geometry": "SRID=4326;POINT (103.950901 1.353784)",
+      "address": "262 Tampines Street 21 #01-272",
+      "postal_code": "520262",
+      "phone_number": "6783446",
+      "email_address": "pcfte262@Gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 345,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TAMPINES NORTH Blk 483 (KN)",
+      "geometry": "SRID=4326;POINT (103.952451 1.3617178)",
+      "address": "483 Tampines Street 43 #01-202",
+      "postal_code": "520483",
+      "phone_number": "6785391",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 346,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TAMPINES WEST Blk 140 (KN)",
+      "geometry": "SRID=4326;POINT (103.943774 1.347674)",
+      "address": "140 Tampines Street 12 #01-426",
+      "postal_code": "520140",
+      "phone_number": "6782117",
+      "email_address": "tampwesteductr@gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 347,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TAMPINES WEST Blk 887 (KN)",
+      "geometry": "SRID=4326;POINT (103.9320276 1.3503718)",
+      "address": "887 Tampines Street 81 #01-1006",
+      "postal_code": "520887",
+      "phone_number": "6783636",
+      "email_address": "tampwesteductr@gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 348,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TAMPINES-CHANGKAT Blk 106 (KN)",
+      "geometry": "SRID=4326;POINT (103.9477094 1.3475719)",
+      "address": "106 Tampines Street 11 #01-333",
+      "postal_code": "521106",
+      "phone_number": "6788533",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 349,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TAMPINES-CHANGKAT Blk 284 (KN)",
+      "geometry": "SRID=4326;POINT (103.952582 1.3490988)",
+      "address": "284 Tampines Street 22 #01-149",
+      "postal_code": "520284",
+      "phone_number": "6784015",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 350,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TAMPINES-CHANGKAT Blk 318 (KN)",
+      "geometry": "SRID=4326;POINT (103.9559589 1.3516225)",
+      "address": "318 Tampines Street 33 #01-80",
+      "postal_code": "520318",
+      "phone_number": "6587346",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 351,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TAMPINES-CHANGKAT Blk 358 (KN)",
+      "geometry": "SRID=4326;POINT (103.9608771 1.3543935)",
+      "address": "358 Tampines Street 33 #01-666",
+      "postal_code": "520358",
+      "phone_number": "6260205",
+      "email_address": "pcfte358@singnet.com.sg",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 352,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TANJONG PAGAR-TIONG BAHRU Blk 130 (KN)",
+      "geometry": "SRID=4326;POINT (103.8292793 1.2805057)",
+      "address": "130 Kim Tian Road #01-157",
+      "postal_code": "160130",
+      "phone_number": "6270219",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 353,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TANJONG PAGAR-TIONG BAHRU Blk 1E (KN)",
+      "geometry": "SRID=4326;POINT (103.8411519 1.276639)",
+      "address": "1E Cantoment Road #03-49",
+      "postal_code": "85501",
+      "phone_number": "6634834",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 354,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TECK GHEE Blk 301 (KN)",
+      "geometry": "SRID=4326;POINT (103.8455382 1.3668709)",
+      "address": "301 Ang Mo Kio Street 31 #01-1814",
+      "postal_code": "560301",
+      "phone_number": "6456499",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 355,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TECK GHEE Blk 466 (KN)",
+      "geometry": "SRID=4326;POINT (103.8569068 1.365897)",
+      "address": "466 Ang Mo Kio Avenue 10 #01-1034",
+      "postal_code": "560466",
+      "phone_number": "6458662",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 356,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TELOK BLANGAH Blk 2 (KN)",
+      "geometry": "SRID=4326;POINT (103.783237 1.302517)",
+      "address": "2 Dover Road #01-342",
+      "postal_code": "130002",
+      "phone_number": "6773176",
+      "email_address": "dover.tbpcf@yahoo.com",
+      "website_url": "www.pcf.org.sg / www.tbpcf.org"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 357,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TELOK BLANGAH Blk 78A (DS)",
+      "geometry": "SRID=4326;POINT (103.8090239 1.273512)",
+      "address": "78A Telok Blangah Street 32 #03-01",
+      "postal_code": "101078",
+      "phone_number": "6270151",
+      "email_address": "tbpcf78a@yahoo.com",
+      "website_url": "www.pcf.org.sg / www.tbpcf.org"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 358,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TOA PAYOH CENTRAL Blk 157 (KN)",
+      "geometry": "SRID=4326;POINT (103.8454896 1.3322871)",
+      "address": "157 Lorong 1 Toa Payoh #01-1243",
+      "postal_code": "310157",
+      "phone_number": "6356182",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 359,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TOA PAYOH CENTRAL Blk 97 (KN)",
+      "geometry": "SRID=4326;POINT (103.8478475 1.3386426)",
+      "address": "97 Lorong 3 Toa Payoh #01-60",
+      "postal_code": "310097",
+      "phone_number": "6353805",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 360,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TOA PAYOH EAST-NOVENA Blk 6 (KN)",
+      "geometry": "SRID=4326;POINT (103.8572275 1.3385211)",
+      "address": "6 Lorong 7 Toa Payoh #01-181",
+      "postal_code": "310006",
+      "phone_number": "6255829",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 361,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TOA PAYOH WEST-BALESTIER Blk 205 (KN)",
+      "geometry": "SRID=4326;POINT (103.8482103 1.3421469)",
+      "address": "205 Toa Payoh North #01-1175",
+      "postal_code": "310205",
+      "phone_number": "6252693",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 362,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ TOA PAYOH WEST-BALESTIER Blk 45 (DS)",
+      "geometry": "SRID=4326;POINT (103.853726 1.335855)",
+      "address": "45 Lorong 5 Toa Payoh #01-149",
+      "postal_code": "310045",
+      "phone_number": "6259173",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 363,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ ULU PANDAN Blk 24 (KN)",
+      "geometry": "SRID=4326;POINT (103.785623 1.308896)",
+      "address": "24 Ghim Moh Link #03-01",
+      "postal_code": "270024",
+      "phone_number": "6468361",
+      "email_address": "pcfulupandan@gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 364,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ WEST COAST Blk 702 (KN)",
+      "geometry": "SRID=4326;POINT (103.7609669 1.307294)",
+      "address": "702 West Coast Rd #01-347",
+      "postal_code": "120702",
+      "phone_number": "6873180",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 365,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ WEST COAST Blk 728 (KN)",
+      "geometry": "SRID=4326;POINT (103.7637205 1.3054443)",
+      "address": "728 Clementi West Street 2 #01-390",
+      "postal_code": "120728",
+      "phone_number": "6778267",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 366,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ WHAMPOA Blk 106 (KN)",
+      "geometry": "SRID=4326;POINT (103.8609608 1.3210859)",
+      "address": "106 Towner Road #01-434",
+      "postal_code": "322106",
+      "phone_number": "6396373",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 367,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ WHAMPOA Blk 112 (KN)",
+      "geometry": "SRID=4326;POINT (103.8568389 1.3261952)",
+      "address": "112 Whampoa Road #01-83",
+      "postal_code": "321112",
+      "phone_number": "6253561",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 368,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ WHAMPOA Blk 85 (KN)",
+      "geometry": "SRID=4326;POINT (103.856429 1.322962)",
+      "address": "85 Whampoa Drive #01-248",
+      "postal_code": "320085",
+      "phone_number": "6254382",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 369,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ WOODGROVE Blk 364 (KN)",
+      "geometry": "SRID=4326;POINT (103.786743 1.434079)",
+      "address": "364 Woodlands Avenue 5 #01-478",
+      "postal_code": "730364",
+      "phone_number": "6269676",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 370,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ WOODGROVE Blk 899B (KN)",
+      "geometry": "SRID=4326;POINT (103.7949903 1.4361131)",
+      "address": "899B Woodlands Drive 50 #01-276",
+      "postal_code": "731899",
+      "phone_number": "6365195",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 371,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ WOODLANDS Blk 652 (KN)",
+      "geometry": "SRID=4326;POINT (103.7995859 1.4381006)",
+      "address": "652 Woodlands Ring Road #01-386",
+      "postal_code": "730652",
+      "phone_number": "6366839",
+      "email_address": "b652pcf@gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 372,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ WOODLANDS Blk 730 (KN)",
+      "geometry": "SRID=4326;POINT (103.7978422 1.4425118)",
+      "address": "730 Woodlands Circle #01-25",
+      "postal_code": "730730",
+      "phone_number": "6369517",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 373,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ WOODLANDS Blk 875 (KN)",
+      "geometry": "SRID=4326;POINT (103.789597 1.4425634)",
+      "address": "875 Woodlands Street 82 #01-548",
+      "postal_code": "730875",
+      "phone_number": "6363158",
+      "email_address": "pcf875@gmail.com",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 374,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ YEW TEE Blk 608 (KN)",
+      "geometry": "SRID=4326;POINT (103.7447538 1.3984005)",
+      "address": "608 Choa Chu Kang Street 62 #01-103",
+      "postal_code": "680608",
+      "phone_number": "6760923",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 375,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ YEW TEE Blk 682 (KN)",
+      "geometry": "SRID=4326;POINT (103.7450621 1.4022789)",
+      "address": "682 Choa Chu Kang Crescent #01-504",
+      "postal_code": "680682",
+      "phone_number": "6762170",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 376,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ YEW TEE Blk 690D (KN)",
+      "geometry": "SRID=4326;POINT (103.7520201 1.4021252)",
+      "address": "690D Choa Chu Kang Crescent #01-74",
+      "postal_code": "684690",
+      "phone_number": "6760936",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 377,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ YIO CHU KANG Blk 121 (KN)",
+      "geometry": "SRID=4326;POINT (103.8435905 1.3697115)",
+      "address": "121 Ang Mo Kio Avenue 3 #01-1711",
+      "postal_code": "560121",
+      "phone_number": "6453649",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 378,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ YIO CHU KANG Blk 235 (KN)",
+      "geometry": "SRID=4326;POINT (103.8362083 1.3669343)",
+      "address": "235 Ang Mo Kio Avenue 3 #01-1114",
+      "postal_code": "560235",
+      "phone_number": "6456787",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 379,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ YIO CHU KANG Blk 644 (KN)",
+      "geometry": "SRID=4326;POINT (103.8409621 1.379137)",
+      "address": "644 Ang Mo Kio Ave 4 #01-850",
+      "postal_code": "560644",
+      "phone_number": "6453649",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 380,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ YUHUA Blk 223A (KN)",
+      "geometry": "SRID=4326;POINT (103.736379 1.341348)",
+      "address": "223A Jurong East Street 21 #01-851",
+      "postal_code": "601223",
+      "phone_number": "6563261",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 381,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ YUHUA Blk 251 (KN)",
+      "geometry": "SRID=4326;POINT (103.7395516 1.343138)",
+      "address": "251 Jurong East Street 24 #01-110",
+      "postal_code": "600251",
+      "phone_number": "6565640",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 382,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ YUHUA Blk 317 (KN)",
+      "geometry": "SRID=4326;POINT (103.73082 1.3471872)",
+      "address": "317 Jurong East Street 31 #01-14",
+      "postal_code": "600317",
+      "phone_number": "6565414",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 383,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ ZHENGHUA Blk 455A (KN)",
+      "geometry": "SRID=4326;POINT (103.7695804 1.3893546)",
+      "address": "455A Segar Road #01-01",
+      "postal_code": "671455",
+      "phone_number": "6684875",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 384,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ ZHENGHUA Blk 528 (KN)",
+      "geometry": "SRID=4326;POINT (103.7655311 1.3851234)",
+      "address": "528 Jelapang Road #01-79",
+      "postal_code": "670528",
+      "phone_number": "6763576",
+      "email_address": "",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 385,
+    "fields": {
+      "name": "PCF SPARKLETOTS PRESCHOOL @ ZHENGHUA Blk 620 (KN)",
+      "geometry": "SRID=4326;POINT (103.761615 1.385843)",
+      "address": "620 Bukit Panjang Ring Road #01-828",
+      "postal_code": "670620",
+      "phone_number": "6310462",
+      "email_address": "zhenghua@pcf.org.sg",
+      "website_url": "www.pcf.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 386,
+    "fields": {
+      "name": "Pearlbank Montessori Kindergarten",
+      "geometry": "SRID=4326;POINT (103.779782 1.2875453)",
+      "address": "302 Pasir Panjang Road",
+      "postal_code": "118643",
+      "phone_number": "6774609",
+      "email_address": "pearlbnk@singnet.com.sg",
+      "website_url": "www.pbkindy.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 387,
+    "fields": {
+      "name": "Pentecost Methodist Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9573782 1.371122)",
+      "address": "4 Pasir Ris Drive 6",
+      "postal_code": "519420",
+      "phone_number": "6581772",
+      "email_address": "pmckadmin@pmc.org.sg",
+      "website_url": "www.pmc.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 388,
+    "fields": {
+      "name": "Pibos Garden Preschool",
+      "geometry": "SRID=4326;POINT (103.814752 1.323441)",
+      "address": "1 Dunearn Close",
+      "postal_code": "299574",
+      "phone_number": "6466263",
+      "email_address": "Sabri.james@pibospreschool.com",
+      "website_url": "pibospreschool.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 389,
+    "fields": {
+      "name": "Pink Tower Montessori",
+      "geometry": "SRID=4326;POINT (103.9052005 1.3066986)",
+      "address": "252 Tembeling Road #01-07",
+      "postal_code": "423731",
+      "phone_number": "6444258",
+      "email_address": "enquiries@pinktower.edu.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 390,
+    "fields": {
+      "name": "Prodigy Preschool",
+      "geometry": "SRID=4326;POINT (103.958588 1.3582685)",
+      "address": "497C Tampines Street 45 #01-54",
+      "postal_code": "522497",
+      "phone_number": "6785660",
+      "email_address": "",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 391,
+    "fields": {
+      "name": "Pu Hui Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9005335 1.3163432)",
+      "address": "8 Lorong 102 Changi Road",
+      "postal_code": "426603",
+      "phone_number": "6344433",
+      "email_address": "puhui@singnet.com.sg",
+      "website_url": "www.puhui.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 392,
+    "fields": {
+      "name": "Putra - Putri Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7725021 1.4287996)",
+      "address": "408 Woodlands Street 41",
+      "postal_code": "730408",
+      "phone_number": "6362542",
+      "email_address": "putraputrikindy@yahoo.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 393,
+    "fields": {
+      "name": "Quayside Isle Preparatory School",
+      "geometry": "SRID=4326;POINT (103.8417309 1.2479283)",
+      "address": "31 Ocean Way #01-17",
+      "postal_code": "98375",
+      "phone_number": "6235752",
+      "email_address": "info@quips.sg",
+      "website_url": "www.quips.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 394,
+    "fields": {
+      "name": "Raffles Montessori Kindergarten (Aljunied)",
+      "geometry": "SRID=4326;POINT (103.881442 1.3151763)",
+      "address": "Fansida Building 46 Lorong 23 Geylang #04-46C",
+      "postal_code": "388375",
+      "phone_number": "6745272",
+      "email_address": "info@rafflesmontessorikindergarten.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 395,
+    "fields": {
+      "name": "Raffles Montessori Kindergarten (Still Road)",
+      "geometry": "SRID=4326;POINT (103.9078449 1.3097221)",
+      "address": "105 Lorong Stangee",
+      "postal_code": "425080",
+      "phone_number": "6344007",
+      "email_address": "info@rafflesmontessori.com.sg",
+      "website_url": "www.rafflesmontessori.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 396,
+    "fields": {
+      "name": "Rainbow Cove Montessori",
+      "geometry": "SRID=4326;POINT (103.8074006 1.2913174)",
+      "address": "Alexis 354 Alexandra Road",
+      "postal_code": "159948",
+      "phone_number": "6339637",
+      "email_address": "jnielsen@rainbowcove.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 397,
+    "fields": {
+      "name": "Ramakrishna Mission Sarada Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8802122 1.3443848)",
+      "address": "179 Bartley Road",
+      "postal_code": "539784",
+      "phone_number": "6288528",
+      "email_address": "office@sarada.edu.sg",
+      "website_url": "www.sarada.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 398,
+    "fields": {
+      "name": "Ripples Montessori Kindergarten",
+      "geometry": "SRID=4326;POINT (103.948884 1.333945)",
+      "address": "Picardy Garden 10 Jalan Pari Burong",
+      "postal_code": "488676",
+      "phone_number": "6442233",
+      "email_address": "",
+      "website_url": "ripplesmontessori.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 399,
+    "fields": {
+      "name": "Riverlife Kindergarten",
+      "geometry": "SRID=4326;POINT (103.957872 1.378617)",
+      "address": "6 Loyang Besar Close",
+      "postal_code": "509026",
+      "phone_number": "6511416",
+      "email_address": "office@riverlifekindergarten.org.sg",
+      "website_url": "www.riverlifekindergarten.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 400,
+    "fields": {
+      "name": "Saraswathy Darma Muneeswaran Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8332833 1.4164009)",
+      "address": "838 Yishun Street 81 #01-322",
+      "postal_code": "760838",
+      "phone_number": "6758742",
+      "email_address": "admin@sdmkg.sg",
+      "website_url": "www.sdmkg.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 401,
+    "fields": {
+      "name": "Saraswathy Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8582734 1.3316889)",
+      "address": "254 Kim Keat Avenue #01-110",
+      "postal_code": "310254",
+      "phone_number": "6258274",
+      "email_address": "admin@skg.sg",
+      "website_url": "www.skg.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 402,
+    "fields": {
+      "name": "Seeds D' Learning House",
+      "geometry": "SRID=4326;POINT (103.9052005 1.3066986)",
+      "address": "252 Tembeling Road #02-07",
+      "postal_code": "423731",
+      "phone_number": "6247727",
+      "email_address": "admin@seeds-dlh.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 403,
+    "fields": {
+      "name": "Sengkang Methodist Children Centre",
+      "geometry": "SRID=4326;POINT (103.886431 1.392229)",
+      "address": "31 Anchorvale Road",
+      "postal_code": "545056",
+      "phone_number": "6385304",
+      "email_address": "joannelow@skmcc.org.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 404,
+    "fields": {
+      "name": "Seventh-day Adventist Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7379933 1.335505)",
+      "address": "90 Jurong East Street 13",
+      "postal_code": "609648",
+      "phone_number": "6562493",
+      "email_address": "leemei@sdak.edu.sg",
+      "website_url": "www.sdak.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 405,
+    "fields": {
+      "name": "Shalom Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9584114 1.3782495)",
+      "address": "4 Loyang Besar Close",
+      "postal_code": "509025",
+      "phone_number": "6581048",
+      "email_address": "shalomkindergarten@gmail.com",
+      "website_url": "shalombpchurch.org/kindergarten"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 406,
+    "fields": {
+      "name": "Singapore Hokkien Huay Kuan Pre-School",
+      "geometry": "SRID=4326;POINT (103.9385912 1.3156864)",
+      "address": "5 Sennett Road",
+      "postal_code": "466781",
+      "phone_number": "6589950",
+      "email_address": "enquiries@shhkpreschool.com.sg",
+      "website_url": "www.shhkpreschool.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 407,
+    "fields": {
+      "name": "Soka Kindergarten",
+      "geometry": "SRID=4326;POINT (103.943348 1.344633)",
+      "address": "7 Tampines Street 92",
+      "postal_code": "528888",
+      "phone_number": "6784423",
+      "email_address": "sokakindergarten@ssabuddhist.org",
+      "website_url": "www.sokakindergarten.org"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 408,
+    "fields": {
+      "name": "Sri Sathya Sai Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9366975 1.3831584)",
+      "address": "716 Pasir Ris St 72 #01-09",
+      "postal_code": "510716",
+      "phone_number": "6581197",
+      "email_address": "",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 409,
+    "fields": {
+      "name": "St. Anne's Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9018723 1.3914223)",
+      "address": "66 Sengkang East Way",
+      "postal_code": "548593",
+      "phone_number": "6386200",
+      "email_address": "stanne.kindergarten@gmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 410,
+    "fields": {
+      "name": "St. Francis Of Assisi Kindergarten (Boon Lay)",
+      "geometry": "SRID=4326;POINT (103.7110824 1.3479955)",
+      "address": "200 Boon Lay Avenue",
+      "postal_code": "649964",
+      "phone_number": "6261821",
+      "email_address": "sfakgbl@yahoo.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 411,
+    "fields": {
+      "name": "St. Francis Of Assisi Kindergarten (Jurong West)",
+      "geometry": "SRID=4326;POINT (103.7165633 1.3519879)",
+      "address": "47 Jurong West Street 42",
+      "postal_code": "649368",
+      "phone_number": "6566776",
+      "email_address": "sfakgjw@gmail.com",
+      "website_url": "www.sfakgjw.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 412,
+    "fields": {
+      "name": "St. Francis Xavier Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8635734 1.3585762)",
+      "address": "63A Chartwell Drive",
+      "postal_code": "558758",
+      "phone_number": "6280892",
+      "email_address": "sfx_kindergarten@sfxchurch.sg | sfxkindy@gmail.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 413,
+    "fields": {
+      "name": "St. Hilda's Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9009842 1.3080128)",
+      "address": "83 Ceylon Road",
+      "postal_code": "429740",
+      "phone_number": "6344311",
+      "email_address": "principal@shkindy.edu.sg",
+      "website_url": "www.shkindy.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 414,
+    "fields": {
+      "name": "St. James' Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.796221 1.3128884)",
+      "address": "1 Leedon Road",
+      "postal_code": "267828",
+      "phone_number": "6219724",
+      "email_address": "leedon@sjck.org.sg",
+      "website_url": "www.sjck.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 415,
+    "fields": {
+      "name": "St. James' Church Kindergarten (Gilstead)",
+      "geometry": "SRID=4326;POINT (103.8388212 1.3167354)",
+      "address": "25 Gilstead Road",
+      "postal_code": "309070",
+      "phone_number": "6254672",
+      "email_address": "gilstead@sjck.org.sg",
+      "website_url": "www.sjck.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 416,
+    "fields": {
+      "name": "St. James' Church Kindergarten (Harding)",
+      "geometry": "SRID=4326;POINT (103.8132017 1.304443)",
+      "address": "29 Harding Road",
+      "postal_code": "249537",
+      "phone_number": "6476602",
+      "email_address": "info@sjck.org.sg",
+      "website_url": "www.sjck.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 417,
+    "fields": {
+      "name": "St. Joseph's Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.768145 1.367748)",
+      "address": "600 Upper Bukit Timah Road",
+      "postal_code": "679331",
+      "phone_number": "6760130",
+      "email_address": "sjckdgn@singnet.com.sg",
+      "website_url": "sjckccc.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 418,
+    "fields": {
+      "name": "St. Paul's Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8823729 1.3582983)",
+      "address": "839 Upper Serangoon Road",
+      "postal_code": "534682",
+      "phone_number": "6280541",
+      "email_address": "adminsupport@spck.edu.sg",
+      "website_url": "www.spck.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 419,
+    "fields": {
+      "name": "St. Vincent De Paul Kindergarten",
+      "geometry": "SRID=4326;POINT (103.875112 1.373699)",
+      "address": "536 Serangoon North Ave 4 #01-187",
+      "postal_code": "550536",
+      "phone_number": "6484081",
+      "email_address": "",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 420,
+    "fields": {
+      "name": "Starland Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9241896 1.3251207)",
+      "address": "29A Chai Chee Avenue #01-74",
+      "postal_code": "461029",
+      "phone_number": "6241700",
+      "email_address": "starland29a@yahoo.com",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 421,
+    "fields": {
+      "name": "Summer Montessori",
+      "geometry": "SRID=4326;POINT (103.7246252 1.3269863)",
+      "address": "The Agape 21 Yung Ho Road #01-04",
+      "postal_code": "618593",
+      "phone_number": "9155245",
+      "email_address": "montessoriatsummer@gmail.com",
+      "website_url": "www.summermontessori.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 422,
+    "fields": {
+      "name": "Sunshine Kindergarten (Watten)",
+      "geometry": "SRID=4326;POINT (103.7967539 1.3240256)",
+      "address": "66 Namly Place",
+      "postal_code": "267211",
+      "phone_number": "6466660",
+      "email_address": "sunshinek.office@gmail.com",
+      "website_url": "www.sunshinekindergarten.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 423,
+    "fields": {
+      "name": "Swallows And Amazons Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7933153 1.3375113)",
+      "address": "200 Turf Club Road",
+      "postal_code": "287994",
+      "phone_number": "6762815",
+      "email_address": "lessons@swallowsandamazons.com.sg",
+      "website_url": "www.swallowsandamazons.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 424,
+    "fields": {
+      "name": "The Ascension Kindergarten",
+      "geometry": "SRID=4326;POINT (103.866549 1.3300829)",
+      "address": "11 Francis Thomas Drive",
+      "postal_code": "359338",
+      "phone_number": "6382111",
+      "email_address": "kindergarten@ascension.org.sg",
+      "website_url": "kindergarten.ascension.org.sg/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 425,
+    "fields": {
+      "name": "The Capstone Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8146073 1.2694015)",
+      "address": "61 Wishart Road",
+      "postal_code": "98716",
+      "phone_number": "6278882",
+      "email_address": "enquiry@capstone.edu.sg",
+      "website_url": "www.capstone.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 426,
+    "fields": {
+      "name": "White Lodge Kindergarten (Upper East Coast)",
+      "geometry": "SRID=4326;POINT (103.9716564 1.3648583)",
+      "address": "36 Toh Drive",
+      "postal_code": "507889",
+      "phone_number": "6543180",
+      "email_address": "uppereastcoast@whitelodge.edu.sg",
+      "website_url": "www.whitelodge.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 427,
+    "fields": {
+      "name": "The Little House (Montessori) Kindergarten",
+      "geometry": "SRID=4326;POINT (103.7672447 1.330593)",
+      "address": "Bowland Blk 1 Brookvale Drive #01-07",
+      "postal_code": "599968",
+      "phone_number": "6469212",
+      "email_address": "tlhmoffice@gmail.com",
+      "website_url": "www.thelittlehousemontessori.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 428,
+    "fields": {
+      "name": "The Montessori Playroom Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8941358 1.3710897)",
+      "address": "806 Hougang Central #04-144",
+      "postal_code": "530806",
+      "phone_number": "6388403",
+      "email_address": "dmp@montessori-playroom.com",
+      "website_url": "www.montessori-playroom.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 429,
+    "fields": {
+      "name": "Thomson Road Baptist Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8447681 1.3151596)",
+      "address": "45 Thomson Road",
+      "postal_code": "307584",
+      "phone_number": "6255011",
+      "email_address": "trbk@trbc.org.sg",
+      "website_url": "trbk.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 430,
+    "fields": {
+      "name": "Toa Payoh Methodist Church Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8464162 1.3340136)",
+      "address": "480 Lorong 2 Toa Payoh",
+      "postal_code": "319641",
+      "phone_number": "6353265",
+      "email_address": "admin@tpmckindergarten.edu.sg",
+      "website_url": "www.tpmckindergarten.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 431,
+    "fields": {
+      "name": "Tots Club Preschool",
+      "geometry": "SRID=4326;POINT (103.6978725 1.3457497)",
+      "address": "727 Jurong West Ave 5 #B1-182",
+      "postal_code": "640727",
+      "phone_number": "6790188",
+      "email_address": "totsclubpreschool@gmail.com",
+      "website_url": "www.totsclubpreschool.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 432,
+    "fields": {
+      "name": "Totsville Montessori Kindergarten",
+      "geometry": "SRID=4326;POINT (103.936481 1.381769)",
+      "address": "720 Pasir Ris Street 72 01-105",
+      "postal_code": "510720",
+      "phone_number": "6582800",
+      "email_address": "contact@totsville.com.sg",
+      "website_url": "www.totsville.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 433,
+    "fields": {
+      "name": "Totsville Montessori Kindergarten (Bishan)",
+      "geometry": "SRID=4326;POINT (103.8456739 1.3579056)",
+      "address": "230 Bishan Street 23 #B1-35",
+      "postal_code": "570230",
+      "phone_number": "6455960",
+      "email_address": "contact@totsville.com.sg",
+      "website_url": "www.totsville.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 434,
+    "fields": {
+      "name": "Totsville Montessori Preschool",
+      "geometry": "SRID=4326;POINT (103.8494785 1.3644756)",
+      "address": "340 Ang Mo Kio Ave 1 #01-1687",
+      "postal_code": "560340",
+      "phone_number": "6481331",
+      "email_address": "contact@totsville.com.sg",
+      "website_url": "www.totsville.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 435,
+    "fields": {
+      "name": "TPBC Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8804626 1.3505994)",
+      "address": "20 Lorong Ah Soo",
+      "postal_code": "536698",
+      "phone_number": "6283019",
+      "email_address": "admin@tpbckindergarten.org",
+      "website_url": "www.tpbckindergarten.org"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 436,
+    "fields": {
+      "name": "True Way Presbyterian Kindergarten",
+      "geometry": "SRID=4326;POINT (103.805823 1.2937245)",
+      "address": "156B Stirling Road",
+      "postal_code": "148947",
+      "phone_number": "6471078",
+      "email_address": "kindergarten@trueway.org.sg",
+      "website_url": "twpk.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 437,
+    "fields": {
+      "name": "Tung Ling Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9063378 1.3045377)",
+      "address": "145 Marine Parade",
+      "postal_code": "449274",
+      "phone_number": "6345146",
+      "email_address": "tunglingkdgn@tlcs.org.sg",
+      "website_url": "www.tunglingkdgn@tlcs.org.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 438,
+    "fields": {
+      "name": "Two By Two Schoolhouse",
+      "geometry": "SRID=4326;POINT (103.9105841 1.3118315)",
+      "address": "Bright Centre 55 Lor L Telok Kurau #03-61",
+      "postal_code": "425500",
+      "phone_number": "6245083",
+      "email_address": "enquiry@twobytwo.sg",
+      "website_url": "www.twobytwo.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 439,
+    "fields": {
+      "name": "Wee Care Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8229926 1.3056094)",
+      "address": "56 Tanglin Road #02-03",
+      "postal_code": "247964",
+      "phone_number": "6836145",
+      "email_address": "weecare@singnet.com.sg",
+      "website_url": "www.weecare.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 440,
+    "fields": {
+      "name": "White Lodge Bukit Timah Pte Ltd",
+      "geometry": "SRID=4326;POINT (103.8016765 1.332397)",
+      "address": "39 Linden Drive",
+      "postal_code": "288712",
+      "phone_number": "6468884",
+      "email_address": "bukittimah@whitelodge.edu.sg",
+      "website_url": "www.whitelodge.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 441,
+    "fields": {
+      "name": "White Lodge Kindergarten (East Coast)",
+      "geometry": "SRID=4326;POINT (103.8824307 1.310023)",
+      "address": "102 Guillemard Road #02-01",
+      "postal_code": "399719",
+      "phone_number": "6440669",
+      "email_address": "eastcoast@whitelodge.edu.sg",
+      "website_url": "www.whitelodge.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 442,
+    "fields": {
+      "name": "White Lodge Kindergarten (Phoenix Park)",
+      "geometry": "SRID=4326;POINT (103.8147105 1.2984766)",
+      "address": "310 Tanglin Road",
+      "postal_code": "247975",
+      "phone_number": "6235531",
+      "email_address": "phoenixpark@whitelodge.edu.sg",
+      "website_url": "www.whitelodge.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 443,
+    "fields": {
+      "name": "White Lodge Upper Bukit Timah Pte Ltd",
+      "geometry": "SRID=4326;POINT (103.7687119 1.3582129)",
+      "address": "Fuyoung Estate 1 Jalan Siap",
+      "postal_code": "678541",
+      "phone_number": "6314548",
+      "email_address": "upperbukittimah@whitelodge.edu.sg",
+      "website_url": "www.whitelodge.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 444,
+    "fields": {
+      "name": "White Lodge West Coast Pte Ltd",
+      "geometry": "SRID=4326;POINT (103.7863082 1.279963)",
+      "address": "9 South Buona Vista Road",
+      "postal_code": "118141",
+      "phone_number": "6779846",
+      "email_address": "westcoast@whitelodge.edu.sg",
+      "website_url": "www.whitelodge.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 445,
+    "fields": {
+      "name": "Yio Chu Kang Chapel Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8764376 1.3680115)",
+      "address": "242 Yio Chu Kang Road",
+      "postal_code": "545671",
+      "phone_number": "6285537",
+      "email_address": "kindergarten@yckc.org.sg",
+      "website_url": "www.yckckindergarten.com"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 446,
+    "fields": {
+      "name": "Zion Bishan Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8548685 1.3470505)",
+      "address": "4 Bishan Street 13",
+      "postal_code": "579792",
+      "phone_number": "6353808",
+      "email_address": "principal@zbk.edu.sg",
+      "website_url": "www.zbk.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 447,
+    "fields": {
+      "name": "Zion Kindergarten",
+      "geometry": "SRID=4326;POINT (103.8620678 1.3675067)",
+      "address": "3 & 5 Tavistock Avenue",
+      "postal_code": "555108",
+      "phone_number": "6286168",
+      "email_address": "zionkinder@zionserangoon.org.sg",
+      "website_url": "zionkinder.ednoland.com.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 448,
+    "fields": {
+      "name": "Zoo-Phonics Kindergarten",
+      "geometry": "SRID=4326;POINT (103.9228515 1.3127781)",
+      "address": "54 Burnfoot Terrace",
+      "postal_code": "459839",
+      "phone_number": "6445114",
+      "email_address": "sp@zoo-phonics.com.sg",
+      "website_url": ""
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 449,
+    "fields": {
+      "name": "Zulfa Kindergarten",
+      "geometry": "SRID=4326;POINT (103.697221 1.343413)",
+      "address": "717 Jurong West Street 71 #B1-107",
+      "postal_code": "640717",
+      "phone_number": "6791208",
+      "email_address": "admin_jw715@zulfa.edu.sg",
+      "website_url": "www.zulfa.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 450,
+    "fields": {
+      "name": "Zulfa Kindergarten @ Choa Chu Kang",
+      "geometry": "SRID=4326;POINT (103.736723 1.3818294)",
+      "address": "445 Choa Chu Kang Avenue 4 #01-307",
+      "postal_code": "680445",
+      "phone_number": "6766937",
+      "email_address": "admin_cck@zulfa.edu.sg",
+      "website_url": "www.zulfa.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 451,
+    "fields": {
+      "name": "Zulfa Kindergarten @ Pasir Ris",
+      "geometry": "SRID=4326;POINT (103.9409349 1.3798133)",
+      "address": "626 Pasir Ris Drive 3 #01-302",
+      "postal_code": "510626",
+      "phone_number": "6582796",
+      "email_address": "admin_pr@zulfa.edu.sg",
+      "website_url": "www.zulfa.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 452,
+    "fields": {
+      "name": "Zulfa Kindergarten @ Sembawang Mart PTE LTD",
+      "geometry": "SRID=4326;POINT (103.8195883 1.4538337)",
+      "address": "511 Canberra Road #02-01",
+      "postal_code": "750511",
+      "phone_number": "6758373",
+      "email_address": "admin_sm@zulfa.edu.sg",
+      "website_url": "www.zulfa.edu.sg"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 453,
+    "fields": {
+      "name": "MOE Kindergarten @ Blangah Rise (KCare available)",
+      "geometry": "SRID=4326;POINT (103.8086755 1.2761957)",
+      "address": "Blangah Rise Primary School 91 Telok Blangah Heights",
+      "postal_code": "109100",
+      "phone_number": "6274683",
+      "email_address": "mk_blangahrise@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 454,
+    "fields": {
+      "name": "MOE Kindergarten @ Dazhong (KCare available from 2019)",
+      "geometry": "SRID=4326;POINT (103.7480154 1.3593772)",
+      "address": "Dazhong Primary School 35 Bukit Batok Street 31",
+      "postal_code": "659441",
+      "phone_number": "6896073",
+      "email_address": "mk_dazhong@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 455,
+    "fields": {
+      "name": "MOE Kindergarten @ Farrer Park (KCare available from 2019)",
+      "geometry": "SRID=4326;POINT (103.8508244 1.3122926)",
+      "address": "Farrer Park Primary School 2 Farrer Park Road",
+      "postal_code": "217567",
+      "phone_number": "6341538",
+      "email_address": "mk_farrerpark@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 456,
+    "fields": {
+      "name": "MOE Kindergarten @ Punggol View (KCare available)",
+      "geometry": "SRID=4326;POINT (103.9051799 1.4052956)",
+      "address": "Punggol View Primary School 9 Punggol Place ",
+      "postal_code": "828845",
+      "phone_number": "6659423",
+      "email_address": "mk_punggolview@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 457,
+    "fields": {
+      "name": "MOE Kindergarten @ Tampines",
+      "geometry": "SRID=4326;POINT (103.956521 1.361814)",
+      "address": "Block 489C Tampines Street 45 #01-171",
+      "postal_code": "522489",
+      "phone_number": "6782742",
+      "email_address": "mk_tampines489c@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 458,
+    "fields": {
+      "name": "MOE Kindergarten @ Punggol Green(KCare available)",
+      "geometry": "SRID=4326;POINT (103.8988531 1.4018544)",
+      "address": "Punggol Green Primary School 98 Punggol Walk ",
+      "postal_code": "828772",
+      "phone_number": "6443833",
+      "email_address": "mk_punggolgreen@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 459,
+    "fields": {
+      "name": "MOE Kindergarten @ Sengkang Green (KCare available)",
+      "geometry": "SRID=4326;POINT (103.8751169 1.3925337)",
+      "address": "Sengkang Green Primary School 15 Fernvale Road",
+      "postal_code": "797636",
+      "phone_number": "6241664",
+      "email_address": "mk_sengkanggreen@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 460,
+    "fields": {
+      "name": "MOE Kindergarten @ West Spring (KCare available)",
+      "geometry": "SRID=4326;POINT (103.7662554 1.3893631)",
+      "address": "West Spring Primary School 60 Bukit Panjang Ring Road",
+      "postal_code": "769946",
+      "phone_number": "6314419",
+      "email_address": "mk_westspring@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 461,
+    "fields": {
+      "name": "MOE Kindergarten @ Frontier (KCare available)",
+      "geometry": "SRID=4326;POINT (103.6997742 1.336843)",
+      "address": "Frontier Primary School 20 Jurong West Street 61",
+      "postal_code": "648200",
+      "phone_number": "6686388",
+      "email_address": "mk_frontier@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 462,
+    "fields": {
+      "name": "MOE Kindergarten @ Yishun (KCare available)",
+      "geometry": "SRID=4326;POINT (103.8436132 1.4341054)",
+      "address": "Blk 318A Yishun Avenue 9 #01-126",
+      "postal_code": "761318",
+      "phone_number": "6710787",
+      "email_address": "mk_yishun318a@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 463,
+    "fields": {
+      "name": "MOE Kindergarten @ Fernvale Link (KCare available)",
+      "geometry": "SRID=4326;POINT (103.8794633 1.3963872)",
+      "address": "Block 470A Fernvale Link #01-410",
+      "postal_code": "791470",
+      "phone_number": "6241090",
+      "email_address": "mk_fernvalelink@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 464,
+    "fields": {
+      "name": "MOE Kindergarten @ Northoaks (KCare available)",
+      "geometry": "SRID=4326;POINT (103.813826 1.456638)",
+      "address": "Northoaks Primary School 61 Sembawang Drive",
+      "postal_code": "757622",
+      "phone_number": "6481201",
+      "email_address": "mk_northoaks@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 465,
+    "fields": {
+      "name": "MOE Kindergarten @ Riverside (KCare available)",
+      "geometry": "SRID=4326;POINT (103.8017893 1.447201)",
+      "address": "Riverside Primary School 110 Woodlands Crescent",
+      "postal_code": "737803",
+      "phone_number": "6362722",
+      "email_address": "mk_riverside@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 466,
+    "fields": {
+      "name": "MOE Kindergarten @ Springdale (KCare available)",
+      "geometry": "SRID=4326;POINT (103.8896801 1.3949667)",
+      "address": "Springdale Primary School 71 Anchorvale Link",
+      "postal_code": "544799",
+      "phone_number": "6384670",
+      "email_address": "mk_springdale@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 467,
+    "fields": {
+      "name": "MOE Kindergarten @ Westwood (KCare available)",
+      "geometry": "SRID=4326;POINT (103.7004708 1.3472361)",
+      "address": "Westwood Primary School 1 Jurong West St 73",
+      "postal_code": "649188",
+      "phone_number": "6316021",
+      "email_address": "mk_westwood@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 468,
+    "fields": {
+      "name": "MOE Kindergarten @ Oasis",
+      "geometry": "SRID=4326;POINT (103.9109669 1.4047715)",
+      "address": "Oasis Primary School 71 Edgefield Plains",
+      "postal_code": "828716",
+      "phone_number": "6282486",
+      "email_address": "mk_oasis@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 469,
+    "fields": {
+      "name": "MOE Kindergarten @ Punggol Cove",
+      "geometry": "SRID=4326;POINT (103.8985828 1.4122254)",
+      "address": "Punggol Cove Primary School 52 Sumang Walk",
+      "postal_code": "828674",
+      "phone_number": "6282237",
+      "email_address": "mk_punggolcove@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 470,
+    "fields": {
+      "name": "MOE Kindergarten @ Waterway",
+      "geometry": "SRID=4326;POINT (103.9184708 1.3990541)",
+      "address": "Waterway Primary School 70 Punggol Drive",
+      "postal_code": "828802",
+      "phone_number": "6315008",
+      "email_address": "mk_waterway@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 471,
+    "fields": {
+      "name": "MOE Kindergarten @ Anchor Green (Opening in 2019 -  KCare available)",
+      "geometry": "SRID=4326;POINT (103.8874074 1.3909254)",
+      "address": "Anchor Green Primary School 31 Anchorvale Drive",
+      "postal_code": "544969",
+      "phone_number": "6886135",
+      "email_address": "anchorgreen_ps@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 472,
+    "fields": {
+      "name": "MOE Kindergarten @ Fernvale (Opening in 2019 -  KCare available)",
+      "geometry": "SRID=4326;POINT (103.873919 1.389948)",
+      "address": "Fernvale Primary School 1 Fernvale Lane",
+      "postal_code": "797701",
+      "phone_number": "6315305",
+      "email_address": "fernvale_ps@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 473,
+    "fields": {
+      "name": "MOE Kindergarten @ Wellington (Opening in 2019 -  KCare available)",
+      "geometry": "SRID=4326;POINT (103.8226331 1.4517917)",
+      "address": "Wellington Primary School 10 Wellington Circle",
+      "postal_code": "757702",
+      "phone_number": "6753331",
+      "email_address": "wellingtonps@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 474,
+    "fields": {
+      "name": "MOE Kindergarten @ Pei Tong (Opening in 2019 -  KCare available)",
+      "geometry": "SRID=4326;POINT (103.7675906 1.3161197)",
+      "address": "Pei Tong Primary School 15 Clementi Avenue 5",
+      "postal_code": "129857",
+      "phone_number": "6777545",
+      "email_address": "ptps@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 475,
+    "fields": {
+      "name": "MOE Kindergarten @ First Toa Payoh (Opening in 2019 -  KCare available)",
+      "geometry": "SRID=4326;POINT (103.855651 1.340145)",
+      "address": "First Toa Payoh Primary School 7 Lorong 8 Toa Payoh",
+      "postal_code": "319252",
+      "phone_number": "6256782",
+      "email_address": "ftpps@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 476,
+    "fields": {
+      "name": "MOE Kindergarten @ Kranji (Opening in 2019 -  KCare available)",
+      "geometry": "SRID=4326;POINT (103.7479585 1.3936047)",
+      "address": "Kranji Primary School 11 Choa Chu Kang Street 54",
+      "postal_code": "689189",
+      "phone_number": "6763481",
+      "email_address": "kranji_ps@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  },
+  {
+    "model": "schools.kindergarten",
+    "pk": 477,
+    "fields": {
+      "name": "MOE Kindergarten @ Fern Green (Opening in 2019 -  KCare available)",
+      "geometry": "SRID=4326;POINT (103.8798503 1.3974791)",
+      "address": "Fern Green Primary School 70 Fernvale Link",
+      "postal_code": "797538",
+      "phone_number": "6834310",
+      "email_address": "ferngreen_ps@moe.edu.sg",
+      "website_url": "www.moe.gov.sg/moekindergarten/"
+    }
+  }
+]
