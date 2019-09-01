@@ -43,10 +43,10 @@ python manage.py migrate
 ```
 
 ## Refresh data from the external sources (optional)
-Data is stored locally in `/schools/fixtures` folder. As there might be changes to schools contact information, or new schools/kindergatens might be open, it is recommended to do a full data refresh once every few month.
+Data is stored locally in `/schools/fixtures` folder. As there might be changes in schools contact information, or new schools/kindergatens might be open, it is recommended to do a full data refresh once every few months.
 
-* Obtain API key from Google API Console https://console.developers.google.com/apis (charges may apply)
-* In the root folder of the project create a file credentials.json (follow example provided in credentials.example.json). Paste the API key there.
+* Obtain API key from Google API Console https://console.developers.google.com/apis (charges may apply).
+* In the root folder of the project create a file `credentials.json` (follow example provided in `credentials.example.json`). Paste the API key there.
 * Run `python -m schools.fixtures.data_miner` - it will refresh data in kindergarten.json, primary.json and secondary.json from the external sources.
 
 ## Load data from json files to the database
@@ -55,7 +55,7 @@ Flush data (optional)
 python manage.py flush
 ```
 
-Load default data from `/schools/fixtures`
+Load default data from `/schools/fixtures`:
 ```
 python manage.py loaddata kindergarten.json
 python manage.py loaddata primary.json
