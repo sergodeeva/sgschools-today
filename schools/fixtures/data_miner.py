@@ -37,7 +37,7 @@ def get_json(url, timeout=60):
 
 
 def get_schools(school_type):
-    """Get schools of a given type (Primary or Secondary) from the MOE API. Save result into json file"""
+    """Get schools of a given type (Primary or Secondary) from the MOE API. Save result into json file."""
 
     url = MOE_URL + '?q=*&rows=200&fq=school_journey_s%3A%22' + school_type + '%20school%22&fl=id,school_name_s,telephone_no_s,address_s,postal_code_s,email_address_s,url_address_s,location_p'
     results = get_json(url)['response']['docs']
@@ -51,7 +51,7 @@ def get_schools(school_type):
 
 
 def get_kindergartens():
-    """Get kindergartens from Data Gov API. Save result into json file"""
+    """Get kindergartens from Data Gov API. Save result into json file."""
 
     print('Importing kindergartens, it might take a few minutes.')
     url = f'{DATA_GOV_URL}/action/datastore_search?resource_id=0ba90baa-31fa-4c3a-87d5-6057a4cff882&limit=500'
@@ -78,7 +78,7 @@ def get_kindergartens():
 
 
 def _build_school_obj(school_type, school_json, i):
-    """Function maps MOE json to Django json, and also handles 12 schools co-located to kindergartens"""
+    """Function maps MOE json to Django json, and also handles 12 schools co-located to kindergartens."""
 
     colocated_schools = {
         'Northoaks Primary School': 464,
@@ -115,7 +115,7 @@ def _build_school_obj(school_type, school_json, i):
 
 def _get_shool_geometry(school_json):
     """Function gets school geometry in Django format.
-    Hardcoded lat/lng for a few schools, as these schools have no lat/lng on MOE website"""
+    Hardcoded lat/lng for a few schools, as these schools have no lat/lng on MOE website."""
 
     school_lat_lng = {
         'Valour Primary School': '103.8995102 1.4065167',
@@ -137,7 +137,7 @@ def _get_shool_geometry(school_json):
 
 
 def _get_kindergarten_geometry(kindergarten_json):
-    """Function gets kindergarten geometry from Google Maps API (credentials.json with valid API key is required)"""
+    """Function gets kindergarten geometry from Google Maps API (credentials.json with valid API key is required)."""
 
     geometry = ''
 
