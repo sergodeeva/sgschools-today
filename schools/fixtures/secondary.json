@@ -1,0 +1,1978 @@
+[
+  {
+    "model": "schools.secondaryschool",
+    "pk": 1,
+    "fields": {
+      "name": "Zhenghua Secondary School",
+      "geometry": "SRID=4326;POINT (103.765521558 1.3883687040001)",
+      "address": "91 Senja Road",
+      "postal_code": "677741",
+      "phone_number": "6763945",
+      "email_address": "zhenghua_ss@moe.edu.sg",
+      "website_url": "http://www.zhenghuasec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 2,
+    "fields": {
+      "name": "Yusof Ishak Secondary School",
+      "geometry": "SRID=4326;POINT (103.760032628 1.3423392140001)",
+      "address": "11 Bukit Batok Street 25",
+      "postal_code": "658712",
+      "phone_number": "6500980",
+      "email_address": "yiss@moe.edu.sg",
+      "website_url": "http://www.yusofishaksec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 3,
+    "fields": {
+      "name": "Yuan Ching Secondary School",
+      "geometry": "SRID=4326;POINT (103.720898704 1.3420063580001)",
+      "address": "103 Yuan Ching Road",
+      "postal_code": "618654",
+      "phone_number": "6261248",
+      "email_address": "ycss@moe.edu.sg",
+      "website_url": "http://yuanchingsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 4,
+    "fields": {
+      "name": "Yishun Town Secondary School",
+      "geometry": "SRID=4326;POINT (103.838094226 1.432321567)",
+      "address": "6 Yishun Street 21",
+      "postal_code": "768610",
+      "phone_number": "6758721",
+      "email_address": "ytss@moe.edu.sg",
+      "website_url": "http://www.yishuntownsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 5,
+    "fields": {
+      "name": "West Spring Secondary School",
+      "geometry": "SRID=4326;POINT (103.760128827 1.387822838)",
+      "address": "61 Senja Road",
+      "postal_code": "677737",
+      "phone_number": "6892036",
+      "email_address": "westspringss@moe.edu.sg",
+      "website_url": "http://www.westspringsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 6,
+    "fields": {
+      "name": "Unity Secondary School",
+      "geometry": "SRID=4326;POINT (103.746025844 1.400028933)",
+      "address": "20 Choa Chu Kang Street 62",
+      "postal_code": "689143",
+      "phone_number": "6767107",
+      "email_address": "unity_ss@moe.edu.sg",
+      "website_url": "http://www.unitysec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 7,
+    "fields": {
+      "name": "Teck Whye Secondary School",
+      "geometry": "SRID=4326;POINT (103.755330021 1.383089179)",
+      "address": "31 Teck Whye Crescent",
+      "postal_code": "688848",
+      "phone_number": "6769138",
+      "email_address": "twss@moe.edu.sg",
+      "website_url": "http://www.teckwhyesec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 8,
+    "fields": {
+      "name": "Tanjong Katong Secondary School",
+      "geometry": "SRID=4326;POINT (103.897225196 1.308735158)",
+      "address": "130 Haig Road",
+      "postal_code": "438796",
+      "phone_number": "6344347",
+      "email_address": "tkss@moe.edu.sg",
+      "website_url": "http://www.tanjongkatongsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 9,
+    "fields": {
+      "name": "Tanglin Secondary School",
+      "geometry": "SRID=4326;POINT (103.758158358 1.309701692)",
+      "address": "301 West Coast Road",
+      "postal_code": "127391",
+      "phone_number": "6424820",
+      "email_address": "tanglin_ss@moe.edu.sg",
+      "website_url": "http://www.tanglinsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 10,
+    "fields": {
+      "name": "Tampines Secondary School",
+      "geometry": "SRID=4326;POINT (103.94426371 1.349260948)",
+      "address": "252 Tampines St 12",
+      "postal_code": "529427",
+      "phone_number": "6783542",
+      "email_address": "tpss@moe.edu.sg",
+      "website_url": "http://www.tampinessec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 11,
+    "fields": {
+      "name": "Queensway Secondary School",
+      "geometry": "SRID=4326;POINT (103.802207292 1.3002227160001)",
+      "address": "2A Margaret Drive",
+      "postal_code": "149295",
+      "phone_number": "6474142",
+      "email_address": "qss@moe.edu.sg",
+      "website_url": "http://www.queenswaysec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 12,
+    "fields": {
+      "name": "Punggol Secondary School",
+      "geometry": "SRID=4326;POINT (103.909213706 1.4020573840001)",
+      "address": "51 Edgefield Plains",
+      "postal_code": "828870",
+      "phone_number": "6489785",
+      "email_address": "punggol_ss@moe.edu.sg",
+      "website_url": "http://www.punggolsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 13,
+    "fields": {
+      "name": "Presbyterian High School",
+      "geometry": "SRID=4326;POINT (103.843149383 1.3820119430001)",
+      "address": "5209 Ang Mo Kio Avenue 6",
+      "postal_code": "569845",
+      "phone_number": "6454372",
+      "email_address": "presbyterian@moe.edu.sg",
+      "website_url": "http://www.presbyterian.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 14,
+    "fields": {
+      "name": "North Vista Secondary School",
+      "geometry": "SRID=4326;POINT (103.899188814 1.381131285)",
+      "address": "11 Rivervale Link",
+      "postal_code": "545081",
+      "phone_number": "6879393",
+      "email_address": "northvistass@moe.edu.sg",
+      "website_url": "http://www.northvistasec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 15,
+    "fields": {
+      "name": "Ngee Ann Secondary School",
+      "geometry": "SRID=4326;POINT (103.956746316 1.35447464)",
+      "address": "1 Tampines Street 32",
+      "postal_code": "529283",
+      "phone_number": "6784458",
+      "email_address": "nass@moe.edu.sg",
+      "website_url": "http://www.ngeeannsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 16,
+    "fields": {
+      "name": "New Town Secondary School",
+      "geometry": "SRID=4326;POINT (103.773188634 1.3097759)",
+      "address": "1020 Dover Road",
+      "postal_code": "139657",
+      "phone_number": "6775414",
+      "email_address": "ntss@moe.edu.sg",
+      "website_url": "http://www.newtownsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 17,
+    "fields": {
+      "name": "Nan Hua High School",
+      "geometry": "SRID=4326;POINT (103.768561208 1.3080949910001)",
+      "address": "41 Clementi Avenue 1",
+      "postal_code": "129956",
+      "phone_number": "6778830",
+      "email_address": "nhhs@moe.edu.sg",
+      "website_url": "http://www.nanhuahigh.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 18,
+    "fields": {
+      "name": "Nan Chiau High School",
+      "geometry": "SRID=4326;POINT (103.890004424 1.3887958250001)",
+      "address": "20 Anchorvale Link",
+      "postal_code": "545079",
+      "phone_number": "6489797",
+      "email_address": "nchs@moe.edu.sg",
+      "website_url": "https://nchs.edu.sg/"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 19,
+    "fields": {
+      "name": "Meridian Secondary School",
+      "geometry": "SRID=4326;POINT (103.948972484 1.3672468500001)",
+      "address": "31 Pasir Ris Street 51",
+      "postal_code": "518901",
+      "phone_number": "6583138",
+      "email_address": "meridian_sec@moe.edu.sg",
+      "website_url": "http://www.meridiansec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 20,
+    "fields": {
+      "name": "Maris Stella High School (Secondary Section)",
+      "geometry": "SRID=4326;POINT (103.877852485 1.3413947340001)",
+      "address": "25 Mount Vernon Road",
+      "postal_code": "368051",
+      "phone_number": "6280388",
+      "email_address": "msh@moe.edu.sg",
+      "website_url": "http://www.marisstellahigh.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 21,
+    "fields": {
+      "name": "Loyang View Secondary School",
+      "geometry": "SRID=4326;POINT (103.956944586 1.3665841720001)",
+      "address": "12 Pasir Ris Street 11",
+      "postal_code": "519073",
+      "phone_number": "6582172",
+      "email_address": "loyangview_ss@moe.edu.sg",
+      "website_url": "http://www.loyangviewsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 22,
+    "fields": {
+      "name": "Kranji Secondary School",
+      "geometry": "SRID=4326;POINT (103.756493446 1.38169399)",
+      "address": "61 Choa Chu Kang Street 51",
+      "postal_code": "689333",
+      "phone_number": "6766246",
+      "email_address": "kranji_ss@moe.edu.sg",
+      "website_url": "http://www.kranjisec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 23,
+    "fields": {
+      "name": "Juying Secondary School",
+      "geometry": "SRID=4326;POINT (103.687310265 1.338722773)",
+      "address": "33 Jurong West Street 91",
+      "postal_code": "649038",
+      "phone_number": "6308989",
+      "email_address": "juying_ss@moe.edu.sg",
+      "website_url": "http://www.juyingsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 24,
+    "fields": {
+      "name": "Jurong West Secondary School",
+      "geometry": "SRID=4326;POINT (103.702098132 1.3352563450001)",
+      "address": "61 Jurong West Street 65",
+      "postal_code": "648348",
+      "phone_number": "6262359",
+      "email_address": "jwss@moe.edu.sg",
+      "website_url": "http://www.jurongwestsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 25,
+    "fields": {
+      "name": "Jurong Secondary School",
+      "geometry": "SRID=4326;POINT (103.723952962 1.330020322)",
+      "address": "31 Yuan Ching Road",
+      "postal_code": "618652",
+      "phone_number": "6265598",
+      "email_address": "jurong_ss@moe.edu.sg",
+      "website_url": "http://www.jurongsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 26,
+    "fields": {
+      "name": "Holy Innocents\u2019 High School",
+      "geometry": "SRID=4326;POINT (103.896398814 1.3715450880001)",
+      "address": "1191 Upper Serangoon Road",
+      "postal_code": "534786",
+      "phone_number": "6283338",
+      "email_address": "hihs@moe.edu.sg",
+      "website_url": "http://www.holyinnocentshigh.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 27,
+    "fields": {
+      "name": "Hai Sing Catholic School",
+      "geometry": "SRID=4326;POINT (103.954957944 1.374346412)",
+      "address": "9 Pasir Ris Drive 6",
+      "postal_code": "519421",
+      "phone_number": "6582786",
+      "email_address": "hshs@moe.edu.sg",
+      "website_url": "http://www.haisingcatholic.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 28,
+    "fields": {
+      "name": "Fairfield Methodist School (Secondary)",
+      "geometry": "SRID=4326;POINT (103.784099647 1.3016337440001)",
+      "address": "102 Dover Road",
+      "postal_code": "139649",
+      "phone_number": "6778870",
+      "email_address": "fmss@moe.edu.sg",
+      "website_url": "http://www.fairfieldsec.org"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 29,
+    "fields": {
+      "name": "Dunman Secondary School",
+      "geometry": "SRID=4326;POINT (103.956213321 1.3606525860001)",
+      "address": "21 Tampines Street 45",
+      "postal_code": "529093",
+      "phone_number": "6786266",
+      "email_address": "dunman_ss@moe.edu.sg",
+      "website_url": "http://www.dunmansec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 30,
+    "fields": {
+      "name": "Chua Chu Kang Secondary School",
+      "geometry": "SRID=4326;POINT (103.75187829 1.383190293)",
+      "address": "3 Teck Whye Crescent",
+      "postal_code": "688845",
+      "phone_number": "6765522",
+      "email_address": "cckss@moe.edu.sg",
+      "website_url": "http://www.chuachukangsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 31,
+    "fields": {
+      "name": "Christ Church Secondary School",
+      "geometry": "SRID=4326;POINT (103.793451109 1.426567813)",
+      "address": "20 Woodlands Drive 17",
+      "postal_code": "737924",
+      "phone_number": "6893329",
+      "email_address": "ccss@moe.edu.sg",
+      "website_url": "http://www.christchurchsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 32,
+    "fields": {
+      "name": "CHIJ St. Nicholas Girls\u2019 School (Secondary Section)",
+      "geometry": "SRID=4326;POINT (103.834253269 1.3734768790001)",
+      "address": "501 Ang Mo Kio Street 13",
+      "postal_code": "569405",
+      "phone_number": "6354183",
+      "email_address": "chijsng_sec@moe.edu.sg",
+      "website_url": "http://www.chijstnicholasgirls.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 33,
+    "fields": {
+      "name": "CHIJ St. Joseph\u2019s Convent",
+      "geometry": "SRID=4326;POINT (103.902464991 1.391752222)",
+      "address": "62 Sengkang East Way",
+      "postal_code": "548595",
+      "phone_number": "6489758",
+      "email_address": "chijsjcs@moe.edu.sg",
+      "website_url": "http://www.chijstjosephsconvent.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 34,
+    "fields": {
+      "name": "CHIJ Katong Convent",
+      "geometry": "SRID=4326;POINT (103.917144367 1.3064425380001)",
+      "address": "346 Marine Terrace",
+      "postal_code": "449150",
+      "phone_number": "6448643",
+      "email_address": "chijktcs@moe.edu.sg",
+      "website_url": "http://www.chijkatongconvent.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 35,
+    "fields": {
+      "name": "Cedar Girls\u2019 Secondary School",
+      "geometry": "SRID=4326;POINT (103.873933064 1.333758002)",
+      "address": "1 Cedar Avenue",
+      "postal_code": "349692",
+      "phone_number": "6288490",
+      "email_address": "cedargirlss@moe.edu.sg",
+      "website_url": "http://www.cedargirlssec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 36,
+    "fields": {
+      "name": "Broadrick Secondary School",
+      "geometry": "SRID=4326;POINT (103.886917441 1.307050512)",
+      "address": "61 Dakota Crescent",
+      "postal_code": "399935",
+      "phone_number": "6344502",
+      "email_address": "broadrick_ss@moe.edu.sg",
+      "website_url": "http://www.broadricksec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 37,
+    "fields": {
+      "name": "Bowen Secondary School",
+      "geometry": "SRID=4326;POINT (103.877659578 1.370359944)",
+      "address": "2 Lorong Napiri",
+      "postal_code": "547529",
+      "phone_number": "6385946",
+      "email_address": "bowen_ss@moe.edu.sg",
+      "website_url": "http://www.bowensec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 38,
+    "fields": {
+      "name": "Bedok View Secondary School",
+      "geometry": "SRID=4326;POINT (103.943776245 1.324157041)",
+      "address": "6 Bedok South Avenue 3",
+      "postal_code": "469293",
+      "phone_number": "6443056",
+      "email_address": "bedokview_ss@moe.edu.sg",
+      "website_url": "http://www.bedokviewsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 39,
+    "fields": {
+      "name": "Assumption Pathway School",
+      "geometry": "SRID=4326;POINT (103.765959131 1.369670704)",
+      "address": "30 Cashew Road",
+      "postal_code": "679697",
+      "phone_number": "6879390",
+      "email_address": "aps@ite.edu.sg",
+      "website_url": "http://www.aps.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 40,
+    "fields": {
+      "name": "Anglo-Chinese School (Independent)",
+      "geometry": "SRID=4326;POINT (103.780363418 1.303704093)",
+      "address": "121 Dover Road",
+      "postal_code": "139650",
+      "phone_number": "6773163",
+      "email_address": "acsindep@acsindep.edu.sg",
+      "website_url": "http://www.acsindep.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 41,
+    "fields": {
+      "name": "Anglican High School",
+      "geometry": "SRID=4326;POINT (103.941857925 1.331180405)",
+      "address": "600 Upper Changi Road",
+      "postal_code": "487012",
+      "phone_number": "6241486",
+      "email_address": "ahs@moe.edu.sg",
+      "website_url": "http://www.anglicanhigh.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 42,
+    "fields": {
+      "name": "Anderson Secondary School",
+      "geometry": "SRID=4326;POINT (103.851554107 1.3743400170001)",
+      "address": "10 Ang Mo Kio Street 53",
+      "postal_code": "569206",
+      "phone_number": "6459830",
+      "email_address": "anderson_ss@moe.edu.sg",
+      "website_url": "http://www.andersonsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 43,
+    "fields": {
+      "name": "Ahmad Ibrahim Secondary School",
+      "geometry": "SRID=4326;POINT (103.829718678 1.4360597640001)",
+      "address": "751 Yishun Avenue 7",
+      "postal_code": "768928",
+      "phone_number": "6758538",
+      "email_address": "aiss@moe.edu.sg",
+      "website_url": "http://www.ahmadibrahimsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 44,
+    "fields": {
+      "name": "Admiralty Secondary School",
+      "geometry": "SRID=4326;POINT (103.802398197 1.4458906890001)",
+      "address": "31 Woodlands Crescent",
+      "postal_code": "737916",
+      "phone_number": "6365173",
+      "email_address": "admiralty_ss@moe.edu.sg",
+      "website_url": "http://www.admiraltysec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 45,
+    "fields": {
+      "name": "Zhonghua Secondary School",
+      "geometry": "SRID=4326;POINT (103.869430481 1.348407208)",
+      "address": "13 Serangoon Avenue 3",
+      "postal_code": "556123",
+      "phone_number": "6282433",
+      "email_address": "zhonghua_ss@moe.edu.sg",
+      "website_url": "http://www.zhonghuasec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 46,
+    "fields": {
+      "name": "Yio Chu Kang Secondary School",
+      "geometry": "SRID=4326;POINT (103.842136964 1.3779759770001)",
+      "address": "3063 Ang Mo Kio Avenue 5",
+      "postal_code": "569868",
+      "phone_number": "6456066",
+      "email_address": "yckss@moe.edu.sg",
+      "website_url": "http://www.yiochukangsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 47,
+    "fields": {
+      "name": "Xinmin Secondary School",
+      "geometry": "SRID=4326;POINT (103.883051614 1.3725588470001)",
+      "address": "11 Hougang Avenue 8",
+      "postal_code": "538789",
+      "phone_number": "6288938",
+      "email_address": "xinmin_ss@moe.edu.sg",
+      "website_url": "http://www.xinminss.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 48,
+    "fields": {
+      "name": "Woodlands Secondary School",
+      "geometry": "SRID=4326;POINT (103.77458641 1.439125281)",
+      "address": "11 Marsiling Road",
+      "postal_code": "739111",
+      "phone_number": "6849440",
+      "email_address": "wdl_ss@moe.edu.sg",
+      "website_url": "http://www.woodlandssec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 49,
+    "fields": {
+      "name": "Woodgrove Secondary School",
+      "geometry": "SRID=4326;POINT (103.796047585 1.428318281)",
+      "address": "3 Woodlands Avenue 6",
+      "postal_code": "738990",
+      "phone_number": "6893256",
+      "email_address": "woodgrove_ss@moe.edu.sg",
+      "website_url": "http://www.woodgrovesec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 50,
+    "fields": {
+      "name": "Whitley Secondary School",
+      "geometry": "SRID=4326;POINT (103.842552378 1.3550520850001)",
+      "address": "30 Bishan Street 24",
+      "postal_code": "579747",
+      "phone_number": "6456133",
+      "email_address": "whitley_ss@moe.edu.sg",
+      "website_url": "http://www.whitleysec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 51,
+    "fields": {
+      "name": "Westwood Secondary School",
+      "geometry": "SRID=4326;POINT (103.701772102 1.3537369850001)",
+      "address": "11 Jurong West Street 25",
+      "postal_code": "648350",
+      "phone_number": "6792973",
+      "email_address": "westwood_ss@moe.edu.sg",
+      "website_url": "http://www.westwoodsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 52,
+    "fields": {
+      "name": "Victoria School",
+      "geometry": "SRID=4326;POINT (103.927980967 1.308713025)",
+      "address": "2 Siglap Link",
+      "postal_code": "448880",
+      "phone_number": "6291296",
+      "email_address": "victoria_sch@moe.edu.sg",
+      "website_url": "https://victoria.moe.edu.sg/"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 53,
+    "fields": {
+      "name": "Temasek Junior College",
+      "geometry": "SRID=4326;POINT (103.935567309 1.31849283)",
+      "address": "22 Bedok South Road",
+      "postal_code": "469278",
+      "phone_number": "6442806",
+      "email_address": "temasek_jc@moe.edu.sg",
+      "website_url": "http://www.temasekjc.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 54,
+    "fields": {
+      "name": "Tanjong Katong Girls\u2019 School",
+      "geometry": "SRID=4326;POINT (103.927030802 1.3220391200001)",
+      "address": "20 Dunman Lane",
+      "postal_code": "439272",
+      "phone_number": "6344159",
+      "email_address": "tkgs@moe.edu.sg",
+      "website_url": "http://www.tkgs.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 55,
+    "fields": {
+      "name": "St. Margaret\u2019s Secondary School",
+      "geometry": "SRID=4326;POINT (103.80995114 1.3200682140001)",
+      "address": "111 Farrer Road",
+      "postal_code": "259240",
+      "phone_number": "6466452",
+      "email_address": "stmargaretss@moe.edu.sg",
+      "website_url": "http://www.stmargaretssec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 56,
+    "fields": {
+      "name": "St. Joseph\u2019s Institution",
+      "geometry": "SRID=4326;POINT (103.828498975 1.323653135)",
+      "address": "38 Malcolm Road",
+      "postal_code": "308274",
+      "phone_number": "6250002",
+      "email_address": "contact@sji.edu.sg",
+      "website_url": "http://www.sji.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 57,
+    "fields": {
+      "name": "St. Hilda\u2019s Secondary School",
+      "geometry": "SRID=4326;POINT (103.937608032 1.3497392240001)",
+      "address": "2 Tampines Street 82",
+      "postal_code": "528986",
+      "phone_number": "6305527",
+      "email_address": "shss@moe.edu.sg",
+      "website_url": "http://www.sthildassec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 58,
+    "fields": {
+      "name": "Spectra Secondary School",
+      "geometry": "SRID=4326;POINT (103.804100467 1.4370375080001)",
+      "address": "1 Woodlands Drive 64",
+      "postal_code": "737758",
+      "phone_number": "6466077",
+      "email_address": "info@spectra.edu.sg",
+      "website_url": "http://www.spectra.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 59,
+    "fields": {
+      "name": "Singapore Chinese Girls\u2019 School",
+      "geometry": "SRID=4326;POINT (103.82819212 1.3210450820001)",
+      "address": "190 Dunearn Road",
+      "postal_code": "309437",
+      "phone_number": "6252796",
+      "email_address": "scgss@moe.edu.sg",
+      "website_url": "http://www.scgs.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 60,
+    "fields": {
+      "name": "Serangoon Garden Secondary School",
+      "geometry": "SRID=4326;POINT (103.869270302 1.3693257050001)",
+      "address": "21 Serangoon North Avenue 1",
+      "postal_code": "555889",
+      "phone_number": "6288922",
+      "email_address": "sgss@moe.edu.sg",
+      "website_url": "http://www.sgs.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 61,
+    "fields": {
+      "name": "Seng Kang Secondary School",
+      "geometry": "SRID=4326;POINT (103.898365037 1.386596831)",
+      "address": "10 Compassvale Lane",
+      "postal_code": "545090",
+      "phone_number": "6388725",
+      "email_address": "skss@moe.edu.sg",
+      "website_url": "http://www.sengkangsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 62,
+    "fields": {
+      "name": "Sembawang Secondary School",
+      "geometry": "SRID=4326;POINT (103.816843258 1.4453150210001)",
+      "address": "30 Sembawang Crescent",
+      "postal_code": "757704",
+      "phone_number": "6756676",
+      "email_address": "sembawang_ss@moe.edu.sg",
+      "website_url": "http://www.sembawangsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 63,
+    "fields": {
+      "name": "School of the Arts, Singapore",
+      "geometry": "SRID=4326;POINT (103.848687419 1.2993648040001)",
+      "address": "1 Zubir Said Drive",
+      "postal_code": "227968",
+      "phone_number": "6338966",
+      "email_address": "enquiries@sota.edu.sg",
+      "website_url": "http://www.sota.edu.sg/"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 64,
+    "fields": {
+      "name": "School of Science and Technology, Singapore",
+      "geometry": "SRID=4326;POINT (103.774011529 1.3129281060001)",
+      "address": "1 Technology Drive",
+      "postal_code": "138572",
+      "phone_number": "6571720",
+      "email_address": "contactus@sst.edu.sg",
+      "website_url": "http://www.sst.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 65,
+    "fields": {
+      "name": "Regent Secondary School",
+      "geometry": "SRID=4326;POINT (103.751034412 1.393279083)",
+      "address": "50 Choa Chu Kang North 5",
+      "postal_code": "689621",
+      "phone_number": "6765382",
+      "email_address": "regent_ss@moe.edu.sg",
+      "website_url": "http://www.regentsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 66,
+    "fields": {
+      "name": "Raffles Institution",
+      "geometry": "SRID=4326;POINT (103.845674258 1.347717436)",
+      "address": "1 Raffles Institution Lane",
+      "postal_code": "575954",
+      "phone_number": "6419924",
+      "email_address": "comms@ri.edu.sg",
+      "website_url": "http://www.ri.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 67,
+    "fields": {
+      "name": "Raffles Girls\u2019 School (Secondary)",
+      "geometry": "SRID=4326;POINT (103.828959586 1.311695028)",
+      "address": "20 Anderson Road",
+      "postal_code": "259978",
+      "phone_number": "6737184",
+      "email_address": "rgss@moe.edu.sg",
+      "website_url": "http://www.rgs.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 68,
+    "fields": {
+      "name": "Queenstown Secondary School",
+      "geometry": "SRID=4326;POINT (103.81319098 1.2935212680001)",
+      "address": "1 Strathmore Road",
+      "postal_code": "148800",
+      "phone_number": "6474105",
+      "email_address": "qtss@moe.edu.sg",
+      "website_url": "http://www.queenstownsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 69,
+    "fields": {
+      "name": "Peirce Secondary School",
+      "geometry": "SRID=4326;POINT (103.830216068 1.3666594470001)",
+      "address": "10 Sin Ming Walk",
+      "postal_code": "575566",
+      "phone_number": "6457645",
+      "email_address": "peirce_ss@moe.edu.sg",
+      "website_url": "http://www.peircesec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 70,
+    "fields": {
+      "name": "Pasir Ris Crest Secondary School",
+      "geometry": "SRID=4326;POINT (103.959728203 1.3728406010001)",
+      "address": "11 Pasir Ris Street 41",
+      "postal_code": "518934",
+      "phone_number": "6581165",
+      "email_address": "prcss@moe.edu.sg",
+      "website_url": "http://www.prcss.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 71,
+    "fields": {
+      "name": "Outram Secondary School",
+      "geometry": "SRID=4326;POINT (103.837127336 1.286514062)",
+      "address": "3 York Hill",
+      "postal_code": "168622",
+      "phone_number": "6733407",
+      "email_address": "oss@moe.edu.sg",
+      "website_url": "http://www.outramsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 72,
+    "fields": {
+      "name": "NorthLight School",
+      "geometry": "SRID=4326;POINT (103.855759554 1.319100216)",
+      "address": "151 Towner Road",
+      "postal_code": "327830",
+      "phone_number": "6580649",
+      "email_address": "northlight@ite.edu.sg",
+      "website_url": "http://www.nls.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 73,
+    "fields": {
+      "name": "Naval Base Secondary School",
+      "geometry": "SRID=4326;POINT (103.83105039 1.4193788160001)",
+      "address": "901 Yishun Ring Road",
+      "postal_code": "768689",
+      "phone_number": "6257199",
+      "email_address": "nbss@moe.edu.sg",
+      "website_url": "http://www.navalbasesec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 74,
+    "fields": {
+      "name": "National Junior College",
+      "geometry": "SRID=4326;POINT (103.804110905 1.3302929110001)",
+      "address": "37 Hillcrest Road",
+      "postal_code": "288913",
+      "phone_number": "6466114",
+      "email_address": "njc@moe.edu.sg",
+      "website_url": "http://www.nationaljc.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 75,
+    "fields": {
+      "name": "Montfort Secondary School",
+      "geometry": "SRID=4326;POINT (103.888928609 1.373961266)",
+      "address": "50 Hougang Avenue 8",
+      "postal_code": "538785",
+      "phone_number": "6510707",
+      "email_address": "contact@montfortsec.edu.sg",
+      "website_url": "http://www.montfortsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 76,
+    "fields": {
+      "name": "Methodist Girls\u2019 School (Secondary)",
+      "geometry": "SRID=4326;POINT (103.78339301 1.3329480090001)",
+      "address": "11 Blackmore Drive",
+      "postal_code": "599986",
+      "phone_number": "6469480",
+      "email_address": "mgss@moe.edu.sg",
+      "website_url": "http://www.mgs.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 77,
+    "fields": {
+      "name": "Mayflower Secondary School",
+      "geometry": "SRID=4326;POINT (103.835360727 1.368272662)",
+      "address": "2 Ang Mo Kio Street 21",
+      "postal_code": "569384",
+      "phone_number": "6457778",
+      "email_address": "mayflower_ss@moe.edu.sg",
+      "website_url": "http://www.mayflowersec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 78,
+    "fields": {
+      "name": "Marsiling Secondary School",
+      "geometry": "SRID=4326;POINT (103.77600809 1.4366442480001)",
+      "address": "12 Marsiling Road",
+      "postal_code": "739110",
+      "phone_number": "6894141",
+      "email_address": "marsiling_ss@moe.edu.sg",
+      "website_url": "http://www.marsilingsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 79,
+    "fields": {
+      "name": "Kuo Chuan Presbyterian Secondary School",
+      "geometry": "SRID=4326;POINT (103.855365172 1.3500756230001)",
+      "address": "10 Bishan Street 13",
+      "postal_code": "579795",
+      "phone_number": "6259381",
+      "email_address": "kcpss@moe.edu.sg",
+      "website_url": "http://www.kuochuanpresbyteriansec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 80,
+    "fields": {
+      "name": "Junyuan Secondary School",
+      "geometry": "SRID=4326;POINT (103.933886166 1.353613153)",
+      "address": "11 Tampines Street 84",
+      "postal_code": "528933",
+      "phone_number": "6587368",
+      "email_address": "junyuan_ss@moe.edu.sg",
+      "website_url": "http://www.junyuansec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 81,
+    "fields": {
+      "name": "Hwa Chong Institution",
+      "geometry": "SRID=4326;POINT (103.804513105 1.325139595)",
+      "address": "661 Bukit Timah Road",
+      "postal_code": "269734",
+      "phone_number": "6468395",
+      "email_address": "admin@hci.edu.sg",
+      "website_url": "http://www.hwachong.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 82,
+    "fields": {
+      "name": "Hougang Secondary School",
+      "geometry": "SRID=4326;POINT (103.882533963 1.377640193)",
+      "address": "2 Hougang Street 93",
+      "postal_code": "534256",
+      "phone_number": "6385199",
+      "email_address": "hougang_ss@moe.edu.sg",
+      "website_url": "http://www.hougangsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 83,
+    "fields": {
+      "name": "Hillgrove Secondary School",
+      "geometry": "SRID=4326;POINT (103.752986488 1.352735766)",
+      "address": "10 Bukit Batok Street 52",
+      "postal_code": "659250",
+      "phone_number": "6560372",
+      "email_address": "hillgrove_ss@moe.edu.sg",
+      "website_url": "http://www.hillgrovesec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 84,
+    "fields": {
+      "name": "Guangyang Secondary School",
+      "geometry": "SRID=4326;POINT (103.850208934 1.34440856)",
+      "address": "8 Bishan Street 12",
+      "postal_code": "579807",
+      "phone_number": "6258978",
+      "email_address": "gyss@moe.edu.sg",
+      "website_url": "http://www.guangyangsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 85,
+    "fields": {
+      "name": "Fuhua Secondary School",
+      "geometry": "SRID=4326;POINT (103.726520898 1.347014089)",
+      "address": "5 Jurong West Street 41",
+      "postal_code": "649410",
+      "phone_number": "6563306",
+      "email_address": "fhss@moe.edu.sg",
+      "website_url": "http://www.fuhuasec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 86,
+    "fields": {
+      "name": "Evergreen Secondary School",
+      "geometry": "SRID=4326;POINT (103.794137756 1.441491313)",
+      "address": "11 Woodlands Street 83",
+      "postal_code": "738489",
+      "phone_number": "6365639",
+      "email_address": "evergreen_ss@moe.edu.sg",
+      "website_url": "http://www.evergreensec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 87,
+    "fields": {
+      "name": "Dunman High School",
+      "geometry": "SRID=4326;POINT (103.88294156 1.299961903)",
+      "address": "10 Tanjong Rhu Road",
+      "postal_code": "436895",
+      "phone_number": "6345053",
+      "email_address": "dhs@moe.edu.sg",
+      "website_url": "http://www.dunmanhigh.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 88,
+    "fields": {
+      "name": "Deyi Secondary School",
+      "geometry": "SRID=4326;POINT (103.852545771 1.3659970250001)",
+      "address": "1 Ang Mo Kio Street 42",
+      "postal_code": "569277",
+      "phone_number": "6456156",
+      "email_address": "deyi_ss@moe.edu.sg",
+      "website_url": "http://www.deyisec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 89,
+    "fields": {
+      "name": "Damai Secondary School",
+      "geometry": "SRID=4326;POINT (103.927091653 1.336927985)",
+      "address": "4800 Bedok Reservoir Road",
+      "postal_code": "479229",
+      "phone_number": "6443684",
+      "email_address": "damai_ss@moe.edu.sg",
+      "website_url": "http://www.damaisec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 90,
+    "fields": {
+      "name": "Compassvale Secondary School",
+      "geometry": "SRID=4326;POINT (103.899847164 1.39614084)",
+      "address": "51 Compassvale Crescent",
+      "postal_code": "545083",
+      "phone_number": "6881504",
+      "email_address": "cvss@moe.edu.sg",
+      "website_url": "http://www.compassvalesec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 91,
+    "fields": {
+      "name": "Commonwealth Secondary School",
+      "geometry": "SRID=4326;POINT (103.745637393 1.319203959)",
+      "address": "698 West Coast Road",
+      "postal_code": "608784",
+      "phone_number": "6560686",
+      "email_address": "cwss@moe.edu.sg",
+      "website_url": "http://www.commonwealthsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 92,
+    "fields": {
+      "name": "Chung Cheng High School (Main)",
+      "geometry": "SRID=4326;POINT (103.891653229 1.3050915480001)",
+      "address": "50 Goodman Road",
+      "postal_code": "439012",
+      "phone_number": "6344139",
+      "email_address": "cchms@moe.edu.sg",
+      "website_url": "http://www.chungchenghighmain.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 93,
+    "fields": {
+      "name": "CHIJ St. Theresa\u2019s Convent",
+      "geometry": "SRID=4326;POINT (103.822440702 1.2753517750001)",
+      "address": "160 Lower Delta Road",
+      "postal_code": "099138",
+      "phone_number": "6477577",
+      "email_address": "chijstcs@moe.edu.sg",
+      "website_url": "http://www.chijsttheresasconvent.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 94,
+    "fields": {
+      "name": "CHIJ Secondary (Toa Payoh)",
+      "geometry": "SRID=4326;POINT (103.843271625 1.3324607990001)",
+      "address": "626 Lorong 1 Toa Payoh",
+      "postal_code": "319764",
+      "phone_number": "6353497",
+      "email_address": "chijtpss@moe.edu.sg",
+      "website_url": "http://www.chijsec.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 95,
+    "fields": {
+      "name": "Canberra Secondary School",
+      "geometry": "SRID=4326;POINT (103.814194898 1.453224924)",
+      "address": "51 Sembawang Drive",
+      "postal_code": "757699",
+      "phone_number": "6758507",
+      "email_address": "canberra_ss@moe.edu.sg",
+      "website_url": "http://www.canberrasec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 96,
+    "fields": {
+      "name": "Bukit Merah Secondary School",
+      "geometry": "SRID=4326;POINT (103.81302312 1.2857841380001)",
+      "address": "10 Lengkok Bahru",
+      "postal_code": "159050",
+      "phone_number": "6474893",
+      "email_address": "bmss@moe.edu.sg",
+      "website_url": "http://www.bukitmerahsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 97,
+    "fields": {
+      "name": "Bukit Batok Secondary School",
+      "geometry": "SRID=4326;POINT (103.740873705 1.3484908560001)",
+      "address": "50 Bukit Batok West Ave 8",
+      "postal_code": "658962",
+      "phone_number": "6566312",
+      "email_address": "bbss@moe.edu.sg",
+      "website_url": "http://www.bukitbatoksec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 98,
+    "fields": {
+      "name": "Boon Lay Secondary School",
+      "geometry": "SRID=4326;POINT (103.701890026 1.3427226910001)",
+      "address": "11 Jurong West Street 65",
+      "postal_code": "648354",
+      "phone_number": "6794016",
+      "email_address": "blss@moe.edu.sg",
+      "website_url": "http://www.boonlaysec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 99,
+    "fields": {
+      "name": "Bedok Green Secondary School",
+      "geometry": "SRID=4326;POINT (103.935028383 1.3345194730001)",
+      "address": "360 Bedok North Ave 3",
+      "postal_code": "469722",
+      "phone_number": "6446330",
+      "email_address": "bgss@moe.edu.sg",
+      "website_url": "http://www.bedokgreensec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 100,
+    "fields": {
+      "name": "Bartley Secondary School",
+      "geometry": "SRID=4326;POINT (103.882806212 1.339954156)",
+      "address": "10 Jalan Bunga Rampai",
+      "postal_code": "538403",
+      "phone_number": "6288901",
+      "email_address": "bartley_ss@moe.edu.sg",
+      "website_url": "http://www.bartleysec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 101,
+    "fields": {
+      "name": "Assumption English School",
+      "geometry": "SRID=4326;POINT (103.767937546 1.3691629530001)",
+      "address": "622 Upper Bukit Timah Road",
+      "postal_code": "678117",
+      "phone_number": "6572910",
+      "email_address": "aes@moe.edu.sg",
+      "website_url": "http://www.assumptionenglish.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 102,
+    "fields": {
+      "name": "Ang Mo Kio Secondary School",
+      "geometry": "SRID=4326;POINT (103.842154974 1.367337102)",
+      "address": "6 Ang Mo Kio Street 22",
+      "postal_code": "569362",
+      "phone_number": "6454860",
+      "email_address": "amkss@moe.edu.sg",
+      "website_url": "http://www.angmokiosec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 103,
+    "fields": {
+      "name": "Yuying Secondary School",
+      "geometry": "SRID=4326;POINT (103.890194755 1.3571359530001)",
+      "address": "47 Hougang Avenue 1",
+      "postal_code": "538884",
+      "phone_number": "6282796",
+      "email_address": "yuying_ss@moe.edu.sg",
+      "website_url": "http://www.yuyingsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 104,
+    "fields": {
+      "name": "Yuhua Secondary School",
+      "geometry": "SRID=4326;POINT (103.722687236 1.3471862690001)",
+      "address": "35 Jurong West Street 41",
+      "postal_code": "649406",
+      "phone_number": "6566198",
+      "email_address": "yuhua_ss@moe.edu.sg",
+      "website_url": "http://www.yuhuasec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 105,
+    "fields": {
+      "name": "Yishun Secondary School",
+      "geometry": "SRID=4326;POINT (103.828764317 1.428133243)",
+      "address": "4 Yishun Street 71",
+      "postal_code": "768516",
+      "phone_number": "6876712",
+      "email_address": "yishun_ss@moe.edu.sg",
+      "website_url": "http://www.yishunsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 106,
+    "fields": {
+      "name": "Woodlands Ring Secondary School",
+      "geometry": "SRID=4326;POINT (103.80014847 1.436488947)",
+      "address": "10 Woodlands Ring Road",
+      "postal_code": "738239",
+      "phone_number": "6364371",
+      "email_address": "wrss@moe.edu.sg",
+      "website_url": "http://www.woodlandsringsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 107,
+    "fields": {
+      "name": "Temasek Secondary School",
+      "geometry": "SRID=4326;POINT (103.947564112 1.3159167320001)",
+      "address": "600 Upper East Coast Road",
+      "postal_code": "465561",
+      "phone_number": "6449502",
+      "email_address": "temasek_ss@moe.edu.sg",
+      "website_url": "http://www.temaseksec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 108,
+    "fields": {
+      "name": "Swiss Cottage Secondary School",
+      "geometry": "SRID=4326;POINT (103.750396137 1.3647174270001)",
+      "address": "3 Bukit Batok Street 34",
+      "postal_code": "659322",
+      "phone_number": "6563717",
+      "email_address": "scss@moe.edu.sg",
+      "website_url": "http://www.swisscottagesec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 109,
+    "fields": {
+      "name": "St. Patrick\u2019s School",
+      "geometry": "SRID=4326;POINT (103.917638194 1.3078834190001)",
+      "address": "490 East Coast Road",
+      "postal_code": "429058",
+      "phone_number": "6344092",
+      "email_address": "stpatricksch@moe.edu.sg",
+      "website_url": "http://www.stpatricks.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 110,
+    "fields": {
+      "name": "St. Gabriel\u2019s Secondary School",
+      "geometry": "SRID=4326;POINT (103.875808419 1.346382857)",
+      "address": "24 Serangoon Avenue 1",
+      "postal_code": "556140",
+      "phone_number": "6288947",
+      "email_address": "stgss@moe.edu.sg",
+      "website_url": "http://www.stgabrielssec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 111,
+    "fields": {
+      "name": "St. Anthony\u2019s Canossian Secondary School",
+      "geometry": "SRID=4326;POINT (103.941977167 1.334663135)",
+      "address": "1600 Bedok North Avenue 4",
+      "postal_code": "469700",
+      "phone_number": "6449061",
+      "email_address": "sacss@moe.edu.sg",
+      "website_url": "http://www.stanthonyscanossiansec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 112,
+    "fields": {
+      "name": "St. Andrew\u2019s Secondary School",
+      "geometry": "SRID=4326;POINT (103.866249138 1.330693609)",
+      "address": "15 Francis Thomas Drive",
+      "postal_code": "359342",
+      "phone_number": "6285194",
+      "email_address": "sass@moe.edu.sg",
+      "website_url": "http://www.standrewssec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 113,
+    "fields": {
+      "name": "Springfield Secondary School",
+      "geometry": "SRID=4326;POINT (103.930354461 1.3495730350001)",
+      "address": "30 Tampines Avenue 8",
+      "postal_code": "529593",
+      "phone_number": "6318305",
+      "email_address": "springfields@moe.edu.sg",
+      "website_url": "http://www.springfieldsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 114,
+    "fields": {
+      "name": "Singapore Sports School",
+      "geometry": "SRID=4326;POINT (103.789444794 1.4264114060001)",
+      "address": "1 Champions Way",
+      "postal_code": "737913",
+      "phone_number": "6766010",
+      "email_address": "enquire@sportsschool.edu.sg",
+      "website_url": "http://www.sportsschool.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 115,
+    "fields": {
+      "name": "Serangoon Secondary School",
+      "geometry": "SRID=4326;POINT (103.902138741 1.3746553880001)",
+      "address": "11 Upper Serangoon View",
+      "postal_code": "534237",
+      "phone_number": "6385158",
+      "email_address": "serangoon_ss@moe.edu.sg",
+      "website_url": "http://www.serangoonsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 116,
+    "fields": {
+      "name": "Riverside Secondary School",
+      "geometry": "SRID=4326;POINT (103.788308236 1.4411015710001)",
+      "address": "3 Woodlands Street 81",
+      "postal_code": "738524",
+      "phone_number": "6269963",
+      "email_address": "riverside_ss@moe.edu.sg",
+      "website_url": "http://www.riversidesec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 117,
+    "fields": {
+      "name": "River Valley High School",
+      "geometry": "SRID=4326;POINT (103.708190689 1.344595842)",
+      "address": "6 Boon Lay Avenue",
+      "postal_code": "649961",
+      "phone_number": "6567811",
+      "email_address": "rvhs@moe.edu.sg",
+      "website_url": "http://www.rivervalleyhigh.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 118,
+    "fields": {
+      "name": "Ping Yi Secondary School",
+      "geometry": "SRID=4326;POINT (103.920700672 1.3270167270001)",
+      "address": "61 Chai Chee Street",
+      "postal_code": "468980",
+      "phone_number": "6448958",
+      "email_address": "pyss@moe.edu.sg",
+      "website_url": "http://www.pingyisec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 119,
+    "fields": {
+      "name": "Peicai Secondary School",
+      "geometry": "SRID=4326;POINT (103.870010749 1.3595158320001)",
+      "address": "10 Serangoon Avenue 4",
+      "postal_code": "556094",
+      "phone_number": "6288415",
+      "email_address": "peicai_ss@moe.edu.sg",
+      "website_url": "http://www.peicaisec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 120,
+    "fields": {
+      "name": "Pei Hwa Secondary School",
+      "geometry": "SRID=4326;POINT (103.878461745 1.3903750500001)",
+      "address": "21 Fernvale Link",
+      "postal_code": "797702",
+      "phone_number": "6500958",
+      "email_address": "peihwasec@moe.edu.sg",
+      "website_url": "http://www.peihwasec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 121,
+    "fields": {
+      "name": "Paya Lebar Methodist Girls\u2019 School (Secondary)",
+      "geometry": "SRID=4326;POINT (103.885120051 1.350967559)",
+      "address": "296 Lor Ah Soo",
+      "postal_code": "536742",
+      "phone_number": "6281660",
+      "email_address": "plmgss@moe.edu.sg",
+      "website_url": "http://www.plmgss.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 122,
+    "fields": {
+      "name": "Pasir Ris Secondary School",
+      "geometry": "SRID=4326;POINT (103.948962626 1.354227327)",
+      "address": "390 Tampines Street 21",
+      "postal_code": "529400",
+      "phone_number": "6501080",
+      "email_address": "prss@moe.edu.sg",
+      "website_url": "http://www.pasirrissec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 123,
+    "fields": {
+      "name": "Orchid Park Secondary School",
+      "geometry": "SRID=4326;POINT (103.837859241 1.4153203280001)",
+      "address": "10 Yishun Street 81",
+      "postal_code": "768454",
+      "phone_number": "6759854",
+      "email_address": "opss@moe.edu.sg",
+      "website_url": "http://www.orchidparksec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 124,
+    "fields": {
+      "name": "NUS High School of Mathematics and Science",
+      "geometry": "SRID=4326;POINT (103.769365121 1.3065644220001)",
+      "address": "20 Clementi Avenue 1",
+      "postal_code": "129957",
+      "phone_number": "6516170",
+      "email_address": "einstein@highsch.nus.edu.sg",
+      "website_url": "http://www.nushigh.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 125,
+    "fields": {
+      "name": "Northland Secondary School",
+      "geometry": "SRID=4326;POINT (103.840104688 1.4358018340001)",
+      "address": "3 Yishun Street 22",
+      "postal_code": "768578",
+      "phone_number": "6257678",
+      "email_address": "northland_ss@moe.edu.sg",
+      "website_url": "http://www.northlandsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 126,
+    "fields": {
+      "name": "Northbrooks Secondary School",
+      "geometry": "SRID=4326;POINT (103.845147333 1.4208128500001)",
+      "address": "585 Yishun Ring Road",
+      "postal_code": "768692",
+      "phone_number": "6752431",
+      "email_address": "northbrooks@moe.edu.sg",
+      "website_url": "http://www.northbrookssec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 127,
+    "fields": {
+      "name": "Nanyang Girls\u2019 High School",
+      "geometry": "SRID=4326;POINT (103.80242098 1.3305832670001)",
+      "address": "2 Linden Drive",
+      "postal_code": "288683",
+      "phone_number": "6466327",
+      "email_address": "nyghs@moe.edu.sg",
+      "website_url": "http://www.nygh.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 128,
+    "fields": {
+      "name": "Manjusri Secondary School",
+      "geometry": "SRID=4326;POINT (103.901719964 1.32747112)",
+      "address": "20 Ubi Avenue 1",
+      "postal_code": "408940",
+      "phone_number": "6842455",
+      "email_address": "manjusri_ss@moe.edu.sg",
+      "website_url": "http://www.manjusrisec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 129,
+    "fields": {
+      "name": "Kent Ridge Secondary School",
+      "geometry": "SRID=4326;POINT (103.764889618 1.3012277340001)",
+      "address": "147 West Coast Road",
+      "postal_code": "127368",
+      "phone_number": "6773112",
+      "email_address": "krss@moe.edu.sg",
+      "website_url": "http://www.kentridgesec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 130,
+    "fields": {
+      "name": "Jurongville Secondary School",
+      "geometry": "SRID=4326;POINT (103.72890771 1.351288628)",
+      "address": "202 Jurong East Avenue 1",
+      "postal_code": "609790",
+      "phone_number": "6563870",
+      "email_address": "jurongville@moe.edu.sg",
+      "website_url": "http://www.jurongvillesec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 131,
+    "fields": {
+      "name": "Hua Yi Secondary School",
+      "geometry": "SRID=4326;POINT (103.72183232 1.352343655)",
+      "address": "60 Jurong West St 42",
+      "postal_code": "649371",
+      "phone_number": "6563456",
+      "email_address": "hyss@moe.edu.sg",
+      "website_url": "http://www.huayisec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 132,
+    "fields": {
+      "name": "Greenridge Secondary School",
+      "geometry": "SRID=4326;POINT (103.773828467 1.381864337)",
+      "address": "32 Bukit Panjang Ring Road",
+      "postal_code": "679938",
+      "phone_number": "6760105",
+      "email_address": "gss@moe.edu.sg",
+      "website_url": "http://www.greenridgesec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 133,
+    "fields": {
+      "name": "Greendale Secondary School",
+      "geometry": "SRID=4326;POINT (103.911700141 1.396960199)",
+      "address": "51 Edgedale Plains",
+      "postal_code": "828866",
+      "phone_number": "6315861",
+      "email_address": "greendale_ss@moe.edu.sg",
+      "website_url": "http://www.greendalesec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 134,
+    "fields": {
+      "name": "Geylang Methodist School (Secondary)",
+      "geometry": "SRID=4326;POINT (103.882673394 1.3176708340001)",
+      "address": "2 Geylang East Central",
+      "postal_code": "389705",
+      "phone_number": "6746650",
+      "email_address": "gmss@moe.edu.sg",
+      "website_url": "http://www.geylangmethodistsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 135,
+    "fields": {
+      "name": "Gan Eng Seng School",
+      "geometry": "SRID=4326;POINT (103.823733673 1.289071145)",
+      "address": "1 Henderson Road",
+      "postal_code": "159561",
+      "phone_number": "6474559",
+      "email_address": "gess@moe.edu.sg",
+      "website_url": "http://www.ganengsengsch.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 136,
+    "fields": {
+      "name": "Fuchun Secondary School",
+      "geometry": "SRID=4326;POINT (103.777625749 1.430704529)",
+      "address": "21 Woodlands Avenue 1",
+      "postal_code": "739062",
+      "phone_number": "6368198",
+      "email_address": "fcss@moe.edu.sg",
+      "website_url": "http://www.fuchunsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 137,
+    "fields": {
+      "name": "Fajar Secondary School",
+      "geometry": "SRID=4326;POINT (103.763998914 1.3756000540001)",
+      "address": "31 Gangsa Road",
+      "postal_code": "678972",
+      "phone_number": "6769149",
+      "email_address": "fajar_ss@moe.edu.sg",
+      "website_url": "http://www.fajarsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 138,
+    "fields": {
+      "name": "Edgefield Secondary School",
+      "geometry": "SRID=4326;POINT (103.902687385 1.4005931)",
+      "address": "36 Punggol Field",
+      "postal_code": "828814",
+      "phone_number": "6883951",
+      "email_address": "edgefield_ss@moe.edu.sg",
+      "website_url": "http://www.edgefieldsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 139,
+    "fields": {
+      "name": "East Spring Secondary School",
+      "geometry": "SRID=4326;POINT (103.9606407 1.3562250900001)",
+      "address": "30 Tampines Street 34",
+      "postal_code": "529231",
+      "phone_number": "6587380",
+      "email_address": "esss@moe.edu.sg",
+      "website_url": "http://www.eastspringsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 140,
+    "fields": {
+      "name": "Dunearn Secondary School",
+      "geometry": "SRID=4326;POINT (103.744721091 1.363579008)",
+      "address": "21 Bukit Batok West Avenue 2",
+      "postal_code": "659204",
+      "phone_number": "6565369",
+      "email_address": "dunearn_ss@moe.edu.sg",
+      "website_url": "http://www.dunearnsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 141,
+    "fields": {
+      "name": "Crest Secondary School",
+      "geometry": "SRID=4326;POINT (103.742628105 1.3431198050001)",
+      "address": "561 Jurong East Street 24",
+      "postal_code": "609561",
+      "phone_number": "6899277",
+      "email_address": "info@crestsec.edu.sg",
+      "website_url": "http://www.crestsec.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 142,
+    "fields": {
+      "name": "Crescent Girls\u2019 School",
+      "geometry": "SRID=4326;POINT (103.817544461 1.29331947)",
+      "address": "357 Tanglin Road",
+      "postal_code": "247961",
+      "phone_number": "6475871",
+      "email_address": "crescentgirl@moe.edu.sg",
+      "website_url": "http://www.crescent.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 143,
+    "fields": {
+      "name": "Clementi Town Secondary School",
+      "geometry": "SRID=4326;POINT (103.762020599 1.3155391290001)",
+      "address": "10 Clementi Ave 3",
+      "postal_code": "129904",
+      "phone_number": "6777736",
+      "email_address": "ctss@moe.edu.sg",
+      "website_url": "http://www.clementitownsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 144,
+    "fields": {
+      "name": "Chung Cheng High School (Yishun)",
+      "geometry": "SRID=4326;POINT (103.837390783 1.419226036)",
+      "address": "11 Yishun Street 61",
+      "postal_code": "768547",
+      "phone_number": "6758391",
+      "email_address": "cchys@moe.edu.sg",
+      "website_url": "http://www.chungchenghighyishun.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 145,
+    "fields": {
+      "name": "Changkat Changi Secondary School",
+      "geometry": "SRID=4326;POINT (103.953245526 1.339506301)",
+      "address": "23 Simei St 3",
+      "postal_code": "529894",
+      "phone_number": "6785979",
+      "email_address": "changkatchgi@moe.edu.sg",
+      "website_url": "http://www.changkatchangisec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 146,
+    "fields": {
+      "name": "Catholic High School (Secondary Section)",
+      "geometry": "SRID=4326;POINT (103.844874677 1.354723075)",
+      "address": "9 Bishan Street 22",
+      "postal_code": "579767",
+      "phone_number": "6458217",
+      "email_address": "chs@moe.edu.sg",
+      "website_url": "http://www.catholichigh.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 147,
+    "fields": {
+      "name": "Bukit View Secondary School",
+      "geometry": "SRID=4326;POINT (103.752226594 1.345733055)",
+      "address": "16 Bukit Batok Street 21",
+      "postal_code": "659633",
+      "phone_number": "6566199",
+      "email_address": "bukitview_ss@moe.edu.sg",
+      "website_url": "http://www.bukitviewsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 148,
+    "fields": {
+      "name": "Bukit Panjang Govt. High School",
+      "geometry": "SRID=4326;POINT (103.73835388 1.382225572)",
+      "address": "7 Choa Chu Kang Ave 4",
+      "postal_code": "689809",
+      "phone_number": "6769103",
+      "email_address": "bpghs@moe.edu.sg",
+      "website_url": "http://www.bpghs.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 149,
+    "fields": {
+      "name": "Bendemeer Secondary School",
+      "geometry": "SRID=4326;POINT (103.860970284 1.3246111130001)",
+      "address": "1 St Wilfred Road",
+      "postal_code": "327919",
+      "phone_number": "6292761",
+      "email_address": "bendemeer_ss@moe.edu.sg",
+      "website_url": "http://www.bendemeersec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 150,
+    "fields": {
+      "name": "Bedok South Secondary School",
+      "geometry": "SRID=4326;POINT (103.950989139 1.3251365520001)",
+      "address": "1 Jalan Langgar Bedok",
+      "postal_code": "468585",
+      "phone_number": "6441447",
+      "email_address": "bsss@moe.edu.sg",
+      "website_url": "http://www.bedoksouthsec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 151,
+    "fields": {
+      "name": "Beatty Secondary School",
+      "geometry": "SRID=4326;POINT (103.852285637 1.341770656)",
+      "address": "1 Toa Payoh North",
+      "postal_code": "318990",
+      "phone_number": "6256910",
+      "email_address": "beatty_ss@moe.edu.sg",
+      "website_url": "http://www.beattysec.moe.edu.sg"
+    }
+  },
+  {
+    "model": "schools.secondaryschool",
+    "pk": 152,
+    "fields": {
+      "name": "Anglo-Chinese School (Barker Road)",
+      "geometry": "SRID=4326;POINT (103.83577269 1.319616492)",
+      "address": "60 Barker Road",
+      "postal_code": "309919",
+      "phone_number": "6256163",
+      "email_address": "acsbr@moe.edu.sg",
+      "website_url": "http://www.acsbr.moe.edu.sg"
+    }
+  }
+]
