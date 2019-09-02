@@ -1,11 +1,14 @@
+from bs4 import BeautifulSoup
 import googlemaps
 import html
 import json
 import os
+import re
 import requests
 
 MOE_URL = 'https://search.olasearch.com/moe/search'
 DATA_GOV_URL = 'https://data.gov.sg/api'
+ELITE_URL = 'https://elite.com.sg'
 
 
 def credentials():
@@ -27,6 +30,22 @@ def get_json(url, timeout=60):
         response = requests.get(url, timeout=timeout)
         if response.status_code in (200, 201):
             result = response.json()
+        else:
+            raise requests.exceptions.ConnectionError(f'Response status code {response.status_code} for url {url}')
+
+    except (requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout) as ex:
+        print(ex)
+
+    return result
+
+
+def get_soup(url, timeout=60):
+    result = None
+    try:
+        response = requests.get(url, timeout=timeout)
+        if response.status_code in (200, 201):
+            content = response.content
+            result = BeautifulSoup(content, 'html.parser')
         else:
             raise requests.exceptions.ConnectionError(f'Response status code {response.status_code} for url {url}')
 
@@ -75,6 +94,90 @@ def get_kindergartens():
 
     with open('kindergarten.json', 'w') as outfile:
         json.dump(kindergartens, outfile, indent=2)
+
+
+def get_registration_results():
+    print('Importing registration results, it might take a few minutes.')
+
+    soup = get_soup(f'{ELITE_URL}/primary-schools')
+    data = soup.find_all('script')[8].text
+    match = re.search('var dataSet = (.+?);', data, re.DOTALL)
+    school_list = json.loads(match.groups()[0])
+
+    schools_in_db = get_school_name_id_mapping()
+    registation_results = []
+
+    for school in school_list:
+        if school[1].lower() in schools_in_db:
+            school_id = schools_in_db[school[1].lower()]
+        else:
+            print(f'{school[1]} is not found in the database. Update registration_results.json for this school manually.')
+            school_id = school[1]
+
+        registation_results = registation_results + _get_single_school_registration_results(school[0], school_id)
+
+    with open('registration_results.json', 'w') as outfile:
+        json.dump(registation_results, outfile, indent=2)
+
+
+def _get_single_school_registration_results(elite_school_id, db_school_id):
+    data = {'sid': f'{elite_school_id}'}
+    reg_results = []
+
+    try:
+        response = requests.post(f'{ELITE_URL}/reg.php', data).text
+        soup = BeautifulSoup(response, 'html.parser')
+        rows = soup.find_all('tr')
+
+        for i, row in enumerate(rows[0].find_all('td')[1:]):
+            reg_results.append({
+                'model': 'schools.registrationresults',
+                'fields': {
+                    'primaryschool': db_school_id,
+                    'year': int(row.text),
+                    'total_vacancy': _cleanup_row(rows[1], i),
+                    'phase_1_taken_up': _cleanup_row(rows[2], i),
+                    'phase_2a1_taken_up': _cleanup_row(rows[3], i),
+                    'phase_2a2_taken_up': _cleanup_row(rows[4], i),
+                    'phase_2b_vacancy': _cleanup_row(rows[5], i),
+                    'phase_2b_registrations': _cleanup_row(rows[6], i),
+                    'phase_2b_taken_up': _cleanup_row(rows[7], i),
+                    'phase_2c_vacancy': _cleanup_row(rows[8], i),
+                    'phase_2c_registrations': _cleanup_row(rows[9], i),
+                    'phase_2c_taken_up': _cleanup_row(rows[10], i),
+                    'phase_2cs_vacancy': _cleanup_row(rows[11], i),
+                    'phase_2cs_registrations': _cleanup_row(rows[12], i),
+                    'phase_2cs_taken_up': _cleanup_row(rows[13], i),
+                    'phase_3_vacancy': _cleanup_row(rows[14], i),
+                }})
+
+    except(requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout) as ex:
+        print(f'Exception occurred for school id {elite_school_id}: {ex}')
+
+    return reg_results
+
+
+def _cleanup_row(tag, index):
+    value = tag.find_all('td')[index+1].text.replace(' ', '')
+    value = value.replace('NA', '0')
+
+    if value == '':
+        value = 0
+
+    return int(value)
+
+
+def get_school_name_id_mapping():
+    """Returns dictionary with school names as keys and school ids as values."""
+
+    with open('primary.json') as json_file:
+        data = json.load(json_file)
+
+    schools = {}
+    for school in data:
+        schools[school['fields']['name'].lower().replace("’", "'")] = school['pk']
+
+    return schools
 
 
 def _build_school_obj(school_type, school_json, i):
@@ -158,3 +261,4 @@ if __name__ == '__main__':
         get_schools(sch_type)
 
     get_kindergartens()
+    get_registration_results()

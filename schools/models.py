@@ -36,3 +36,26 @@ class SecondarySchool(BaseModel):
     class Meta:
         verbose_name_plural = 'Secondary schools'
         ordering = ('name',)
+
+
+class RegistrationResults(models.Model):
+    primaryschool = models.ForeignKey(PrimarySchool, on_delete=models.CASCADE)
+    year = models.PositiveSmallIntegerField()
+    total_vacancy = models.PositiveSmallIntegerField()
+    phase_1_taken_up = models.SmallIntegerField()
+    phase_2a1_taken_up = models.SmallIntegerField()
+    phase_2a2_taken_up = models.SmallIntegerField()
+    phase_2b_vacancy = models.PositiveSmallIntegerField()
+    phase_2b_registrations = models.SmallIntegerField()
+    phase_2b_taken_up = models.SmallIntegerField()
+    phase_2c_vacancy = models.PositiveSmallIntegerField()
+    phase_2c_registrations = models.SmallIntegerField()
+    phase_2c_taken_up = models.SmallIntegerField()
+    phase_2cs_vacancy = models.PositiveSmallIntegerField()
+    phase_2cs_registrations = models.SmallIntegerField()
+    phase_2cs_taken_up = models.SmallIntegerField()
+    phase_3_vacancy = models.PositiveSmallIntegerField()
+
+    class Meta:
+        verbose_name_plural = 'Registration Results'
+        ordering = ('primaryschool', 'year',)

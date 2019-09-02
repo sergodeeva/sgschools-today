@@ -60,6 +60,7 @@ Load default data from `/schools/fixtures`:
 python manage.py loaddata kindergarten.json
 python manage.py loaddata primary.json
 python manage.py loaddata secondary.json
+python manage.py loaddata registration_results.json
 ```
 
 ## Start server
