@@ -48,9 +48,9 @@ function getPopup(school) {
   var customPopup = "";
 
   if (school.properties.kindergartens.length !== 0) {
-    customPopup = '<p class="popup-content"> The school has co-related kindergarten</p>';
+    customPopup = '<p class="popup-content"> The school has co-located kindergarten</p>';
   } else {
-    customPopup = '<p class="popup-content"> There is no co-related kindergarten</p>';
+    customPopup = '<p class="popup-content"> There is no co-located kindergarten</p>';
   }
   customPopup += '<div class="popup-btn-container">';
   customPopup +=
