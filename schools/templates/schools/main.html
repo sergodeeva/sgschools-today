@@ -1,7 +1,8 @@
-{% extends "header.html" %}
 {% load static %}
 {% block content %}
-<div class="page-wrapper page">
+<div class="page-wrapper">
+    <!-- Natalya: included header inside page-wrapper so that can fit header + body into screen -->
+    {% include "header.html" %}
 
     <!-------Add by Kiwi-------------->
     <div id="search">
@@ -54,7 +55,7 @@
     </div>
     <!-------End Add By Kiwi-------------->
 
-    <div class="map-container page">
+    <div class="map-container">
         <div id="main-map"></div>
     </div>
     <div>

@@ -34,30 +34,34 @@ var kindergartenMarker = L.AwesomeMarkers.icon({
 
 //create marker for the input data
 function getMarker(school, markerType) {
-  var Popup = '<b class="popup-title">' + school.properties.name + "</b><br/>";
-  if (markerType === schoolMarker) {
-    Popup += getPopup(school);
-  }
+  var popup = getPopup(school, markerType);
   var lat = school.geometry.coordinates[1];
   var lng = school.geometry.coordinates[0];
-  return L.marker([lat, lng], { icon: markerType }).bindPopup(Popup, customOptions);
+
+  return L.marker([lat, lng], { icon: markerType }).bindPopup(popup, customOptions);
 }
 
 // generate popup for the point on map
-function getPopup(school) {
-  var customPopup = "";
+function getPopup(school, markerType) {
+  var schoolType = markerType === schoolMarker ? "primary" : "kindergarten";
+  var popup =
+    '<b class="popup-title"><a href="/' + schoolType + "/" + school.properties.pk + '">' +
+        school.properties.name + "</a></b><br/>";
 
-  if (school.properties.kindergartens.length !== 0) {
-    customPopup = '<p class="popup-content"> The school has co-related kindergarten</p>';
-  } else {
-    customPopup = '<p class="popup-content"> There is no co-related kindergarten</p>';
+  if (markerType === schoolMarker) {
+    if (school.properties.kindergartens.length !== 0) {
+      popup += '<p class="popup-content">The school has co-located kindergarten</p>';
+    } else {
+      popup += '<p class="popup-content">There is no co-located kindergartens</p>';
+    }
+
+    popup += '<div class="popup-btn-container">';
+    popup +=
+      '<button class="popup-btn circle btn btn-info one-km" data-toggle="button">1km</button>';
+    popup +=
+      '<button class="popup-btn circle btn btn-info two-km" data-toggle="button">2km</button></br></div>';
   }
-  customPopup += '<div class="popup-btn-container">';
-  customPopup +=
-    '<button type="button" class="popup-btn circle btn btn-info one-km"  data-toggle="button">1km</button>';
-  customPopup +=
-    '<button type="button" class="popup-btn circle btn btn-info two-km"  data-toggle="button">2km</button></br></div>';
-  return customPopup;
+  return popup;
 }
 
 //popup functions
