@@ -70,3 +70,33 @@ python manage.py runserver
 After starting the server web app will be available at http://127.0.0.1:8000/.
 
 # Deployment
+ssh to the Linux server
+```
+ssh -i geo root@159.65.15.94 -p 65535
+```
+
+Install git and clone source code
+```
+sudo yum install git
+git clone https://github.com/sergodeeva/geodjango_sg_schools.git
+cd geodjango_sg_schools
+git config credential.helper store  # to store git credentials once
+git pull
+```
+
+Install python and pip
+```
+sudo yum install python36
+sudo yum install python36-pip
+sudo pip3 install --upgrade pip
+```
+
+Create virtual environment and install dependencies
+```
+sudo python36 -m pip install virtualenv
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+
