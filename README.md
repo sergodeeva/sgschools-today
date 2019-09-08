@@ -20,7 +20,7 @@ pip install -r requirements.txt
 psql
 postgres=# create database sg_schools;
 \c sg_schools;
-sg_schools=# create user django_user with encrypted password '123';
+sg_schools=# create user django_user with encrypted password '1234';
 ALTER ROLE django_user SUPERUSER;
 ```
 Update database credentials in `/schools/settings.py`
