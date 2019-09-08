@@ -68,3 +68,5 @@ python manage.py loaddata registration_results.json
 python manage.py runserver
  ```
 After starting the server web app will be available at http://127.0.0.1:8000/.
+
+# Deployment
