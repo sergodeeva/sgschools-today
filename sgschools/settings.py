@@ -23,9 +23,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '9wdoe&*&iw-lg5ps!!^lasid$+vw*!t055=3$9*6fp#u)dw7sp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+# To avoid transmitting the CSRF cookie over HTTP accidentally in production
+CSRF_COOKIE_SECURE = True
+
+# To avoid transmitting the session cookie over HTTP accidentally in production
+SESSION_COOKIE_SECURE = True
+
+ALLOWED_HOSTS = ['sgschools.today']
 
 
 # Application definition
