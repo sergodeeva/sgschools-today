@@ -31,7 +31,7 @@ CSRF_COOKIE_SECURE = True
 # To avoid transmitting the session cookie over HTTP accidentally in production
 SESSION_COOKIE_SECURE = True
 
-ALLOWED_HOSTS = ['sgschools.today']
+ALLOWED_HOSTS = ['sgschools.today', '127.0.0.1', 'localhost']
 
 
 # Application definition
