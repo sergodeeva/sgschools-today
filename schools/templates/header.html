@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>{{title|default:"SG Schools"}}</title>
-    <link rel="icon" href="{% static 'images/favicon.ico' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
 
     <!--fontawesome stylesheet-->
     <link
@@ -63,20 +63,6 @@
     <!--leaflet.awesome-markers-->
     <script src="{% static  'leaflet.awesome-markers.js' %}"></script>
   </head>
-
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #563d7c;">
-      <a class="navbar-brand" href="/">SGSchools</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="/about">About<span class="sr-only">(current)</span></a>
-          </div>
-      </div>
-  </nav>
-
   <body>
     {% block content %}{% endblock %}
   </body>
