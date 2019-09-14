@@ -23,9 +23,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '9wdoe&*&iw-lg5ps!!^lasid$+vw*!t055=3$9*6fp#u)dw7sp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+# To avoid transmitting the CSRF cookie over HTTP accidentally in production
+CSRF_COOKIE_SECURE = True
+
+# To avoid transmitting the session cookie over HTTP accidentally in production
+SESSION_COOKIE_SECURE = True
+
+ALLOWED_HOSTS = ['sgschools.today', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -80,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'sg_schools',
         'USER': 'django_user',
-        'PASSWORD': '123',
+        'PASSWORD': '1234',
         'HOST': 'localhost',
         'PORT': '5432'
     }
@@ -123,14 +129,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets/')
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
-
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
 
 if os.name == 'nt':
     import platform

@@ -17,10 +17,11 @@ pip install -r requirements.txt
 
 ## Configure database
 ```
+sudo su - postgres // change to postgres user (required on Linux)
 psql
 postgres=# create database sg_schools;
 \c sg_schools;
-sg_schools=# create user django_user with encrypted password '123';
+sg_schools=# create user django_user with encrypted password '1234';
 ALTER ROLE django_user SUPERUSER;
 ```
 Update database credentials in `/schools/settings.py`
@@ -68,3 +69,15 @@ python manage.py loaddata registration_results.json
 python manage.py runserver
  ```
 After starting the server web app will be available at http://127.0.0.1:8000/.
+
+# Deployment
+Generate static files in 'assets' folder:
+```
+python manage.py collectstatic
+```
+
+Stop/Start uWSGI:
+```
+killall uwsgi
+uwsgi --emperor /etc/uwsgi/vassals --uid www-data --gid www-data --gid www-data --daemonize /var/log/uwsgi-emperor.log
+```
