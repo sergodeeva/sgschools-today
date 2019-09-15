@@ -1,5 +1,6 @@
 from django.views import generic
 from django.http import Http404, HttpResponse, HttpResponseRedirect, JsonResponse
+from django.forms.models import model_to_dict
 from django.core import serializers
 from django.shortcuts import render
 
@@ -26,17 +27,35 @@ def get_detail(request):
         return HttpResponseRedirect('/')
 
 
-def school_detail(request, school_type, school_id):
+def school_details(request, school_type, school_id):
     try:
+        results = None
         if school_type == 'primary':
             school = PrimarySchool.objects.get(pk=school_id)
+
+            reg_results = school.registrationresults_set.all().order_by('-year')
+            transposed_results = []
+            for result in reg_results:
+                transposed_results.append(model_to_dict(result))
+
+            results = [
+                [], [], [], ['Total vacancy'], ['Phase 1 taken up'], ['Phase 2A1 taken up'], ['Phase 2A2 taken up'],
+                ['Phase 2B vacancy'], ['Phase 2B registrations'], ['Phase 2B taken up'],
+                ['Phase 2C vacancy'], ['Phase 2C registrations'], ['Phase 2C taken up'],
+                ['Phase 2C S vacancy'], ['Phase 2C S registrations'], ['Phase 2C S taken up'], ['Phase 3 vacancy']]
+
+            for result in transposed_results:
+                for y, value in enumerate(result.values()):
+                    results[y].append(value)
+
         elif school_type == 'secondary':
             school = SecondarySchool.objects.get(pk=school_id)
         else:
             school = Kindergarten.objects.get(pk=school_id)
     except Exception:
-        raise Http404("School does not exist")
-    return render(request, 'schools/detail.html', {'school': school})
+        raise Http404('School does not exist')
+
+    return render(request, 'schools/details.html', {'school': school, 'results': results})
 
 
 class MapView(generic.TemplateView):
@@ -49,6 +68,7 @@ class MapView(generic.TemplateView):
             'primary_school_list': PrimarySchool.objects.all(),
             'kindergarten_list': Kindergarten.objects.all(),
         })
+
         return context
 
 

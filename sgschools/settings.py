@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '9wdoe&*&iw-lg5ps!!^lasid$+vw*!t055=3$9*6fp#u)dw7sp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = (sys.argv[1] == 'runserver')
 
 # To avoid transmitting the CSRF cookie over HTTP accidentally in production
 CSRF_COOKIE_SECURE = True
