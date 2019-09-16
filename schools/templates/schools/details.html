@@ -1,0 +1,54 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+{% include "header.html" with title=school.name %}
+{% load static %}
+{% block content %}
+{% include "navbar.html" %}
+
+<div class="container my-5">
+    <h5 class="card-title">{{ school.name }}</h5>
+    <p class="card-text">Address: {{ school.address }}, {{ school.postal_code }}</p>
+
+    {% if school.phone_number %}
+    <p class="card-text">
+        Phone number: <a href="tel:{{ school.phone_number }}">{{ school.phone_number }}</a>
+    </p>
+    {% endif %}
+
+    {% if school.email_address %}
+    <p class="card-text">
+        Email: <a href="mailto:{{ school.email_address }}">{{ school.email_address }}</a>
+    </p>
+    {% endif %}
+
+    {% if school.website_url %}
+    <a href="{{ school.website_url }}" class="btn btn-info" target="_blank">Visit website</a>
+    {% endif %}
+
+    {% if results %}
+    <h5 class="mt-5">Previous years registration results</h5>
+    <table class="table table-hover table-responsive">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            {% for item in results.2 %}
+            <th scope="col">{{item}}</th>
+            {% endfor %}
+        </tr>
+        </thead>
+        <tbody>
+        {% for row in results %}
+        {% if forloop.counter >= 4 %}
+        <tr>
+            {% for item in row %}
+            {% if forloop.first %}<th>{{item}}</th>{% endif %}
+            {% if not forloop.first %}<td>{{item}}</td>{% endif %}
+            {% endfor %}
+        </tr>
+        {% endif %}
+        {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</div>
+
+{% endblock %}
