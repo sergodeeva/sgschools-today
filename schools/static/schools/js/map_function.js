@@ -3,6 +3,8 @@ var schools = L.layerGroup();
 schools.addTo(mymap);
 var kindergartens = L.layerGroup();
 kindergartens.addTo(mymap);
+var geoLocations = L.layerGroup();
+geoLocations.addTo(mymap);
 
 // range layer
 var range = L.layerGroup();
@@ -31,6 +33,19 @@ var kindergartenMarker = L.AwesomeMarkers.icon({
   icon: "child",
   markerColor: "orange"
 });
+
+var geoLocationMarker = L.AwesomeMarkers.icon({
+    prefix: "fa",
+    icon: "thumbtack",
+    markerColor: "darkgreen"
+});
+
+function getGeoLocationMarker(geoLocation) { //todo: call APIs to convert geolocation to postal code
+     var popup = '<b class="popup-title">Pinned Location</b><br/>';
+     popup += '<p class="popup-content">' + geoLocation + '</p>';
+
+    return L.marker(geoLocation, geoLocationMarker).bindPopup(popup,customOptions);
+}
 
 //create marker for the input data
 function getMarker(school, markerType) {
@@ -89,6 +104,17 @@ mymap.on("popupopen", function(ev) {
   });
 });
 
+
+mymap.on('locationfound', function (locationEvent) {
+  showCurrLocation(locationEvent.latlng);
+});
+
+function locateUser() {
+  mymap.locate({ setView: true });
+
+}
+
+
 // set map center to the specific point
 function goTo(lat, lng) {
   if (mymap.getZoom() < 14) {
@@ -98,7 +124,25 @@ function goTo(lat, lng) {
   }
 }
 
-function showOnMap(type, id, move) {
+function clearAllLayers() {
+  schools.clearLayers();
+  kindergartens.clearLayers();
+  range.clearLayers();
+  geoLocations.clearLayers()
+}
+
+function showCurrLocation(latlng){
+  clearAllLayers();
+  var marker = getGeoLocationMarker(latlng);
+  geoLocations.addLayer(marker);
+}
+
+function showOnMap(type, id, move, clear_layer=true) {
+
+  if (clear_layer){
+    clearAllLayers();
+  }
+
   $.ajax({
     type: "GET",
     url: "api/get-detail/",
@@ -118,7 +162,7 @@ function showOnMap(type, id, move) {
 
             if (point.properties.kindergartens.length !== 0) {
               for (var i = 0, len = point.properties.kindergartens.length; i < len; i++) {
-                showOnMap("kindergarten", point.properties.kindergartens[i], false);
+                showOnMap("kindergarten", point.properties.kindergartens[i], false, false);
               }
             }
           } else if (type === "kindergarten") {
