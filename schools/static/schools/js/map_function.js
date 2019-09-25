@@ -40,11 +40,17 @@ var geoLocationMarker = L.AwesomeMarkers.icon({
     markerColor: "darkgreen"
 });
 
-function getGeoLocationMarker(geoLocation) { //todo: call APIs to convert geolocation to postal code
-     var popup = '<b class="popup-title">Pinned Location</b><br/>';
-     popup += '<p class="popup-content">' + geoLocation + '</p>';
+//container ids
+var id_1km_btn = '1km-btn';
+var id_2km_btn = '2km-btn';
 
-    return L.marker(geoLocation, geoLocationMarker).bindPopup(popup,customOptions);
+function getGeoLocationMarker(geoLocation, poptitle=null) { //todo: call APIs to convert geolocation to postal code
+  var popup = '<b class="popup-title">'+poptitle+'</b><br/>';
+  popup += '<p class="popup-content">' + 'add translated geo/postal info here'+ '</p>';
+  popup += '<div class="popup-btn-container">';
+  popup += '<button id="'+id_1km_btn+'" class="popup-btn circle btn btn-info one-km" data-toggle="button" onclick="handleKmBtnClick(this.id)">1km</button>';
+  popup += '<button id="'+id_2km_btn+'" class="popup-btn circle btn btn-info two-km" data-toggle="button" onclick="handleKmBtnClick(this.id)">2km</button></br></div>';
+  return L.marker(geoLocation, geoLocationMarker).bindPopup(popup,customOptions);
 }
 
 //create marker for the input data
@@ -71,15 +77,14 @@ function getPopup(school, markerType) {
     }
 
     popup += '<div class="popup-btn-container">';
-    popup +=
-      '<button class="popup-btn circle btn btn-info one-km" data-toggle="button">1km</button>';
-    popup +=
-      '<button class="popup-btn circle btn btn-info two-km" data-toggle="button">2km</button></br></div>';
+    popup += '<button id="'+id_1km_btn+'" class="popup-btn circle btn btn-info one-km" data-toggle="button" onclick="handleKmBtnClick(this.id)">1km</button>';
+    popup += '<button id="'+id_2km_btn+'" class="popup-btn circle btn btn-info two-km" data-toggle="button" onclick="handleKmBtnClick(this.id)">2km</button></br></div>';
   }
   return popup;
 }
 
 //popup functions
+/*
 mymap.on("popupopen", function(ev) {
   if (range.hasLayer(onekmRange)) {
     $("button.circle.one-km").addClass("active");
@@ -103,25 +108,35 @@ mymap.on("popupopen", function(ev) {
     }
   });
 });
+*/
+
+function handleKmBtnClick(btnId){
+  if(btnId === id_1km_btn){
+    if (range.hasLayer(onekmRange)) range.removeLayer(onekmRange);
+    else range.addLayer(onekmRange);
+  }
+  else if(btnId === id_2km_btn){
+    if (range.hasLayer(twokmRange)) range.removeLayer(twokmRange);
+    else range.addLayer(twokmRange);
+  }
+}
 
 
 mymap.on('locationfound', function (locationEvent) {
-  showCurrLocation(locationEvent.latlng);
+  flyTo(locationEvent.latlng);
+  var oppMsgTitle = 'Detected Location: ' + locationEvent.latlng.lat.toString() +', '+locationEvent.latlng.lng.toString();
+  showCurrLocation(locationEvent.latlng, oppMsgTitle);
 });
 
+//triggers 'locationfound' event
 function locateUser() {
   mymap.locate({ setView: true });
-
 }
 
 
 // set map center to the specific point
-function goTo(lat, lng) {
-  if (mymap.getZoom() < 14) {
-    mymap.flyTo([lat, lng], 14);
-  } else {
-    mymap.flyTo([lat, lng]);
-  }
+function flyTo(coordinates) {
+  mymap.flyTo(coordinates, 15);
 }
 
 function clearAllLayers() {
@@ -131,9 +146,10 @@ function clearAllLayers() {
   geoLocations.clearLayers()
 }
 
-function showCurrLocation(latlng){
+function showCurrLocation(latlng, poptitle=null){
   clearAllLayers();
-  var marker = getGeoLocationMarker(latlng);
+  prepareCircleMarker(latlng);
+  var marker = getGeoLocationMarker(latlng, poptitle);
   geoLocations.addLayer(marker);
 }
 
@@ -172,9 +188,9 @@ function showOnMap(type, id, move, clear_layer=true) {
           if (move === true) {
             var lat = point.geometry.coordinates[1];
             var lng = point.geometry.coordinates[0];
-            onekmRange = L.circle([lat, lng], { radius: 1000, color: "red", opacity: 0.3 });
-            twokmRange = L.circle([lat, lng], { radius: 2000, opacity: 0.3 });
-            goTo(lat, lng);
+            var coordinates = [lat, lng];
+            prepareCircleMarker(coordinates);
+            flyTo(coordinates);
           }
         });
       }
@@ -184,3 +200,10 @@ function showOnMap(type, id, move, clear_layer=true) {
     }
   });
 }
+
+function prepareCircleMarker(coordinates) {
+  onekmRange = L.circle(coordinates, { radius: 1000, color: "red", opacity: 0.3 });
+  twokmRange = L.circle(coordinates, { radius: 2000, opacity: 0.3 });
+}
+
+//todo need to study loading performace of ll labrary
