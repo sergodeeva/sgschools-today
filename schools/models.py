@@ -14,6 +14,10 @@ class BaseModel(models.Model):
     def __str__(self):
         return self.name
 
+    @property
+    def school_type(self):
+        return self.__class__.__name__
+
     class Meta:
         abstract = True
 
