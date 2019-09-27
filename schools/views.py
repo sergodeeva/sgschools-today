@@ -3,7 +3,7 @@ from django.http import Http404, HttpResponse, HttpResponseRedirect, JsonRespons
 from django.forms.models import model_to_dict
 from django.core import serializers
 from django.shortcuts import render
-
+from django.core.serializers import serialize
 from .models import PrimarySchool, SecondarySchool, Kindergarten
 
 
@@ -66,7 +66,11 @@ class MapView(generic.TemplateView):
 
         context.update({
             'primary_school_list': PrimarySchool.objects.all(),
+            'primary_school_list_serialized': serialize('geojson', PrimarySchool.objects.all(), geometry_field='geometry'),
             'kindergarten_list': Kindergarten.objects.all(),
+            'kindergarten_list_serialized': serialize('geojson', Kindergarten.objects.all(), geometry_field='geometry'),
+            'secondary_school_list': SecondarySchool.objects.all(),
+            'secondary_school_list_serialized': serialize('geojson', SecondarySchool.objects.all(), geometry_field='geometry'),
         })
 
         return context

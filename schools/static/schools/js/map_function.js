@@ -48,8 +48,8 @@ function getGeoLocationMarker(geoLocation, poptitle=null) { //todo: call APIs to
   var popup = '<b class="popup-title">'+poptitle+'</b><br/>';
   popup += '<p class="popup-content">' + 'add translated geo/postal info here'+ '</p>';
   popup += '<div class="popup-btn-container">';
-  popup += '<button id="'+id_1km_btn+'" class="popup-btn circle btn btn-info one-km" data-toggle="button" onclick="handleKmBtnClick(this.id)">1km</button>';
-  popup += '<button id="'+id_2km_btn+'" class="popup-btn circle btn btn-info two-km" data-toggle="button" onclick="handleKmBtnClick(this.id)">2km</button></br></div>';
+  popup += '<button id="'+id_1km_btn+'" class="popup-btn circle btn btn-info one-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(geoLocation)+')">1km</button>';
+  popup += '<button id="'+id_2km_btn+'" class="popup-btn circle btn btn-info two-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(geoLocation)+')">2km</button></br></div>';
   return L.marker(geoLocation, geoLocationMarker).bindPopup(popup,customOptions);
 }
 
@@ -77,8 +77,8 @@ function getPopup(school, markerType) {
     }
 
     popup += '<div class="popup-btn-container">';
-    popup += '<button id="'+id_1km_btn+'" class="popup-btn circle btn btn-info one-km" data-toggle="button" onclick="handleKmBtnClick(this.id)">1km</button>';
-    popup += '<button id="'+id_2km_btn+'" class="popup-btn circle btn btn-info two-km" data-toggle="button" onclick="handleKmBtnClick(this.id)">2km</button></br></div>';
+    popup += '<button id="'+id_1km_btn+'" class="popup-btn circle btn btn-info one-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(school.geometry.coordinates)+')">1km</button>';
+    popup += '<button id="'+id_2km_btn+'" class="popup-btn circle btn btn-info two-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(school.geometry.coordinates)+')">2km</button></br></div>';
   }
   return popup;
 }
@@ -110,10 +110,12 @@ mymap.on("popupopen", function(ev) {
 });
 */
 
-function handleKmBtnClick(btnId){
+function handleKmBtnClick(btnId, geoLocation){
   if(btnId === id_1km_btn){
     if (range.hasLayer(onekmRange)) range.removeLayer(onekmRange);
     else range.addLayer(onekmRange);
+    //show all schools within 1km range
+    showSchoolsWithin(geoLocation, 1000);
   }
   else if(btnId === id_2km_btn){
     if (range.hasLayer(twokmRange)) range.removeLayer(twokmRange);
@@ -121,6 +123,22 @@ function handleKmBtnClick(btnId){
   }
 }
 
+function showSchoolsWithin(centerCoo, radius){
+  g_primary_school_list.forEach(function (item, idx, arr) {
+    let distance = getDistanceBetween(centerCoo, item['geometry']['coordinates']);
+    console.log(item);
+    if (distance <= radius){
+
+    }
+  })
+}
+
+//p1 and p2 are Latlng type
+function getDistanceBetween(p1, p2){
+    let ll1 = L.latLng([p1[0],p1[1]]);
+    let ll2 = L.latLng([p2[0],p2[1]]);
+    return ll1.distanceTo(ll2); //unit metes
+}
 
 mymap.on('locationfound', function (locationEvent) {
   flyTo(locationEvent.latlng);
@@ -168,6 +186,7 @@ function showOnMap(type, id, move, clear_layer=true) {
     },
     async: true,
     success: function(result) {
+      console.log(result);
       var response = JSON.parse(result).features;
       if (response.length > 0) {
         response.forEach(function(point) {

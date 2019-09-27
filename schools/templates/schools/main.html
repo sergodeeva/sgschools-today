@@ -2,6 +2,13 @@
 {% load static %}
 {% block content %}
 
+<!-- init school list -->
+<script>
+    var g_kindergarten_list = {{ kindergarten_list_serialized|safe }};
+    var g_primary_school_list = ({{ primary_school_list_serialized|safe }})['features'];
+    var g_secondary_school_list = {{ secondary_school_list_serialized|safe }};
+</script>
+
 <div class="page-wrapper">
     <!-- Natalya: included header inside page-wrapper so that can fit header + body into screen -->
     {% include "navbar.html" %}
