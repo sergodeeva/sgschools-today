@@ -23,7 +23,9 @@ def get_detail(request):
             result = Kindergarten.objects.get(pk=school_id)
         else:
             result = None
+
         json_response = Serializer().serialize([result], geometry_field='geometry',)
+        
         return JsonResponse(json_response, safe=False)
     else:
         return HttpResponseRedirect('/')
