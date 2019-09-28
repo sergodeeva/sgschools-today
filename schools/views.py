@@ -17,12 +17,12 @@ def get_detail(request):
     if request.method == 'GET' and request.is_ajax():
         school_type = request.GET['type']
         school_id = request.GET['id']
-        if school_type == 'school':
+        if school_type == 'PrimarySchool':
             result = PrimarySchool.objects.get(pk=school_id)
-        elif school_type == 'kindergarten':
+        elif school_type == 'Kindergarten':
             result = Kindergarten.objects.get(pk=school_id)
         else:
-            result = None
+            result = SecondarySchool.objects.get(pk=school_id)
 
         json_response = Serializer().serialize([result], geometry_field='geometry',)
         
@@ -60,6 +60,21 @@ def school_details(request, school_type, school_id):
         raise Http404('School does not exist')
 
     return render(request, 'schools/details.html', {'school': school, 'results': results})
+
+
+def get_all_schools(request):
+    if request.method == 'GET' and request.is_ajax():
+        query = request.GET['query']
+
+        all_schools = list(
+            chain(PrimarySchool.objects.filter(name__icontains=query),
+                  SecondarySchool.objects.filter(name__icontains=query),
+                  Kindergarten.objects.filter(name__icontains=query)))
+        json_response = Serializer().serialize(all_schools, geometry_field='geometry')
+
+        return JsonResponse(json_response, safe=False)
+    else:
+        return HttpResponseRedirect('/')
 
 
 class MapView(generic.TemplateView):

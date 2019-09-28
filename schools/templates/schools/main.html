@@ -2,7 +2,6 @@
 {% load static %}
 {% block content %}
 
-<!-- init school list -->
 <script>
     var g_all_schools = ({{ all_school_list_serialized|safe }})['features'];
 </script>
@@ -11,67 +10,12 @@
     <!-- Natalya: included header inside page-wrapper so that can fit header + body into screen -->
     {% include "navbar.html" %}
 
-    <!-------Add by Kiwi-------------->
-    <div id="search">
-        <div id="search-title">
-            <h5>Locate a School or Kindergarten</h5>
-        </div>
-
-        <div id="search-box" class="search-form-control">
-            <input class="input-box" id="search-input" onblur="this.placeholder = 'Search'"
-                onfocus="this.placeholder = ''" placeholder="Search" type="text">
-                <img src="/static/images/location.svg" onclick="locateUser()">
-        </div>
-
-        <div id="search-type-container">
-            <input type="radio" name="search-type" class="search-type" value="school" id="checkbox1" checked>
-            <label for="checkbox1" class="search-type">School</label>
-            <input type="radio" name="search-type" class="search-type" value="kindergarten" id="checkbox2">
-            <label for="checkbox2" class="search-type">Kindergarten</label>
-
-        </div>
-
-        <div id="radio-container">
-
-            {% for school in primary_school_list %}
-            <div class="radio-beauty-container school" name="{{ school }}">
-                <div class="radio-row">
-                    <label class="radio-label">
-                        <span class="radio-name">{{ school }}</span>
-                        <input type="radio" name="schoolOnSelect" value="{{ school.id }}" hidden />
-                        <span class="radio-beauty"></span>
-                    </label>
-
-                </div>
-            </div>
-            {% endfor %}
-
-            {% for kindergarten in kindergarten_list %}
-            <div class="radio-beauty-container kindergarten" name="{{ kindergarten }}">
-                <div class="radio-row">
-                    <label class="radio-label">
-                        <span class="radio-name">{{ kindergarten }}</span>
-                        <input type="radio" name="schoolOnSelect" value="{{ kindergarten.id }}" hidden />
-                        <span class="radio-beauty"></span>
-                    </label>
-                </div>
-            </div>
-            {% endfor %}
-
-        </div>
-    </div>
-    <!-------End Add By Kiwi-------------->
-
     <div class="map-container">
         <div id="main-map"></div>
     </div>
-    <div>
-        <a href="/about"><img class="about" src="{% static "images/about.png" %}"></a>
-    </div>
-</div>
 
-<script src="{% static "schools/js/init_map.js" %}"></script>
-<script src="{% static "schools/js/map_function.js" %}"></script>
-<script src="{% static "schools/js/searchbox_function.js" %}"></script>
+    <script src="{% static 'schools/js/init_map.js' %}"></script>
+    <script src="{% static 'schools/js/map_function.js' %}"></script>
+</div>
 
 {% endblock %}

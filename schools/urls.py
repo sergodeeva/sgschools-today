@@ -1,5 +1,5 @@
 from django.urls import path
-from schools.views import MapView, get_detail, about, school_details
+from schools.views import MapView, get_all_schools, get_detail, about, school_details
 
 
 app_name = 'schools'
@@ -10,4 +10,5 @@ urlpatterns = [
     path('about/', about, name='about'),
     path('', MapView.as_view(), name='school'),
     path('<str:school_type>/<int:school_id>', school_details, name='school_details'),
+    path('api/get-all-schools/', get_all_schools, name='get_all_schools'),
 ]
