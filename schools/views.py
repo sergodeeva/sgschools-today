@@ -1,9 +1,11 @@
+from itertools import chain
 from django.views import generic
 from django.http import Http404, HttpResponse, HttpResponseRedirect, JsonResponse
 from django.forms.models import model_to_dict
-from django.core import serializers
+#from django.core import serializers
 from django.shortcuts import render
-from django.core.serializers import serialize
+#from django.core.serializers import serialize
+from .serializer import Serializer
 from .models import PrimarySchool, SecondarySchool, Kindergarten
 
 
@@ -21,7 +23,7 @@ def get_detail(request):
             result = Kindergarten.objects.get(pk=school_id)
         else:
             result = None
-        json_response = serializers.serialize('geojson', [result], geometry_field='geometry', )
+        json_response = Serializer().serialize([result], geometry_field='geometry',)
         return JsonResponse(json_response, safe=False)
     else:
         return HttpResponseRedirect('/')
@@ -64,13 +66,13 @@ class MapView(generic.TemplateView):
     def get_context_data(self, **kwargs):
         context = super(MapView, self).get_context_data(**kwargs)
 
+        all_schools = list(chain(PrimarySchool.objects.all(), SecondarySchool.objects.all(), Kindergarten.objects.all()))
+
         context.update({
             'primary_school_list': PrimarySchool.objects.all(),
-            'primary_school_list_serialized': serialize('geojson', PrimarySchool.objects.all(), geometry_field='geometry'),
             'kindergarten_list': Kindergarten.objects.all(),
-            'kindergarten_list_serialized': serialize('geojson', Kindergarten.objects.all(), geometry_field='geometry'),
             'secondary_school_list': SecondarySchool.objects.all(),
-            'secondary_school_list_serialized': serialize('geojson', SecondarySchool.objects.all(), geometry_field='geometry'),
+            'all_school_list_serialized': Serializer().serialize(all_schools, geometry_field='geometry'),
         })
 
         return context

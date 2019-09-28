@@ -4,9 +4,7 @@
 
 <!-- init school list -->
 <script>
-    var g_kindergarten_list = {{ kindergarten_list_serialized|safe }};
-    var g_primary_school_list = ({{ primary_school_list_serialized|safe }})['features'];
-    var g_secondary_school_list = {{ secondary_school_list_serialized|safe }};
+    var g_all_schools = ({{ all_school_list_serialized|safe }})['features'];
 </script>
 
 <div class="page-wrapper">
