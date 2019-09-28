@@ -15,7 +15,7 @@ var twokmRange;
 
 // popup options
 var customOptions = {
-  maxWidth: "400",
+  maxWidth: "320",
   width: "200",
   className: "popupCustom"
 };
@@ -55,8 +55,8 @@ function getGeoLocationMarker(geoLocation, poptitle=null) { //todo: call APIs to
 }
 
 //create marker for the input data
-function getMarker(school, markerType) {
-  var popup = getPopup(school, markerType);
+function getMarker(school, schoolType, markerType) {
+  var popup = getPopup(school, schoolType, markerType);
   var lat = school.geometry.coordinates[1];
   var lng = school.geometry.coordinates[0];
 
@@ -64,16 +64,20 @@ function getMarker(school, markerType) {
 }
 
 // generate popup for the point on map
-function getPopup(school, markerType) {
+function getPopup(school, schoolType, markerType) {
   var lat = school.geometry.coordinates[1];
   var lng = school.geometry.coordinates[0];
   let centerGeo = [lat, lng];
-  var schoolType = markerType === schoolMarker ? "primary" : "kindergarten";
-  var popup =
-    '<b class="popup-title"><a href="/' + schoolType + "/" + school.properties.pk + '">' +
-        school.properties.name + "</a></b><br/>";
+  var path = schoolType === "PrimarySchool" ? "primary" : schoolType === "SecondarySchool" ? "secondary" : "kindergarten";
 
-  if (markerType === schoolMarker) {
+  var popup =
+    '<strong class="popup-title"><a href="/' + path + "/" + school.properties.pk + '">' +
+        school.properties.name + "</a></strong><br/> " + school.properties.address + '<br/>' +
+        '<a target="_blank" href="mailto:' + school.properties.email_address + '">' + school.properties.email_address + '</a><br/>' +
+        '<a href="tel:' + school.properties.phone_number + '">' + school.properties.phone_number + '</a><br/>' +
+        '<a target="_blank" href="' + school.properties.website_url + '">' + school.properties.website_url + '</a><br/>';
+
+  if (schoolType === "PrimarySchool") {
     if (school.properties.kindergartens.length !== 0) {
       popup += '<p class="popup-content">The school has co-located kindergarten</p>';
     } else {
@@ -86,33 +90,6 @@ function getPopup(school, markerType) {
   }
   return popup;
 }
-
-//popup functions
-/*
-mymap.on("popupopen", function(ev) {
-  if (rangeCirclesLG.hasLayer(onekmRange)) {
-    $("button.circle.one-km").addClass("active");
-  }
-  if (rangeCirclesLG.hasLayer(twokmRange)) {
-    $("button.circle.two-km").addClass("active");
-  }
-  $("button.circle").click(function() {
-    if (!$(this).hasClass("active")) {
-      if ($(this).hasClass("one-km") && !rangeCirclesLG.hasLayer(onekmRange)) {
-        rangeCirclesLG.addLayer(onekmRange);
-      } else if ($(this).hasClass("two-km") && !rangeCirclesLG.hasLayer(twokmRange)) {
-        rangeCirclesLG.addLayer(twokmRange);
-      }
-    } else {
-      if ($(this).hasClass("one-km")) {
-        rangeCirclesLG.removeLayer(onekmRange);
-      } else if ($(this).hasClass("two-km")) {
-        rangeCirclesLG.removeLayer(twokmRange);
-      }
-    }
-  });
-});
-*/
 
 function handleKmBtnClick(btnId, geoLocation){
   if(btnId === id_1km_btn){
@@ -144,7 +121,7 @@ function showSchoolsWithin(centerCoo, radius){
     let distance = getDistanceBetween(centerCoo, itemGeo);
     if (distance <= radius){
       if (item.school_type === 'PrimarySchool'){ //todo : change APIs to support all schoolsLG
-        var marker = getMarker(item, schoolMarker);
+        var marker = getMarker(item, item.school_type, schoolMarker);
         if(!schoolsLG.hasLayer(marker)){ schoolsLG.addLayer(marker);}
         else {schoolsLG.removeLayer(marker);}
       }
@@ -209,8 +186,8 @@ function showOnMap(type, id, move, clear_layer=true) {
       if (response.length > 0) {
         response.forEach(function(point) {
           var marker;
-          if (type === "school") {
-            marker = getMarker(point, schoolMarker);
+          if (type === "PrimarySchool") {
+            marker = getMarker(point, type, schoolMarker);
             schoolsLG.addLayer(marker);
 
             if (point.properties.kindergartens.length !== 0) {
@@ -218,8 +195,8 @@ function showOnMap(type, id, move, clear_layer=true) {
                 showOnMap("kindergarten", point.properties.kindergartens[i], false, false);
               }
             }
-          } else if (type === "kindergarten") {
-            marker = getMarker(point, kindergartenMarker);
+          } else if (type === "Kindergarten" || type == "SecondarySchool") {
+            marker = getMarker(point, type, kindergartenMarker);
             kindergartensLG.addLayer(marker);
           }
           if (move === true) {

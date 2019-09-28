@@ -4,6 +4,12 @@
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+
+    <div>
+    <input id="search-input" onblur="this.placeholder = 'Search'"/>
+        <span class="detect-location" onclick="locateUser()"></span>
+    </div>
+
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-item nav-link active" href="/about">About<span class="sr-only">(current)</span></a>
