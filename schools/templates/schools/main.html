@@ -1,6 +1,5 @@
 {% include "header.html" %}
 {% load static %}
-{% load school_extras %}
 {% block content %}
 
 <div class="page-wrapper">
@@ -29,11 +28,11 @@
 
         <div id="radio-container">
 
-            {% for school in all_schools %}
+            {% for school in primary_school_list %}
             <div class="radio-beauty-container school" name="{{ school }}">
                 <div class="radio-row">
                     <label class="radio-label">
-                        <span class="radio-name">{{ school }} | {{ school | class_name }}</span>
+                        <span class="radio-name">{{ school }}</span>
                         <input type="radio" name="schoolOnSelect" value="{{ school.id }}" hidden />
                         <span class="radio-beauty"></span>
                     </label>

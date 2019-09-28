@@ -2,7 +2,7 @@ from itertools import chain
 from django.views import generic
 from django.http import Http404, HttpResponse, HttpResponseRedirect, JsonResponse
 from django.forms.models import model_to_dict
-from .serializer import Serializer
+from django.core import serializers
 from django.shortcuts import render
 
 from .models import PrimarySchool, SecondarySchool, Kindergarten
@@ -23,9 +23,7 @@ def get_detail(request):
         else:
             result = None
 
-        result_list = list(chain(PrimarySchool.objects.all(), Kindergarten.objects.all()))
-
-        json_response = Serializer().serialize(result_list, geometry_field='geometry')
+        json_response = serializers.serialize('geojson', [result], geometry_field='geometry', )
         return JsonResponse(json_response, safe=False)
     else:
         return HttpResponseRedirect('/')
@@ -71,7 +69,6 @@ class MapView(generic.TemplateView):
         context.update({
             'primary_school_list': PrimarySchool.objects.all(),
             'kindergarten_list': Kindergarten.objects.all(),
-            'all_schools': list(chain(PrimarySchool.objects.all(), Kindergarten.objects.all()))
         })
 
         return context
