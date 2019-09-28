@@ -2,6 +2,11 @@
 {% load static %}
 {% block content %}
 
+<!-- init school list -->
+<script>
+    var g_all_schools = ({{ all_school_list_serialized|safe }})['features'];
+</script>
+
 <div class="page-wrapper">
     <!-- Natalya: included header inside page-wrapper so that can fit header + body into screen -->
     {% include "navbar.html" %}
@@ -15,7 +20,7 @@
         <div id="search-box" class="search-form-control">
             <input class="input-box" id="search-input" onblur="this.placeholder = 'Search'"
                 onfocus="this.placeholder = ''" placeholder="Search" type="text">
-                <a href="#"><img src="/static/images/location.svg" /></a>
+                <img src="/static/images/location.svg" onclick="locateUser()">
         </div>
 
         <div id="search-type-container">
@@ -68,15 +73,5 @@
 <script src="{% static "schools/js/init_map.js" %}"></script>
 <script src="{% static "schools/js/map_function.js" %}"></script>
 <script src="{% static "schools/js/searchbox_function.js" %}"></script>
-<script>
-    function locateUser() {
-        mymap.locate({ setView: true });
-    }
-
-    $('#search-box').find('a').on('click', function () {
-        locateUser();
-    });
-</script>
-
 
 {% endblock %}

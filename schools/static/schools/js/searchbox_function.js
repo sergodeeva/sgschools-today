@@ -45,8 +45,5 @@ $("input.search-type:radio").bind("input propertychange", function() {
 $("input[type=radio][name='schoolOnSelect']").change(function() {
   var searchType = $("input[name='search-type']:checked").val();
   var target_id = $(this).val();
-  schools.clearLayers();
-  kindergartens.clearLayers();
-  range.clearLayers();
   showOnMap(searchType, target_id, true);
 });
