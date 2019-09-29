@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '9wdoe&*&iw-lg5ps!!^lasid$+vw*!t055=3$9*6fp#u)dw7sp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = (sys.argv[1] == 'runserver')
+DEBUG = (len(sys.argv) >= 2 and sys.argv[1] == 'runserver')
 
 # To avoid transmitting the CSRF cookie over HTTP accidentally in production
 CSRF_COOKIE_SECURE = True
