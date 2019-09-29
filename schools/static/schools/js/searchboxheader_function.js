@@ -33,6 +33,8 @@ $(document).ready(function() {
         // TODO: to make autocomplete work on all the pages
         $("#search-input").val(ui.item.properties.name);
         showOnMap(ui.item.school_type, ui.item.properties.pk, true);
+        document.activeElement.blur();
+        $("search-input").blur();
         return false;
       }
     })
