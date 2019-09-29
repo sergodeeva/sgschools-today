@@ -227,34 +227,41 @@ input.search-type:checked + label.search-type::before {
   border-bottom: 1px solid lightblue;
   width: 395px;
 }
+
 .ui-menu-item .ui-menu-item-wrapper.ui-state-active {
   background: #563d7c;
 }
+
 .autocomplete-name-type-container {
   display: flex;
 }
+
 .autocomplete-item-name {
   width: 280px;
 }
+
 .autocomplete-item-type {
   flex: 1;
   text-align: right;
   font-size: 0.8rem;
 }
+
 .autocomplete-item-address {
   font-size: 0.9rem;
 }
+
 .detect-location{
   width: 24px;
   height: 24px;
   position: relative;
   float: right;
   left: -28px;
-  top: 3px;
+  top: 4px;
   opacity: 0.7;
   cursor: pointer;
   background: url("/static/images/location.svg");
 }
+
 #search-input {
   width: 400px;
   padding-left: 10px;

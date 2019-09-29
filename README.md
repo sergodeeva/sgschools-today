@@ -71,13 +71,26 @@ python manage.py runserver
 After starting the server web app will be available at http://127.0.0.1:8000/.
 
 # Deployment
-Generate static files in 'assets' folder:
+Pull latest changes and activate virtual environment:
 ```
-python manage.py collectstatic
+cd /opt/project-sgschools/geodjango_sg_schools // Navigate to the project folder
+git pull  // Pull latest changes from GitHub
+source ../venv/bin/activate  // Activate virtual environment
+```
+
+Regenerate static files in 'assets' folder:
+```
+rm -r assets  // Delete previousle generates static files
+python manage.py collectstatic  // Generate static files again
 ```
 
 Stop/Start uWSGI:
 ```
 killall uwsgi
-uwsgi --emperor /etc/uwsgi/vassals --uid www-data --gid www-data --gid www-data --daemonize /var/log/uwsgi-emperor.log
+uwsgi --emperor /opt/project-sgschools/geodjango_sg_schools/uwsgi --uid www-data --gid www-data --daemonize /var/log/uwsgi-emperor.log
+```
+
+Restart Nginx (optional):
+```
+sudo service nginx restart
 ```

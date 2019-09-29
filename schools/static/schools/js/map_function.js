@@ -15,7 +15,7 @@ var twokmRange;
 
 // popup options
 var customOptions = {
-  maxWidth: "320",
+  maxWidth: "380",
   width: "200",
   className: "popupCustom"
 };
