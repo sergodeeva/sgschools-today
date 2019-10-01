@@ -195,7 +195,7 @@ function showOnMap(type, id, move, clear_layer=true) {
                 showOnMap("kindergarten", point.properties.kindergartens[i], false, false);
               }
             }
-          } else if (type === "Kindergarten" || type == "SecondarySchool") {
+          } else if (type === "Kindergarten" || type === "SecondarySchool") {
             marker = getMarker(point, type, kindergartenMarker);
             kindergartensLG.addLayer(marker);
           }
