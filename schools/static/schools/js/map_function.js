@@ -74,10 +74,9 @@ function addMarker(type, key, marker){
   }
 }
 
-function getGeoLocationMarker(geoLocation, poptitle=null) { //todo: call APIs to convert geolocation to postal code
+function getGeoLocationMarker(geoLocation, poptitle) {
   let centerGeo = [geoLocation.lat,geoLocation.lng];
-  var popup = '<b class="popup-title">'+poptitle+'</b><br/>';
-  popup += '<p class="popup-content">' + 'add translated geo/postal info here'+ '</p>';
+  var popup = '<strong class="popup-title"><a href="" onclick="return false;">'+ poptitle[0] +'</a></strong></br><a href="" onclick="return false;">'+ poptitle[1] + '</a><p>' + poptitle[2] +'</p>';
   popup += '<div class="popup-btn-container">';
   popup += '<button id="'+id_1km_btn+'" class="popup-btn circle btn btn-info one-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">1 Km</button>';
   popup += '<button id="'+id_2km_btn+'" class="popup-btn circle btn btn-info two-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">2 Km</button></br></div>';
@@ -182,10 +181,42 @@ function getDistanceBetween(p1, p2){
 }
 
 mymap.on('locationfound', function (locationEvent) {
-  flyTo(locationEvent.latlng);
-  var oppMsgTitle = 'Detected Location: ' + locationEvent.latlng.lat.toString() +', '+locationEvent.latlng.lng.toString();
-  showCurrLocation(locationEvent.latlng, oppMsgTitle);
+  decode_geolocation(locationEvent.latlng);
 });
+
+function decode_geolocation(latlng){
+  var popMsgTitle = ['GPS Location', '', latlng['lat'].toFixed(8) + ', ' + latlng['lng'].toFixed(8)];
+    $.ajax({
+        type: "GET",
+        url: "api/geo-to-address/",
+        data: {
+          lat:latlng['lat'],
+          lng:latlng['lng'],
+        },
+        async: true,
+        success: function (result) {
+          var response = JSON.parse(result);
+          if (response.results.length > 0){
+            popMsgTitle[0] = response.results[0].formatted;
+            let addresses = response.results[0].formatted.split(', ');
+            if (addresses.length > 2){
+              popMsgTitle[0] = addresses[0];
+              popMsgTitle[1] = addresses[1]+', '+addresses[2];
+              popMsgTitle[2] = 'GPS: '+latlng['lat'].toFixed(8) + ', ' + latlng['lng'].toFixed(8);
+            }
+          }
+
+          flyTo(latlng);
+          showCurrLocation(latlng, popMsgTitle);
+        },
+
+        error: function(error) {
+            flyTo(latlng);
+            showCurrLocation(latlng, popMsgTitle);
+            console.log(error);
+        }
+    });
+}
 
 //triggers 'locationfound' event
 function locateUser() {
@@ -223,7 +254,7 @@ function clearAllLMarkers(except_marker_keys=null) {
 
 }
 
-function showCurrLocation(latlng, poptitle=null){
+function showCurrLocation(latlng, poptitle){
   clearAllLMarkers();
   prepareCircleMarker(latlng);
   var marker = getGeoLocationMarker(latlng, poptitle);

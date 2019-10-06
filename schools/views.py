@@ -7,6 +7,8 @@ from django.shortcuts import render
 #from django.core.serializers import serialize
 from .serializer import Serializer
 from .models import PrimarySchool, SecondarySchool, Kindergarten
+import requests
+from .config import Config
 
 KEY_TYPE_ALL = 'KEY_TYPE_ALL'
 KEY_TYPE_PRIMARY = 'KEY_TYPE_PRIMARY'
@@ -119,6 +121,22 @@ def get_all_schools(request):
         return JsonResponse(json_response, safe=False)
     else:
         return HttpResponseRedirect('/')
+
+
+def fmt_opencagedata_url(key, lat, lng):
+    return 'https://api.opencagedata.com/geocode/v1/json?key='+key+'&q='+lat+'%2C'+lng
+
+
+def geo_to_address(request):
+    if request.method == 'GET' and request.is_ajax():
+
+        lat, lng = request.GET['lat'], request.GET['lng']
+
+        result = requests.get(fmt_opencagedata_url(Config.get_opencage_key(), lat, lng))
+
+        return JsonResponse(result.content.decode('utf-8'), safe=False)
+    else:
+        return JsonResponse('', safe=False)
 
 
 class MapView(generic.TemplateView):
