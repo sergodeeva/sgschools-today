@@ -1,8 +1,7 @@
 // create markers group
 var schoolsLG = L.layerGroup();
 schoolsLG.addTo(mymap);
-var kindergartensLG = L.layerGroup();
-kindergartensLG.addTo(mymap);
+
 var geoCenterLG = L.layerGroup();
 geoCenterLG.addTo(mymap);
 
@@ -24,10 +23,17 @@ var customOptions = {
 };
 
 // school marker config (font-awesome icon)
-var schoolMarker = L.AwesomeMarkers.icon({
+var primarySchoolMarker = L.AwesomeMarkers.icon({
   prefix: "fa",
   icon: "school",
   markerColor: "blue"
+});
+
+// school marker config (font-awesome icon)
+var secondarySchoolMarker = L.AwesomeMarkers.icon({
+  prefix: "fa",
+  icon: "square-root-alt",
+  markerColor: "green"
 });
 
 // kindergarten marker config (font-awesome icon)
@@ -38,9 +44,9 @@ var kindergartenMarker = L.AwesomeMarkers.icon({
 });
 
 var geoLocationMarker = L.AwesomeMarkers.icon({
-    prefix: "fa",
-    icon: "thumbtack",
-    markerColor: "darkgreen"
+  prefix: "fa",
+  icon: "globe-asia",
+  markerColor: "purple"
 });
 
 //container ids
@@ -64,7 +70,7 @@ function populateMakerInstance(keys, outArr){
   });
 }
 
-function addMarker(type, key, marker){
+function cacheMarker(type, key, marker){
   if (type === 's'){
     markers[type][key] = marker;
   }
@@ -80,46 +86,57 @@ function getGeoLocationMarker(geoLocation, poptitle) {
   popup += '<div class="popup-btn-container">';
   popup += '<button id="'+id_1km_btn+'" class="popup-btn circle btn btn-info one-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">1 Km</button>';
   popup += '<button id="'+id_2km_btn+'" class="popup-btn circle btn btn-info two-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">2 Km</button></br></div>';
-  let marker =  L.marker(geoLocation, geoLocationMarker).bindPopup(popup,customOptions);
-  addMarker('u',centerGeo, marker);
+  let marker =  L.marker(geoLocation, {icon: geoLocationMarker}).bindPopup(popup,customOptions);
+  cacheMarker('u',centerGeo, marker);
   return marker;
 }
 
 //create marker for the input data
-function getMarker(school, schoolType, markerType) {
+function getMarker(school) {
   let lat = school.geometry.coordinates[1];
   let lng = school.geometry.coordinates[0];
   let centerGeo = [lat, lng];
-  var popup = getPopup(school, schoolType, markerType);
+
+  var markerType = school.school_type === "pri" ? primarySchoolMarker : school.school_type === "sec" ? secondarySchoolMarker : kindergartenMarker;
+
+  var popup = getPopup(school);
+
   let marker= L.marker(centerGeo, { icon: markerType }).bindPopup(popup, customOptions);
-  addMarker('s', centerGeo, marker);
+  cacheMarker('s', centerGeo, marker);
   return marker;
 }
 
 // generate popup for the point on map
-function getPopup(school, schoolType, markerType) {
+function getPopup(school) {
   var lat = school.geometry.coordinates[1];
   var lng = school.geometry.coordinates[0];
   let centerGeo = [lat, lng];
-  var path = schoolType === "PrimarySchool" ? "primary" : schoolType === "SecondarySchool" ? "secondary" : "kindergarten";
+  var path = school.school_type === "pri" ? "primary" : school.school_type === "sec" ? "secondary" : "kindergarten";
+
+  var email = '';
+  if (school.properties.email_address){
+    email =  '<a target="_blank" href="mailto:' + school.properties.email_address + '">' + school.properties.email_address + '</a><br/>';
+  }
 
   var popup = '<strong class="popup-title"><a href="/' + path + "/" + school.properties.pk + '">' +
-        school.properties.name + "</a></strong><br/> " + school.properties.address + '<br/>' +
-        '<a target="_blank" href="mailto:' + school.properties.email_address + '">' + school.properties.email_address + '</a><br/>' +
+        school.properties.name + "</a></strong><br/>" + school.properties.address + '<br/>' + email +
         '<a href="tel:' + school.properties.phone_number + '">' + school.properties.phone_number + '</a><br/>' +
         '<a target="_blank" href="' + school.properties.website_url + '">' + school.properties.website_url + '</a><br/>';
 
-  if (schoolType === "PrimarySchool") {
+  if (school.school_type === "pri") {
     if (school.properties.kindergartens.length !== 0) {
       popup += '<p class="popup-content">The school has co-located kindergarten</p>';
     } else {
       popup += '<p class="popup-content">There is no co-located kindergartens</p>';
     }
-
-    popup += '<div class="popup-btn-container">';
-    popup += '<button id="'+id_1km_btn+'" class="popup-btn circle btn btn-info one-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">1 Km</button>';
-    popup += '<button id="'+id_2km_btn+'" class="popup-btn circle btn btn-info two-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">2 Km</button></br></div>';
+  }else{
+    popup += '<p class="popup-content"></p>' //keep the layout consistent
   }
+
+  popup += '<div class="popup-btn-container">';
+  popup += '<button id="'+id_1km_btn+'" class="popup-btn circle btn btn-info one-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">1 Km</button>';
+  popup += '<button id="'+id_2km_btn+'" class="popup-btn circle btn btn-info two-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">2 Km</button></br></div>';
+
   return popup;
 }
 
@@ -159,16 +176,14 @@ function handleKmBtnClick(btnId, geoLocation){
 }
 
 function showSchoolsWithin(centerCoo, radius, layerGroup){
-  g_all_schools.forEach(function (item, idx, arr) {
-    let lat = item.geometry.coordinates[1];
-    let lng = item.geometry.coordinates[0];
+  g_all_schools.forEach(function (school, idx, arr) {
+    let lat = school.geometry.coordinates[1];
+    let lng = school.geometry.coordinates[0];
     let itemGeo = [lat, lng];
     let distance = getDistanceBetween(centerCoo, itemGeo);
     if ((0 < distance) && (distance <= radius)){
-      if (item.school_type === 'PrimarySchool'){ //todo : change APIs to support all schoolsLG
-        var marker = getMarker(item, item.school_type, schoolMarker);
-        layerGroup.addLayer(marker);
-      }
+      let marker = getMarker(school);
+      layerGroup.addLayer(marker);
     }
   });
 }
@@ -247,7 +262,7 @@ function clearMarkers(layerGroup, except_marker_keys=null){
 }
 
 function clearAllLMarkers(except_marker_keys=null) {
-  let lgs = [schoolsLG, kindergartensLG, geoCenterLG, rangeCircle1KmLG, rangeCircle2KmLG];
+  let lgs = [schoolsLG, geoCenterLG, rangeCircle1KmLG, rangeCircle2KmLG];
   lgs.forEach(function (lg, idx, arr) {
     clearMarkers(lg, except_marker_keys);
   });
@@ -278,24 +293,20 @@ function showOnMap(type, id, move, clear_layer=true) {
     success: function(result) {
       var response = JSON.parse(result).features;
       if (response.length > 0) {
-        response.forEach(function(point) {
-          var marker;
-          if (type === "PrimarySchool") {
-            marker = getMarker(point, type, schoolMarker);
-            schoolsLG.addLayer(marker);
+        response.forEach(function(school) {
 
-            if (point.properties.kindergartens.length !== 0) {
-              for (var i = 0, len = point.properties.kindergartens.length; i < len; i++) {
-                showOnMap("kindergarten", point.properties.kindergartens[i], false, false);
+          schoolsLG.addLayer(getMarker(school));
+
+          if (type === "pri") {
+            if (school.properties.kindergartens.length !== 0) {
+              for (var i = 0, len = school.properties.kindergartens.length; i < len; i++) {
+                showOnMap("kin", school.properties.kindergartens[i], false, false);
               }
             }
-          } else if (type === "Kindergarten" || type === "SecondarySchool") {
-            marker = getMarker(point, type, kindergartenMarker);
-            kindergartensLG.addLayer(marker);
           }
           if (move === true) {
-            var lat = point.geometry.coordinates[1];
-            var lng = point.geometry.coordinates[0];
+            var lat = school.geometry.coordinates[1];
+            var lng = school.geometry.coordinates[0];
             var coordinates = [lat, lng];
             prepareCircleMarker(coordinates);
             flyTo(coordinates);

@@ -61,11 +61,12 @@ def get_detail(request):
     if request.method == 'GET' and request.is_ajax():
         school_type = request.GET['type']
         school_id = request.GET['id']
-        if school_type == 'PrimarySchool':
+        result = ''
+        if school_type == 'pri':
             result = get_cached_results(KEY_TYPE_PRIMARY, school_id)
-        elif school_type == 'Kindergarten':
+        elif school_type == 'kin':
             result = get_cached_results(KEY_TYPE_KINDERGARTEN, school_id)
-        else:
+        elif school_type == 'sec':
             result = get_cached_results(KEY_TYPE_SECONDARY, school_id)
 
         json_response = Serializer().serialize([result], geometry_field='geometry',)

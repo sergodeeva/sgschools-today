@@ -1,5 +1,5 @@
 function getAutocompleteElement(item) {
-    var schoolType = item.school_type === 'PrimarySchool' ? 'primary' : item.school_type === 'SecondarySchool' ? 'secondary' : 'kindergarten'
+    var schoolType = item.school_type === 'pri' ? 'primary' : item.school_type === 'sec' ? 'secondary' : 'kindergarten';
     var elementString =
         '<div><div class="autocomplete-name-type-container"><div class="autocomplete-item-name"><strong>'
         + item.properties.name
@@ -7,7 +7,7 @@ function getAutocompleteElement(item) {
         + schoolType
         + '</div></div><div class="autocomplete-item-address">'
         + item.properties.address
-        + '</div></div>'
+        + '</div></div>';
 
    return elementString
 }
