@@ -2,24 +2,14 @@ from bs4 import BeautifulSoup
 import googlemaps
 import html
 import json
-import os
 import re
 import requests
+
+from schools import credentials
 
 MOE_URL = 'https://search.olasearch.com/moe/search'
 DATA_GOV_URL = 'https://data.gov.sg/api'
 ELITE_URL = 'https://elite.com.sg'
-
-
-def credentials():
-    """Read credentials from credentials.json file."""
-
-    cred_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) + '/credentials.json'
-
-    with open(cred_path) as json_data_file:
-        credentials_json = json.load(json_data_file)
-
-    return credentials_json
 
 
 def get_json(url, timeout=60):

@@ -5,10 +5,12 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
+    {% if displaySearchBar %}
     <div>
     <input id="search-input" onblur="this.placeholder = 'Search'"/>
         <span class="detect-location" onclick="locateUser()"></span>
     </div>
+    {% endif %}
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">

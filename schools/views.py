@@ -8,7 +8,7 @@ from django.shortcuts import render
 from .serializer import Serializer
 from .models import PrimarySchool, SecondarySchool, Kindergarten
 import requests
-from .config import Config
+from . import credentials
 
 KEY_TYPE_ALL = 'KEY_TYPE_ALL'
 KEY_TYPE_PRIMARY = 'KEY_TYPE_PRIMARY'
@@ -140,10 +140,8 @@ def fmt_onemap_url(searchval):
 
 def geo_to_address(request):
     if request.method == 'GET' and request.is_ajax():
-
         lat, lng = request.GET['lat'], request.GET['lng']
-
-        result = requests.get(fmt_opencagedata_url(Config.get_opencage_key(), lat, lng))
+        result = requests.get(fmt_opencagedata_url(credentials()['key_opencagedata'], lat, lng))
 
         return JsonResponse(result.content.decode('utf-8'), safe=False)
     else:

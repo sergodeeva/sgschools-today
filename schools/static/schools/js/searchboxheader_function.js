@@ -1,14 +1,3 @@
-const note_css = "display:flex;justify-content:center;align-items:center;"+
-    "font-family:Fira%20Code,SFMono-Regular,Menlo,Monaco,Consolas,Liberation%20Mono,Courier%20New,monospace;" +
-    "font-weight:500;" +
-    "background:#f4f2ff;" +
-    "font-size:1rem;" +
-    "color:#9884fc;" +
-    "padding:4px%2010px;" +
-    "border-radius:5px;" +
-    "line-height:1.5rem;" +
-    "word-break:normal;";
-
 String.prototype.toTitleCase = function () {
     return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 };
@@ -16,7 +5,7 @@ String.prototype.toTitleCase = function () {
 function fmt_autocomplete_str(name, note, address) {
     return '<div><div class="autocomplete-name-type-container"><div class="autocomplete-item-name"><strong>'
         + name
-        + '</strong></div><div class="autocomplete-item-type" style='+note_css+'>'
+        + '</strong></div><div class="autocomplete-item-type">'
         + note
         + '</div></div><div class="autocomplete-item-address">'
         + address
