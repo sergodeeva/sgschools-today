@@ -111,13 +111,19 @@ def get_all_schools(request):
     if request.method == 'GET' and request.is_ajax():
         query = request.GET['query']
 
-        all_schools = list(
+        results = list(
             chain(get_cached_results(KEY_TYPE_ALL, KEY_TYPE_PRIMARY).filter(name__icontains=query),
                   get_cached_results(KEY_TYPE_ALL, KEY_TYPE_SECONDARY).filter(name__icontains=query),
                   get_cached_results(KEY_TYPE_ALL, KEY_TYPE_KINDERGARTEN).filter(name__icontains=query),
                   )
         )
-        json_response = Serializer().serialize(all_schools, geometry_field='geometry')
+
+        json_response = Serializer().serialize(results, geometry_field='geometry')
+
+        if not len(results):  # extend the search out of local db
+            searchval = query.replace(' ', '%20')
+            results = requests.get(fmt_onemap_url(searchval))
+            json_response = results.content.decode('utf-8')
 
         return JsonResponse(json_response, safe=False)
     else:
@@ -126,6 +132,10 @@ def get_all_schools(request):
 
 def fmt_opencagedata_url(key, lat, lng):
     return 'https://api.opencagedata.com/geocode/v1/json?key='+key+'&q='+lat+'%2C'+lng
+
+
+def fmt_onemap_url(searchval):
+    return 'https://developers.onemap.sg/commonapi/search?searchVal=' + searchval + '&returnGeom=Y&getAddrDetails=Y&pageNum=1'
 
 
 def geo_to_address(request):
