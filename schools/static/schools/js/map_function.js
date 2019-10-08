@@ -1,17 +1,19 @@
 // create markers group
 var schoolsLG = L.layerGroup();
 schoolsLG.addTo(mymap);
-var kindergartensLG = L.layerGroup();
-kindergartensLG.addTo(mymap);
+
 var geoCenterLG = L.layerGroup();
 geoCenterLG.addTo(mymap);
 
-// rangeCirclesLG layer
-var rangeCirclesLG = L.layerGroup();
-rangeCirclesLG.addTo(mymap);
+// rangeCircles group
+var rangeCircle1KmLG = L.layerGroup();
+rangeCircle1KmLG.addTo(mymap);
 
-var onekmRange;
-var twokmRange;
+var rangeCircle2KmLG = L.layerGroup();
+rangeCircle2KmLG.addTo(mymap);
+
+var oneKmCircleMaker;
+var twoKmCircleMaker;
 
 // popup options
 var customOptions = {
@@ -21,10 +23,17 @@ var customOptions = {
 };
 
 // school marker config (font-awesome icon)
-var schoolMarker = L.AwesomeMarkers.icon({
+var primarySchoolMarker = L.AwesomeMarkers.icon({
   prefix: "fa",
   icon: "school",
   markerColor: "blue"
+});
+
+// school marker config (font-awesome icon)
+var secondarySchoolMarker = L.AwesomeMarkers.icon({
+  prefix: "fa",
+  icon: "square-root-alt",
+  markerColor: "green"
 });
 
 // kindergarten marker config (font-awesome icon)
@@ -35,98 +44,148 @@ var kindergartenMarker = L.AwesomeMarkers.icon({
 });
 
 var geoLocationMarker = L.AwesomeMarkers.icon({
-    prefix: "fa",
-    icon: "thumbtack",
-    markerColor: "darkgreen"
+  prefix: "fa",
+  icon: "globe-asia",
+  markerColor: "purple"
 });
 
 //container ids
 var id_1km_btn = '1km-btn';
 var id_2km_btn = '2km-btn';
 
-function getGeoLocationMarker(geoLocation, poptitle=null) { //todo: call APIs to convert geolocation to postal code
+//markers stored in this dictionary is used for instance reference tracing
+let markers = {
+  's':{}, //for schools {[lat, lng]: maker_instance}
+  'u':{}, //for user's current location {[lat, lng]: maker_instance}
+};
+
+function populateMakerInstance(keys, outArr){
+  keys.forEach(function (k , i , a) {
+    if (k in markers['s']){
+      outArr.push(markers['s'][k]);
+    }
+    if (k in markers['u']){
+      outArr.push(markers['u'][k]);
+    }
+  });
+}
+
+function cacheMarker(type, key, marker){
+  if (type === 's'){
+    markers[type][key] = marker;
+  }
+  else if (type === 'u'){
+    markers[type] = {}; //must clear to avoid mem leak
+    markers[type][key] = marker;
+  }
+}
+
+function getGeoLocationMarker(geoLocation, poptitle) {
   let centerGeo = [geoLocation.lat,geoLocation.lng];
-  var popup = '<b class="popup-title">'+poptitle+'</b><br/>';
-  popup += '<p class="popup-content">' + 'add translated geo/postal info here'+ '</p>';
+  var popup = '<strong class="popup-title"><a href="" onclick="return false;">'+ poptitle[0] +'</a></strong></br><a href="" onclick="return false;">'+ poptitle[1] + '</a><p>' + poptitle[2] +'</p>';
   popup += '<div class="popup-btn-container">';
-  popup += '<button id="'+id_1km_btn+'" class="popup-btn circle btn btn-info one-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">1km</button>';
-  popup += '<button id="'+id_2km_btn+'" class="popup-btn circle btn btn-info two-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">2km</button></br></div>';
-  return L.marker(geoLocation, geoLocationMarker).bindPopup(popup,customOptions);
+  popup += '<button id="'+id_1km_btn+'" class="popup-btn circle btn btn-info one-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">1 Km</button>';
+  popup += '<button id="'+id_2km_btn+'" class="popup-btn circle btn btn-info two-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">2 Km</button></br></div>';
+  let marker =  L.marker(geoLocation, {icon: geoLocationMarker}).bindPopup(popup,customOptions);
+  cacheMarker('u',centerGeo, marker);
+  return marker;
 }
 
 //create marker for the input data
-function getMarker(school, schoolType, markerType) {
-  var popup = getPopup(school, schoolType, markerType);
-  var lat = school.geometry.coordinates[1];
-  var lng = school.geometry.coordinates[0];
+function getMarker(school) {
+  let lat = school.geometry.coordinates[1];
+  let lng = school.geometry.coordinates[0];
+  let centerGeo = [lat, lng];
 
-  return L.marker([lat, lng], { icon: markerType }).bindPopup(popup, customOptions);
+  var markerType = school.school_type === "pri" ? primarySchoolMarker : school.school_type === "sec" ? secondarySchoolMarker : kindergartenMarker;
+
+  var popup = getPopup(school);
+
+  let marker= L.marker(centerGeo, { icon: markerType }).bindPopup(popup, customOptions);
+  cacheMarker('s', centerGeo, marker);
+  return marker;
 }
 
 // generate popup for the point on map
-function getPopup(school, schoolType, markerType) {
+function getPopup(school) {
   var lat = school.geometry.coordinates[1];
   var lng = school.geometry.coordinates[0];
   let centerGeo = [lat, lng];
-  var path = schoolType === "PrimarySchool" ? "primary" : schoolType === "SecondarySchool" ? "secondary" : "kindergarten";
+  var path = school.school_type === "pri" ? "primary" : school.school_type === "sec" ? "secondary" : "kindergarten";
 
-  var popup =
-    '<strong class="popup-title"><a href="/' + path + "/" + school.properties.pk + '">' +
-        school.properties.name + "</a></strong><br/> " + school.properties.address + '<br/>' +
-        '<a target="_blank" href="mailto:' + school.properties.email_address + '">' + school.properties.email_address + '</a><br/>' +
+  var email = '';
+  if (school.properties.email_address){
+    email =  '<a target="_blank" href="mailto:' + school.properties.email_address + '">' + school.properties.email_address + '</a><br/>';
+  }
+
+  var popup = '<strong class="popup-title"><a href="/' + path + "/" + school.properties.pk + '">' +
+        school.properties.name + "</a></strong><br/>" + school.properties.address + '<br/>' + email +
         '<a href="tel:' + school.properties.phone_number + '">' + school.properties.phone_number + '</a><br/>' +
         '<a target="_blank" href="' + school.properties.website_url + '">' + school.properties.website_url + '</a><br/>';
 
-  if (schoolType === "PrimarySchool") {
+  if (school.school_type === "pri") {
     if (school.properties.kindergartens.length !== 0) {
       popup += '<p class="popup-content">The school has co-located kindergarten</p>';
     } else {
       popup += '<p class="popup-content">There is no co-located kindergartens</p>';
     }
-
-    popup += '<div class="popup-btn-container">';
-    popup += '<button id="'+id_1km_btn+'" class="popup-btn circle btn btn-info one-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">1km</button>';
-    popup += '<button id="'+id_2km_btn+'" class="popup-btn circle btn btn-info two-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">2km</button></br></div>';
+  }else{
+    popup += '<p class="popup-content"></p>' //keep the layout consistent
   }
+
+  popup += '<div class="popup-btn-container">';
+  popup += '<button id="'+id_1km_btn+'" class="popup-btn circle btn btn-info one-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">1 Km</button>';
+  popup += '<button id="'+id_2km_btn+'" class="popup-btn circle btn btn-info two-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">2 Km</button></br></div>';
+
   return popup;
 }
 
-function handleKmBtnClick(btnId, geoLocation){
-  if(btnId === id_1km_btn){
-    if (rangeCirclesLG.hasLayer(onekmRange)) {
-      rangeCirclesLG.removeLayer(onekmRange);
-    }
-    else {
-      rangeCirclesLG.addLayer(onekmRange);
-      showSchoolsWithin(geoLocation, 1000);
-    }
+var prev_click = [null, null];
+function click_on_same_marker(curr_click){
+  let ret = (curr_click[0] === prev_click[0]) && (curr_click[1] === prev_click[1]);
+  prev_click = curr_click;
+  return ret;
+}
 
+function handleKmBtnClick(btnId, geoLocation){
+
+  if (!click_on_same_marker(geoLocation)){
+    prepareCircleMarker(geoLocation);
+    clearAllLMarkers([geoLocation]);
   }
-  else if(btnId === id_2km_btn){
-    if (rangeCirclesLG.hasLayer(twokmRange)) {
-      rangeCirclesLG.removeLayer(twokmRange);
+
+  if(btnId === id_1km_btn){
+    if (!rangeCircle1KmLG.hasLayer(oneKmCircleMaker)){
+      rangeCircle1KmLG.addLayer(oneKmCircleMaker);
+      showSchoolsWithin(geoLocation, 1000, rangeCircle1KmLG);
     }
-    else {
-      rangeCirclesLG.addLayer(twokmRange);
-      showSchoolsWithin(geoLocation, 2000);
+    else{
+      clearMarkers(rangeCircle1KmLG, [geoLocation]);
+    }
+  }
+
+  if(btnId === id_2km_btn){
+    if (!rangeCircle2KmLG.hasLayer(twoKmCircleMaker)){
+      rangeCircle2KmLG.addLayer(twoKmCircleMaker);
+      showSchoolsWithin(geoLocation, 2000, rangeCircle2KmLG);
+    }
+    else{
+       clearMarkers(rangeCircle2KmLG, [geoLocation]);
     }
   }
 }
 
-function showSchoolsWithin(centerCoo, radius){
-  g_all_schools.forEach(function (item, idx, arr) {
-    let lat = item.geometry.coordinates[1];
-    let lng = item.geometry.coordinates[0];
+function showSchoolsWithin(centerCoo, radius, layerGroup){
+  g_all_schools.forEach(function (school, idx, arr) {
+    let lat = school.geometry.coordinates[1];
+    let lng = school.geometry.coordinates[0];
     let itemGeo = [lat, lng];
     let distance = getDistanceBetween(centerCoo, itemGeo);
-    if (distance <= radius){
-      if (item.school_type === 'PrimarySchool'){ //todo : change APIs to support all schoolsLG
-        var marker = getMarker(item, item.school_type, schoolMarker);
-        if(!schoolsLG.hasLayer(marker)){ schoolsLG.addLayer(marker);}
-        else {schoolsLG.removeLayer(marker);}
-      }
+    if ((0 < distance) && (distance <= radius)){
+      let marker = getMarker(school);
+      layerGroup.addLayer(marker);
     }
-  })
+  });
 }
 
 //p1 and p2 are Latlng type
@@ -137,10 +196,42 @@ function getDistanceBetween(p1, p2){
 }
 
 mymap.on('locationfound', function (locationEvent) {
-  flyTo(locationEvent.latlng);
-  var oppMsgTitle = 'Detected Location: ' + locationEvent.latlng.lat.toString() +', '+locationEvent.latlng.lng.toString();
-  showCurrLocation(locationEvent.latlng, oppMsgTitle);
+  decode_geolocation(locationEvent.latlng);
 });
+
+function decode_geolocation(latlng){
+  var popMsgTitle = ['GPS Location', '', latlng['lat'].toFixed(8) + ', ' + latlng['lng'].toFixed(8)];
+    $.ajax({
+        type: "GET",
+        url: "api/geo-to-address/",
+        data: {
+          lat:latlng['lat'],
+          lng:latlng['lng'],
+        },
+        async: true,
+        success: function (result) {
+          var response = JSON.parse(result);
+          if (response.results.length > 0){
+            popMsgTitle[0] = response.results[0].formatted;
+            let addresses = response.results[0].formatted.split(', ');
+            if (addresses.length > 2){
+              popMsgTitle[0] = addresses[0];
+              popMsgTitle[1] = addresses[1]+', '+addresses[2];
+              popMsgTitle[2] = 'GPS: '+latlng['lat'].toFixed(8) + ', ' + latlng['lng'].toFixed(8);
+            }
+          }
+
+          flyTo(latlng);
+          showCurrLocation(latlng, popMsgTitle);
+        },
+
+        error: function(error) {
+            flyTo(latlng);
+            showCurrLocation(latlng, popMsgTitle);
+            console.log(error);
+        }
+    });
+}
 
 //triggers 'locationfound' event
 function locateUser() {
@@ -153,15 +244,33 @@ function flyTo(coordinates) {
   mymap.flyTo(coordinates, 15);
 }
 
-function clearAllLayers() {
-  schoolsLG.clearLayers();
-  kindergartensLG.clearLayers();
-  rangeCirclesLG.clearLayers();
-  geoCenterLG.clearLayers()
+
+// clear all markers except those in exception list
+function clearMarkers(layerGroup, except_marker_keys=null){
+  if (except_marker_keys === null){
+    layerGroup.clearLayers();
+  }
+  else {
+    var except_marker_instances = [];
+    populateMakerInstance(except_marker_keys, except_marker_instances);
+    layerGroup.eachLayer(function (marker) {
+      if (!except_marker_instances.includes(marker)){
+        layerGroup.removeLayer(marker);
+      }
+    });
+  }
 }
 
-function showCurrLocation(latlng, poptitle=null){
-  clearAllLayers();
+function clearAllLMarkers(except_marker_keys=null) {
+  let lgs = [schoolsLG, geoCenterLG, rangeCircle1KmLG, rangeCircle2KmLG];
+  lgs.forEach(function (lg, idx, arr) {
+    clearMarkers(lg, except_marker_keys);
+  });
+
+}
+
+function showCurrLocation(latlng, poptitle){
+  clearAllLMarkers();
   prepareCircleMarker(latlng);
   var marker = getGeoLocationMarker(latlng, poptitle);
   geoCenterLG.addLayer(marker);
@@ -170,7 +279,7 @@ function showCurrLocation(latlng, poptitle=null){
 function showOnMap(type, id, move, clear_layer=true) {
 
   if (clear_layer){
-    clearAllLayers();
+    clearAllLMarkers();
   }
 
   $.ajax({
@@ -184,24 +293,20 @@ function showOnMap(type, id, move, clear_layer=true) {
     success: function(result) {
       var response = JSON.parse(result).features;
       if (response.length > 0) {
-        response.forEach(function(point) {
-          var marker;
-          if (type === "PrimarySchool") {
-            marker = getMarker(point, type, schoolMarker);
-            schoolsLG.addLayer(marker);
+        response.forEach(function(school) {
 
-            if (point.properties.kindergartens.length !== 0) {
-              for (var i = 0, len = point.properties.kindergartens.length; i < len; i++) {
-                showOnMap("kindergarten", point.properties.kindergartens[i], false, false);
+          schoolsLG.addLayer(getMarker(school));
+
+          if (type === "pri") {
+            if (school.properties.kindergartens.length !== 0) {
+              for (var i = 0, len = school.properties.kindergartens.length; i < len; i++) {
+                showOnMap("kin", school.properties.kindergartens[i], false, false);
               }
             }
-          } else if (type === "Kindergarten" || type == "SecondarySchool") {
-            marker = getMarker(point, type, kindergartenMarker);
-            kindergartensLG.addLayer(marker);
           }
           if (move === true) {
-            var lat = point.geometry.coordinates[1];
-            var lng = point.geometry.coordinates[0];
+            var lat = school.geometry.coordinates[1];
+            var lng = school.geometry.coordinates[0];
             var coordinates = [lat, lng];
             prepareCircleMarker(coordinates);
             flyTo(coordinates);
@@ -216,8 +321,8 @@ function showOnMap(type, id, move, clear_layer=true) {
 }
 
 function prepareCircleMarker(coordinates) {
-  onekmRange = L.circle(coordinates, { radius: 1000, color: "red", opacity: 0.3 });
-  twokmRange = L.circle(coordinates, { radius: 2000, opacity: 0.3 });
+  oneKmCircleMaker = L.circle(coordinates, { radius: 1000, color: "red", opacity: 0.3 });
+  twoKmCircleMaker = L.circle(coordinates, { radius: 2000, opacity: 0.3 });
 }
 
 //todo need to study loading performace of ll labrary
