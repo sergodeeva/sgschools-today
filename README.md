@@ -84,6 +84,8 @@ rm -r assets  // Delete previousle generates static files
 python manage.py collectstatic  // Generate static files again
 ```
 
+Create file credentials.json on the server (refer to credentials.example.json). Place credentials into the file.
+
 Stop/Start uWSGI:
 ```
 killall uwsgi
