@@ -259,29 +259,32 @@ input.search-type:checked + label.search-type::before {
   font-size: 0.9rem;
 }
 
-.detect-location{
-  width: 24px;
-  height: 24px;
-  position: relative;
-  float: right;
-  left: -28px;
-  top: 4px;
-  opacity: 0.7;
-  cursor: pointer;
-  background: url("/static/images/location.svg");
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  max-width: 398px;
 }
 
-#search-input {
-  width: 400px;
-  padding-left: 10px;
-  padding-right: 30px;
+.icon {
+  padding: 15px;
+  background: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0 10px;
+  border: 1px solid white;
+  outline: none;
 }
 
 @media only screen and (max-width: 600px) {
-  .ui-menu .ui-menu-item {
-    width: 305px;
+  .input-container {
+    width: 90.7vw;
   }
-  #search-input {
-    width: 310px;
+  .ui-menu .ui-menu-item {
+    width: 90vw;
   }
 }

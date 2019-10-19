@@ -6,9 +6,9 @@
     </button>
 
     {% if displaySearchBar %}
-    <div>
-    <input id="search-input" onblur="this.placeholder = 'Search'"/>
-        <span class="detect-location" onclick="locateUser()"></span>
+    <div class="input-container">
+        <input id="search-input" class="input-field" onblur="this.placeholder = 'Enter school, address or postal code'"/>
+        <i class="fa fa-location-arrow icon" onclick="locateUser()"></i>
     </div>
     {% endif %}
 
