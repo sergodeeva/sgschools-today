@@ -1,0 +1,299 @@
+[
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Serangoon Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.872256917786 1.35072709374027)",
+      "address": "23 Serangoon Central",
+      "postal_code": "556083",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/342/Default.aspx?branch=Serangoon+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "library@orchard",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.839669047112 1.30040819039694)",
+      "address": "277 Orchard Road",
+      "postal_code": "238858",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/337/Default.aspx?branch=library%40orchard"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Geylang East Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.885837273218 1.31744297942454)",
+      "address": "50 Geylang East Ave 1",
+      "postal_code": "389777",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/328/Default.aspx?branch=Geylang+East+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Jurong West Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.704512325533 1.34063599253795)",
+      "address": "60 Jurong West Central 3",
+      "postal_code": "648346",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/302/Default.aspx?branch=Jurong+West+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Bukit Batok Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.749285191724 1.34949754800173)",
+      "address": "1 Bukit Batok Central Link",
+      "postal_code": "658713",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/286/Default.aspx?branch=Bukit+Batok+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Sengkang Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.894688239041 1.39132876236971)",
+      "address": "1 Sengkang Square",
+      "postal_code": "545078",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/341/Default.aspx?branch=Sengkang+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Marine Parade Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.909581446984 1.30466966872275)",
+      "address": "278 Marine Parade Road",
+      "postal_code": "449282",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/324/Default.aspx?branch=Marine+Parade+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Pasir Ris Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.949439880186 1.37235750960519)",
+      "address": "1 Pasir Ris Central St 3",
+      "postal_code": "518457",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/325/Default.aspx?branch=Pasir+Ris+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "library@chinatown",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.844942912669 1.28526073700342)",
+      "address": "133 North Bridge Road",
+      "postal_code": "59413",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/322/Default.aspx?branch=library%40chinatown"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "library@esplanade",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.855770250108 1.28941165551051)",
+      "address": "8 Raffles Avenue",
+      "postal_code": "39802",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/336/Default.aspx?branch=library%40esplanade"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Chua Chu Kang Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.745039269848 1.38495919705382)",
+      "address": "21 Choa Chu Kang Avenue 4",
+      "postal_code": "689812",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/295/Default.aspx?branch=Choa+Chu+Kang+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Bukit Panjang Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.764350064878 1.37993637366735)",
+      "address": "1 Jelebu Road",
+      "postal_code": "677743",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/292/Default.aspx?branch=Bukit+Panjang+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Cheng San Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.893775348884 1.3725726449182)",
+      "address": "90 Hougang Avenue 10",
+      "postal_code": "538766",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/288/Default.aspx?branch=Cheng+San+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Clementi Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.764305614552 1.31506201647581)",
+      "address": "3155 Commonwealth Avenue West",
+      "postal_code": "129588",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/296/Default.aspx?branch=Clementi+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Ang Mo Kio Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.845580674824 1.37479006912036)",
+      "address": "4300 Ang Mo Kio Avenue 6",
+      "postal_code": "569842",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/332/Default.aspx?branch=Ang+Mo+Kio+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Yishun Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.835803458095 1.42971547356642)",
+      "address": "930 Yishun Ave 2",
+      "postal_code": "769098",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/320/Default.aspx?branch=Yishun+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Bishan Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.848840445413 1.3498506667736)",
+      "address": "5 Bishan Place",
+      "postal_code": "579841",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/312/Default.aspx?branch=Bishan+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Bedok Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.931691125839 1.32698939805286)",
+      "address": "11 Bedok North St. 1",
+      "postal_code": "469662",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/330/Default.aspx?branch=Bedok+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Central Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.854234798536 1.2974201806193)",
+      "address": "100 Victoria Street (Basement 1)",
+      "postal_code": "188064",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/289/Default.aspx?branch=Central+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Harbour Front Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.82163145796 1.26392174964736)",
+      "address": "1 Harbourfront Walk",
+      "postal_code": "98585",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/362/Default.aspx?branch=library%40harbourfront"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Toa Payoh Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.85096929438 1.33362463556477)",
+      "address": "6 Toa Payoh Central",
+      "postal_code": "319191",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/319/Default.aspx?branch=Toa+Payoh+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Jurong Regional Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.739242870677 1.33289451520808)",
+      "address": "21 Jurong East Central 1",
+      "postal_code": "609732",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/338/Default.aspx?branch=Jurong+Regional+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "National Library Building",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.854287271717 1.29720240914801)",
+      "address": "100 Victoria Street",
+      "postal_code": "188064",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/329/Default.aspx?branch=National+Library+%2f+Lee+Kong+Chian+Reference+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Queenstown Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.805520397172 1.29871263170447)",
+      "address": "53 Margaret Drive",
+      "postal_code": "149297",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/309/Default.aspx?branch=Queenstown+Public+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Woodlands Regional Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.786927526354 1.43503700134939)",
+      "address": "900 South Woodlands Drive",
+      "postal_code": "730900",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/310/Default.aspx?branch=Woodlands+Regional+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Tampines Regional Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.944555866304 1.35629183172687)",
+      "address": "1 Tampines Walk",
+      "postal_code": "528523",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/335/Default.aspx?branch=Tampines+Regional+Library"
+    }
+  },
+  {
+    "model": "schools.place",
+    "fields": {
+      "name": "Sembawang Public Library",
+      "type": "library",
+      "geometry": "SRID=4326;POINT (103.819498553738 1.44819664827432)",
+      "address": "30 Sembawang Drive",
+      "postal_code": "757713",
+      "website_url": "http://www.nlb.gov.sg/VisitUs/BranchDetails/tabid/140/bid/331/Default.aspx?branch=Sembawang+Public+Library"
+    }
+  }
+]

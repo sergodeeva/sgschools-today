@@ -1,9 +1,10 @@
 [
   {
-    "model": "schools.secondaryschool",
-    "pk": 1,
+    "model": "schools.place",
+    "pk": 478,
     "fields": {
       "name": "Zhenghua Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.765521558 1.3883687040001)",
       "address": "91 Senja Road",
       "postal_code": "677741",
@@ -13,10 +14,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 2,
+    "model": "schools.place",
+    "pk": 479,
     "fields": {
       "name": "Yusof Ishak Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.760032628 1.3423392140001)",
       "address": "11 Bukit Batok Street 25",
       "postal_code": "658712",
@@ -26,10 +28,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 3,
+    "model": "schools.place",
+    "pk": 480,
     "fields": {
       "name": "Yuan Ching Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.720898704 1.3420063580001)",
       "address": "103 Yuan Ching Road",
       "postal_code": "618654",
@@ -39,10 +42,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 4,
+    "model": "schools.place",
+    "pk": 481,
     "fields": {
       "name": "Yishun Town Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.838094226 1.432321567)",
       "address": "6 Yishun Street 21",
       "postal_code": "768610",
@@ -52,10 +56,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 5,
+    "model": "schools.place",
+    "pk": 482,
     "fields": {
       "name": "West Spring Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.760128827 1.387822838)",
       "address": "61 Senja Road",
       "postal_code": "677737",
@@ -65,10 +70,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 6,
+    "model": "schools.place",
+    "pk": 483,
     "fields": {
       "name": "Unity Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.746025844 1.400028933)",
       "address": "20 Choa Chu Kang Street 62",
       "postal_code": "689143",
@@ -78,10 +84,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 7,
+    "model": "schools.place",
+    "pk": 484,
     "fields": {
       "name": "Teck Whye Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.755330021 1.383089179)",
       "address": "31 Teck Whye Crescent",
       "postal_code": "688848",
@@ -91,10 +98,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 8,
+    "model": "schools.place",
+    "pk": 485,
     "fields": {
       "name": "Tanjong Katong Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.897225196 1.308735158)",
       "address": "130 Haig Road",
       "postal_code": "438796",
@@ -104,10 +112,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 9,
+    "model": "schools.place",
+    "pk": 486,
     "fields": {
       "name": "Tanglin Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.758158358 1.309701692)",
       "address": "301 West Coast Road",
       "postal_code": "127391",
@@ -117,10 +126,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 10,
+    "model": "schools.place",
+    "pk": 487,
     "fields": {
       "name": "Tampines Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.94426371 1.349260948)",
       "address": "252 Tampines St 12",
       "postal_code": "529427",
@@ -130,10 +140,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 11,
+    "model": "schools.place",
+    "pk": 488,
     "fields": {
       "name": "Queensway Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.802207292 1.3002227160001)",
       "address": "2A Margaret Drive",
       "postal_code": "149295",
@@ -143,10 +154,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 12,
+    "model": "schools.place",
+    "pk": 489,
     "fields": {
       "name": "Punggol Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.909213706 1.4020573840001)",
       "address": "51 Edgefield Plains",
       "postal_code": "828870",
@@ -156,10 +168,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 13,
+    "model": "schools.place",
+    "pk": 490,
     "fields": {
       "name": "Presbyterian High School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.843149383 1.3820119430001)",
       "address": "5209 Ang Mo Kio Avenue 6",
       "postal_code": "569845",
@@ -169,10 +182,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 14,
+    "model": "schools.place",
+    "pk": 491,
     "fields": {
       "name": "North Vista Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.899188814 1.381131285)",
       "address": "11 Rivervale Link",
       "postal_code": "545081",
@@ -182,10 +196,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 15,
+    "model": "schools.place",
+    "pk": 492,
     "fields": {
       "name": "Ngee Ann Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.956746316 1.35447464)",
       "address": "1 Tampines Street 32",
       "postal_code": "529283",
@@ -195,10 +210,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 16,
+    "model": "schools.place",
+    "pk": 493,
     "fields": {
       "name": "New Town Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.773188634 1.3097759)",
       "address": "1020 Dover Road",
       "postal_code": "139657",
@@ -208,10 +224,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 17,
+    "model": "schools.place",
+    "pk": 494,
     "fields": {
       "name": "Nan Hua High School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.768561208 1.3080949910001)",
       "address": "41 Clementi Avenue 1",
       "postal_code": "129956",
@@ -221,10 +238,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 18,
+    "model": "schools.place",
+    "pk": 495,
     "fields": {
       "name": "Nan Chiau High School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.890004424 1.3887958250001)",
       "address": "20 Anchorvale Link",
       "postal_code": "545079",
@@ -234,10 +252,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 19,
+    "model": "schools.place",
+    "pk": 496,
     "fields": {
       "name": "Meridian Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.948972484 1.3672468500001)",
       "address": "31 Pasir Ris Street 51",
       "postal_code": "518901",
@@ -247,10 +266,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 20,
+    "model": "schools.place",
+    "pk": 497,
     "fields": {
       "name": "Maris Stella High School (Secondary Section)",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.877852485 1.3413947340001)",
       "address": "25 Mount Vernon Road",
       "postal_code": "368051",
@@ -260,10 +280,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 21,
+    "model": "schools.place",
+    "pk": 498,
     "fields": {
       "name": "Loyang View Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.956944586 1.3665841720001)",
       "address": "12 Pasir Ris Street 11",
       "postal_code": "519073",
@@ -273,10 +294,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 22,
+    "model": "schools.place",
+    "pk": 499,
     "fields": {
       "name": "Kranji Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.756493446 1.38169399)",
       "address": "61 Choa Chu Kang Street 51",
       "postal_code": "689333",
@@ -286,10 +308,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 23,
+    "model": "schools.place",
+    "pk": 500,
     "fields": {
       "name": "Juying Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.687310265 1.338722773)",
       "address": "33 Jurong West Street 91",
       "postal_code": "649038",
@@ -299,10 +322,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 24,
+    "model": "schools.place",
+    "pk": 501,
     "fields": {
       "name": "Jurong West Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.702098132 1.3352563450001)",
       "address": "61 Jurong West Street 65",
       "postal_code": "648348",
@@ -312,10 +336,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 25,
+    "model": "schools.place",
+    "pk": 502,
     "fields": {
       "name": "Jurong Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.723952962 1.330020322)",
       "address": "31 Yuan Ching Road",
       "postal_code": "618652",
@@ -325,10 +350,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 26,
+    "model": "schools.place",
+    "pk": 503,
     "fields": {
       "name": "Holy Innocents\u2019 High School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.896398814 1.3715450880001)",
       "address": "1191 Upper Serangoon Road",
       "postal_code": "534786",
@@ -338,10 +364,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 27,
+    "model": "schools.place",
+    "pk": 504,
     "fields": {
       "name": "Hai Sing Catholic School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.954957944 1.374346412)",
       "address": "9 Pasir Ris Drive 6",
       "postal_code": "519421",
@@ -351,10 +378,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 28,
+    "model": "schools.place",
+    "pk": 505,
     "fields": {
       "name": "Fairfield Methodist School (Secondary)",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.784099647 1.3016337440001)",
       "address": "102 Dover Road",
       "postal_code": "139649",
@@ -364,10 +392,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 29,
+    "model": "schools.place",
+    "pk": 506,
     "fields": {
       "name": "Dunman Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.956213321 1.3606525860001)",
       "address": "21 Tampines Street 45",
       "postal_code": "529093",
@@ -377,10 +406,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 30,
+    "model": "schools.place",
+    "pk": 507,
     "fields": {
       "name": "Chua Chu Kang Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.75187829 1.383190293)",
       "address": "3 Teck Whye Crescent",
       "postal_code": "688845",
@@ -390,10 +420,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 31,
+    "model": "schools.place",
+    "pk": 508,
     "fields": {
       "name": "Christ Church Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.793451109 1.426567813)",
       "address": "20 Woodlands Drive 17",
       "postal_code": "737924",
@@ -403,10 +434,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 32,
+    "model": "schools.place",
+    "pk": 509,
     "fields": {
       "name": "CHIJ St. Nicholas Girls\u2019 School (Secondary Section)",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.834253269 1.3734768790001)",
       "address": "501 Ang Mo Kio Street 13",
       "postal_code": "569405",
@@ -416,10 +448,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 33,
+    "model": "schools.place",
+    "pk": 510,
     "fields": {
       "name": "CHIJ St. Joseph\u2019s Convent",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.902464991 1.391752222)",
       "address": "62 Sengkang East Way",
       "postal_code": "548595",
@@ -429,10 +462,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 34,
+    "model": "schools.place",
+    "pk": 511,
     "fields": {
       "name": "CHIJ Katong Convent",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.917144367 1.3064425380001)",
       "address": "346 Marine Terrace",
       "postal_code": "449150",
@@ -442,10 +476,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 35,
+    "model": "schools.place",
+    "pk": 512,
     "fields": {
       "name": "Cedar Girls\u2019 Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.873933064 1.333758002)",
       "address": "1 Cedar Avenue",
       "postal_code": "349692",
@@ -455,10 +490,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 36,
+    "model": "schools.place",
+    "pk": 513,
     "fields": {
       "name": "Broadrick Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.886917441 1.307050512)",
       "address": "61 Dakota Crescent",
       "postal_code": "399935",
@@ -468,10 +504,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 37,
+    "model": "schools.place",
+    "pk": 514,
     "fields": {
       "name": "Bowen Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.877659578 1.370359944)",
       "address": "2 Lorong Napiri",
       "postal_code": "547529",
@@ -481,10 +518,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 38,
+    "model": "schools.place",
+    "pk": 515,
     "fields": {
       "name": "Bedok View Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.943776245 1.324157041)",
       "address": "6 Bedok South Avenue 3",
       "postal_code": "469293",
@@ -494,10 +532,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 39,
+    "model": "schools.place",
+    "pk": 516,
     "fields": {
       "name": "Assumption Pathway School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.765959131 1.369670704)",
       "address": "30 Cashew Road",
       "postal_code": "679697",
@@ -507,10 +546,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 40,
+    "model": "schools.place",
+    "pk": 517,
     "fields": {
       "name": "Anglo-Chinese School (Independent)",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.780363418 1.303704093)",
       "address": "121 Dover Road",
       "postal_code": "139650",
@@ -520,10 +560,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 41,
+    "model": "schools.place",
+    "pk": 518,
     "fields": {
       "name": "Anglican High School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.941857925 1.331180405)",
       "address": "600 Upper Changi Road",
       "postal_code": "487012",
@@ -533,10 +574,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 42,
+    "model": "schools.place",
+    "pk": 519,
     "fields": {
       "name": "Anderson Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.851554107 1.3743400170001)",
       "address": "10 Ang Mo Kio Street 53",
       "postal_code": "569206",
@@ -546,10 +588,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 43,
+    "model": "schools.place",
+    "pk": 520,
     "fields": {
       "name": "Ahmad Ibrahim Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.829718678 1.4360597640001)",
       "address": "751 Yishun Avenue 7",
       "postal_code": "768928",
@@ -559,10 +602,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 44,
+    "model": "schools.place",
+    "pk": 521,
     "fields": {
       "name": "Admiralty Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.802398197 1.4458906890001)",
       "address": "31 Woodlands Crescent",
       "postal_code": "737916",
@@ -572,10 +616,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 45,
+    "model": "schools.place",
+    "pk": 522,
     "fields": {
       "name": "Zhonghua Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.869430481 1.348407208)",
       "address": "13 Serangoon Avenue 3",
       "postal_code": "556123",
@@ -585,10 +630,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 46,
+    "model": "schools.place",
+    "pk": 523,
     "fields": {
       "name": "Yio Chu Kang Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.842136964 1.3779759770001)",
       "address": "3063 Ang Mo Kio Avenue 5",
       "postal_code": "569868",
@@ -598,10 +644,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 47,
+    "model": "schools.place",
+    "pk": 524,
     "fields": {
       "name": "Xinmin Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.883051614 1.3725588470001)",
       "address": "11 Hougang Avenue 8",
       "postal_code": "538789",
@@ -611,10 +658,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 48,
+    "model": "schools.place",
+    "pk": 525,
     "fields": {
       "name": "Woodlands Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.77458641 1.439125281)",
       "address": "11 Marsiling Road",
       "postal_code": "739111",
@@ -624,10 +672,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 49,
+    "model": "schools.place",
+    "pk": 526,
     "fields": {
       "name": "Woodgrove Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.796047585 1.428318281)",
       "address": "3 Woodlands Avenue 6",
       "postal_code": "738990",
@@ -637,10 +686,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 50,
+    "model": "schools.place",
+    "pk": 527,
     "fields": {
       "name": "Whitley Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.842552378 1.3550520850001)",
       "address": "30 Bishan Street 24",
       "postal_code": "579747",
@@ -650,10 +700,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 51,
+    "model": "schools.place",
+    "pk": 528,
     "fields": {
       "name": "Westwood Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.701772102 1.3537369850001)",
       "address": "11 Jurong West Street 25",
       "postal_code": "648350",
@@ -663,10 +714,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 52,
+    "model": "schools.place",
+    "pk": 529,
     "fields": {
       "name": "Victoria School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.927980967 1.308713025)",
       "address": "2 Siglap Link",
       "postal_code": "448880",
@@ -676,10 +728,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 53,
+    "model": "schools.place",
+    "pk": 530,
     "fields": {
       "name": "Temasek Junior College",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.935567309 1.31849283)",
       "address": "22 Bedok South Road",
       "postal_code": "469278",
@@ -689,10 +742,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 54,
+    "model": "schools.place",
+    "pk": 531,
     "fields": {
       "name": "Tanjong Katong Girls\u2019 School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.927030802 1.3220391200001)",
       "address": "20 Dunman Lane",
       "postal_code": "439272",
@@ -702,10 +756,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 55,
+    "model": "schools.place",
+    "pk": 532,
     "fields": {
       "name": "St. Margaret\u2019s Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.80995114 1.3200682140001)",
       "address": "111 Farrer Road",
       "postal_code": "259240",
@@ -715,10 +770,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 56,
+    "model": "schools.place",
+    "pk": 533,
     "fields": {
       "name": "St. Joseph\u2019s Institution",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.828498975 1.323653135)",
       "address": "38 Malcolm Road",
       "postal_code": "308274",
@@ -728,10 +784,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 57,
+    "model": "schools.place",
+    "pk": 534,
     "fields": {
       "name": "St. Hilda\u2019s Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.937608032 1.3497392240001)",
       "address": "2 Tampines Street 82",
       "postal_code": "528986",
@@ -741,10 +798,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 58,
+    "model": "schools.place",
+    "pk": 535,
     "fields": {
       "name": "Spectra Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.804100467 1.4370375080001)",
       "address": "1 Woodlands Drive 64",
       "postal_code": "737758",
@@ -754,10 +812,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 59,
+    "model": "schools.place",
+    "pk": 536,
     "fields": {
       "name": "Singapore Chinese Girls\u2019 School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.82819212 1.3210450820001)",
       "address": "190 Dunearn Road",
       "postal_code": "309437",
@@ -767,10 +826,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 60,
+    "model": "schools.place",
+    "pk": 537,
     "fields": {
       "name": "Serangoon Garden Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.869270302 1.3693257050001)",
       "address": "21 Serangoon North Avenue 1",
       "postal_code": "555889",
@@ -780,10 +840,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 61,
+    "model": "schools.place",
+    "pk": 538,
     "fields": {
       "name": "Seng Kang Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.898365037 1.386596831)",
       "address": "10 Compassvale Lane",
       "postal_code": "545090",
@@ -793,10 +854,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 62,
+    "model": "schools.place",
+    "pk": 539,
     "fields": {
       "name": "Sembawang Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.816843258 1.4453150210001)",
       "address": "30 Sembawang Crescent",
       "postal_code": "757704",
@@ -806,10 +868,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 63,
+    "model": "schools.place",
+    "pk": 540,
     "fields": {
       "name": "School of the Arts, Singapore",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.848687419 1.2993648040001)",
       "address": "1 Zubir Said Drive",
       "postal_code": "227968",
@@ -819,10 +882,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 64,
+    "model": "schools.place",
+    "pk": 541,
     "fields": {
       "name": "School of Science and Technology, Singapore",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.774011529 1.3129281060001)",
       "address": "1 Technology Drive",
       "postal_code": "138572",
@@ -832,10 +896,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 65,
+    "model": "schools.place",
+    "pk": 542,
     "fields": {
       "name": "Regent Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.751034412 1.393279083)",
       "address": "50 Choa Chu Kang North 5",
       "postal_code": "689621",
@@ -845,10 +910,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 66,
+    "model": "schools.place",
+    "pk": 543,
     "fields": {
       "name": "Raffles Institution",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.845674258 1.347717436)",
       "address": "1 Raffles Institution Lane",
       "postal_code": "575954",
@@ -858,10 +924,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 67,
+    "model": "schools.place",
+    "pk": 544,
     "fields": {
       "name": "Raffles Girls\u2019 School (Secondary)",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.828959586 1.311695028)",
       "address": "20 Anderson Road",
       "postal_code": "259978",
@@ -871,10 +938,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 68,
+    "model": "schools.place",
+    "pk": 545,
     "fields": {
       "name": "Queenstown Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.81319098 1.2935212680001)",
       "address": "1 Strathmore Road",
       "postal_code": "148800",
@@ -884,10 +952,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 69,
+    "model": "schools.place",
+    "pk": 546,
     "fields": {
       "name": "Peirce Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.830216068 1.3666594470001)",
       "address": "10 Sin Ming Walk",
       "postal_code": "575566",
@@ -897,10 +966,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 70,
+    "model": "schools.place",
+    "pk": 547,
     "fields": {
       "name": "Pasir Ris Crest Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.959728203 1.3728406010001)",
       "address": "11 Pasir Ris Street 41",
       "postal_code": "518934",
@@ -910,10 +980,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 71,
+    "model": "schools.place",
+    "pk": 548,
     "fields": {
       "name": "Outram Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.837127336 1.286514062)",
       "address": "3 York Hill",
       "postal_code": "168622",
@@ -923,10 +994,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 72,
+    "model": "schools.place",
+    "pk": 549,
     "fields": {
       "name": "NorthLight School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.855759554 1.319100216)",
       "address": "151 Towner Road",
       "postal_code": "327830",
@@ -936,10 +1008,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 73,
+    "model": "schools.place",
+    "pk": 550,
     "fields": {
       "name": "Naval Base Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.83105039 1.4193788160001)",
       "address": "901 Yishun Ring Road",
       "postal_code": "768689",
@@ -949,10 +1022,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 74,
+    "model": "schools.place",
+    "pk": 551,
     "fields": {
       "name": "National Junior College",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.804110905 1.3302929110001)",
       "address": "37 Hillcrest Road",
       "postal_code": "288913",
@@ -962,10 +1036,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 75,
+    "model": "schools.place",
+    "pk": 552,
     "fields": {
       "name": "Montfort Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.888928609 1.373961266)",
       "address": "50 Hougang Avenue 8",
       "postal_code": "538785",
@@ -975,10 +1050,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 76,
+    "model": "schools.place",
+    "pk": 553,
     "fields": {
       "name": "Methodist Girls\u2019 School (Secondary)",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.78339301 1.3329480090001)",
       "address": "11 Blackmore Drive",
       "postal_code": "599986",
@@ -988,10 +1064,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 77,
+    "model": "schools.place",
+    "pk": 554,
     "fields": {
       "name": "Mayflower Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.835360727 1.368272662)",
       "address": "2 Ang Mo Kio Street 21",
       "postal_code": "569384",
@@ -1001,10 +1078,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 78,
+    "model": "schools.place",
+    "pk": 555,
     "fields": {
       "name": "Marsiling Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.77600809 1.4366442480001)",
       "address": "12 Marsiling Road",
       "postal_code": "739110",
@@ -1014,10 +1092,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 79,
+    "model": "schools.place",
+    "pk": 556,
     "fields": {
       "name": "Kuo Chuan Presbyterian Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.855365172 1.3500756230001)",
       "address": "10 Bishan Street 13",
       "postal_code": "579795",
@@ -1027,10 +1106,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 80,
+    "model": "schools.place",
+    "pk": 557,
     "fields": {
       "name": "Junyuan Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.933886166 1.353613153)",
       "address": "11 Tampines Street 84",
       "postal_code": "528933",
@@ -1040,10 +1120,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 81,
+    "model": "schools.place",
+    "pk": 558,
     "fields": {
       "name": "Hwa Chong Institution",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.804513105 1.325139595)",
       "address": "661 Bukit Timah Road",
       "postal_code": "269734",
@@ -1053,10 +1134,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 82,
+    "model": "schools.place",
+    "pk": 559,
     "fields": {
       "name": "Hougang Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.882533963 1.377640193)",
       "address": "2 Hougang Street 93",
       "postal_code": "534256",
@@ -1066,10 +1148,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 83,
+    "model": "schools.place",
+    "pk": 560,
     "fields": {
       "name": "Hillgrove Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.752986488 1.352735766)",
       "address": "10 Bukit Batok Street 52",
       "postal_code": "659250",
@@ -1079,10 +1162,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 84,
+    "model": "schools.place",
+    "pk": 561,
     "fields": {
       "name": "Guangyang Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.850208934 1.34440856)",
       "address": "8 Bishan Street 12",
       "postal_code": "579807",
@@ -1092,10 +1176,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 85,
+    "model": "schools.place",
+    "pk": 562,
     "fields": {
       "name": "Fuhua Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.726520898 1.347014089)",
       "address": "5 Jurong West Street 41",
       "postal_code": "649410",
@@ -1105,10 +1190,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 86,
+    "model": "schools.place",
+    "pk": 563,
     "fields": {
       "name": "Evergreen Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.794137756 1.441491313)",
       "address": "11 Woodlands Street 83",
       "postal_code": "738489",
@@ -1118,10 +1204,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 87,
+    "model": "schools.place",
+    "pk": 564,
     "fields": {
       "name": "Dunman High School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.88294156 1.299961903)",
       "address": "10 Tanjong Rhu Road",
       "postal_code": "436895",
@@ -1131,10 +1218,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 88,
+    "model": "schools.place",
+    "pk": 565,
     "fields": {
       "name": "Deyi Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.852545771 1.3659970250001)",
       "address": "1 Ang Mo Kio Street 42",
       "postal_code": "569277",
@@ -1144,10 +1232,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 89,
+    "model": "schools.place",
+    "pk": 566,
     "fields": {
       "name": "Damai Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.927091653 1.336927985)",
       "address": "4800 Bedok Reservoir Road",
       "postal_code": "479229",
@@ -1157,10 +1246,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 90,
+    "model": "schools.place",
+    "pk": 567,
     "fields": {
       "name": "Compassvale Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.899847164 1.39614084)",
       "address": "51 Compassvale Crescent",
       "postal_code": "545083",
@@ -1170,10 +1260,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 91,
+    "model": "schools.place",
+    "pk": 568,
     "fields": {
       "name": "Commonwealth Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.745637393 1.319203959)",
       "address": "698 West Coast Road",
       "postal_code": "608784",
@@ -1183,10 +1274,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 92,
+    "model": "schools.place",
+    "pk": 569,
     "fields": {
       "name": "Chung Cheng High School (Main)",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.891653229 1.3050915480001)",
       "address": "50 Goodman Road",
       "postal_code": "439012",
@@ -1196,10 +1288,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 93,
+    "model": "schools.place",
+    "pk": 570,
     "fields": {
       "name": "CHIJ St. Theresa\u2019s Convent",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.822440702 1.2753517750001)",
       "address": "160 Lower Delta Road",
       "postal_code": "099138",
@@ -1209,10 +1302,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 94,
+    "model": "schools.place",
+    "pk": 571,
     "fields": {
       "name": "CHIJ Secondary (Toa Payoh)",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.843271625 1.3324607990001)",
       "address": "626 Lorong 1 Toa Payoh",
       "postal_code": "319764",
@@ -1222,10 +1316,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 95,
+    "model": "schools.place",
+    "pk": 572,
     "fields": {
       "name": "Canberra Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.814194898 1.453224924)",
       "address": "51 Sembawang Drive",
       "postal_code": "757699",
@@ -1235,10 +1330,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 96,
+    "model": "schools.place",
+    "pk": 573,
     "fields": {
       "name": "Bukit Merah Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.81302312 1.2857841380001)",
       "address": "10 Lengkok Bahru",
       "postal_code": "159050",
@@ -1248,10 +1344,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 97,
+    "model": "schools.place",
+    "pk": 574,
     "fields": {
       "name": "Bukit Batok Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.740873705 1.3484908560001)",
       "address": "50 Bukit Batok West Ave 8",
       "postal_code": "658962",
@@ -1261,10 +1358,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 98,
+    "model": "schools.place",
+    "pk": 575,
     "fields": {
       "name": "Boon Lay Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.701890026 1.3427226910001)",
       "address": "11 Jurong West Street 65",
       "postal_code": "648354",
@@ -1274,10 +1372,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 99,
+    "model": "schools.place",
+    "pk": 576,
     "fields": {
       "name": "Bedok Green Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.935028383 1.3345194730001)",
       "address": "360 Bedok North Ave 3",
       "postal_code": "469722",
@@ -1287,10 +1386,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 100,
+    "model": "schools.place",
+    "pk": 577,
     "fields": {
       "name": "Bartley Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.882806212 1.339954156)",
       "address": "10 Jalan Bunga Rampai",
       "postal_code": "538403",
@@ -1300,10 +1400,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 101,
+    "model": "schools.place",
+    "pk": 578,
     "fields": {
       "name": "Assumption English School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.767937546 1.3691629530001)",
       "address": "622 Upper Bukit Timah Road",
       "postal_code": "678117",
@@ -1313,10 +1414,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 102,
+    "model": "schools.place",
+    "pk": 579,
     "fields": {
       "name": "Ang Mo Kio Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.842154974 1.367337102)",
       "address": "6 Ang Mo Kio Street 22",
       "postal_code": "569362",
@@ -1326,10 +1428,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 103,
+    "model": "schools.place",
+    "pk": 580,
     "fields": {
       "name": "Yuying Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.890194755 1.3571359530001)",
       "address": "47 Hougang Avenue 1",
       "postal_code": "538884",
@@ -1339,10 +1442,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 104,
+    "model": "schools.place",
+    "pk": 581,
     "fields": {
       "name": "Yuhua Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.722687236 1.3471862690001)",
       "address": "35 Jurong West Street 41",
       "postal_code": "649406",
@@ -1352,10 +1456,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 105,
+    "model": "schools.place",
+    "pk": 582,
     "fields": {
       "name": "Yishun Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.828764317 1.428133243)",
       "address": "4 Yishun Street 71",
       "postal_code": "768516",
@@ -1365,10 +1470,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 106,
+    "model": "schools.place",
+    "pk": 583,
     "fields": {
       "name": "Woodlands Ring Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.80014847 1.436488947)",
       "address": "10 Woodlands Ring Road",
       "postal_code": "738239",
@@ -1378,10 +1484,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 107,
+    "model": "schools.place",
+    "pk": 584,
     "fields": {
       "name": "Temasek Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.947564112 1.3159167320001)",
       "address": "600 Upper East Coast Road",
       "postal_code": "465561",
@@ -1391,10 +1498,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 108,
+    "model": "schools.place",
+    "pk": 585,
     "fields": {
       "name": "Swiss Cottage Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.750396137 1.3647174270001)",
       "address": "3 Bukit Batok Street 34",
       "postal_code": "659322",
@@ -1404,10 +1512,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 109,
+    "model": "schools.place",
+    "pk": 586,
     "fields": {
       "name": "St. Patrick\u2019s School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.917638194 1.3078834190001)",
       "address": "490 East Coast Road",
       "postal_code": "429058",
@@ -1417,10 +1526,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 110,
+    "model": "schools.place",
+    "pk": 587,
     "fields": {
       "name": "St. Gabriel\u2019s Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.875808419 1.346382857)",
       "address": "24 Serangoon Avenue 1",
       "postal_code": "556140",
@@ -1430,10 +1540,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 111,
+    "model": "schools.place",
+    "pk": 588,
     "fields": {
       "name": "St. Anthony\u2019s Canossian Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.941977167 1.334663135)",
       "address": "1600 Bedok North Avenue 4",
       "postal_code": "469700",
@@ -1443,10 +1554,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 112,
+    "model": "schools.place",
+    "pk": 589,
     "fields": {
       "name": "St. Andrew\u2019s Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.866249138 1.330693609)",
       "address": "15 Francis Thomas Drive",
       "postal_code": "359342",
@@ -1456,10 +1568,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 113,
+    "model": "schools.place",
+    "pk": 590,
     "fields": {
       "name": "Springfield Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.930354461 1.3495730350001)",
       "address": "30 Tampines Avenue 8",
       "postal_code": "529593",
@@ -1469,10 +1582,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 114,
+    "model": "schools.place",
+    "pk": 591,
     "fields": {
       "name": "Singapore Sports School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.789444794 1.4264114060001)",
       "address": "1 Champions Way",
       "postal_code": "737913",
@@ -1482,10 +1596,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 115,
+    "model": "schools.place",
+    "pk": 592,
     "fields": {
       "name": "Serangoon Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.902138741 1.3746553880001)",
       "address": "11 Upper Serangoon View",
       "postal_code": "534237",
@@ -1495,10 +1610,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 116,
+    "model": "schools.place",
+    "pk": 593,
     "fields": {
       "name": "Riverside Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.788308236 1.4411015710001)",
       "address": "3 Woodlands Street 81",
       "postal_code": "738524",
@@ -1508,10 +1624,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 117,
+    "model": "schools.place",
+    "pk": 594,
     "fields": {
       "name": "River Valley High School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.708190689 1.344595842)",
       "address": "6 Boon Lay Avenue",
       "postal_code": "649961",
@@ -1521,10 +1638,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 118,
+    "model": "schools.place",
+    "pk": 595,
     "fields": {
       "name": "Ping Yi Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.920700672 1.3270167270001)",
       "address": "61 Chai Chee Street",
       "postal_code": "468980",
@@ -1534,10 +1652,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 119,
+    "model": "schools.place",
+    "pk": 596,
     "fields": {
       "name": "Peicai Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.870010749 1.3595158320001)",
       "address": "10 Serangoon Avenue 4",
       "postal_code": "556094",
@@ -1547,10 +1666,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 120,
+    "model": "schools.place",
+    "pk": 597,
     "fields": {
       "name": "Pei Hwa Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.878461745 1.3903750500001)",
       "address": "21 Fernvale Link",
       "postal_code": "797702",
@@ -1560,10 +1680,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 121,
+    "model": "schools.place",
+    "pk": 598,
     "fields": {
       "name": "Paya Lebar Methodist Girls\u2019 School (Secondary)",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.885120051 1.350967559)",
       "address": "296 Lor Ah Soo",
       "postal_code": "536742",
@@ -1573,10 +1694,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 122,
+    "model": "schools.place",
+    "pk": 599,
     "fields": {
       "name": "Pasir Ris Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.948962626 1.354227327)",
       "address": "390 Tampines Street 21",
       "postal_code": "529400",
@@ -1586,10 +1708,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 123,
+    "model": "schools.place",
+    "pk": 600,
     "fields": {
       "name": "Orchid Park Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.837859241 1.4153203280001)",
       "address": "10 Yishun Street 81",
       "postal_code": "768454",
@@ -1599,10 +1722,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 124,
+    "model": "schools.place",
+    "pk": 601,
     "fields": {
       "name": "NUS High School of Mathematics and Science",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.769365121 1.3065644220001)",
       "address": "20 Clementi Avenue 1",
       "postal_code": "129957",
@@ -1612,10 +1736,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 125,
+    "model": "schools.place",
+    "pk": 602,
     "fields": {
       "name": "Northland Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.840104688 1.4358018340001)",
       "address": "3 Yishun Street 22",
       "postal_code": "768578",
@@ -1625,10 +1750,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 126,
+    "model": "schools.place",
+    "pk": 603,
     "fields": {
       "name": "Northbrooks Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.845147333 1.4208128500001)",
       "address": "585 Yishun Ring Road",
       "postal_code": "768692",
@@ -1638,10 +1764,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 127,
+    "model": "schools.place",
+    "pk": 604,
     "fields": {
       "name": "Nanyang Girls\u2019 High School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.80242098 1.3305832670001)",
       "address": "2 Linden Drive",
       "postal_code": "288683",
@@ -1651,10 +1778,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 128,
+    "model": "schools.place",
+    "pk": 605,
     "fields": {
       "name": "Manjusri Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.901719964 1.32747112)",
       "address": "20 Ubi Avenue 1",
       "postal_code": "408940",
@@ -1664,10 +1792,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 129,
+    "model": "schools.place",
+    "pk": 606,
     "fields": {
       "name": "Kent Ridge Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.764889618 1.3012277340001)",
       "address": "147 West Coast Road",
       "postal_code": "127368",
@@ -1677,10 +1806,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 130,
+    "model": "schools.place",
+    "pk": 607,
     "fields": {
       "name": "Jurongville Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.72890771 1.351288628)",
       "address": "202 Jurong East Avenue 1",
       "postal_code": "609790",
@@ -1690,10 +1820,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 131,
+    "model": "schools.place",
+    "pk": 608,
     "fields": {
       "name": "Hua Yi Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.72183232 1.352343655)",
       "address": "60 Jurong West St 42",
       "postal_code": "649371",
@@ -1703,10 +1834,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 132,
+    "model": "schools.place",
+    "pk": 609,
     "fields": {
       "name": "Greenridge Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.773828467 1.381864337)",
       "address": "32 Bukit Panjang Ring Road",
       "postal_code": "679938",
@@ -1716,10 +1848,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 133,
+    "model": "schools.place",
+    "pk": 610,
     "fields": {
       "name": "Greendale Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.911700141 1.396960199)",
       "address": "51 Edgedale Plains",
       "postal_code": "828866",
@@ -1729,10 +1862,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 134,
+    "model": "schools.place",
+    "pk": 611,
     "fields": {
       "name": "Geylang Methodist School (Secondary)",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.882673394 1.3176708340001)",
       "address": "2 Geylang East Central",
       "postal_code": "389705",
@@ -1742,10 +1876,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 135,
+    "model": "schools.place",
+    "pk": 612,
     "fields": {
       "name": "Gan Eng Seng School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.823733673 1.289071145)",
       "address": "1 Henderson Road",
       "postal_code": "159561",
@@ -1755,10 +1890,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 136,
+    "model": "schools.place",
+    "pk": 613,
     "fields": {
       "name": "Fuchun Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.777625749 1.430704529)",
       "address": "21 Woodlands Avenue 1",
       "postal_code": "739062",
@@ -1768,10 +1904,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 137,
+    "model": "schools.place",
+    "pk": 614,
     "fields": {
       "name": "Fajar Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.763998914 1.3756000540001)",
       "address": "31 Gangsa Road",
       "postal_code": "678972",
@@ -1781,10 +1918,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 138,
+    "model": "schools.place",
+    "pk": 615,
     "fields": {
       "name": "Edgefield Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.902687385 1.4005931)",
       "address": "36 Punggol Field",
       "postal_code": "828814",
@@ -1794,10 +1932,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 139,
+    "model": "schools.place",
+    "pk": 616,
     "fields": {
       "name": "East Spring Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.9606407 1.3562250900001)",
       "address": "30 Tampines Street 34",
       "postal_code": "529231",
@@ -1807,10 +1946,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 140,
+    "model": "schools.place",
+    "pk": 617,
     "fields": {
       "name": "Dunearn Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.744721091 1.363579008)",
       "address": "21 Bukit Batok West Avenue 2",
       "postal_code": "659204",
@@ -1820,10 +1960,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 141,
+    "model": "schools.place",
+    "pk": 618,
     "fields": {
       "name": "Crest Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.742628105 1.3431198050001)",
       "address": "561 Jurong East Street 24",
       "postal_code": "609561",
@@ -1833,10 +1974,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 142,
+    "model": "schools.place",
+    "pk": 619,
     "fields": {
       "name": "Crescent Girls\u2019 School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.817544461 1.29331947)",
       "address": "357 Tanglin Road",
       "postal_code": "247961",
@@ -1846,10 +1988,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 143,
+    "model": "schools.place",
+    "pk": 620,
     "fields": {
       "name": "Clementi Town Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.762020599 1.3155391290001)",
       "address": "10 Clementi Ave 3",
       "postal_code": "129904",
@@ -1859,10 +2002,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 144,
+    "model": "schools.place",
+    "pk": 621,
     "fields": {
       "name": "Chung Cheng High School (Yishun)",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.837390783 1.419226036)",
       "address": "11 Yishun Street 61",
       "postal_code": "768547",
@@ -1872,10 +2016,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 145,
+    "model": "schools.place",
+    "pk": 622,
     "fields": {
       "name": "Changkat Changi Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.953245526 1.339506301)",
       "address": "23 Simei St 3",
       "postal_code": "529894",
@@ -1885,10 +2030,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 146,
+    "model": "schools.place",
+    "pk": 623,
     "fields": {
       "name": "Catholic High School (Secondary Section)",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.844874677 1.354723075)",
       "address": "9 Bishan Street 22",
       "postal_code": "579767",
@@ -1898,10 +2044,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 147,
+    "model": "schools.place",
+    "pk": 624,
     "fields": {
       "name": "Bukit View Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.752226594 1.345733055)",
       "address": "16 Bukit Batok Street 21",
       "postal_code": "659633",
@@ -1911,10 +2058,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 148,
+    "model": "schools.place",
+    "pk": 625,
     "fields": {
       "name": "Bukit Panjang Govt. High School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.73835388 1.382225572)",
       "address": "7 Choa Chu Kang Ave 4",
       "postal_code": "689809",
@@ -1924,10 +2072,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 149,
+    "model": "schools.place",
+    "pk": 626,
     "fields": {
       "name": "Bendemeer Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.860970284 1.3246111130001)",
       "address": "1 St Wilfred Road",
       "postal_code": "327919",
@@ -1937,10 +2086,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 150,
+    "model": "schools.place",
+    "pk": 627,
     "fields": {
       "name": "Bedok South Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.950989139 1.3251365520001)",
       "address": "1 Jalan Langgar Bedok",
       "postal_code": "468585",
@@ -1950,10 +2100,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 151,
+    "model": "schools.place",
+    "pk": 628,
     "fields": {
       "name": "Beatty Secondary School",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.852285637 1.341770656)",
       "address": "1 Toa Payoh North",
       "postal_code": "318990",
@@ -1963,10 +2114,11 @@
     }
   },
   {
-    "model": "schools.secondaryschool",
-    "pk": 152,
+    "model": "schools.place",
+    "pk": 629,
     "fields": {
       "name": "Anglo-Chinese School (Barker Road)",
+      "type": "secondary",
       "geometry": "SRID=4326;POINT (103.83577269 1.319616492)",
       "address": "60 Barker Road",
       "postal_code": "309919",

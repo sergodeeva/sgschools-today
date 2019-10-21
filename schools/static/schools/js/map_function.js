@@ -22,27 +22,6 @@ var customOptions = {
   className: "popupCustom"
 };
 
-// school marker config (font-awesome icon)
-var primarySchoolMarker = L.AwesomeMarkers.icon({
-  prefix: "fa",
-  icon: "school",
-  markerColor: "blue"
-});
-
-// school marker config (font-awesome icon)
-var secondarySchoolMarker = L.AwesomeMarkers.icon({
-  prefix: "fa",
-  icon: "square-root-alt",
-  markerColor: "green"
-});
-
-// kindergarten marker config (font-awesome icon)
-var kindergartenMarker = L.AwesomeMarkers.icon({
-  prefix: "fa",
-  icon: "child",
-  markerColor: "orange"
-});
-
 var geoLocationMarker = L.AwesomeMarkers.icon({
   prefix: "fa",
   icon: "globe-asia",
@@ -82,7 +61,7 @@ function cacheMarker(type, key, marker){
 
 function getGeoLocationMarker(geoLocation, poptitle) {
   let centerGeo = [geoLocation.lat,geoLocation.lng];
-  var popup = '<strong class="popup-title"><a href="" onclick="return false;">'+ poptitle[0] +'</a></strong></br><a href="" onclick="return false;">'+ poptitle[1] + '</a><p>' + poptitle[2] +'</p>';
+  var popup = '<strong class="popup-title"><a href="" onclick="return false;">'+ poptitle[0] +'</a></strong></br>'+ poptitle[1] + '<p>' + poptitle[2] +'</p>';
   popup += '<div class="popup-btn-container">';
   popup += '<button id="'+id_1km_btn+'" class="popup-btn circle btn btn-info one-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">1 Km</button>';
   popup += '<button id="'+id_2km_btn+'" class="popup-btn circle btn btn-info two-km" data-toggle="button" onclick="handleKmBtnClick(this.id,'+JSON.stringify(centerGeo)+')">2 Km</button></br></div>';
@@ -91,13 +70,29 @@ function getGeoLocationMarker(geoLocation, poptitle) {
   return marker;
 }
 
+// Function returns a marker icon of a given color and type
+function getMarkerIcon(icon, color) {
+    return L.AwesomeMarkers.icon({
+        prefix: "fa",
+        icon: icon,
+        markerColor: color});
+    }
+
 //create marker for the input data
 function getMarker(school) {
   let lat = school.geometry.coordinates[1];
   let lng = school.geometry.coordinates[0];
   let centerGeo = [lat, lng];
 
-  var markerType = school.school_type === "pri" ? primarySchoolMarker : school.school_type === "sec" ? secondarySchoolMarker : kindergartenMarker;
+  var markers = {
+    "primary": getMarkerIcon("school", "blue"),
+    "secondary": getMarkerIcon("square-root-alt", "green"),
+    "kindergarten": getMarkerIcon("child", "orange"),
+    "library": getMarkerIcon("book", "purple"),
+    "default": getMarkerIcon("school", "blue")
+  }
+
+  var markerType = school.properties.type in markers ? markers[school.properties.type] : markers["default"];
 
   var popup = getPopup(school);
 
@@ -111,20 +106,27 @@ function getPopup(school) {
   var lat = school.geometry.coordinates[1];
   var lng = school.geometry.coordinates[0];
   let centerGeo = [lat, lng];
-  var path = school.school_type === "pri" ? "primary" : school.school_type === "sec" ? "secondary" : "kindergarten";
+  var path = school.properties.type;
 
   var email = '';
   if (school.properties.email_address){
     email =  '<a target="_blank" href="mailto:' + school.properties.email_address + '">' + school.properties.email_address + '</a><br/>';
   }
+  var phone_number = '';
+  if (school.properties.phone_number){
+    phone_number =  '<a href="tel:' + school.properties.phone_number + '">' + school.properties.phone_number + '</a><br/>';
+  }
+  var website_url = '';
+  if (school.properties.website_url && school.properties.website_url != ''){
+    website_url =  '<a target="_blank" href="' + school.properties.website_url + '">' + 'Visit website' + '</a><br/>';
+  }
 
   var popup = '<strong class="popup-title"><a href="/' + path + "/" + school.properties.pk + '">' +
-        school.properties.name + "</a></strong><br/>" + school.properties.address + '<br/>' + email +
-        '<a href="tel:' + school.properties.phone_number + '">' + school.properties.phone_number + '</a><br/>' +
-        '<a target="_blank" href="' + school.properties.website_url + '">' + school.properties.website_url + '</a><br/>';
+        school.properties.name + "</a></strong><br/>" + school.properties.address + '<br/>'
+        + email + phone_number + website_url;
 
-  if (school.school_type === "pri") {
-    if (school.properties.kindergartens.length !== 0) {
+  if (school.properties.type === "primary") {
+    if (school.properties.collocated) {
       popup += '<p class="popup-content">The school has co-located kindergarten</p>';
     } else {
       popup += '<p class="popup-content">There is no co-located kindergartens</p>';
@@ -235,13 +237,13 @@ function decode_geolocation(latlng){
 
 //triggers 'locationfound' event
 function locateUser() {
-  mymap.locate({ setView: true });
+  mymap.locate({ setView: true, maxZoom: 12 });
 }
 
 
 // set map center to the specific point
 function flyTo(coordinates) {
-  mymap.flyTo(coordinates, 15);
+  mymap.flyTo(coordinates, 14);
 }
 
 

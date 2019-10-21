@@ -14,10 +14,8 @@ function fmt_autocomplete_str(name, note, address) {
 
 function getAutocompleteElement(item) {
     var elementString = '<div></div>';
-
-    if(item.school_type){
-        var schoolType = item.school_type === 'pri' ? 'primary' : item.school_type === 'sec' ? 'secondary' : 'kindergarten';
-        elementString = fmt_autocomplete_str(item.properties.name, schoolType, item.properties.address);
+    if(item.properties && item.properties.type){
+        elementString = fmt_autocomplete_str(item.properties.name, item.properties.type, item.properties.address);
     }
 
     else if(item.SEARCHVAL){
@@ -54,7 +52,7 @@ $(document).ready(function() {
         });
       },
       focus: function(event, ui) {
-          if (ui.item.school_type){
+          if (ui.item.properties.type){
               $("#search-input").val(ui.item.properties.name);
           }
           else if(ui.item.SEARCHVAL){
@@ -65,9 +63,9 @@ $(document).ready(function() {
       select: function(event, ui) {
         // TODO: to make autocomplete work on all the pages
           var display = "";
-          if (ui.item.school_type){
+          if (ui.item.properties && ui.item.properties.type){
               display = ui.item.properties.name;
-              showOnMap(ui.item.school_type, ui.item.properties.pk, true);
+              showOnMap(ui.item.properties.type, ui.item.properties.pk, true);
           }
           else if(ui.item.SEARCHVAL){
               display = ui.item.SEARCHVAL.toTitleCase();
