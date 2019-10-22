@@ -1,7 +1,6 @@
 [
   {
     "model": "schools.place",
-    "pk": 478,
     "fields": {
       "name": "Zhenghua Secondary School",
       "type": "secondary",
@@ -15,7 +14,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 479,
     "fields": {
       "name": "Yusof Ishak Secondary School",
       "type": "secondary",
@@ -29,7 +27,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 480,
     "fields": {
       "name": "Yuan Ching Secondary School",
       "type": "secondary",
@@ -43,7 +40,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 481,
     "fields": {
       "name": "Yishun Town Secondary School",
       "type": "secondary",
@@ -57,7 +53,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 482,
     "fields": {
       "name": "West Spring Secondary School",
       "type": "secondary",
@@ -71,7 +66,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 483,
     "fields": {
       "name": "Unity Secondary School",
       "type": "secondary",
@@ -85,7 +79,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 484,
     "fields": {
       "name": "Teck Whye Secondary School",
       "type": "secondary",
@@ -99,7 +92,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 485,
     "fields": {
       "name": "Tanjong Katong Secondary School",
       "type": "secondary",
@@ -113,7 +105,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 486,
     "fields": {
       "name": "Tanglin Secondary School",
       "type": "secondary",
@@ -127,7 +118,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 487,
     "fields": {
       "name": "Tampines Secondary School",
       "type": "secondary",
@@ -141,7 +131,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 488,
     "fields": {
       "name": "Queensway Secondary School",
       "type": "secondary",
@@ -155,7 +144,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 489,
     "fields": {
       "name": "Punggol Secondary School",
       "type": "secondary",
@@ -169,7 +157,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 490,
     "fields": {
       "name": "Presbyterian High School",
       "type": "secondary",
@@ -183,7 +170,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 491,
     "fields": {
       "name": "North Vista Secondary School",
       "type": "secondary",
@@ -197,7 +183,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 492,
     "fields": {
       "name": "Ngee Ann Secondary School",
       "type": "secondary",
@@ -211,7 +196,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 493,
     "fields": {
       "name": "New Town Secondary School",
       "type": "secondary",
@@ -225,7 +209,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 494,
     "fields": {
       "name": "Nan Hua High School",
       "type": "secondary",
@@ -239,7 +222,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 495,
     "fields": {
       "name": "Nan Chiau High School",
       "type": "secondary",
@@ -253,7 +235,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 496,
     "fields": {
       "name": "Meridian Secondary School",
       "type": "secondary",
@@ -267,7 +248,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 497,
     "fields": {
       "name": "Maris Stella High School (Secondary Section)",
       "type": "secondary",
@@ -281,7 +261,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 498,
     "fields": {
       "name": "Loyang View Secondary School",
       "type": "secondary",
@@ -295,7 +274,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 499,
     "fields": {
       "name": "Kranji Secondary School",
       "type": "secondary",
@@ -309,7 +287,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 500,
     "fields": {
       "name": "Juying Secondary School",
       "type": "secondary",
@@ -323,7 +300,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 501,
     "fields": {
       "name": "Jurong West Secondary School",
       "type": "secondary",
@@ -337,7 +313,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 502,
     "fields": {
       "name": "Jurong Secondary School",
       "type": "secondary",
@@ -351,7 +326,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 503,
     "fields": {
       "name": "Holy Innocents\u2019 High School",
       "type": "secondary",
@@ -365,7 +339,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 504,
     "fields": {
       "name": "Hai Sing Catholic School",
       "type": "secondary",
@@ -379,7 +352,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 505,
     "fields": {
       "name": "Fairfield Methodist School (Secondary)",
       "type": "secondary",
@@ -393,7 +365,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 506,
     "fields": {
       "name": "Dunman Secondary School",
       "type": "secondary",
@@ -407,7 +378,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 507,
     "fields": {
       "name": "Chua Chu Kang Secondary School",
       "type": "secondary",
@@ -421,7 +391,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 508,
     "fields": {
       "name": "Christ Church Secondary School",
       "type": "secondary",
@@ -435,7 +404,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 509,
     "fields": {
       "name": "CHIJ St. Nicholas Girls\u2019 School (Secondary Section)",
       "type": "secondary",
@@ -449,7 +417,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 510,
     "fields": {
       "name": "CHIJ St. Joseph\u2019s Convent",
       "type": "secondary",
@@ -463,7 +430,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 511,
     "fields": {
       "name": "CHIJ Katong Convent",
       "type": "secondary",
@@ -477,7 +443,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 512,
     "fields": {
       "name": "Cedar Girls\u2019 Secondary School",
       "type": "secondary",
@@ -491,7 +456,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 513,
     "fields": {
       "name": "Broadrick Secondary School",
       "type": "secondary",
@@ -505,7 +469,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 514,
     "fields": {
       "name": "Bowen Secondary School",
       "type": "secondary",
@@ -519,7 +482,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 515,
     "fields": {
       "name": "Bedok View Secondary School",
       "type": "secondary",
@@ -533,7 +495,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 516,
     "fields": {
       "name": "Assumption Pathway School",
       "type": "secondary",
@@ -547,7 +508,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 517,
     "fields": {
       "name": "Anglo-Chinese School (Independent)",
       "type": "secondary",
@@ -561,7 +521,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 518,
     "fields": {
       "name": "Anglican High School",
       "type": "secondary",
@@ -575,7 +534,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 519,
     "fields": {
       "name": "Anderson Secondary School",
       "type": "secondary",
@@ -589,7 +547,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 520,
     "fields": {
       "name": "Ahmad Ibrahim Secondary School",
       "type": "secondary",
@@ -603,7 +560,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 521,
     "fields": {
       "name": "Admiralty Secondary School",
       "type": "secondary",
@@ -617,7 +573,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 522,
     "fields": {
       "name": "Zhonghua Secondary School",
       "type": "secondary",
@@ -631,7 +586,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 523,
     "fields": {
       "name": "Yio Chu Kang Secondary School",
       "type": "secondary",
@@ -645,7 +599,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 524,
     "fields": {
       "name": "Xinmin Secondary School",
       "type": "secondary",
@@ -659,7 +612,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 525,
     "fields": {
       "name": "Woodlands Secondary School",
       "type": "secondary",
@@ -673,7 +625,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 526,
     "fields": {
       "name": "Woodgrove Secondary School",
       "type": "secondary",
@@ -687,7 +638,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 527,
     "fields": {
       "name": "Whitley Secondary School",
       "type": "secondary",
@@ -701,7 +651,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 528,
     "fields": {
       "name": "Westwood Secondary School",
       "type": "secondary",
@@ -715,7 +664,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 529,
     "fields": {
       "name": "Victoria School",
       "type": "secondary",
@@ -729,7 +677,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 530,
     "fields": {
       "name": "Temasek Junior College",
       "type": "secondary",
@@ -743,7 +690,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 531,
     "fields": {
       "name": "Tanjong Katong Girls\u2019 School",
       "type": "secondary",
@@ -757,7 +703,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 532,
     "fields": {
       "name": "St. Margaret\u2019s Secondary School",
       "type": "secondary",
@@ -771,7 +716,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 533,
     "fields": {
       "name": "St. Joseph\u2019s Institution",
       "type": "secondary",
@@ -785,7 +729,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 534,
     "fields": {
       "name": "St. Hilda\u2019s Secondary School",
       "type": "secondary",
@@ -799,7 +742,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 535,
     "fields": {
       "name": "Spectra Secondary School",
       "type": "secondary",
@@ -813,7 +755,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 536,
     "fields": {
       "name": "Singapore Chinese Girls\u2019 School",
       "type": "secondary",
@@ -827,7 +768,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 537,
     "fields": {
       "name": "Serangoon Garden Secondary School",
       "type": "secondary",
@@ -841,7 +781,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 538,
     "fields": {
       "name": "Seng Kang Secondary School",
       "type": "secondary",
@@ -855,7 +794,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 539,
     "fields": {
       "name": "Sembawang Secondary School",
       "type": "secondary",
@@ -869,7 +807,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 540,
     "fields": {
       "name": "School of the Arts, Singapore",
       "type": "secondary",
@@ -883,7 +820,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 541,
     "fields": {
       "name": "School of Science and Technology, Singapore",
       "type": "secondary",
@@ -897,7 +833,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 542,
     "fields": {
       "name": "Regent Secondary School",
       "type": "secondary",
@@ -911,7 +846,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 543,
     "fields": {
       "name": "Raffles Institution",
       "type": "secondary",
@@ -925,7 +859,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 544,
     "fields": {
       "name": "Raffles Girls\u2019 School (Secondary)",
       "type": "secondary",
@@ -939,7 +872,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 545,
     "fields": {
       "name": "Queenstown Secondary School",
       "type": "secondary",
@@ -953,7 +885,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 546,
     "fields": {
       "name": "Peirce Secondary School",
       "type": "secondary",
@@ -967,7 +898,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 547,
     "fields": {
       "name": "Pasir Ris Crest Secondary School",
       "type": "secondary",
@@ -981,7 +911,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 548,
     "fields": {
       "name": "Outram Secondary School",
       "type": "secondary",
@@ -995,7 +924,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 549,
     "fields": {
       "name": "NorthLight School",
       "type": "secondary",
@@ -1009,7 +937,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 550,
     "fields": {
       "name": "Naval Base Secondary School",
       "type": "secondary",
@@ -1023,7 +950,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 551,
     "fields": {
       "name": "National Junior College",
       "type": "secondary",
@@ -1037,7 +963,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 552,
     "fields": {
       "name": "Montfort Secondary School",
       "type": "secondary",
@@ -1051,7 +976,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 553,
     "fields": {
       "name": "Methodist Girls\u2019 School (Secondary)",
       "type": "secondary",
@@ -1065,7 +989,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 554,
     "fields": {
       "name": "Mayflower Secondary School",
       "type": "secondary",
@@ -1079,7 +1002,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 555,
     "fields": {
       "name": "Marsiling Secondary School",
       "type": "secondary",
@@ -1093,7 +1015,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 556,
     "fields": {
       "name": "Kuo Chuan Presbyterian Secondary School",
       "type": "secondary",
@@ -1107,7 +1028,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 557,
     "fields": {
       "name": "Junyuan Secondary School",
       "type": "secondary",
@@ -1121,7 +1041,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 558,
     "fields": {
       "name": "Hwa Chong Institution",
       "type": "secondary",
@@ -1135,7 +1054,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 559,
     "fields": {
       "name": "Hougang Secondary School",
       "type": "secondary",
@@ -1149,7 +1067,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 560,
     "fields": {
       "name": "Hillgrove Secondary School",
       "type": "secondary",
@@ -1163,7 +1080,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 561,
     "fields": {
       "name": "Guangyang Secondary School",
       "type": "secondary",
@@ -1177,7 +1093,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 562,
     "fields": {
       "name": "Fuhua Secondary School",
       "type": "secondary",
@@ -1191,7 +1106,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 563,
     "fields": {
       "name": "Evergreen Secondary School",
       "type": "secondary",
@@ -1205,7 +1119,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 564,
     "fields": {
       "name": "Dunman High School",
       "type": "secondary",
@@ -1219,7 +1132,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 565,
     "fields": {
       "name": "Deyi Secondary School",
       "type": "secondary",
@@ -1233,7 +1145,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 566,
     "fields": {
       "name": "Damai Secondary School",
       "type": "secondary",
@@ -1247,7 +1158,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 567,
     "fields": {
       "name": "Compassvale Secondary School",
       "type": "secondary",
@@ -1261,7 +1171,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 568,
     "fields": {
       "name": "Commonwealth Secondary School",
       "type": "secondary",
@@ -1275,7 +1184,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 569,
     "fields": {
       "name": "Chung Cheng High School (Main)",
       "type": "secondary",
@@ -1289,7 +1197,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 570,
     "fields": {
       "name": "CHIJ St. Theresa\u2019s Convent",
       "type": "secondary",
@@ -1303,7 +1210,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 571,
     "fields": {
       "name": "CHIJ Secondary (Toa Payoh)",
       "type": "secondary",
@@ -1317,7 +1223,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 572,
     "fields": {
       "name": "Canberra Secondary School",
       "type": "secondary",
@@ -1331,7 +1236,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 573,
     "fields": {
       "name": "Bukit Merah Secondary School",
       "type": "secondary",
@@ -1345,7 +1249,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 574,
     "fields": {
       "name": "Bukit Batok Secondary School",
       "type": "secondary",
@@ -1359,7 +1262,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 575,
     "fields": {
       "name": "Boon Lay Secondary School",
       "type": "secondary",
@@ -1373,7 +1275,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 576,
     "fields": {
       "name": "Bedok Green Secondary School",
       "type": "secondary",
@@ -1387,7 +1288,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 577,
     "fields": {
       "name": "Bartley Secondary School",
       "type": "secondary",
@@ -1401,7 +1301,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 578,
     "fields": {
       "name": "Assumption English School",
       "type": "secondary",
@@ -1415,7 +1314,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 579,
     "fields": {
       "name": "Ang Mo Kio Secondary School",
       "type": "secondary",
@@ -1429,7 +1327,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 580,
     "fields": {
       "name": "Yuying Secondary School",
       "type": "secondary",
@@ -1443,7 +1340,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 581,
     "fields": {
       "name": "Yuhua Secondary School",
       "type": "secondary",
@@ -1457,7 +1353,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 582,
     "fields": {
       "name": "Yishun Secondary School",
       "type": "secondary",
@@ -1471,7 +1366,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 583,
     "fields": {
       "name": "Woodlands Ring Secondary School",
       "type": "secondary",
@@ -1485,7 +1379,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 584,
     "fields": {
       "name": "Temasek Secondary School",
       "type": "secondary",
@@ -1499,7 +1392,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 585,
     "fields": {
       "name": "Swiss Cottage Secondary School",
       "type": "secondary",
@@ -1513,7 +1405,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 586,
     "fields": {
       "name": "St. Patrick\u2019s School",
       "type": "secondary",
@@ -1527,7 +1418,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 587,
     "fields": {
       "name": "St. Gabriel\u2019s Secondary School",
       "type": "secondary",
@@ -1541,7 +1431,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 588,
     "fields": {
       "name": "St. Anthony\u2019s Canossian Secondary School",
       "type": "secondary",
@@ -1555,7 +1444,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 589,
     "fields": {
       "name": "St. Andrew\u2019s Secondary School",
       "type": "secondary",
@@ -1569,7 +1457,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 590,
     "fields": {
       "name": "Springfield Secondary School",
       "type": "secondary",
@@ -1583,7 +1470,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 591,
     "fields": {
       "name": "Singapore Sports School",
       "type": "secondary",
@@ -1597,7 +1483,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 592,
     "fields": {
       "name": "Serangoon Secondary School",
       "type": "secondary",
@@ -1611,7 +1496,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 593,
     "fields": {
       "name": "Riverside Secondary School",
       "type": "secondary",
@@ -1625,7 +1509,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 594,
     "fields": {
       "name": "River Valley High School",
       "type": "secondary",
@@ -1639,7 +1522,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 595,
     "fields": {
       "name": "Ping Yi Secondary School",
       "type": "secondary",
@@ -1653,7 +1535,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 596,
     "fields": {
       "name": "Peicai Secondary School",
       "type": "secondary",
@@ -1667,7 +1548,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 597,
     "fields": {
       "name": "Pei Hwa Secondary School",
       "type": "secondary",
@@ -1681,7 +1561,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 598,
     "fields": {
       "name": "Paya Lebar Methodist Girls\u2019 School (Secondary)",
       "type": "secondary",
@@ -1695,7 +1574,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 599,
     "fields": {
       "name": "Pasir Ris Secondary School",
       "type": "secondary",
@@ -1709,7 +1587,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 600,
     "fields": {
       "name": "Orchid Park Secondary School",
       "type": "secondary",
@@ -1723,7 +1600,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 601,
     "fields": {
       "name": "NUS High School of Mathematics and Science",
       "type": "secondary",
@@ -1737,7 +1613,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 602,
     "fields": {
       "name": "Northland Secondary School",
       "type": "secondary",
@@ -1751,7 +1626,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 603,
     "fields": {
       "name": "Northbrooks Secondary School",
       "type": "secondary",
@@ -1765,7 +1639,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 604,
     "fields": {
       "name": "Nanyang Girls\u2019 High School",
       "type": "secondary",
@@ -1779,7 +1652,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 605,
     "fields": {
       "name": "Manjusri Secondary School",
       "type": "secondary",
@@ -1793,7 +1665,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 606,
     "fields": {
       "name": "Kent Ridge Secondary School",
       "type": "secondary",
@@ -1807,7 +1678,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 607,
     "fields": {
       "name": "Jurongville Secondary School",
       "type": "secondary",
@@ -1821,7 +1691,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 608,
     "fields": {
       "name": "Hua Yi Secondary School",
       "type": "secondary",
@@ -1835,7 +1704,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 609,
     "fields": {
       "name": "Greenridge Secondary School",
       "type": "secondary",
@@ -1849,7 +1717,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 610,
     "fields": {
       "name": "Greendale Secondary School",
       "type": "secondary",
@@ -1863,7 +1730,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 611,
     "fields": {
       "name": "Geylang Methodist School (Secondary)",
       "type": "secondary",
@@ -1877,7 +1743,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 612,
     "fields": {
       "name": "Gan Eng Seng School",
       "type": "secondary",
@@ -1891,7 +1756,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 613,
     "fields": {
       "name": "Fuchun Secondary School",
       "type": "secondary",
@@ -1905,7 +1769,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 614,
     "fields": {
       "name": "Fajar Secondary School",
       "type": "secondary",
@@ -1919,7 +1782,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 615,
     "fields": {
       "name": "Edgefield Secondary School",
       "type": "secondary",
@@ -1933,7 +1795,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 616,
     "fields": {
       "name": "East Spring Secondary School",
       "type": "secondary",
@@ -1947,7 +1808,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 617,
     "fields": {
       "name": "Dunearn Secondary School",
       "type": "secondary",
@@ -1961,7 +1821,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 618,
     "fields": {
       "name": "Crest Secondary School",
       "type": "secondary",
@@ -1975,7 +1834,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 619,
     "fields": {
       "name": "Crescent Girls\u2019 School",
       "type": "secondary",
@@ -1989,7 +1847,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 620,
     "fields": {
       "name": "Clementi Town Secondary School",
       "type": "secondary",
@@ -2003,7 +1860,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 621,
     "fields": {
       "name": "Chung Cheng High School (Yishun)",
       "type": "secondary",
@@ -2017,7 +1873,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 622,
     "fields": {
       "name": "Changkat Changi Secondary School",
       "type": "secondary",
@@ -2031,7 +1886,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 623,
     "fields": {
       "name": "Catholic High School (Secondary Section)",
       "type": "secondary",
@@ -2045,7 +1899,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 624,
     "fields": {
       "name": "Bukit View Secondary School",
       "type": "secondary",
@@ -2059,7 +1912,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 625,
     "fields": {
       "name": "Bukit Panjang Govt. High School",
       "type": "secondary",
@@ -2073,7 +1925,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 626,
     "fields": {
       "name": "Bendemeer Secondary School",
       "type": "secondary",
@@ -2087,7 +1938,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 627,
     "fields": {
       "name": "Bedok South Secondary School",
       "type": "secondary",
@@ -2101,7 +1951,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 628,
     "fields": {
       "name": "Beatty Secondary School",
       "type": "secondary",
@@ -2115,7 +1964,6 @@
   },
   {
     "model": "schools.place",
-    "pk": 629,
     "fields": {
       "name": "Anglo-Chinese School (Barker Road)",
       "type": "secondary",

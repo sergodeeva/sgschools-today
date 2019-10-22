@@ -215,7 +215,6 @@ def _build_school_obj(school_type, school_json, i):
     }
     school = {
         'model': 'schools.place',
-        'pk': i,
         'fields': {
             'name': html.unescape(school_json['school_name_s']),
             'type': school_type,
@@ -227,6 +226,11 @@ def _build_school_obj(school_type, school_json, i):
             'website_url': school_json['url_address_s'],
         }
     }
+
+    # Add key for primary schools as this key is used for mapping primary schools and registration results. Dirty but still...
+    if school_type == 'primary':
+        school['pk'] = i
+
     if school_json['school_name_s'] in colocated_schools:
         school['fields']['collocated'] = colocated_schools[school_json['school_name_s']]
 
