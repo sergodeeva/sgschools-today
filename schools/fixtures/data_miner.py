@@ -45,7 +45,7 @@ def get_soup(url, timeout=60):
     return result
 
 
-def get_schools(school_type):
+def get_schools(school_type, index_start):
     """Get schools of a given type (Primary or Secondary) from the MOE API. Save result into json file."""
 
     url = MOE_URL + '?q=*&rows=200&fq=school_journey_s%3A%22' + school_type + '%20school%22&fl=id,school_name_s,telephone_no_s,address_s,postal_code_s,email_address_s,url_address_s,location_p'
@@ -53,7 +53,7 @@ def get_schools(school_type):
     schools = []
 
     for i, item in enumerate(results):
-        schools.append(_build_school_obj(school_type, item, i))
+        schools.append(_build_school_obj(school_type.lower(), item, i + index_start))
 
     with open(f'{school_type.lower()}.json', 'w') as outfile:
         json.dump(schools, outfile, indent=2)
@@ -69,10 +69,11 @@ def get_kindergartens():
 
     for i, item in enumerate(results):
         kindergartens.append({
-            'model': 'schools.kindergarten',
+            'model': 'schools.place',
             'pk': i + 1,
             'fields': {
                 'name': item['centre_name'],
+                'type': 'kindergarten',
                 'geometry': f'SRID=4326;POINT ({_get_kindergarten_geometry(item)})',
                 'address': item['centre_address'].split(' S(', 1)[0],
                 'postal_code': item['postal_code'],
@@ -84,6 +85,31 @@ def get_kindergartens():
 
     with open('kindergarten.json', 'w') as outfile:
         json.dump(kindergartens, outfile, indent=2)
+
+
+def get_libraries():
+    with open('libraries-geojson.geojson') as json_file:
+        data = json.load(json_file)
+    libraries = []
+
+    for i, item in enumerate(data['features']):
+        soup = BeautifulSoup(item['properties']['Description'], 'html.parser')
+        coordinates = item["geometry"]["coordinates"]
+
+        libraries.append({
+            'model': 'schools.place',
+            'fields': {
+                'name': soup.find('th', text='NAME').find_next_sibling('td').text,
+                'type': 'library',
+                'geometry': f'SRID=4326;POINT ({str(coordinates[0]) + " " + str(coordinates[1])})',
+                'address': soup.find('th', text='ADDRESSBLOCKHOUSENUMBER').find_next_sibling('td').text + ' ' + soup.find('th', text='ADDRESSSTREETNAME').find_next_sibling('td').text,
+                'postal_code': soup.find('th', text='ADDRESSPOSTALCODE').find_next_sibling('td').text,
+                'website_url': soup.find('th', text='HYPERLINK').find_next_sibling('td').text,
+            }
+        })
+
+    with open('library.json', 'w') as outfile:
+        json.dump(libraries, outfile, indent=2)
 
 
 def get_registration_results():
@@ -123,7 +149,7 @@ def _get_single_school_registration_results(elite_school_id, db_school_id):
             reg_results.append({
                 'model': 'schools.registrationresults',
                 'fields': {
-                    'primaryschool': db_school_id,
+                    'place': db_school_id,
                     'year': int(row.text),
                     'total_vacancy': _cleanup_row(rows[1], i),
                     'phase_1_taken_up': _cleanup_row(rows[2], i),
@@ -188,10 +214,11 @@ def _build_school_obj(school_type, school_json, i):
         'Westwood Primary School': 467,
     }
     school = {
-        'model': f'schools.{school_type.lower()}school',
-        'pk': i + 1,
+        'model': 'schools.place',
+        'pk': i,
         'fields': {
             'name': html.unescape(school_json['school_name_s']),
+            'type': school_type,
             'geometry': f'SRID=4326;POINT ({_get_shool_geometry(school_json)})',
             'address': school_json['address_s'],
             'postal_code': school_json['postal_code_s'],
@@ -201,7 +228,7 @@ def _build_school_obj(school_type, school_json, i):
         }
     }
     if school_json['school_name_s'] in colocated_schools:
-        school['fields']['kindergartens'] = [colocated_schools[school_json['school_name_s']]]
+        school['fields']['collocated'] = colocated_schools[school_json['school_name_s']]
 
     return school
 
@@ -247,8 +274,8 @@ def _get_kindergarten_geometry(kindergarten_json):
 
 
 if __name__ == '__main__':
-    for sch_type in ['Primary', 'Secondary']:
-        get_schools(sch_type)
-
     get_kindergartens()
+    for sch_type in ['Primary', 'Secondary']:
+        get_schools(sch_type, 478)  # start schools index from 478 (as there are 477 kindergartens)
     get_registration_results()
+    get_libraries()

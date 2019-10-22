@@ -62,6 +62,7 @@ python manage.py loaddata kindergarten.json
 python manage.py loaddata primary.json
 python manage.py loaddata secondary.json
 python manage.py loaddata registration_results.json
+python manage.py loaddata library.json
 ```
 
 ## Start server

@@ -1,9 +1,10 @@
 [
   {
-    "model": "schools.primaryschool",
-    "pk": 1,
+    "model": "schools.place",
+    "pk": 478,
     "fields": {
       "name": "Valour Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.8995102 1.4065167)",
       "address": "49 Punggol Central",
       "postal_code": "828728",
@@ -13,10 +14,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 2,
+    "model": "schools.place",
+    "pk": 479,
     "fields": {
       "name": "Zhangde Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.825951875662 1.28421153335382)",
       "address": "51 Jalan Membina",
       "postal_code": "169485",
@@ -26,10 +28,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 3,
+    "model": "schools.place",
+    "pk": 480,
     "fields": {
       "name": "Yumin Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.950461927088 1.35129177656982)",
       "address": "3 Tampines Street 21",
       "postal_code": "529393",
@@ -39,10 +42,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 4,
+    "model": "schools.place",
+    "pk": 481,
     "fields": {
       "name": "Yuhua Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.741105772644 1.34280230475035)",
       "address": "158 Jurong East Street 24",
       "postal_code": "609558",
@@ -52,10 +56,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 5,
+    "model": "schools.place",
+    "pk": 482,
     "fields": {
       "name": "Yu Neng Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.932150334643 1.33388900977814)",
       "address": "56 Bedok North St 3",
       "postal_code": "469623",
@@ -65,10 +70,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 6,
+    "model": "schools.place",
+    "pk": 483,
     "fields": {
       "name": "Yio Chu Kang Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.885643682171 1.37793264345278)",
       "address": "1 Hougang Street 51",
       "postal_code": "538720",
@@ -78,10 +84,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 7,
+    "model": "schools.place",
+    "pk": 484,
     "fields": {
       "name": "Yew Tee Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.750985967346 1.39676600905038)",
       "address": "10 Choa Chu Kang St 64",
       "postal_code": "689100",
@@ -91,10 +98,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 8,
+    "model": "schools.place",
+    "pk": 485,
     "fields": {
       "name": "Yangzheng Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.868349549195 1.3489737533151)",
       "address": "15 Serangoon Avenue 3",
       "postal_code": "556108",
@@ -104,10 +112,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 9,
+    "model": "schools.place",
+    "pk": 486,
     "fields": {
       "name": "Xinmin Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.883080767491 1.37139548941933)",
       "address": "9 Hougang Avenue 8",
       "postal_code": "538784",
@@ -117,10 +126,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 10,
+    "model": "schools.place",
+    "pk": 487,
     "fields": {
       "name": "Woodlands Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.791570546509 1.43655108594233)",
       "address": "10 Woodlands Drive 50",
       "postal_code": "738853",
@@ -130,10 +140,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 11,
+    "model": "schools.place",
+    "pk": 488,
     "fields": {
       "name": "Townsville Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.853826048328 1.36003263719251)",
       "address": "3 Ang Mo Kio Ave 10",
       "postal_code": "569730",
@@ -143,10 +154,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 12,
+    "model": "schools.place",
+    "pk": 489,
     "fields": {
       "name": "Temasek Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.945590669163 1.31770677551335)",
       "address": "501 Bedok South Ave 3",
       "postal_code": "469300",
@@ -156,10 +168,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 13,
+    "model": "schools.place",
+    "pk": 490,
     "fields": {
       "name": "Telok Kurau Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.910934011337 1.3310458544135)",
       "address": "50 Bedok Reservoir Rd",
       "postal_code": "479239",
@@ -169,10 +182,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 14,
+    "model": "schools.place",
+    "pk": 491,
     "fields": {
       "name": "Tao Nan School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.911553152326 1.30528528687323)",
       "address": "49 Marine Crescent",
       "postal_code": "449761",
@@ -182,10 +196,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 15,
+    "model": "schools.place",
+    "pk": 492,
     "fields": {
       "name": "Tanjong Katong Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.9363866 1.3246555)",
       "address": "10 Seraya Road",
       "postal_code": "437259",
@@ -195,10 +210,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 16,
+    "model": "schools.place",
+    "pk": 493,
     "fields": {
       "name": "Tampines Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.944004684986 1.34977870805929)",
       "address": "250 Tampines Street 12",
       "postal_code": "529426",
@@ -208,10 +224,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 17,
+    "model": "schools.place",
+    "pk": 494,
     "fields": {
       "name": "Tampines North Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.948725782833 1.36047641484685)",
       "address": "30 Tampines Avenue 9",
       "postal_code": "529565",
@@ -221,10 +238,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 18,
+    "model": "schools.place",
+    "pk": 495,
     "fields": {
       "name": "Stamford Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.857453500579 1.3034563846745)",
       "address": "1 Victoria Lane",
       "postal_code": "198423",
@@ -234,10 +252,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 19,
+    "model": "schools.place",
+    "pk": 496,
     "fields": {
       "name": "St. Anthony\u2019s Canossian Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.941234868202 1.33472537301892)",
       "address": "1602 Bedok North Ave 4",
       "postal_code": "469701",
@@ -247,10 +266,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 20,
+    "model": "schools.place",
+    "pk": 497,
     "fields": {
       "name": "South View Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.746275846011 1.38166664389752)",
       "address": "6 Choa Chu Kang Central",
       "postal_code": "689762",
@@ -260,10 +280,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 21,
+    "model": "schools.place",
+    "pk": 498,
     "fields": {
       "name": "Si Ling Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.786035065192 1.43240935732527)",
       "address": "61 Woodlands Avenue 1",
       "postal_code": "739067",
@@ -273,10 +294,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 22,
+    "model": "schools.place",
+    "pk": 499,
     "fields": {
       "name": "Shuqun Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.721523713379 1.34765311431636)",
       "address": "8 Jurong West Street 51",
       "postal_code": "649332",
@@ -286,10 +308,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 23,
+    "model": "schools.place",
+    "pk": 500,
     "fields": {
       "name": "Sembawang Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.821042374036 1.44507371552624)",
       "address": "10 Sembawang Drive",
       "postal_code": "757715",
@@ -299,10 +322,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 24,
+    "model": "schools.place",
+    "pk": 501,
     "fields": {
       "name": "Rosyth School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.875001549174 1.37289067499066)",
       "address": "21 Serangoon North Avenue 4",
       "postal_code": "555855",
@@ -312,10 +336,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 25,
+    "model": "schools.place",
+    "pk": 502,
     "fields": {
       "name": "Red Swastika School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.934332314404 1.33324297847733)",
       "address": "350 Bedok North Avenue 3",
       "postal_code": "469719",
@@ -325,26 +350,26 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 26,
+    "model": "schools.place",
+    "pk": 503,
     "fields": {
       "name": "Punggol View Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.905156371376 1.40514582647964)",
       "address": "9 Punggol Place",
       "postal_code": "828845",
       "phone_number": "6570158",
       "email_address": "punggolview_ps@moe.edu.sg",
       "website_url": "http://www.punggolviewpri.moe.edu.sg",
-      "kindergartens": [
-        456
-      ]
+      "collocated": 456
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 27,
+    "model": "schools.place",
+    "pk": 504,
     "fields": {
       "name": "Punggol Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.894506933396 1.37779451245844)",
       "address": "61 Hougang Avenue 8",
       "postal_code": "538787",
@@ -354,26 +379,26 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 28,
+    "model": "schools.place",
+    "pk": 505,
     "fields": {
       "name": "Punggol Green Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.898801330302 1.40187220643297)",
       "address": "98 Punggol Walk",
       "postal_code": "828772",
       "phone_number": "6538301",
       "email_address": "admin_punggolgreen_ps@moe.edu.sg",
       "website_url": "http://www.punggolgreenpri.moe.edu.sg",
-      "kindergartens": [
-        458
-      ]
+      "collocated": 458
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 29,
+    "model": "schools.place",
+    "pk": 506,
     "fields": {
       "name": "Pioneer Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.695003812477 1.34883617453429)",
       "address": "23 Jurong West Street 81",
       "postal_code": "649076",
@@ -383,10 +408,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 30,
+    "model": "schools.place",
+    "pk": 507,
     "fields": {
       "name": "Pei Hwa Presbyterian Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.776108247761 1.33805507824253)",
       "address": "7 Pei Wah Avenue",
       "postal_code": "597610",
@@ -396,10 +422,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 31,
+    "model": "schools.place",
+    "pk": 508,
     "fields": {
       "name": "Pei Chun Public School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.858628716978 1.33274088113984)",
       "address": "16 Lorong 7 Toa Payoh",
       "postal_code": "319320",
@@ -409,10 +436,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 32,
+    "model": "schools.place",
+    "pk": 509,
     "fields": {
       "name": "Pasir Ris Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.962807212116 1.37241870245533)",
       "address": "5 Pasir Ris Street 21",
       "postal_code": "518968",
@@ -422,10 +450,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 33,
+    "model": "schools.place",
+    "pk": 510,
     "fields": {
       "name": "Palm View Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.891354675017 1.38376923022127)",
       "address": "150 Compassvale Bow",
       "postal_code": "544822",
@@ -435,10 +464,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 34,
+    "model": "schools.place",
+    "pk": 511,
     "fields": {
       "name": "North Vista Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.895961877928 1.38282243016301)",
       "address": "20 Compassvale Link",
       "postal_code": "544974",
@@ -448,10 +478,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 35,
+    "model": "schools.place",
+    "pk": 512,
     "fields": {
       "name": "New Town Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.800102318609 1.29964181064172)",
       "address": "300 Tanglin Halt Road",
       "postal_code": "148812",
@@ -461,10 +492,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 36,
+    "model": "schools.place",
+    "pk": 513,
     "fields": {
       "name": "Naval Base Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.838794077233 1.41630663159389)",
       "address": "7 Yishun Ave 4",
       "postal_code": "769028",
@@ -474,10 +506,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 37,
+    "model": "schools.place",
+    "pk": 514,
     "fields": {
       "name": "Nan Chiau Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.891180928186 1.39221149906595)",
       "address": "50 Anchorvale Link",
       "postal_code": "545080",
@@ -487,10 +520,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 38,
+    "model": "schools.place",
+    "pk": 515,
     "fields": {
       "name": "Mee Toh School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.908589494228 1.39461845385922)",
       "address": "21 Edgedale Plains",
       "postal_code": "828867",
@@ -500,10 +534,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 39,
+    "model": "schools.place",
+    "pk": 516,
     "fields": {
       "name": "Lakeside Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.718089546936 1.33820397676916)",
       "address": "161 Corporation Walk",
       "postal_code": "618310",
@@ -513,10 +548,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 40,
+    "model": "schools.place",
+    "pk": 517,
     "fields": {
       "name": "Kuo Chuan Presbyterian Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.855018233311 1.34939813669538)",
       "address": "8 Bishan Street 13",
       "postal_code": "579793",
@@ -526,10 +562,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 41,
+    "model": "schools.place",
+    "pk": 518,
     "fields": {
       "name": "Kong Hwa School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.888352029067 1.31099674009195)",
       "address": "350 Guillemard Road",
       "postal_code": "399772",
@@ -539,10 +576,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 42,
+    "model": "schools.place",
+    "pk": 519,
     "fields": {
       "name": "Juying Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.687769624799 1.33902264667596)",
       "address": "31 Jurong West Street 91",
       "postal_code": "649037",
@@ -552,10 +590,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 43,
+    "model": "schools.place",
+    "pk": 520,
     "fields": {
       "name": "Hong Wen School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.857628468881 1.32175999964555)",
       "address": "30 Towner Road",
       "postal_code": "327829",
@@ -565,10 +604,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 44,
+    "model": "schools.place",
+    "pk": 521,
     "fields": {
       "name": "Haig Girls\u2019 School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.902902557195 1.31194344271385)",
       "address": "51 Koon Seng Road",
       "postal_code": "427072",
@@ -578,10 +618,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 45,
+    "model": "schools.place",
+    "pk": 522,
     "fields": {
       "name": "Guangyang Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.849453239895 1.34569011530241)",
       "address": "6 Bishan Street 12",
       "postal_code": "579806",
@@ -591,10 +632,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 46,
+    "model": "schools.place",
+    "pk": 523,
     "fields": {
       "name": "Greendale Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.912341048919 1.39648761034483)",
       "address": "50 Edgedale Plains",
       "postal_code": "828848",
@@ -604,10 +646,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 47,
+    "model": "schools.place",
+    "pk": 524,
     "fields": {
       "name": "Gan Eng Seng Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.815547410064 1.28559516494963)",
       "address": "100 Redhill Close",
       "postal_code": "158901",
@@ -617,10 +660,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 48,
+    "model": "schools.place",
+    "pk": 525,
     "fields": {
       "name": "Fuhua Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.736103745748 1.33650394789627)",
       "address": "65 Jurong East Street 13",
       "postal_code": "609647",
@@ -630,10 +674,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 49,
+    "model": "schools.place",
+    "pk": 526,
     "fields": {
       "name": "Fern Green Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.880330305684 1.39726966050481)",
       "address": "70 Fernvale Link",
       "postal_code": "797538",
@@ -643,10 +688,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 50,
+    "model": "schools.place",
+    "pk": 527,
     "fields": {
       "name": "Fairfield Methodist School (Primary)",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.785438270044 1.30054082453427)",
       "address": "100 Dover Road",
       "postal_code": "139648",
@@ -656,10 +702,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 51,
+    "model": "schools.place",
+    "pk": 528,
     "fields": {
       "name": "Endeavour Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.817436231731 1.45403837499303)",
       "address": "10 Admiralty Link",
       "postal_code": "757521",
@@ -669,10 +716,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 52,
+    "model": "schools.place",
+    "pk": 529,
     "fields": {
       "name": "Elias Park Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.945128117683 1.37451269459895)",
       "address": "11 Pasir Ris Street 52",
       "postal_code": "518866",
@@ -682,10 +730,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 53,
+    "model": "schools.place",
+    "pk": 530,
     "fields": {
       "name": "Chongzheng Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.951399541868 1.35070739237745)",
       "address": "1 Tampines Street 21",
       "postal_code": "529392",
@@ -695,10 +744,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 54,
+    "model": "schools.place",
+    "pk": 531,
     "fields": {
       "name": "Chongfu School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.839309173817 1.43839562897008)",
       "address": "170 Yishun Avenue 6",
       "postal_code": "768959",
@@ -708,10 +758,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 55,
+    "model": "schools.place",
+    "pk": 532,
     "fields": {
       "name": "CHIJ St. Nicholas Girls\u2019 School (Primary Section)",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.834253269436 1.37347687878919)",
       "address": "501 Ang Mo Kio Street 13",
       "postal_code": "569405",
@@ -721,10 +772,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 56,
+    "model": "schools.place",
+    "pk": 533,
     "fields": {
       "name": "CHIJ Primary (Toa Payoh)",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.841847263786 1.33275264711591)",
       "address": "628 Lorong 1 Toa Payoh",
       "postal_code": "319765",
@@ -734,10 +786,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 57,
+    "model": "schools.place",
+    "pk": 534,
     "fields": {
       "name": "CHIJ Our Lady Queen of Peace",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.767412204602 1.36660366856101)",
       "address": "4 Chestnut Drive",
       "postal_code": "679287",
@@ -747,10 +800,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 58,
+    "model": "schools.place",
+    "pk": 535,
     "fields": {
       "name": "CHIJ Our Lady of The Nativity",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.897575728031 1.37330297194879)",
       "address": "1257 Upper Serangoon Road",
       "postal_code": "534793",
@@ -760,10 +814,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 59,
+    "model": "schools.place",
+    "pk": 536,
     "fields": {
       "name": "CHIJ Our Lady of Good Counsel",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.864009397373 1.3574295229699)",
       "address": "2C Burghley Drive",
       "postal_code": "558979",
@@ -773,10 +828,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 60,
+    "model": "schools.place",
+    "pk": 537,
     "fields": {
       "name": "CHIJ (Kellock)",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.828157564896 1.27502272296403)",
       "address": "1 Bukit Teresa Road",
       "postal_code": "099757",
@@ -786,10 +842,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 61,
+    "model": "schools.place",
+    "pk": 538,
     "fields": {
       "name": "Changkat Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.952080114035 1.34023163951634)",
       "address": "11 Simei St 3",
       "postal_code": "529896",
@@ -799,10 +856,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 62,
+    "model": "schools.place",
+    "pk": 539,
     "fields": {
       "name": "Cedar Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.875620790518 1.33558842561171)",
       "address": "15 Cedar Avenue",
       "postal_code": "349700",
@@ -812,10 +870,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 63,
+    "model": "schools.place",
+    "pk": 540,
     "fields": {
       "name": "Canossa Catholic Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.881050911498 1.32685879628179)",
       "address": "1 Sallim Road",
       "postal_code": "387621",
@@ -825,10 +884,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 64,
+    "model": "schools.place",
+    "pk": 541,
     "fields": {
       "name": "Bukit View Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.753665986188 1.34586054842037)",
       "address": "18 Bukit Batok Street 21",
       "postal_code": "659634",
@@ -838,10 +898,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 65,
+    "model": "schools.place",
+    "pk": 542,
     "fields": {
       "name": "Bukit Panjang Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.769374904025 1.37362179302439)",
       "address": "109 Cashew Road",
       "postal_code": "679676",
@@ -851,10 +912,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 66,
+    "model": "schools.place",
+    "pk": 543,
     "fields": {
       "name": "Boon Lay Garden Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.713280889452 1.34317853793319)",
       "address": "20 Boon Lay Drive",
       "postal_code": "649930",
@@ -864,10 +926,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 67,
+    "model": "schools.place",
+    "pk": 544,
     "fields": {
       "name": "Bendemeer Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.865404167629 1.32181250780476)",
       "address": "91 Bendemeer Road",
       "postal_code": "339948",
@@ -877,10 +940,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 68,
+    "model": "schools.place",
+    "pk": 545,
     "fields": {
       "name": "Bedok Green Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.937878976352 1.32344593287994)",
       "address": "1 Bedok South Ave 2",
       "postal_code": "469317",
@@ -890,10 +954,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 69,
+    "model": "schools.place",
+    "pk": 546,
     "fields": {
       "name": "Beacon Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.77363194111 1.38394934487102)",
       "address": "36 Bukit Panjang Ring Road",
       "postal_code": "679944",
@@ -903,10 +968,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 70,
+    "model": "schools.place",
+    "pk": 547,
     "fields": {
       "name": "Angsana Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.951808106156 1.34855974654082)",
       "address": "3 Tampines Street 22",
       "postal_code": "529366",
@@ -916,10 +982,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 71,
+    "model": "schools.place",
+    "pk": 548,
     "fields": {
       "name": "Admiralty Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.800040119743 1.44263479033113)",
       "address": "11 Woodlands Circle",
       "postal_code": "738907",
@@ -929,10 +996,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 72,
+    "model": "schools.place",
+    "pk": 549,
     "fields": {
       "name": "Maris Stella High School (Primary Section)",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.8761218 1.3417641)",
       "address": "25 Mount Vernon Road",
       "postal_code": "368051",
@@ -942,10 +1010,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 73,
+    "model": "schools.place",
+    "pk": 550,
     "fields": {
       "name": "Zhonghua Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.869762438084 1.3602032970505)",
       "address": "12 Serangoon Avenue 4",
       "postal_code": "556095",
@@ -955,10 +1024,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 74,
+    "model": "schools.place",
+    "pk": 551,
     "fields": {
       "name": "Zhenghua Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.769313521752 1.37954887512233)",
       "address": "9 Fajar Road",
       "postal_code": "679002",
@@ -968,10 +1038,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 75,
+    "model": "schools.place",
+    "pk": 552,
     "fields": {
       "name": "Xinghua Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.890465047334 1.35790893608186)",
       "address": "45 Hougang Avenue 1",
       "postal_code": "538882",
@@ -981,10 +1052,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 76,
+    "model": "schools.place",
+    "pk": 553,
     "fields": {
       "name": "Woodlands Ring Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.797435733144 1.4349522931586)",
       "address": "11 Woodlands Ring Road",
       "postal_code": "738240",
@@ -994,10 +1066,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 77,
+    "model": "schools.place",
+    "pk": 554,
     "fields": {
       "name": "White Sands Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.960918869319 1.36555714668556)",
       "address": "2 Pasir Ris St 11",
       "postal_code": "519075",
@@ -1007,26 +1080,26 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 78,
+    "model": "schools.place",
+    "pk": 555,
     "fields": {
       "name": "Westwood Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.70053420978 1.34718456606377)",
       "address": "1 Jurong West Street 73",
       "postal_code": "649188",
       "phone_number": "6412169",
       "email_address": "westwood_ps@moe.edu.sg",
       "website_url": "http://www.westwoodpri.moe.edu.sg",
-      "kindergartens": [
-        467
-      ]
+      "collocated": 467
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 79,
+    "model": "schools.place",
+    "pk": 556,
     "fields": {
       "name": "West View Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.760240434318 1.38367582003361)",
       "address": "31 Senja Road",
       "postal_code": "677742",
@@ -1036,10 +1109,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 80,
+    "model": "schools.place",
+    "pk": 557,
     "fields": {
       "name": "West Grove Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.699286360581 1.34487905600144)",
       "address": "1 Jurong West St 72",
       "postal_code": "649223",
@@ -1049,10 +1123,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 81,
+    "model": "schools.place",
+    "pk": 558,
     "fields": {
       "name": "St. Stephen\u2019s School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.917258129598 1.31878997295137)",
       "address": "20 Siglap View",
       "postal_code": "455789",
@@ -1062,10 +1137,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 82,
+    "model": "schools.place",
+    "pk": 559,
     "fields": {
       "name": "St. Andrew\u2019s Junior School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.865117134385 1.33140255308872)",
       "address": "2 Francis Thomas Drive",
       "postal_code": "359337",
@@ -1075,26 +1151,26 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 83,
+    "model": "schools.place",
+    "pk": 560,
     "fields": {
       "name": "Sengkang Green Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.875217666486 1.39284606680479)",
       "address": "15 Fernvale Road",
       "postal_code": "797636",
       "phone_number": "6386425",
       "email_address": "sengkanggreen_ps@moe.edu.sg",
       "website_url": "http://www.sengkanggreenpri.moe.edu.sg/",
-      "kindergartens": [
-        459
-      ]
+      "collocated": 459
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 84,
+    "model": "schools.place",
+    "pk": 561,
     "fields": {
       "name": "Rivervale Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.904559511997 1.39340997767763)",
       "address": "80 Rivervale Drive",
       "postal_code": "545092",
@@ -1104,26 +1180,26 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 85,
+    "model": "schools.place",
+    "pk": 562,
     "fields": {
       "name": "Riverside Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.801831963297 1.44704734253722)",
       "address": "110 Woodlands Crescent",
       "postal_code": "737803",
       "phone_number": "6365449",
       "email_address": "riverside_ps@moe.edu.sg",
       "website_url": "http://www.riversidepri.moe.edu.sg",
-      "kindergartens": [
-        465
-      ]
+      "collocated": 465
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 86,
+    "model": "schools.place",
+    "pk": 563,
     "fields": {
       "name": "River Valley Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.835815165829 1.29422328461692)",
       "address": "2 River Valley Green",
       "postal_code": "237993",
@@ -1133,10 +1209,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 87,
+    "model": "schools.place",
+    "pk": 564,
     "fields": {
       "name": "Queenstown Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.807548617332 1.29559365009016)",
       "address": "310 Margaret Dr",
       "postal_code": "149303",
@@ -1146,10 +1223,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 88,
+    "model": "schools.place",
+    "pk": 565,
     "fields": {
       "name": "Qihua Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.788339756898 1.44203596612333)",
       "address": "5 Woodlands Street 81",
       "postal_code": "738525",
@@ -1159,10 +1237,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 89,
+    "model": "schools.place",
+    "pk": 566,
     "fields": {
       "name": "Peiying Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.830417090698 1.41723339695906)",
       "address": "651 Yishun Ring Road",
       "postal_code": "768687",
@@ -1172,10 +1251,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 90,
+    "model": "schools.place",
+    "pk": 567,
     "fields": {
       "name": "Pei Tong Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.767599739431 1.31619774918991)",
       "address": "15 Clementi Avenue 5",
       "postal_code": "129857",
@@ -1185,10 +1265,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 91,
+    "model": "schools.place",
+    "pk": 568,
     "fields": {
       "name": "Paya Lebar Methodist Girls\u2019 School (Primary)",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.884971343143 1.34947276268398)",
       "address": "298 Lorong Ah Soo",
       "postal_code": "536741",
@@ -1198,10 +1279,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 92,
+    "model": "schools.place",
+    "pk": 569,
     "fields": {
       "name": "Oasis Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.911120600638 1.40462413200795)",
       "address": "71 Edgefield Plains",
       "postal_code": "828716",
@@ -1211,10 +1293,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 93,
+    "model": "schools.place",
+    "pk": 570,
     "fields": {
       "name": "Ngee Ann Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.917463017497 1.305525059105)",
       "address": "344 Marine Terrace",
       "postal_code": "449149",
@@ -1224,10 +1307,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 94,
+    "model": "schools.place",
+    "pk": 571,
     "fields": {
       "name": "Nanyang Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.807750155296 1.32084749904534)",
       "address": "52 King's Road",
       "postal_code": "268097",
@@ -1237,10 +1321,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 95,
+    "model": "schools.place",
+    "pk": 572,
     "fields": {
       "name": "Nan Hua Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.765118624077 1.30611628454706)",
       "address": "30 Jalan Lempeng",
       "postal_code": "128806",
@@ -1250,10 +1335,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 96,
+    "model": "schools.place",
+    "pk": 573,
     "fields": {
       "name": "Mayflower Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.835805246743 1.37614621670478)",
       "address": "200 Ang Mo Kio Avenue 5",
       "postal_code": "569878",
@@ -1263,10 +1349,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 97,
+    "model": "schools.place",
+    "pk": 574,
     "fields": {
       "name": "Marsiling Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.773643013846 1.4338390403706)",
       "address": "31 Woodlands Centre Road",
       "postal_code": "738927",
@@ -1276,10 +1363,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 98,
+    "model": "schools.place",
+    "pk": 575,
     "fields": {
       "name": "Lianhua Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.754165828711 1.35424191127296)",
       "address": "2 Bukit Batok Street 52",
       "postal_code": "659243",
@@ -1289,10 +1377,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 99,
+    "model": "schools.place",
+    "pk": 576,
     "fields": {
       "name": "Keming Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.756449399351 1.34552849960877)",
       "address": "90 Bukit Batok East Avenue 6",
       "postal_code": "659762",
@@ -1302,10 +1391,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 100,
+    "model": "schools.place",
+    "pk": 577,
     "fields": {
       "name": "Jurong West Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.698803732244 1.33917519796107)",
       "address": "30 Jurong West St 61",
       "postal_code": "648368",
@@ -1315,10 +1405,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 101,
+    "model": "schools.place",
+    "pk": 578,
     "fields": {
       "name": "Jurong Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.733156560251 1.3486002031607)",
       "address": "320 Jurong East Street 32",
       "postal_code": "609476",
@@ -1328,10 +1419,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 102,
+    "model": "schools.place",
+    "pk": 579,
     "fields": {
       "name": "Junyuan Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.939220537934 1.34787051230886)",
       "address": "2 Tampines Street 91",
       "postal_code": "528906",
@@ -1341,10 +1433,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 103,
+    "model": "schools.place",
+    "pk": 580,
     "fields": {
       "name": "Jing Shan Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.852132214306 1.372232909835)",
       "address": "5 Ang Mo Kio St 52",
       "postal_code": "569228",
@@ -1354,10 +1447,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 104,
+    "model": "schools.place",
+    "pk": 581,
     "fields": {
       "name": "Huamin Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.844863443 1.42731880981381)",
       "address": "21 Yishun Avenue 11",
       "postal_code": "768857",
@@ -1367,10 +1461,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 105,
+    "model": "schools.place",
+    "pk": 582,
     "fields": {
       "name": "Hougang Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.880807295096 1.37738249360778)",
       "address": "1 Hougang St 93",
       "postal_code": "534238",
@@ -1380,10 +1475,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 106,
+    "model": "schools.place",
+    "pk": 583,
     "fields": {
       "name": "Holy Innocents\u2019 Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.894114899795 1.3669383087735)",
       "address": "5 Lorong Low Koon",
       "postal_code": "536451",
@@ -1393,10 +1489,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 107,
+    "model": "schools.place",
+    "pk": 584,
     "fields": {
       "name": "Henry Park Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.784296227747 1.31667646178349)",
       "address": "1 Holland Grove Road",
       "postal_code": "278790",
@@ -1406,10 +1503,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 108,
+    "model": "schools.place",
+    "pk": 585,
     "fields": {
       "name": "Fuchun Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.778192944298 1.43047990810127)",
       "address": "23 Woodlands Avenue 1",
       "postal_code": "739063",
@@ -1419,26 +1517,26 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 109,
+    "model": "schools.place",
+    "pk": 586,
     "fields": {
       "name": "Frontier Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.69970173931 1.33641298743236)",
       "address": "20 Jurong West Street 61",
       "postal_code": "648200",
       "phone_number": "6578955",
       "email_address": "frontier_ps@moe.edu.sg",
       "website_url": "http://www.frontierpri.moe.edu.sg",
-      "kindergartens": [
-        461
-      ]
+      "collocated": 461
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 110,
+    "model": "schools.place",
+    "pk": 587,
     "fields": {
       "name": "Fengshan Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.931710293058 1.32980598760786)",
       "address": "307 Bedok North Road",
       "postal_code": "469680",
@@ -1448,10 +1546,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 111,
+    "model": "schools.place",
+    "pk": 588,
     "fields": {
       "name": "Evergreen Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.794581221647 1.44415064298951)",
       "address": "31 Woodlands Circle",
       "postal_code": "738908",
@@ -1461,10 +1560,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 112,
+    "model": "schools.place",
+    "pk": 589,
     "fields": {
       "name": "De La Salle School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.743201812831 1.39470782963993)",
       "address": "11 Choa Chu Kang St 52",
       "postal_code": "689285",
@@ -1474,10 +1574,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 113,
+    "model": "schools.place",
+    "pk": 590,
     "fields": {
       "name": "Corporation Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.707593724614 1.35099779872542)",
       "address": "31 Jurong West Street 24",
       "postal_code": "648347",
@@ -1487,10 +1588,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 114,
+    "model": "schools.place",
+    "pk": 591,
     "fields": {
       "name": "Clementi Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.763144493687 1.31506321827877)",
       "address": "8 Clementi Ave 3",
       "postal_code": "129903",
@@ -1500,10 +1602,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 115,
+    "model": "schools.place",
+    "pk": 592,
     "fields": {
       "name": "Chua Chu Kang Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.741832917421 1.3777589009337)",
       "address": "20 Choa Chu Kang Avenue 2",
       "postal_code": "689905",
@@ -1513,10 +1616,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 116,
+    "model": "schools.place",
+    "pk": 593,
     "fields": {
       "name": "CHIJ (Katong) Primary",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.911105620496 1.30648535277089)",
       "address": "17 Martia Road",
       "postal_code": "424821",
@@ -1526,10 +1630,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 117,
+    "model": "schools.place",
+    "pk": 594,
     "fields": {
       "name": "Casuarina Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.957020286387 1.37246063955374)",
       "address": "30 Pasir Ris St 41",
       "postal_code": "518935",
@@ -1539,10 +1644,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 118,
+    "model": "schools.place",
+    "pk": 595,
     "fields": {
       "name": "Cantonment Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.839962631748 1.27547252623205)",
       "address": "1 Cantonment Close",
       "postal_code": "088256",
@@ -1552,10 +1658,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 119,
+    "model": "schools.place",
+    "pk": 596,
     "fields": {
       "name": "Canberra Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.815839476605 1.45130467584564)",
       "address": "21 Admiralty Drive",
       "postal_code": "757714",
@@ -1565,10 +1672,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 120,
+    "model": "schools.place",
+    "pk": 597,
     "fields": {
       "name": "Anglo-Chinese School (Primary)",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.835609732082 1.31837054550897)",
       "address": "50 Barker Road",
       "postal_code": "309918",
@@ -1578,10 +1686,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 121,
+    "model": "schools.place",
+    "pk": 598,
     "fields": {
       "name": "Anglo-Chinese School (Junior)",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.840955091346 1.30935122599558)",
       "address": "16 Winstedt Road",
       "postal_code": "227988",
@@ -1591,10 +1700,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 122,
+    "model": "schools.place",
+    "pk": 599,
     "fields": {
       "name": "Ang Mo Kio Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.839630858752 1.3693217658461)",
       "address": "20 Ang Mo Kio Avenue 3",
       "postal_code": "569920",
@@ -1604,10 +1714,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 123,
+    "model": "schools.place",
+    "pk": 600,
     "fields": {
       "name": "Anderson Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.841392081119 1.38426429436739)",
       "address": "19 Ang Mo Kio Ave 9",
       "postal_code": "569785",
@@ -1617,10 +1728,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 124,
+    "model": "schools.place",
+    "pk": 601,
     "fields": {
       "name": "Anchor Green Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.887165375937 1.39037014886962)",
       "address": "31 Anchorvale Drive",
       "postal_code": "544969",
@@ -1630,10 +1742,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 125,
+    "model": "schools.place",
+    "pk": 602,
     "fields": {
       "name": "Ai Tong School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.833020333986 1.36058343389044)",
       "address": "100 Bright Hill Drive",
       "postal_code": "579646",
@@ -1643,10 +1756,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 126,
+    "model": "schools.place",
+    "pk": 603,
     "fields": {
       "name": "Yishun Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.834087115915 1.43338602948303)",
       "address": "500 Yishun Ring Road",
       "postal_code": "768679",
@@ -1656,10 +1770,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 127,
+    "model": "schools.place",
+    "pk": 604,
     "fields": {
       "name": "Xishan Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.837755319448 1.43347186925066)",
       "address": "8 Yishun Street 21",
       "postal_code": "768611",
@@ -1669,10 +1784,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 128,
+    "model": "schools.place",
+    "pk": 605,
     "fields": {
       "name": "Xingnan Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.687950252103 1.34254744877696)",
       "address": "5 Jurong West Street 91",
       "postal_code": "649036",
@@ -1682,10 +1798,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 129,
+    "model": "schools.place",
+    "pk": 606,
     "fields": {
       "name": "Woodgrove Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.790604437613 1.43310340168969)",
       "address": "2 Woodlands Drive 14",
       "postal_code": "738079",
@@ -1695,26 +1812,26 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 130,
+    "model": "schools.place",
+    "pk": 607,
     "fields": {
       "name": "West Spring Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.766195711835 1.38944145898946)",
       "address": "60 Bukit Panjang Ring Road",
       "postal_code": "679946",
       "phone_number": "6314419",
       "email_address": "westspring_ps@moe.edu.sg",
       "website_url": "http://www.westspringpri.moe.edu.sg",
-      "kindergartens": [
-        460
-      ]
+      "collocated": 460
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 131,
+    "model": "schools.place",
+    "pk": 608,
     "fields": {
       "name": "Wellington Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.82230605577 1.45191585783116)",
       "address": "10 Wellington Circle",
       "postal_code": "757702",
@@ -1724,10 +1841,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 132,
+    "model": "schools.place",
+    "pk": 609,
     "fields": {
       "name": "Waterway Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.918621581556 1.3988280062658)",
       "address": "70 Punggol Drive",
       "postal_code": "828802",
@@ -1737,10 +1855,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 133,
+    "model": "schools.place",
+    "pk": 610,
     "fields": {
       "name": "Unity Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.746822625758 1.40285481877249)",
       "address": "21 Choa Chu Kang Crescent",
       "postal_code": "688268",
@@ -1750,10 +1869,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 134,
+    "model": "schools.place",
+    "pk": 611,
     "fields": {
       "name": "Teck Whye Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.753291857016 1.38364996834459)",
       "address": "11 Teck Whye Walk",
       "postal_code": "688261",
@@ -1763,10 +1883,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 135,
+    "model": "schools.place",
+    "pk": 612,
     "fields": {
       "name": "Teck Ghee Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.850957126982 1.36558782075971)",
       "address": "1 Ang Mo Kio Street 32",
       "postal_code": "569299",
@@ -1776,10 +1897,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 136,
+    "model": "schools.place",
+    "pk": 613,
     "fields": {
       "name": "St. Margaret\u2019s Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.846251114072 1.30378845667471)",
       "address": "99 Wilkie Road",
       "postal_code": "228091",
@@ -1789,10 +1911,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 137,
+    "model": "schools.place",
+    "pk": 614,
     "fields": {
       "name": "St. Joseph\u2019s Institution Junior",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.845611935235 1.31772860986917)",
       "address": "3 Essex Road",
       "postal_code": "309331",
@@ -1802,10 +1925,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 138,
+    "model": "schools.place",
+    "pk": 615,
     "fields": {
       "name": "St. Hilda\u2019s Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.937920511812 1.34934994368498)",
       "address": "2 Tampines Ave 3",
       "postal_code": "529706",
@@ -1815,10 +1939,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 139,
+    "model": "schools.place",
+    "pk": 616,
     "fields": {
       "name": "St. Gabriel\u2019s Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.862561037707 1.34947192653863)",
       "address": "220 Lorong Chuan",
       "postal_code": "556742",
@@ -1828,10 +1953,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 140,
+    "model": "schools.place",
+    "pk": 617,
     "fields": {
       "name": "St. Anthony\u2019s Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.749251919049 1.36411948475835)",
       "address": "30 Bukit Batok St 32",
       "postal_code": "659401",
@@ -1841,26 +1967,26 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 141,
+    "model": "schools.place",
+    "pk": 618,
     "fields": {
       "name": "Springdale Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.889926221247 1.39467010299297)",
       "address": "71 Anchorvale Link",
       "postal_code": "544799",
       "phone_number": "6315760",
       "email_address": "springdale_ps@moe.edu.sg",
       "website_url": "http://springdalepri.moe.edu.sg/",
-      "kindergartens": [
-        466
-      ]
+      "collocated": 466
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 142,
+    "model": "schools.place",
+    "pk": 619,
     "fields": {
       "name": "Singapore Chinese Girls\u2019 School (Primary)",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.82994776728 1.3203941615946)",
       "address": "190 Dunearn Road",
       "postal_code": "309437",
@@ -1870,10 +1996,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 143,
+    "model": "schools.place",
+    "pk": 620,
     "fields": {
       "name": "Seng Kang Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.899767112047 1.38949740395092)",
       "address": "21 Compassvale Walk",
       "postal_code": "545166",
@@ -1883,10 +2010,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 144,
+    "model": "schools.place",
+    "pk": 621,
     "fields": {
       "name": "Rulang Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.718457955487 1.34673868889098)",
       "address": "6 Jurong West Street 52",
       "postal_code": "649295",
@@ -1896,10 +2024,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 145,
+    "model": "schools.place",
+    "pk": 622,
     "fields": {
       "name": "Raffles Girls\u2019 Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.806442915912 1.32940426000123)",
       "address": "21 Hillcrest Road",
       "postal_code": "289072",
@@ -1909,10 +2038,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 146,
+    "model": "schools.place",
+    "pk": 623,
     "fields": {
       "name": "Radin Mas Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.824188270373 1.27495823622639)",
       "address": "1 Bukit Purmei Avenue",
       "postal_code": "099840",
@@ -1922,10 +2052,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 147,
+    "model": "schools.place",
+    "pk": 624,
     "fields": {
       "name": "Qifa Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.756743208641 1.31325147892085)",
       "address": "50 West Coast Avenue",
       "postal_code": "128104",
@@ -1935,10 +2066,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 148,
+    "model": "schools.place",
+    "pk": 625,
     "fields": {
       "name": "Punggol Cove Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.898804620697 1.41159891873965)",
       "address": "52 Sumang Walk",
       "postal_code": "828674",
@@ -1948,10 +2080,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 149,
+    "model": "schools.place",
+    "pk": 626,
     "fields": {
       "name": "Princess Elizabeth Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.74101964471 1.34920351265302)",
       "address": "30 Bukit Batok West Avenue 3",
       "postal_code": "659163",
@@ -1961,10 +2094,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 150,
+    "model": "schools.place",
+    "pk": 627,
     "fields": {
       "name": "Poi Ching School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.935246477199 1.35765122315691)",
       "address": "21 Tampines Street 71",
       "postal_code": "529067",
@@ -1974,10 +2108,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 151,
+    "model": "schools.place",
+    "pk": 628,
     "fields": {
       "name": "Park View Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.939541695654 1.37738069854251)",
       "address": "60 Pasir Ris Drive 1",
       "postal_code": "519524",
@@ -1987,10 +2122,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 152,
+    "model": "schools.place",
+    "pk": 629,
     "fields": {
       "name": "Opera Estate Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.923788259248 1.3193191443626)",
       "address": "48 Fidelio Street",
       "postal_code": "458436",
@@ -2000,26 +2136,26 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 153,
+    "model": "schools.place",
+    "pk": 630,
     "fields": {
       "name": "Northoaks Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.814196981329 1.45660782030105)",
       "address": "61 Sembawang Drive",
       "postal_code": "757622",
       "phone_number": "6753883",
       "email_address": "northoaks_ps@moe.edu.sg",
       "website_url": "http://www.northoakspri.moe.edu.sg",
-      "kindergartens": [
-        464
-      ]
+      "collocated": 464
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 154,
+    "model": "schools.place",
+    "pk": 631,
     "fields": {
       "name": "Northland Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.840928424929 1.42096989918956)",
       "address": "15 Yishun Avenue 4",
       "postal_code": "769026",
@@ -2029,10 +2165,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 155,
+    "model": "schools.place",
+    "pk": 632,
     "fields": {
       "name": "North View Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.848190787869 1.42752327193729)",
       "address": "210 Yishun Avenue 6",
       "postal_code": "768960",
@@ -2042,10 +2179,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 156,
+    "model": "schools.place",
+    "pk": 633,
     "fields": {
       "name": "North Spring Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.903202683028 1.38706146494863)",
       "address": "1 Rivervale Street",
       "postal_code": "545088",
@@ -2055,10 +2193,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 157,
+    "model": "schools.place",
+    "pk": 634,
     "fields": {
       "name": "Montfort Junior School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.889307782925 1.3738244407598)",
       "address": "52 Hougang Avenue 8",
       "postal_code": "538786",
@@ -2068,10 +2207,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 158,
+    "model": "schools.place",
+    "pk": 635,
     "fields": {
       "name": "Methodist Girls\u2019 School (Primary)",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.783393009829 1.33294800935715)",
       "address": "11 Blackmore Drive",
       "postal_code": "599986",
@@ -2081,10 +2221,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 159,
+    "model": "schools.place",
+    "pk": 636,
     "fields": {
       "name": "Meridian Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.934889078246 1.37552831658488)",
       "address": "20 Pasir Ris St 71",
       "postal_code": "518798",
@@ -2094,10 +2235,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 160,
+    "model": "schools.place",
+    "pk": 637,
     "fields": {
       "name": "Marymount Convent School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.840021064426 1.34036676987376)",
       "address": "20 Marymount Road",
       "postal_code": "297754",
@@ -2107,10 +2249,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 161,
+    "model": "schools.place",
+    "pk": 638,
     "fields": {
       "name": "Maha Bodhi School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.901298737314 1.32847086658388)",
       "address": "10 Ubi Avenue 1",
       "postal_code": "408931",
@@ -2120,10 +2263,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 162,
+    "model": "schools.place",
+    "pk": 639,
     "fields": {
       "name": "Kranji Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.747362720939 1.39356050497107)",
       "address": "11 Choa Chu Kang Street 54",
       "postal_code": "689189",
@@ -2133,10 +2277,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 163,
+    "model": "schools.place",
+    "pk": 640,
     "fields": {
       "name": "Kheng Cheng School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.847148501824 1.33733819356392)",
       "address": "15 Lorong 3 Toa Payoh",
       "postal_code": "319580",
@@ -2146,10 +2291,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 164,
+    "model": "schools.place",
+    "pk": 641,
     "fields": {
       "name": "Jiemin Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.830427933344 1.42768620385279)",
       "address": "2  Yishun Street 71",
       "postal_code": "768515",
@@ -2159,10 +2305,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 165,
+    "model": "schools.place",
+    "pk": 642,
     "fields": {
       "name": "Innova Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.790607539185 1.42896700684853)",
       "address": "80 Woodlands Drive 17",
       "postal_code": "737888",
@@ -2172,10 +2319,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 166,
+    "model": "schools.place",
+    "pk": 643,
     "fields": {
       "name": "Horizon Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.913404855665 1.39955003449202)",
       "address": "61 Edgedale Plains",
       "postal_code": "828819",
@@ -2185,10 +2333,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 167,
+    "model": "schools.place",
+    "pk": 644,
     "fields": {
       "name": "Greenwood Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.804725587384 1.43989958331785)",
       "address": "11 Woodlands Dr 62",
       "postal_code": "737942",
@@ -2198,10 +2347,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 168,
+    "model": "schools.place",
+    "pk": 645,
     "fields": {
       "name": "Greenridge Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.767794469258 1.38588921936923)",
       "address": "11 Jelapang Road",
       "postal_code": "677744",
@@ -2211,10 +2361,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 169,
+    "model": "schools.place",
+    "pk": 646,
     "fields": {
       "name": "Gongshang Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.949116145623 1.35723721033471)",
       "address": "1 Tampines Street 42",
       "postal_code": "529176",
@@ -2224,10 +2375,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 170,
+    "model": "schools.place",
+    "pk": 647,
     "fields": {
       "name": "Geylang Methodist School (Primary)",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.883845744916 1.31759126757286)",
       "address": "4 Geylang East Central",
       "postal_code": "389706",
@@ -2237,10 +2389,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 171,
+    "model": "schools.place",
+    "pk": 648,
     "fields": {
       "name": "First Toa Payoh Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.85552990727 1.34032299527313)",
       "address": "7 Lorong 8 Toa Payoh",
       "postal_code": "319252",
@@ -2250,10 +2403,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 172,
+    "model": "schools.place",
+    "pk": 649,
     "fields": {
       "name": "Fernvale Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.874445458032 1.39030227963798)",
       "address": "1 Fernvale Lane",
       "postal_code": "797701",
@@ -2263,26 +2417,26 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 173,
+    "model": "schools.place",
+    "pk": 650,
     "fields": {
       "name": "Farrer Park Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.850766169884 1.31236855965766)",
       "address": "2 Farrer Park Road",
       "postal_code": "217567",
       "phone_number": "6295227",
       "email_address": "fpps@moe.edu.sg",
       "website_url": "http://www.farrerparkpri.moe.edu.sg",
-      "kindergartens": [
-        455
-      ]
+      "collocated": 455
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 174,
+    "model": "schools.place",
+    "pk": 651,
     "fields": {
       "name": "Eunos Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.904541254016 1.32447629876371)",
       "address": "95 Jalan Eunos",
       "postal_code": "419529",
@@ -2292,10 +2446,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 175,
+    "model": "schools.place",
+    "pk": 652,
     "fields": {
       "name": "Edgefield Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.907847599114 1.40009139510997)",
       "address": "41 Edgefield Plains",
       "postal_code": "828869",
@@ -2305,10 +2460,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 176,
+    "model": "schools.place",
+    "pk": 653,
     "fields": {
       "name": "East Spring Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.961676849165 1.35268400746359)",
       "address": "31 Tampines St 33",
       "postal_code": "529258",
@@ -2318,26 +2474,26 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 177,
+    "model": "schools.place",
+    "pk": 654,
     "fields": {
       "name": "Dazhong Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.74847210784 1.35917974472771)",
       "address": "35 Bukit Batok Street 31",
       "postal_code": "659441",
       "phone_number": "6565800",
       "email_address": "dazhong_ps@moe.edu.sg",
       "website_url": "http://www.dazhongpri.moe.edu.sg",
-      "kindergartens": [
-        454
-      ]
+      "collocated": 454
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 178,
+    "model": "schools.place",
+    "pk": 655,
     "fields": {
       "name": "Damai Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.921270169613 1.33546106800408)",
       "address": "52 Bedok Reservoir Crescent",
       "postal_code": "479226",
@@ -2347,10 +2503,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 179,
+    "model": "schools.place",
+    "pk": 656,
     "fields": {
       "name": "Concord Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.736225440727 1.38000806197243)",
       "address": "3 Choa Chu Kang Ave 4",
       "postal_code": "689814",
@@ -2360,10 +2517,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 180,
+    "model": "schools.place",
+    "pk": 657,
     "fields": {
       "name": "Compassvale Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.897812229905 1.39444529636568)",
       "address": "21 Compassvale St",
       "postal_code": "545091",
@@ -2373,10 +2531,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 181,
+    "model": "schools.place",
+    "pk": 658,
     "fields": {
       "name": "Catholic High School (Primary Section)",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.844874676599 1.35472307471664)",
       "address": "9 Bishan Street 22",
       "postal_code": "579767",
@@ -2386,10 +2545,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 182,
+    "model": "schools.place",
+    "pk": 659,
     "fields": {
       "name": "Bukit Timah Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.767243310781 1.33751860013149)",
       "address": "111 Lorong Kismis",
       "postal_code": "598112",
@@ -2399,26 +2559,26 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 183,
+    "model": "schools.place",
+    "pk": 660,
     "fields": {
       "name": "Blangah Rise Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.808628536055 1.27612047869293)",
       "address": "91 Telok Blangah Heights",
       "postal_code": "109100",
       "phone_number": "6271738",
       "email_address": "brps@moe.edu.sg",
       "website_url": "http://www.blangahrisepri.moe.edu.sg",
-      "kindergartens": [
-        453
-      ]
+      "collocated": 453
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 184,
+    "model": "schools.place",
+    "pk": 661,
     "fields": {
       "name": "Alexandra Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.824424680531 1.29133439161336)",
       "address": "2A Prince Charles Crescent",
       "postal_code": "159016",
@@ -2428,10 +2588,11 @@
     }
   },
   {
-    "model": "schools.primaryschool",
-    "pk": 185,
+    "model": "schools.place",
+    "pk": 662,
     "fields": {
       "name": "Ahmad Ibrahim Primary School",
+      "type": "primary",
       "geometry": "SRID=4326;POINT (103.832942401086 1.4331527154352)",
       "address": "10 Yishun Street 11",
       "postal_code": "768643",

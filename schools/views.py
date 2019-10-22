@@ -1,86 +1,49 @@
-from itertools import chain
 from django.views import generic
-from django.http import Http404, HttpResponse, HttpResponseRedirect, JsonResponse
+from django.core import serializers
+from django.http import Http404, HttpResponseRedirect, JsonResponse
 from django.forms.models import model_to_dict
-#from django.core import serializers
 from django.shortcuts import render
-#from django.core.serializers import serialize
-from .serializer import Serializer
-from .models import PrimarySchool, SecondarySchool, Kindergarten
+from .models import Place
 import requests
 from . import credentials
 
-KEY_TYPE_ALL = 'KEY_TYPE_ALL'
-KEY_TYPE_PRIMARY = 'KEY_TYPE_PRIMARY'
-KEY_TYPE_SECONDARY = 'KEY_TYPE_SECONDARY'
-KEY_TYPE_KINDERGARTEN = 'KEY_TYPE_KINDERGARTEN'
-
 query_cache = {
-
-    # for X.objects.all()
-    KEY_TYPE_ALL: {
-        KEY_TYPE_PRIMARY: None,
-        KEY_TYPE_SECONDARY: None,
-        KEY_TYPE_KINDERGARTEN: None,
-    },
-
-    # for X.objects.get(pk=school_id)
-    KEY_TYPE_PRIMARY: {},
-    KEY_TYPE_SECONDARY: {},
-    KEY_TYPE_KINDERGARTEN: {},
+    'KEY_TYPE_ALL': None,
 }
 
 
-def get_cached_results(level_1_key, level_2_key):
+def get_cached_results(level_1_key):
     try:
-        if query_cache[level_1_key][level_2_key]:
-            return query_cache[level_1_key][level_2_key]
+        if query_cache[level_1_key]:
+            return query_cache[level_1_key]
         raise KeyError
 
     except KeyError:
-        if level_1_key == KEY_TYPE_ALL and level_2_key == KEY_TYPE_PRIMARY:
-            query_cache[level_1_key][level_2_key] = PrimarySchool.objects.all()
-        elif level_1_key == KEY_TYPE_ALL and level_2_key == KEY_TYPE_SECONDARY:
-            query_cache[level_1_key][level_2_key] = SecondarySchool.objects.all()
-        elif level_1_key == KEY_TYPE_ALL and level_2_key == KEY_TYPE_KINDERGARTEN:
-            query_cache[level_1_key][level_2_key] = Kindergarten.objects.all()
-        elif level_1_key == KEY_TYPE_PRIMARY:
-            query_cache[level_1_key][level_2_key] = PrimarySchool.objects.get(pk=level_2_key)
-        elif level_1_key == KEY_TYPE_SECONDARY:
-            query_cache[level_1_key][level_2_key] = SecondarySchool.objects.get(pk=level_2_key)
-        elif level_1_key == KEY_TYPE_KINDERGARTEN:
-            query_cache[level_1_key][level_2_key] = Kindergarten.objects.get(pk=level_2_key)
-        return query_cache[level_1_key][level_2_key]
+        if level_1_key == 'KEY_TYPE_ALL':
+            query_cache[level_1_key] = Place.objects.all()
+        else:
+            query_cache[level_1_key] = Place.objects.get(pk=level_1_key)
 
-
-def index(request):
-    return HttpResponse("Hello, world. You're at the school index.")
+        return query_cache[level_1_key]
 
 
 def get_detail(request):
     if request.method == 'GET' and request.is_ajax():
-        school_type = request.GET['type']
-        school_id = request.GET['id']
-        result = ''
-        if school_type == 'pri':
-            result = get_cached_results(KEY_TYPE_PRIMARY, school_id)
-        elif school_type == 'kin':
-            result = get_cached_results(KEY_TYPE_KINDERGARTEN, school_id)
-        elif school_type == 'sec':
-            result = get_cached_results(KEY_TYPE_SECONDARY, school_id)
+        place_id = request.GET['id']
+        result = get_cached_results(place_id)
 
-        json_response = Serializer().serialize([result], geometry_field='geometry',)
+        json_response = serializers.serialize('geojson', [result], geometry_field='geometry', )
         
         return JsonResponse(json_response, safe=False)
     else:
         return HttpResponseRedirect('/')
 
 
-def school_details(request, school_type, school_id):
+def school_details(request, place_type, place_id):
     try:
         results = None
-        if school_type == 'primary':
-            school = get_cached_results(KEY_TYPE_PRIMARY, school_id)
+        if place_type == 'primary':
+            school = get_cached_results(place_id)
 
             reg_results = school.registrationresults_set.all().order_by('-year')
             transposed_results = []
@@ -97,12 +60,10 @@ def school_details(request, school_type, school_id):
                 for y, value in enumerate(result.values()):
                     results[y].append(value)
 
-        elif school_type == 'secondary':
-            school = get_cached_results(KEY_TYPE_SECONDARY, school_id)
         else:
-            school = get_cached_results(KEY_TYPE_KINDERGARTEN, school_id)
+            school = get_cached_results(place_id)
     except Exception:
-        raise Http404('School does not exist')
+        raise Http404('Place does not exist')
 
     return render(request, 'schools/details.html', {'school': school, 'results': results})
 
@@ -110,15 +71,9 @@ def school_details(request, school_type, school_id):
 def get_all_schools(request):
     if request.method == 'GET' and request.is_ajax():
         query = request.GET['query']
+        results = get_cached_results('KEY_TYPE_ALL').filter(name__icontains=query)
 
-        results = list(
-            chain(get_cached_results(KEY_TYPE_ALL, KEY_TYPE_PRIMARY).filter(name__icontains=query),
-                  get_cached_results(KEY_TYPE_ALL, KEY_TYPE_SECONDARY).filter(name__icontains=query),
-                  get_cached_results(KEY_TYPE_ALL, KEY_TYPE_KINDERGARTEN).filter(name__icontains=query),
-                  )
-        )
-
-        json_response = Serializer().serialize(results, geometry_field='geometry')
+        json_response = serializers.serialize('geojson', results, geometry_field='geometry')
 
         if not len(results):  # extend the search out of local db
             searchval = query.replace(' ', '%20')
@@ -154,17 +109,10 @@ class MapView(generic.TemplateView):
     def get_context_data(self, **kwargs):
         context = super(MapView, self).get_context_data(**kwargs)
 
-        all_schools = list(chain(
-            get_cached_results(KEY_TYPE_ALL, KEY_TYPE_PRIMARY),
-            get_cached_results(KEY_TYPE_ALL, KEY_TYPE_SECONDARY),
-            get_cached_results(KEY_TYPE_ALL, KEY_TYPE_KINDERGARTEN),
-        ))
+        all_schools = get_cached_results('KEY_TYPE_ALL')
 
         context.update({
-            'primary_school_list': PrimarySchool.objects.all(),
-            'kindergarten_list': Kindergarten.objects.all(),
-            'secondary_school_list': SecondarySchool.objects.all(),
-            'all_school_list_serialized': Serializer().serialize(all_schools, geometry_field='geometry'),
+            'all_school_list_serialized': serializers.serialize('geojson', all_schools, geometry_field='geometry'),
         })
 
         return context
