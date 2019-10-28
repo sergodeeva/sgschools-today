@@ -227,7 +227,7 @@ def _build_school_obj(school_type, school_json, i):
         }
     }
 
-    # Add key for primary schools as this key is used for mapping primary schools and registration results. Dirty but still...
+    # Add key for primary schools as this key is used for mapping primary schools and registration results.
     if school_type == 'primary':
         school['pk'] = i
 
@@ -278,8 +278,11 @@ def _get_kindergarten_geometry(kindergarten_json):
 
 
 if __name__ == '__main__':
-    get_kindergartens()
+    # get_kindergartens()  # commented out kindergartens as API was recently removed from https://data.gov.sg/dataset/list-of-kindergartens
+    with open('kindergarten.json') as json_file:
+        data = json.load(json_file)
+    number_of_kindergartens = len(data)
     for sch_type in ['Primary', 'Secondary']:
-        get_schools(sch_type, 478)  # start schools index from 478 (as there are 477 kindergartens)
+        get_schools(sch_type, number_of_kindergartens + 1)
     get_registration_results()
     get_libraries()
