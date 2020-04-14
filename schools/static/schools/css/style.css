@@ -45,6 +45,95 @@ p.popup-content {
   margin-left: 10px;
 }
 
+/***************** routing related styles *****************/
+.hide {
+  display: none;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.route-container {
+  background-color:#563d7c;
+  height: 100%;
+  opacity: 0.9;
+  padding: 0px 10px 10px 10px;
+}
+
+.route-point-label {
+  color: white;
+  background-color: slategray;
+  text-align: center;
+  border-radius: 30px;
+  display: table;
+  width: 30px;
+  height: 30px;
+}
+
+.top-buffer { 
+  margin-top:10px; 
+}
+
+.left-buffer {
+  margin-left: 10px;
+}
+
+.right-buffer {
+  margin-right: 10px;
+}
+
+.route-selected-line {
+  height: 3px;
+  width: 100%;
+}
+
+.route-details-container {
+  height: 63%;
+  margin-top: -3px;
+  background-color: #f8f9fadb;
+  overflow: auto;
+}
+
+.route-details-content {
+  padding: 10px;
+}
+
+.route-point {
+  width: 15px;
+  height: 15px;
+  background-color: #563d7c;
+  display: inline-block;
+  border-radius: 20px;
+  margin-left: -23px;
+  margin-right: 5px;
+}
+
+.route-drive-point {
+  width: 15px;
+  height: 15px;
+  /*margin-left: -23px;*/
+  margin-right: 5px;
+}
+
+.top-buffer-padding {
+  padding-top:10px;
+}
+
+.route-border {
+  border-left: 3px solid #563d7c;
+}
+
+.route-end {
+  border-top: 3px solid #563d7c;
+}
+
+.route-col-image {
+  line-height: 30px;
+  margin-left: -10px;
+}
+
 /*----------About page-----------------------------------------------------*/
 
 /*----------Add By Kiwi-----------------------------------------------------*/
@@ -280,6 +369,10 @@ input.search-type:checked + label.search-type::before {
   outline: none;
 }
 
+.popup-a-btn{
+  color: black!important;
+}
+
 @media only screen and (max-width: 600px) {
   .input-container {
     width: 90.7vw;
@@ -287,4 +380,8 @@ input.search-type:checked + label.search-type::before {
   .ui-menu .ui-menu-item {
     width: 90vw;
   }
+  [class*="col-sm"] {
+    width: 100%;
+  }
 }
+

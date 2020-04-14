@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.gis.db import models as geo_models
-
+from django.utils import timezone as timezone
 
 class Place(models.Model):
     name = models.CharField(max_length=100, blank=False)
@@ -41,3 +41,10 @@ class RegistrationResults(models.Model):
     class Meta:
         verbose_name_plural = 'Registration Results'
         ordering = ('place', 'year',)
+
+
+# Mai Ngin 
+class OneMapToken(models.Model):
+    token = models.CharField(max_length=500, blank=False, null=False)
+    expiryTimeStamp = models.BigIntegerField()
+    modifiedDateTime = models.DateTimeField(default=timezone.now)

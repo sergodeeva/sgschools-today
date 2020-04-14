@@ -9,13 +9,75 @@
 <div class="page-wrapper">
     <!-- Natalya: included header inside page-wrapper so that can fit header + body into screen -->
     {% include "navbar.html" with displaySearchBar="True" %}
-
-    <div class="map-container">
-        <div id="main-map"></div>
+    <div class="container-fluid h-100">
+        <div class="row justify-content-center h-100">
+            <div class="col-sm-3 nopadding route-col-container hide">
+                <div class="route-container">
+                    <button type="button" class="close" aria-label="Close" onclick="hideRouteContainer();">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <br />
+                    <br />
+                    <div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-1 right-buffer">
+                                    <span class="label route-point-label">A</span>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control form-control-sm" id="inputRouteA">
+                                    <input type="text" style="visibility:hidden;display:none" id="inputRouteAA">
+                                </div>
+                                <div class="col-1">
+                                    <!-- <span class="fa fa-location-arrow align-middle route-col-image" onclick="locateUser();"></span> -->
+                                </div>
+                            </div>
+                            <div class="row top-buffer-padding">
+                                <div class="col-1 right-buffer">
+                                    <span class="label route-point-label">B</span>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control form-control-sm" id="inputRouteB" disabled>
+                                </div>
+                                <div class="col-1">
+                                    <!-- <span class="fa fa-retweet align-middle route-col-image"></span> -->
+                                </div>
+                            </div>
+                            <div class="row top-buffer-padding">
+                                <div class="col justify-content-center" style='display:inline-flex;'>
+                                    <button type="button" class="btn btn-light btn-sm text-primary" onclick="findRoute('pt','TRANSIT');">Find Route</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="route-details-block">
+                            <div class="btn-group w-100" role="group" aria-label="Routing Type">
+                                <button type="button" class="route-type-mrt btn btn-light text-success" onclick="fetch_routes('pt','TRANSIT')"><i class="fa fa-bus"></i></button>
+                                <button type="button" class="route-type-drive btn btn-light text-primary" onclick="fetch_routes('drive','')"><i class="fa fa-car"></i></button>
+                                <button type="button" class="route-type-taxi btn btn-light text-warning" onclick="fetch_routes('cycle','')"><i class="fa fa-bicycle"></i></button>
+                                <button type="button" class="route-type-walk btn btn-light text-secondary" onclick="fetch_routes('walk','')"><i class="fa fa-street-view"></i></button>
+                            </div>
+                            <div class="route-details-container w-100">
+                                <div class="route-details-content  w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-sm nopadding">
+                <div class="map-container">
+                    <div id="main-map"></div>
+                </div>
+            </div>
+        </div>
     </div>
+    
 
     <script src="{% static 'schools/js/init_map.js' %}"></script>
     <script src="{% static 'schools/js/map_function.js' %}"></script>
+    <script src="{% static 'schools/js/share_function.js' %}"></script>
 </div>
 
 {% endblock %}

@@ -5,6 +5,8 @@ https://docs.djangoproject.com/en/2.1/ref/contrib/gis/install
 
 ## Install packages
 Create and activate virtual environment
+https://www.youtube.com/watch?v=rZ80cgaY2D8
+https://docs.python.org/3/tutorial/venv.html
 ```
 virtualenv venv
 source venv/bin/activate

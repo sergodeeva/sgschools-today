@@ -52,13 +52,13 @@ $(document).ready(function() {
         });
       },
       focus: function(event, ui) {
-          if (ui.item.properties.type){
+          if (ui.item.properties && ui.item.properties.type){
               $("#search-input").val(ui.item.properties.name);
           }
           else if(ui.item.SEARCHVAL){
               $("#search-input").val(ui.item.SEARCHVAL.toTitleCase());
           }
-        return false;
+        return false;        
       },
       select: function(event, ui) {
         // TODO: to make autocomplete work on all the pages
@@ -85,4 +85,64 @@ $(document).ready(function() {
     .data("ui-autocomplete")._renderItem = function(ul, item) {
       return $("<li>").append(getAutocompleteElement(item)).appendTo(ul);
   };
+
+
+  // Mai Ngin + autocomplete for start point input
+  $("#inputRouteA").autocomplete({
+    minLength: 1,
+    source: function(request, response) {
+      $.ajax({
+        type: "GET",
+        url: "/api/get-all-schools",
+        dataType: "json",
+        data: {query: $("#inputRouteA").val()},
+        success: function(result) {
+            let json = JSON.parse(result);
+            if (json.features){
+                //parse local db results                
+                response(json.features);
+            }
+            else if (json.results){
+                //parse onemap results
+                response(json.results);
+            }
+        },
+        error: function(error) {console.log(error);}
+      });
+    },
+    focus: function(event, ui) {
+        if(ui.item){
+            if (ui.item.properties && ui.item.properties.type){
+                $("#inputRouteA").val(ui.item.properties.name);
+                $("#inputRouteAA").val(ui.item.properties.postal_code);
+            } 
+            else if(ui.item.SEARCHVAL){
+                $("#inputRouteA").val(ui.item.SEARCHVAL.toTitleCase());
+                $("#inputRouteAA").val(ui.item.POSTAL);
+            }
+        }        
+        return false;
+    },
+    select: function(event, ui) {
+        var display = "";
+        if(ui.item){
+            if (ui.item.properties && ui.item.properties.type){
+                display = ui.item.properties.name;
+                $("#inputRouteAA").val(ui.item.properties.postal_code);
+            } 
+            else if(ui.item.SEARCHVAL){
+                display = ui.item.SEARCHVAL.toTitleCase();
+                $("#inputRouteAA").val(ui.item.POSTAL);
+            }
+        }       
+        $("#inputRouteA").val(display);        
+        document.activeElement.blur();
+        $("#inputRouteA").blur();
+        return false;
+    }
+  })
+  .data("ui-autocomplete")._renderItem = function(ul, item) {
+    return $("<li>").append(getAutocompleteElement(item)).appendTo(ul);
+};
+
 });

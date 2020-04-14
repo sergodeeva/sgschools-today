@@ -3,14 +3,17 @@ from django.core import serializers
 from django.http import Http404, HttpResponseRedirect, JsonResponse
 from django.forms.models import model_to_dict
 from django.shortcuts import render
-from .models import Place
+from .models import Place, OneMapToken
 import requests
 from . import credentials
+import polyline 
+from datetime import datetime
+import json
+from django.views.decorators.csrf import csrf_exempt
 
 query_cache = {
     'KEY_TYPE_ALL': None,
 }
-
 
 def get_cached_results(level_1_key):
     try:
@@ -88,10 +91,8 @@ def get_all_schools(request):
 def fmt_opencagedata_url(key, lat, lng):
     return 'https://api.opencagedata.com/geocode/v1/json?key='+key+'&q='+lat+'%2C'+lng
 
-
 def fmt_onemap_url(searchval):
     return 'https://developers.onemap.sg/commonapi/search?searchVal=' + searchval + '&returnGeom=Y&getAddrDetails=Y&pageNum=1'
-
 
 def geo_to_address(request):
     if request.method == 'GET' and request.is_ajax():
@@ -102,6 +103,86 @@ def geo_to_address(request):
     else:
         return JsonResponse('', safe=False)
 
+###############################################################
+# Sundee: Routing API
+###############################################################
+def fmt_onemap_route_url(slat, slng, elat, elng, routeType, token, mode):
+    start = slat + ',' + slng
+    end = elat + ',' + elng
+    date = datetime.today().strftime('%Y-%m-%d')
+    time = '09:00:00' #datetime.today().strftime('%H:%m:%S')
+    return 'https://developers.onemap.sg/privateapi/routingsvc/route?start=' + start + '&end=' + end + '&routeType=' + routeType + '&token=' + token + '&date=' + date + '&time=' + time + '&mode=' + mode + '&maxWalkDistance=1000&numItineraries=1'
+
+def get_routes(request):
+    if request.method == 'GET' and request.is_ajax():
+        slat, slng, elat, elng, token, mode = request.GET['slat'], request.GET['slng'], request.GET['elat'], request.GET['elng'], request.GET['token'], request.GET['mode']
+        result = requests.get(fmt_onemap_route_url(slat, slng, elat, elng, request.GET['rType'], token, mode))
+        return JsonResponse(result.content.decode('utf-8'), safe=False)
+    else:
+        return JsonResponse('', safe=False)
+
+def decode_route_geometry(request):
+    if request.method == 'GET' and request.is_ajax():
+        query = request.GET['query']        
+        result = polyline.decode(query)
+        return JsonResponse(result, safe=False)
+    else:
+        return JsonResponse('', safe=False)
+
+######################################################################
+# Mai Ngin: Routing API for Public Transport and Maintain OneMap Token
+######################################################################
+def decode_route_geometry_multi(request):
+    if request.method == 'GET' and request.is_ajax():
+        geoList = request.GET['query']
+        geoJson = json.loads(geoList)
+        result = []
+        for geo in geoJson:
+            decodedGeo = polyline.decode(geo)
+            result.append(decodedGeo)
+        return JsonResponse(result, safe=False)
+    else:
+        return JsonResponse('', safe=False)
+
+@csrf_exempt
+def update_onemap_token(request):    
+    if request.method=='POST' and request.is_ajax():
+        results = OneMapToken.objects.filter(id=1)
+        if(len(results) > 0):
+            OneMapToken.objects.filter(id=1).update(token=request.POST['token'],expiryTimeStamp=request.POST['expiryTimeStamp'],modifiedDateTime=datetime.now())
+        else:
+            OneMapToken.objects.create(token=request.POST['token'],expiryTimeStamp=request.POST['expiryTimeStamp'],modifiedDateTime=datetime.now())
+        return JsonResponse({"status":"success"}, safe=False)
+    else:
+        return JsonResponse('', safe=False)
+    
+
+def get_onemap_token(request):
+    results = None
+    if request.method=='GET' and request.is_ajax():
+        results = OneMapToken.objects.filter(id=1)
+        json_response = serializers.serialize('geojson', results)
+        return JsonResponse(json_response, safe=False)
+    else:
+        return JsonResponse('', safe=False)
+
+###############################################################
+
+def get_all_address(request):
+    if request.method == 'GET' and request.is_ajax():
+        query = request.GET['query']
+        results = get_cached_results('KEY_TYPE_ALL').filter(name__icontains=query)
+
+        json_response = serializers.serialize('geojson', results, geometry_field='geometry')
+
+        if not len(results):  # extend the search out of local db
+            searchval = query.replace(' ', '%20')
+            results = requests.get(fmt_onemap_url(searchval))
+            json_response = results.content.decode('utf-8')
+
+        return JsonResponse(json_response, safe=False)
+    else:
+        return HttpResponseRedirect('/')
 
 class MapView(generic.TemplateView):
     template_name = 'schools/main.html'
