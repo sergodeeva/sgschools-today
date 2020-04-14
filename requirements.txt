@@ -1,3 +1,4 @@
+asgiref==3.2.3
 astroid==2.2.5
 autopep8==1.4.4
 beautifulsoup4==4.8.0
@@ -7,9 +8,14 @@ chardet==3.0.4
 Django==2.2.4
 googlemaps==3.1.1
 idna==2.8
+iso8601==0.1.12
 isort==4.3.21
 lazy-object-proxy==1.4.1
 mccabe==0.6.1
+osmiter==1.0.4
+pkg-resources==0.0.0
+polyline==1.4.0
+protobuf==3.11.3
 psycopg2-binary==2.8.3
 pycodestyle==2.5.0
 pylint==2.3.1
