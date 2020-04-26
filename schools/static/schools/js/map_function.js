@@ -103,7 +103,8 @@ function getGeoLocationMarker(geoLocation, poptitle) {
   popup += 'Share';
   popup += '</button>';
   popup += '<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">';   
-  popup += '<button class="dropdown-item" id="btnWhatsapp" onclick="handleBtnWhatsappClick('+ shareParams +')">Whatsapp</button>';   
+  popup += '<button class="dropdown-item d-none d-md-block" id="btnWhatsappLg" onclick="handleBtnWhatsappClick('+ shareParams +')">Whatsapp</button>';     
+  popup += '<button class="dropdown-item d-sm-none" id="btnWhatsappsm" onclick="handleBtnSmallWhatsappClick('+ shareParams +')">Whatsapp</button>';     
   popup += '<button class="dropdown-item" id="btnFBMessanger" onclick="handleBtnFBMessangerClick('+ shareParams +')">Messenger</button>';    
   popup += '<a class="dropdown-item popup-a-btn" href="mailto:?subject=<SG Schools>Check out this location&amp;body=Check out this location ' + linkstr + '">Mail</a>'
   popup += '<button class="dropdown-item" id="btnCopyLink" onclick="handleBtnCopyLinkClick('+ shareParams +')">Copy Link</button>';    
@@ -190,8 +191,9 @@ function getPopup(school) {
   popup += '<button id="btnGroupDrop1" type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
   popup += 'Share';
   popup += '</button>';
-  popup += '<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">';  
-  popup += '<button class="dropdown-item" id="btnWhatsapp" onclick="handleBtnWhatsappClick('+ shareParams +')">Whatsapp</button>';   
+  popup += '<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">';    
+  popup += '<button class="dropdown-item d-none d-md-block" id="btnWhatsappLg" onclick="handleBtnWhatsappClick('+ shareParams +')">Whatsapp</button>';     
+  popup += '<button class="dropdown-item d-sm-none" id="btnWhatsappsm" onclick="handleBtnSmallWhatsappClick('+ shareParams +')">Whatsapp</button>';       
   popup += '<button class="dropdown-item" id="btnFBMessanger" onclick="handleBtnFBMessangerClick('+ shareParams +')">Messenger</button>';    
   popup += '<a class="dropdown-item popup-a-btn" href="mailto:?subject=<SG Schools>Check out this location&amp;body=Check out this location ' + linkstr + '">Mail</a>'
   popup += '<button class="dropdown-item" id="btnCopyLink" onclick="handleBtnCopyLinkClick('+ shareParams +')">Copy Link</button>';    
@@ -748,10 +750,19 @@ function clearRoute(){
 // var homeUrl = 'http://127.0.0.1:8000'; //MAI_TODO replace with live domain name
 var homeUrl = 'https://sgschools.today'; //live domain name
 
+// Whatsapp Desktop
 function handleBtnWhatsappClick(val1,val2,isSchool){
   var uri=homeUrl + "?params="+val1+"_"+val2+"_"+isSchool;    
   window.open('https://web.whatsapp.com/send?text='+uri);
+  
 }
+
+// Whatsapp Mobile
+function handleBtnSmallWhatsappClick(val1,val2,isSchool){
+  var uri=homeUrl + "?params="+val1+"_"+val2+"_"+isSchool;    
+  window.open('https://api.whatsapp.com/send?text='+uri);  
+}
+
 
 function handleBtnFBMessangerClick(val1,val2,isSchool){   
   var linkstr=homeUrl + "?params="+val1+"_"+val2+"_"+isSchool;      
